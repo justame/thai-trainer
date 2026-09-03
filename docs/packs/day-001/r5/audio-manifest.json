@@ -1,0 +1,293 @@
+{
+  "content_sha256": "2ee17250cd9ca59e8218e62fcb1b8c6b3e80aed406aa7ddfe58a83100df1138c",
+  "lesson_id": "day-001",
+  "practice_variations": {
+    "count": 20,
+    "pairs": [
+      {
+        "hebrew": {
+          "segment_sha256": "3562a508b00aa6c35fdc6e22d2c3774532197d1d83454c76b3e94f1105943420"
+        },
+        "sentence_id": "d001-s01",
+        "thai": {
+          "segment_sha256": "7173f53218db937fc3c4dcb78106a590d78a9863a4a673c8dc77ddcea3cb6f79"
+        }
+      },
+      {
+        "hebrew": {
+          "segment_sha256": "1ea677671a73ea739ac7b8aefd67e700cceb9399a802dc7b0b8b68cf93a8e5f5"
+        },
+        "sentence_id": "d001-s02",
+        "thai": {
+          "segment_sha256": "351c280141a14d0b6c75e9466fbad5fdc290bf34bc2ea7f40973c6e4bf6bd5c9"
+        }
+      },
+      {
+        "hebrew": {
+          "segment_sha256": "041ab87239072d28d8a71f5d1b9615169c4d55c95771cb58f7a38958ef63e2b3"
+        },
+        "sentence_id": "d001-s03",
+        "thai": {
+          "segment_sha256": "ec5a91b6a39855eb64006628530ce30a6c37045101750d67fc7ed130fbbe345c"
+        }
+      },
+      {
+        "hebrew": {
+          "segment_sha256": "c5f29682a99afe83f63427eed6078e19f194e404c4b4d8a599b85bb7e09ef508"
+        },
+        "sentence_id": "d001-s04",
+        "thai": {
+          "segment_sha256": "5d22b163c8fd72beadd1e07f1e17a908238df3650232d9ff4759d38de2988158"
+        }
+      },
+      {
+        "hebrew": {
+          "segment_sha256": "0e834ac734d711e0825535e90a81f5f69ebe136b897690643d5ed09d7cf8f2db"
+        },
+        "sentence_id": "d001-s05",
+        "thai": {
+          "segment_sha256": "6b9a8500b2873edc53fa9a110809a6224525c5a58261605fd8930ca84f842b57"
+        }
+      },
+      {
+        "hebrew": {
+          "segment_sha256": "8b216900dd219bf34ac009701fee376217bfb0458622318a361af248a22a6fd7"
+        },
+        "sentence_id": "d001-s06",
+        "thai": {
+          "segment_sha256": "597344bc7d421efb5ec0447043b892a68d9482a156bfec5574a1186f135775ff"
+        }
+      },
+      {
+        "hebrew": {
+          "segment_sha256": "f334622dae035efc6b184c370b02077d21da83db6312efe79dbe5d22deb41720"
+        },
+        "sentence_id": "d001-s07",
+        "thai": {
+          "segment_sha256": "d77c36144ed45047b5c3873e318ab8488a781fac18e39920404d56285b50ae01"
+        }
+      },
+      {
+        "hebrew": {
+          "segment_sha256": "a103b80670e40a4fcf6f7d1667cacf10f4e6fedbf0e37babcbfcd32047fc2d74"
+        },
+        "sentence_id": "d001-s08",
+        "thai": {
+          "segment_sha256": "ca1dfcd9425d7dd7bbf8e4da87b6debd4967dd92ed44071848eb6f07240441a3"
+        }
+      },
+      {
+        "hebrew": {
+          "segment_sha256": "b4dfd7733b1a38bcb82a2051e6f03f0d656637368fe2e135b10085bd59b1bc4e"
+        },
+        "sentence_id": "d001-s09",
+        "thai": {
+          "segment_sha256": "bee5ee26e6882d8a19bdb469e62dc2fe81a2786f872d87b5de94dea9229d2b21"
+        }
+      },
+      {
+        "hebrew": {
+          "segment_sha256": "86d8c8e7a159158b8fa515db4950906fda943d66fd9cabfae2954e3873c26185"
+        },
+        "sentence_id": "d001-s10",
+        "thai": {
+          "segment_sha256": "27203f3200d86adec7625408c8234d74e248ce8939459a6687ecf967f25e3968"
+        }
+      },
+      {
+        "hebrew": {
+          "segment_sha256": "087f24f796df746e5c1d0883a156a854d3aa1d3239655680eb1b41c8f1a37416"
+        },
+        "sentence_id": "d001-s11",
+        "thai": {
+          "segment_sha256": "bb7ef39152a0dae60bc9d72627ce14a3d2f19525b50f2281870fbed4d5f805ee"
+        }
+      },
+      {
+        "hebrew": {
+          "segment_sha256": "022301b3db1fd44e456b6a5d87cf715386f28955d21e2f09d854bd895519380e"
+        },
+        "sentence_id": "d001-s12",
+        "thai": {
+          "segment_sha256": "c767857da50d21a9d035da2fddd8b21457fafb23a7310dbd608b14422a0fce9c"
+        }
+      },
+      {
+        "hebrew": {
+          "segment_sha256": "877ce1c3e23c4844a5ee6ba66d6f4b16221afc0b037d597baca20e0e66495dcd"
+        },
+        "sentence_id": "d001-s13",
+        "thai": {
+          "segment_sha256": "38ef98f4f791830e2783382faf510c5bcfd3fb44706c44bfcd32657727d3079b"
+        }
+      },
+      {
+        "hebrew": {
+          "segment_sha256": "1a36a4a6117aecde992439ffeb54fe70422cabc49e98d2e1c960085dc1c66262"
+        },
+        "sentence_id": "d001-s14",
+        "thai": {
+          "segment_sha256": "3e60b448f8e110f46afac52ff9e6a8a35c3cdb7eb6fe84e7d1b4179aa52f634d"
+        }
+      },
+      {
+        "hebrew": {
+          "segment_sha256": "5dce603ca2b7d2a35231c13fea63e2ec31c56ebf8370f23b81a0719dd28de7c3"
+        },
+        "sentence_id": "d001-s15",
+        "thai": {
+          "segment_sha256": "05e6985a9e5c8d18a64950e55e7446e91e3a635cb6dac1af6ab458104d0af58b"
+        }
+      },
+      {
+        "hebrew": {
+          "segment_sha256": "b67a947466e186576cc42bce1f1ca0a101dc72036ab85a77dd9a688b759f69ba"
+        },
+        "sentence_id": "d001-s16",
+        "thai": {
+          "segment_sha256": "9f9d3271c648bdf34c204696c7f3de11ec1239699fb29ddc72ad3278aa3054f7"
+        }
+      },
+      {
+        "hebrew": {
+          "segment_sha256": "2959450f2d709c3eb12aef594187b4ea13cc267607bb273b8b0ace33f703809e"
+        },
+        "sentence_id": "d001-s17",
+        "thai": {
+          "segment_sha256": "bd0315a95596ec268b16fe0a0f296fbb7231c9fd6cdf1fe7b7eaf46e24760407"
+        }
+      },
+      {
+        "hebrew": {
+          "segment_sha256": "a59a7524c88c967071b5a7f442db4f4c83d043b698f76e3a51930c9aa2547a3a"
+        },
+        "sentence_id": "d001-s18",
+        "thai": {
+          "segment_sha256": "9edaa80986c76c0ba6ec1c79e9bf2e4870c1eebd0c3e6a187f54dd593705a519"
+        }
+      },
+      {
+        "hebrew": {
+          "segment_sha256": "187a3e54d1f2fe86c4868903c9daeb03c32d816978aa98f2fae9d6f36a46cd16"
+        },
+        "sentence_id": "d001-s19",
+        "thai": {
+          "segment_sha256": "e0645c0ba12e7edcc3fe4268b374f71620b63b40e3c0f694fde7b547476410d9"
+        }
+      },
+      {
+        "hebrew": {
+          "segment_sha256": "86c52ea87071e3630e000cc962047de8f01ee4e3476546d5206648a39bef5ded"
+        },
+        "sentence_id": "d001-s20",
+        "thai": {
+          "segment_sha256": "3776a89a4fd23cc4678bc32a3cf9e269e94cd4565cc734349b86dd067ea96d85"
+        }
+      }
+    ]
+  },
+  "provider": "google_cloud_tts",
+  "revision": 5,
+  "schema_version": 1,
+  "tracks": [
+    {
+      "assembly": {
+        "channels": 1,
+        "input_encoding": "LINEAR16_WAV",
+        "output_bitrate_kbps": 48,
+        "output_encoding": "MP3",
+        "sample_rate_hertz": 24000,
+        "sample_width_bytes": 2,
+        "tool": "sox",
+        "version": 1
+      },
+      "bytes": 980208,
+      "content_sha256": "2ee17250cd9ca59e8218e62fcb1b8c6b3e80aed406aa7ddfe58a83100df1138c",
+      "file": "listening.mp3",
+      "generated_at": "2026-09-03T21:23:11.673019+00:00",
+      "lesson_id": "day-001",
+      "provider": "google_cloud_tts",
+      "request_sha256": "63b5218e415c302c82f2f51c901c0e20b595523d16779a6412ab1cba59590dfc",
+      "revision": 5,
+      "speech_segments": 40,
+      "track_id": "listening"
+    },
+    {
+      "assembly": {
+        "channels": 1,
+        "input_encoding": "LINEAR16_WAV",
+        "output_bitrate_kbps": 48,
+        "output_encoding": "MP3",
+        "sample_rate_hertz": 24000,
+        "sample_width_bytes": 2,
+        "tool": "sox",
+        "version": 1
+      },
+      "bytes": 1138320,
+      "content_sha256": "2ee17250cd9ca59e8218e62fcb1b8c6b3e80aed406aa7ddfe58a83100df1138c",
+      "file": "shadowing.mp3",
+      "generated_at": "2026-09-03T21:23:12.423487+00:00",
+      "lesson_id": "day-001",
+      "provider": "google_cloud_tts",
+      "request_sha256": "0293dbdabc81ce323e9e5e0cabcb498e9068b997bbc2099ee4bc9a3ad0c5ce3f",
+      "revision": 5,
+      "speech_segments": 60,
+      "track_id": "shadowing"
+    },
+    {
+      "assembly": {
+        "channels": 1,
+        "input_encoding": "LINEAR16_WAV",
+        "output_bitrate_kbps": 48,
+        "output_encoding": "MP3",
+        "sample_rate_hertz": 24000,
+        "sample_width_bytes": 2,
+        "tool": "sox",
+        "version": 1
+      },
+      "bytes": 1370736,
+      "content_sha256": "2ee17250cd9ca59e8218e62fcb1b8c6b3e80aed406aa7ddfe58a83100df1138c",
+      "file": "recall.mp3",
+      "generated_at": "2026-09-03T21:23:16.354780+00:00",
+      "lesson_id": "day-001",
+      "provider": "google_cloud_tts",
+      "request_sha256": "6b915044ef289217d3480b9d547ae43007b8f651de4820387ca04e4cc75e4815",
+      "revision": 5,
+      "speech_segments": 40,
+      "track_id": "recall"
+    },
+    {
+      "assembly": {
+        "channels": 1,
+        "input_encoding": "LINEAR16_WAV",
+        "output_bitrate_kbps": 48,
+        "output_encoding": "MP3",
+        "sample_rate_hertz": 24000,
+        "sample_width_bytes": 2,
+        "tool": "sox",
+        "version": 1
+      },
+      "bytes": 373824,
+      "content_sha256": "2ee17250cd9ca59e8218e62fcb1b8c6b3e80aed406aa7ddfe58a83100df1138c",
+      "file": "scenario.mp3",
+      "generated_at": "2026-09-03T21:23:16.614376+00:00",
+      "lesson_id": "day-001",
+      "provider": "google_cloud_tts",
+      "request_sha256": "6fc50daaee9cdbe870c6f00c5707cad94c4710b1661556cf072b397030fd2b0e",
+      "revision": 5,
+      "speech_segments": 20,
+      "track_id": "scenario"
+    }
+  ],
+  "voices": {
+    "hebrew": {
+      "language_code": "he-IL",
+      "name": "he-IL-Chirp3-HD-Charon"
+    },
+    "provider": "google_cloud_tts",
+    "thai": {
+      "language_code": "th-TH",
+      "name": "th-TH-Chirp3-HD-Erinome"
+    }
+  }
+}
