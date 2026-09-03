@@ -1,0 +1,669 @@
+{
+  "content_sha256": "c4ca956c55e0deea37a0cb889ca222a1e76ede9fdf11cef8b6ad8a0b6c21ce7a",
+  "lesson_id": "day-002",
+  "revision": 1,
+  "sample_rate_hertz": 24000,
+  "schema_version": 2,
+  "sentences": [
+    {
+      "core": {
+        "hebrew": {
+          "bytes": 92204,
+          "file": "d002-s01-core-he.wav",
+          "sha256": "5b84392c99c78ff7d34209e7df0e35a49a0dd5aff4b23773c04aa53968fd0737",
+          "source_request_sha256": "5dc27c01c3e6cfb554bbe0eaaa47daea0dc970d001186bf8d54dc143ffc91f4b"
+        },
+        "thai": {
+          "bytes": 96044,
+          "file": "d002-s01-core-th.wav",
+          "sha256": "d7fcd37c810c80ae6d9b95f688e8483c2939cf64d7ea9be04bd7cb26df455710",
+          "source_request_sha256": "efd0fcdc962346e77bfb8aa697d159084eae64d86f6381638dcf0db22867bd83"
+        }
+      },
+      "sentence_id": "d002-s01",
+      "variations": [
+        {
+          "hebrew": {
+            "bytes": 86444,
+            "file": "d002-s01-variation-1-he.wav",
+            "sha256": "20fcbb97695dd684d6fb92fa4e21f3895f3253a60c51eb4ef8caa0fa5a6998b6",
+            "source_request_sha256": "554a407ac3c645d6e35fbe9b8530275e7bbc89635873d7055ac26281bb5c24ab"
+          },
+          "thai": {
+            "bytes": 82604,
+            "file": "d002-s01-variation-1-th.wav",
+            "sha256": "027d083f02e46bc8f4a02aab7c3f8a8998e49f37481adae689ab88358ffc80ef",
+            "source_request_sha256": "e9a0ea6f3157958c73043f3e1c426ccbf5a7c6b544ab3103e129b08b68c49f87"
+          }
+        }
+      ]
+    },
+    {
+      "core": {
+        "hebrew": {
+          "bytes": 73004,
+          "file": "d002-s02-core-he.wav",
+          "sha256": "cccbb15d542246967f2a7487bc0e5b6f78c3b59bbec6199d7cfbdf86592ece64",
+          "source_request_sha256": "030b267efe339da16ee4c164dfa369038675f893435aa2dad66914e08dea54c5"
+        },
+        "thai": {
+          "bytes": 92204,
+          "file": "d002-s02-core-th.wav",
+          "sha256": "0430a851d505553bdc853782ea8c7eb9457c05875d7a55d38b100c4fcd73917a",
+          "source_request_sha256": "521334402616f97efc44b9e0d683de903b4d5f33abeafce4cd89fd4914a5f18e"
+        }
+      },
+      "sentence_id": "d002-s02",
+      "variations": [
+        {
+          "hebrew": {
+            "bytes": 113324,
+            "file": "d002-s02-variation-1-he.wav",
+            "sha256": "dccc9e1b5fca6c0306853aef9ee62db102d72e6cef11343aea55ad5cbf5de119",
+            "source_request_sha256": "4cd39727b46e49763f8fa7bddacad64a2a79eddff8bf30d2ba0e40c892d7deb5"
+          },
+          "thai": {
+            "bytes": 103724,
+            "file": "d002-s02-variation-1-th.wav",
+            "sha256": "3e793866211a7708ebf64aacc043bf64d4f90a72f1a3839204630b36949d1dfc",
+            "source_request_sha256": "6ab45535a8d46fa282ae9b4617f6da576bece50130c2747eae1c04a9b14f6759"
+          }
+        }
+      ]
+    },
+    {
+      "core": {
+        "hebrew": {
+          "bytes": 78764,
+          "file": "d002-s03-core-he.wav",
+          "sha256": "0660a2b30eb712974e4d6afa8213087dc111a43493e705a8faf5ee9e2b7baf5b",
+          "source_request_sha256": "b6fb9b7576f9b2b5fdbe3a833509d8332ed37185b0411805fd24d360adc916cd"
+        },
+        "thai": {
+          "bytes": 84524,
+          "file": "d002-s03-core-th.wav",
+          "sha256": "0280ea33a701e394d28c29da593f0c7b7647bc704418068c64ad4f12bf234969",
+          "source_request_sha256": "b532c4aedb2c6842b33137cb33bd0824a72ba048812367cea4d9f735940dc95d"
+        }
+      },
+      "sentence_id": "d002-s03",
+      "variations": [
+        {
+          "hebrew": {
+            "bytes": 78764,
+            "file": "d002-s03-variation-1-he.wav",
+            "sha256": "b1237fef0208a6d9dfb71788eff20707518e4afa9beee272d33f6770e13c2176",
+            "source_request_sha256": "ebceef4b82d0c0300170a1d67278de27d8591dda627ec87e5254d25db1701bd0"
+          },
+          "thai": {
+            "bytes": 92204,
+            "file": "d002-s03-variation-1-th.wav",
+            "sha256": "1dd54f55a6599159c4c61a638a4cd8fd169ad0a7f7a24fe554086f4a13f12973",
+            "source_request_sha256": "23d39706d818172d2b24a48292cc8befab482eb7b9bf4dc816237af40ecfbc91"
+          }
+        }
+      ]
+    },
+    {
+      "core": {
+        "hebrew": {
+          "bytes": 105644,
+          "file": "d002-s04-core-he.wav",
+          "sha256": "4bb30537511ec126274628cb2222f101ed53e51169db7aebc1a7c8431c408784",
+          "source_request_sha256": "205d697c56b819f05b65994fb631a16d631163409060e2905222dfdeddd89393"
+        },
+        "thai": {
+          "bytes": 101804,
+          "file": "d002-s04-core-th.wav",
+          "sha256": "925f061478100a7817eef3f2640ac719e46f083f4cbcc37563456bc7ea5b774e",
+          "source_request_sha256": "17e570a3a9e7718e648ebf6969faae887e8ed3361e6a514fc9c3ef04c982d5be"
+        }
+      },
+      "sentence_id": "d002-s04",
+      "variations": [
+        {
+          "hebrew": {
+            "bytes": 103724,
+            "file": "d002-s04-variation-1-he.wav",
+            "sha256": "9e975b13aff8140f27450dfb047a5615a6c894f837025930b6c1bad00dec79b5",
+            "source_request_sha256": "17928286467645c8f3226c07366f597edfa527baf89409f9dbb35a6952a11942"
+          },
+          "thai": {
+            "bytes": 117164,
+            "file": "d002-s04-variation-1-th.wav",
+            "sha256": "064e710f93c6ccdd66c63fbb9b2cc013c6d6f522511ab870e71b18b68d085473",
+            "source_request_sha256": "a32a51156f25144a96bfe5d46b616c37fb5bdb480916c098b17646fe0931b362"
+          }
+        }
+      ]
+    },
+    {
+      "core": {
+        "hebrew": {
+          "bytes": 78764,
+          "file": "d002-s05-core-he.wav",
+          "sha256": "4f16276920783228045bb94fe517e2b60ce48cc029f52cad1109e2a8fd8e9313",
+          "source_request_sha256": "6c011a3167c8596100e7849ead91b3a4c9b018a0f8cda2e11b05153839ed8385"
+        },
+        "thai": {
+          "bytes": 92204,
+          "file": "d002-s05-core-th.wav",
+          "sha256": "5b101571d95624ca5876283b2cb40898889a0d3d86264b2716bdbbc8a8f740d0",
+          "source_request_sha256": "b4336f0071eb5df07a703d9025b9b33534559f5ed8a62224f9a0a733c2e7fc77"
+        }
+      },
+      "sentence_id": "d002-s05",
+      "variations": [
+        {
+          "hebrew": {
+            "bytes": 111404,
+            "file": "d002-s05-variation-1-he.wav",
+            "sha256": "47e54215afedcc34eaefe994b4324ffed4ca8ef23c5e64e544929c796c7ac080",
+            "source_request_sha256": "1ec1f9827dccd8fc7f1a03845642532aa36920fb8b5d2db1c7cd641be2223cac"
+          },
+          "thai": {
+            "bytes": 71084,
+            "file": "d002-s05-variation-1-th.wav",
+            "sha256": "a22e795e6a5f1f59c19ea88343ddc9c0435d3831555644cfd603cd941aa143b1",
+            "source_request_sha256": "bfb9cd43694fd953add0cdfabc5976132f884d68847e906566711c9ae2dc1a05"
+          }
+        }
+      ]
+    },
+    {
+      "core": {
+        "hebrew": {
+          "bytes": 53804,
+          "file": "d002-s06-core-he.wav",
+          "sha256": "32da6630beb8b8f87bb4022d84f46c0f78a1f5f5e241f111c4cfa3a5be6e70e2",
+          "source_request_sha256": "d788c38ef77c51aa19512094db39f67c40597b1ea06a9854469b3100987181c4"
+        },
+        "thai": {
+          "bytes": 84524,
+          "file": "d002-s06-core-th.wav",
+          "sha256": "4ccbac027b21a7dfa4ab2b36e40ae85510ef951f235b7b21395293ee2acc779d",
+          "source_request_sha256": "8678b10b07529e0025fbcbf74591d195e2117e7939983e77e64fc706d189b709"
+        }
+      },
+      "sentence_id": "d002-s06",
+      "variations": [
+        {
+          "hebrew": {
+            "bytes": 71084,
+            "file": "d002-s06-variation-1-he.wav",
+            "sha256": "5cc7834105cf609d3f6b33debd612e492c9df1a252c152bed07cc6c192a2dbbe",
+            "source_request_sha256": "e09a5886628e126c73571ec215ebca488b6e5850e59512f807b4a1f0572fe378"
+          },
+          "thai": {
+            "bytes": 78764,
+            "file": "d002-s06-variation-1-th.wav",
+            "sha256": "302d6cf9f126b2703f2cd0df3b44f6524b578bd93c2230ac1000cd29e0636784",
+            "source_request_sha256": "e43aadf79a897450f817a031defac7f8be20c0f9f3757491b7b021a59a73fab1"
+          }
+        }
+      ]
+    },
+    {
+      "core": {
+        "hebrew": {
+          "bytes": 76844,
+          "file": "d002-s07-core-he.wav",
+          "sha256": "c2b31c10a15309e9db03a38e9d793e7e7f3790224b4ff89ad3d071f188d87679",
+          "source_request_sha256": "38ae67abadfc8de09c670f1a685ab477adb7adc235434bfce6a5f105a83a0014"
+        },
+        "thai": {
+          "bytes": 94124,
+          "file": "d002-s07-core-th.wav",
+          "sha256": "fb35112e9497fff7cf83271541214fb2daae43c5dd68ce801ec54b07fa9aed62",
+          "source_request_sha256": "272d69a9595ad07d946041c80826c616ae22e98c3232d583e13e04a496b33962"
+        }
+      },
+      "sentence_id": "d002-s07",
+      "variations": [
+        {
+          "hebrew": {
+            "bytes": 74924,
+            "file": "d002-s07-variation-1-he.wav",
+            "sha256": "a6b98720fa3db2fab0db0d6a1cf2dd698f9ffae40c74dac230c30d1e3b3fefd3",
+            "source_request_sha256": "af9d231490c1681e332072b4d9583a592f1231999381f35bdb5cb78851da6227"
+          },
+          "thai": {
+            "bytes": 76844,
+            "file": "d002-s07-variation-1-th.wav",
+            "sha256": "58995958c23d43a35aed4416fa18cd0fde10514b200aeacb8a90903ef747a9ad",
+            "source_request_sha256": "b92044dd9b97cc88a7c584fb076b8a0fea6bb4c4d47cf176e22dd8a5535e0097"
+          }
+        }
+      ]
+    },
+    {
+      "core": {
+        "hebrew": {
+          "bytes": 92204,
+          "file": "d002-s08-core-he.wav",
+          "sha256": "01403e003e918cee0599db362c1b5c6b6456d320ee9f6736e01242ccba09cb76",
+          "source_request_sha256": "e1701ddb482b3a34bce1186999f43441ee7674e0744ff09bb6fa63db19549d65"
+        },
+        "thai": {
+          "bytes": 92204,
+          "file": "d002-s08-core-th.wav",
+          "sha256": "6163e260f967c1506901906a0d776c71dc8d1f864ffbbfff6584f57016bd1822",
+          "source_request_sha256": "244aee645f2671cc586b68efd0c98ca0e60352dfb5828b3f2e8fb34190ea630c"
+        }
+      },
+      "sentence_id": "d002-s08",
+      "variations": [
+        {
+          "hebrew": {
+            "bytes": 80684,
+            "file": "d002-s08-variation-1-he.wav",
+            "sha256": "24e9a57d1c0a8a7c9cdabe0e4e6d3373c18fe66ecf4f71a9de74b8c3a86846dd",
+            "source_request_sha256": "087a7d8c57c88480e36165b42803c111e145f7ecb260d18814c36a3d1b94668e"
+          },
+          "thai": {
+            "bytes": 103724,
+            "file": "d002-s08-variation-1-th.wav",
+            "sha256": "1d7add05cc94b1451595162546489ede7fcd93c3b9f09cff5236d44c43bc96ef",
+            "source_request_sha256": "f00fa10c028cda3f661f2babc820775c870dbd932404cc93b13e7a075852d489"
+          }
+        }
+      ]
+    },
+    {
+      "core": {
+        "hebrew": {
+          "bytes": 88364,
+          "file": "d002-s09-core-he.wav",
+          "sha256": "75fb096dcd929b1ab0fc8f7d2c0570c184477d4d6143c0283a02d6b42ab97d3e",
+          "source_request_sha256": "bc5873fcdfb9c36f1aba8b6a00b34ff169586e2985c7f103e6d2e43511db5fe4"
+        },
+        "thai": {
+          "bytes": 80684,
+          "file": "d002-s09-core-th.wav",
+          "sha256": "16dc0ae6c398fc1c8163ca5bdee88122671a25d4d2a3ed97a694cb4f908c20bb",
+          "source_request_sha256": "b4be3749489e2433de28f52273af21b7fb65bf04ce0d3b23e672ffc358a9ce91"
+        }
+      },
+      "sentence_id": "d002-s09",
+      "variations": [
+        {
+          "hebrew": {
+            "bytes": 71084,
+            "file": "d002-s09-variation-1-he.wav",
+            "sha256": "d5665d4424b5e66a2aac216726cdc1f6437251dea21b0136141e578c6df4ce33",
+            "source_request_sha256": "235150d1838b8af2acd55e5f792e746a72917f0fd1ec70a9937be6207e37dae1"
+          },
+          "thai": {
+            "bytes": 119084,
+            "file": "d002-s09-variation-1-th.wav",
+            "sha256": "f995e4ef08158907dc69a662a03edb94eafcc9362d6c1e6a4f7552c4bb7fc815",
+            "source_request_sha256": "3a2a370cfc07e2cf51164c8ea2584ef02c7c20f8ecbde77d1f1768812a886be3"
+          }
+        }
+      ]
+    },
+    {
+      "core": {
+        "hebrew": {
+          "bytes": 90284,
+          "file": "d002-s10-core-he.wav",
+          "sha256": "273beac8a1080d90f0e5eb6e423ebc816e806dbabdba9ee8db4c980b2ee2717f",
+          "source_request_sha256": "226141104bbf1db01c7e1b5feee15d1fe46c618d20c3ade16ca523fef0ece3ea"
+        },
+        "thai": {
+          "bytes": 101804,
+          "file": "d002-s10-core-th.wav",
+          "sha256": "1bb936573c155ba1d6f447ba193f282068624c53ec391bedca1cbabf3f9ca861",
+          "source_request_sha256": "c60c0ad329bbb79cc86ec07afd9a69d1ef2acb937e3ac6d07334b431bdb965b4"
+        }
+      },
+      "sentence_id": "d002-s10",
+      "variations": [
+        {
+          "hebrew": {
+            "bytes": 90284,
+            "file": "d002-s10-variation-1-he.wav",
+            "sha256": "ffd9f6818879a855d93037f7368108015c660399de425f6385a60bd03c37ea59",
+            "source_request_sha256": "4f2a916421ff56546f446fbd8fdf1427bdf692d40524ca54437a03637f803e13"
+          },
+          "thai": {
+            "bytes": 113324,
+            "file": "d002-s10-variation-1-th.wav",
+            "sha256": "67c5d8488ac0e20720b078ebf8839f7695acefd3e90e5655bdeb4e5e101ff2b3",
+            "source_request_sha256": "00deac73df92f8ec48fabb5974dd989c82aa8b006f1d2165b26fd4a378d2dfff"
+          }
+        }
+      ]
+    },
+    {
+      "core": {
+        "hebrew": {
+          "bytes": 105644,
+          "file": "d002-s11-core-he.wav",
+          "sha256": "e2390e33375eb68939128ca0eb23c31e1d573d1182e844fa640eb0a92c65570e",
+          "source_request_sha256": "67ba0bfc465e62b31ca5cc9310bffaed04d53f5580e48e3f6dc5f089f6713fb8"
+        },
+        "thai": {
+          "bytes": 71084,
+          "file": "d002-s11-core-th.wav",
+          "sha256": "a8e8a812303e1be488b6dc4a08691486d72ee1b13382dac6c7addca40f907e46",
+          "source_request_sha256": "760622aaf4311cb31c65fde475a32c289485e9754676e13fc74b7ca485d283ea"
+        }
+      },
+      "sentence_id": "d002-s11",
+      "variations": [
+        {
+          "hebrew": {
+            "bytes": 82604,
+            "file": "d002-s11-variation-1-he.wav",
+            "sha256": "de846827f5847e3805b96677863d2ae1f3e1534107922ac7ea2f022788ed2b3e",
+            "source_request_sha256": "8cb9049fc9484f5557d5de6e5ad22db8d8f2e8a4ad0a83723cb4f1cdc0f9937b"
+          },
+          "thai": {
+            "bytes": 84524,
+            "file": "d002-s11-variation-1-th.wav",
+            "sha256": "bc4a19f72b9a4b82097f5cf45178258640a9368cb5511e205efa8e31c39f5668",
+            "source_request_sha256": "24ca11acd0836e5e3fc7dd6fc7f170ba833bdf13d3c272aa2f81c588b2a75b48"
+          }
+        }
+      ]
+    },
+    {
+      "core": {
+        "hebrew": {
+          "bytes": 71084,
+          "file": "d002-s12-core-he.wav",
+          "sha256": "f65701058d75a65e1ecd080831dda7902236b5153cc9bc31d58a5e43b9105aab",
+          "source_request_sha256": "e846e9d83784cf35ba14a7fdb3b6a4b7bbca9279ff43a9cbd02a3a31e8a5c030"
+        },
+        "thai": {
+          "bytes": 92204,
+          "file": "d002-s12-core-th.wav",
+          "sha256": "89233283cb4d10d23f6d53d5531791ed8daedc8785f370cd2f47539b1ab4d945",
+          "source_request_sha256": "05a751c0fcb691b1edc6beb7b343320f4cb663a4c4273f28d32a245fe3717eb6"
+        }
+      },
+      "sentence_id": "d002-s12",
+      "variations": [
+        {
+          "hebrew": {
+            "bytes": 86444,
+            "file": "d002-s12-variation-1-he.wav",
+            "sha256": "7ffbab62730495ea4d0436ba7aeae5379f842cd1a4b39d7c549edf9e32a70260",
+            "source_request_sha256": "27ad03568d1f11d3392c8608c2f8035a7cf0244fe9972a31f776d3991da38492"
+          },
+          "thai": {
+            "bytes": 88364,
+            "file": "d002-s12-variation-1-th.wav",
+            "sha256": "a0a63bdc90b309874d21525f6b5bf91a9f9f7945b473c3ff684d9f21234ca4ce",
+            "source_request_sha256": "788928a28dbbe5238b1d224ac10c1ea463e583e0433d9e81ec81a51cca7b9dec"
+          }
+        }
+      ]
+    },
+    {
+      "core": {
+        "hebrew": {
+          "bytes": 144044,
+          "file": "d002-s13-core-he.wav",
+          "sha256": "c5c05a7841dd411304daa6a267149615136ea24500ddb5d5163d20e873bfd3da",
+          "source_request_sha256": "f0a6169d808b38dd5ee54ea16db454114bc460271eca2e57b3faf5d9c52a8430"
+        },
+        "thai": {
+          "bytes": 105644,
+          "file": "d002-s13-core-th.wav",
+          "sha256": "f888f70bdce179235527c1a41b4692beb365f97a5b517e5e02c91fc33d0dfca8",
+          "source_request_sha256": "6a762526ce54c32523041c8e7a08e60e5de837903836145632fdf687db1c93f3"
+        }
+      },
+      "sentence_id": "d002-s13",
+      "variations": [
+        {
+          "hebrew": {
+            "bytes": 99884,
+            "file": "d002-s13-variation-1-he.wav",
+            "sha256": "5bb6af69527c4a0d4b8afb4e8a09e2cccf051bb37a0a09db4368e023427f61c5",
+            "source_request_sha256": "90db1ccd9df83cd22030ef1aaa23a530211e154a05ed6ea80bcb11d44e105e49"
+          },
+          "thai": {
+            "bytes": 119084,
+            "file": "d002-s13-variation-1-th.wav",
+            "sha256": "d84c05f1d89b3cd589f9339efa956e404297ba8bee37d87cddad1ac2597a6cc4",
+            "source_request_sha256": "16b3bb8099bd94adbd1e07046eb25912f193a90e91d3ee22dc0d4df72796e752"
+          }
+        }
+      ]
+    },
+    {
+      "core": {
+        "hebrew": {
+          "bytes": 96044,
+          "file": "d002-s14-core-he.wav",
+          "sha256": "f1187cd2e0faf1102265f1196426bec2964755ebf4804f4009a408cbde781050",
+          "source_request_sha256": "f1845c5ad69b02c577a3ef0707aadf506ca95579c26809f752711cdf97fe80ee"
+        },
+        "thai": {
+          "bytes": 86444,
+          "file": "d002-s14-core-th.wav",
+          "sha256": "12898d875e7c070d1fa6be9d5e9bf9056eb71943a5664ab2ca193442052d16c2",
+          "source_request_sha256": "202c59ca34cf675da9f87742d15832d74aaf5f5fd76758beea02bfd3e4efd347"
+        }
+      },
+      "sentence_id": "d002-s14",
+      "variations": [
+        {
+          "hebrew": {
+            "bytes": 121004,
+            "file": "d002-s14-variation-1-he.wav",
+            "sha256": "494d17a2557f85ef1ec7864364b10a3b0b24bb0ce5cf5682dbdd2b050f990b48",
+            "source_request_sha256": "0d96792e05c19653f6f08c8edaa2470011230f00e929646b79dccbd8013b0b87"
+          },
+          "thai": {
+            "bytes": 107564,
+            "file": "d002-s14-variation-1-th.wav",
+            "sha256": "1b8c2a365de24e329dda5f641ec97b7e138170c0b5baace61671d964d4bcea3a",
+            "source_request_sha256": "0bae3edca41b2ed4359bb763a54fe222aca5d5712c575c8626b99261c79fb647"
+          }
+        }
+      ]
+    },
+    {
+      "core": {
+        "hebrew": {
+          "bytes": 142124,
+          "file": "d002-s15-core-he.wav",
+          "sha256": "d838181f3e49c5e0d08ecea112ea43c0d8f718724c074de3f3c0738ff62a189b",
+          "source_request_sha256": "a99112cec638b876b058bcab3e299e06f8ab7dce1900eb8f5218b4d60ab83361"
+        },
+        "thai": {
+          "bytes": 107564,
+          "file": "d002-s15-core-th.wav",
+          "sha256": "30201132efb15a64259f54ab06fdf5fbae1171dff07612d1f85c95997998b3bf",
+          "source_request_sha256": "dfc829313b0e068688e5b395f61c61c18cf4c52eee251f81c359713cc8dca8a3"
+        }
+      },
+      "sentence_id": "d002-s15",
+      "variations": [
+        {
+          "hebrew": {
+            "bytes": 117164,
+            "file": "d002-s15-variation-1-he.wav",
+            "sha256": "aebe09260f6e4d18e9c13bc0f8e04c9e9af1828eec632b8daac3594c0f16d884",
+            "source_request_sha256": "1ec730f72beebc2c5bb179948f2926bb50b246383899256445ea6a990c134590"
+          },
+          "thai": {
+            "bytes": 97964,
+            "file": "d002-s15-variation-1-th.wav",
+            "sha256": "4fcad8066a55bd7d21970a1116407c9d45224ae69e67a4de9aff181e693a4a34",
+            "source_request_sha256": "f2127a3a060403baa6c02f2c9fdef4d8ecd50fed17e3be8ffa5ee1edac63dabd"
+          }
+        }
+      ]
+    },
+    {
+      "core": {
+        "hebrew": {
+          "bytes": 94124,
+          "file": "d002-s16-core-he.wav",
+          "sha256": "73f87c43301ed406298d51c32fe73ad002c45c07d82b198a8de2d26d6525b2f7",
+          "source_request_sha256": "dd873bf402f407ecbbc7bf37643cb4d51aa61afa3554ebe9c3e81439edc1b892"
+        },
+        "thai": {
+          "bytes": 115244,
+          "file": "d002-s16-core-th.wav",
+          "sha256": "6bcece6d4cfb728ffe1f978d233727fc980fbd1358d2d7c3fa7429f52d7c91fe",
+          "source_request_sha256": "b2e83e53e2068177f49e983ec28efb40415a21b60b19a5f95eab15fb9317fa96"
+        }
+      },
+      "sentence_id": "d002-s16",
+      "variations": [
+        {
+          "hebrew": {
+            "bytes": 97964,
+            "file": "d002-s16-variation-1-he.wav",
+            "sha256": "c683e2f0a1ae17cb0ffd93386a4a3da27aa7730cb0f3beb5d67ebf857b202659",
+            "source_request_sha256": "4383d58ec9da8f16419ee94d03c2f4d9dedb701743b543454d962e113d74a277"
+          },
+          "thai": {
+            "bytes": 94124,
+            "file": "d002-s16-variation-1-th.wav",
+            "sha256": "aa18f796bab5436a497521b5c7ed03406f5ab0f59a7458c3d7f96862f0a3e954",
+            "source_request_sha256": "5c89db8fe20b8777010faab917c389ef6c21ffa8ae5b70a0f924fe3f20aa0919"
+          }
+        }
+      ]
+    },
+    {
+      "core": {
+        "hebrew": {
+          "bytes": 90284,
+          "file": "d002-s17-core-he.wav",
+          "sha256": "453aa5b03b9a8f6222828abf55a66e3e16ac33c7f7bb657025f7bf6fefe80c6b",
+          "source_request_sha256": "2e551c02d38fc27cda37c948c091f97b9c85ae95eaa2d43685f7d16f1d36d7e3"
+        },
+        "thai": {
+          "bytes": 103724,
+          "file": "d002-s17-core-th.wav",
+          "sha256": "6630a5d04e6807d1fea083682605beb5b32be49b633dde500b1370b364ff3aaa",
+          "source_request_sha256": "faf09c96795554ea7d7cb72cda5253af47fe8f4e640f2c2f7ec7a98282c8ac0d"
+        }
+      },
+      "sentence_id": "d002-s17",
+      "variations": [
+        {
+          "hebrew": {
+            "bytes": 97964,
+            "file": "d002-s17-variation-1-he.wav",
+            "sha256": "bbca09f621339574afb13a65d090fc5d45f5d10765a055f6001e01d196d74bef",
+            "source_request_sha256": "d1739173c53feea573eb32484d7e84c7d6c1f1a7f609aa6a3278d3c06c01c70b"
+          },
+          "thai": {
+            "bytes": 109484,
+            "file": "d002-s17-variation-1-th.wav",
+            "sha256": "b268be9fa70b0961df7325e005018bef755228110eeec7614632bf79c5e4d53c",
+            "source_request_sha256": "ebf26e290e4b3deb24ba5e51e7907ddc6ded4b5373c81151a9ed7b6fa4e6a124"
+          }
+        }
+      ]
+    },
+    {
+      "core": {
+        "hebrew": {
+          "bytes": 126764,
+          "file": "d002-s18-core-he.wav",
+          "sha256": "a1739884fb0be6b4b1be4ab78c7f0d03488f8f5454a3e702e965daa8fefd50e9",
+          "source_request_sha256": "5e9b508fe647008e4575270de329a657c8bf6a8eb0461193055a3fb81bf30bf3"
+        },
+        "thai": {
+          "bytes": 124844,
+          "file": "d002-s18-core-th.wav",
+          "sha256": "04a1347c97c8cf7da1ad05d91d8fcd99e81d824624fe6f21bbf501ff090c68bf",
+          "source_request_sha256": "b067fcaaa2e0534bffc297fb1580feb2acee094c8dd6ab53d5a9b0d2bb10ec7e"
+        }
+      },
+      "sentence_id": "d002-s18",
+      "variations": [
+        {
+          "hebrew": {
+            "bytes": 94124,
+            "file": "d002-s18-variation-1-he.wav",
+            "sha256": "8d73b3fafe6c14b73b5cfdca0b54c0e4f811398a8556bb78b99b8235178273f5",
+            "source_request_sha256": "76c955b6480011001b73cbaf27d4ce67064fa87e8c824390fe2cab0cccb7ac6a"
+          },
+          "thai": {
+            "bytes": 97964,
+            "file": "d002-s18-variation-1-th.wav",
+            "sha256": "6b3fa7b0303e22ba5a64bcf94e0921c044053fbac1a935a6c3b693be978426b0",
+            "source_request_sha256": "7a023988c82c07a2a236264933414b20bf08a3ebd79c48f1768caa0ae9a962ce"
+          }
+        }
+      ]
+    },
+    {
+      "core": {
+        "hebrew": {
+          "bytes": 109484,
+          "file": "d002-s19-core-he.wav",
+          "sha256": "c78a1288a1a124d3b45b7f392cc497721c3a89540d3398c723b0764c021afbb4",
+          "source_request_sha256": "de92d962cba08647fc20dbbf0eb46593fcd7ce15d3b1dfec45ac3308df9607d7"
+        },
+        "thai": {
+          "bytes": 153644,
+          "file": "d002-s19-core-th.wav",
+          "sha256": "12cea583321b0cc09509b5a1cc48ba66b73ca757d96bfd0044c7598e102fc1ab",
+          "source_request_sha256": "0329bbfc461cd9c4e372430c44cf476e41008ab80a2a75c1ca3163d1a4e1a5ae"
+        }
+      },
+      "sentence_id": "d002-s19",
+      "variations": [
+        {
+          "hebrew": {
+            "bytes": 80684,
+            "file": "d002-s19-variation-1-he.wav",
+            "sha256": "513089290c04e6b7d60d062d232aaa87e0c9ca20d20b474e217bcbbe0a51dba2",
+            "source_request_sha256": "eff52de035e45b1335b68682edc49443f0aa3c2491d38afc0872fe0852554ba9"
+          },
+          "thai": {
+            "bytes": 107564,
+            "file": "d002-s19-variation-1-th.wav",
+            "sha256": "c0e968170bdab77f50cf98e5b223cc36994e271c6ac968dc22263825836b8eee",
+            "source_request_sha256": "1ab35b73286394121097671c628db5d1e8e69a95d35f5a7e53db90483bda3fd3"
+          }
+        }
+      ]
+    },
+    {
+      "core": {
+        "hebrew": {
+          "bytes": 97964,
+          "file": "d002-s20-core-he.wav",
+          "sha256": "54834dc1dde356642ed9055e85b9ca6cb3e1bf927c557a186eb1d9ac49607f4f",
+          "source_request_sha256": "4c2ab9077389da699cb6cbb1563ae66c0172601358c19d03242b22ca8bfdc3c2"
+        },
+        "thai": {
+          "bytes": 82604,
+          "file": "d002-s20-core-th.wav",
+          "sha256": "395e56715e636c81a6166809a8bff8bef97a6109844ec7d1052ebba2d55e2644",
+          "source_request_sha256": "604f36d3959a8895a48b5d7a2235817cca9309de21f51c28aadd68a978833b93"
+        }
+      },
+      "sentence_id": "d002-s20",
+      "variations": [
+        {
+          "hebrew": {
+            "bytes": 109484,
+            "file": "d002-s20-variation-1-he.wav",
+            "sha256": "a631b5493b5c8562daf787534059a1632238d54fad2e1c661c69147738af599b",
+            "source_request_sha256": "ecf75757c8830955dba66caa6ec6fb100bf8a2c38f8ea2cdd7ca6213db0f21be"
+          },
+          "thai": {
+            "bytes": 84524,
+            "file": "d002-s20-variation-1-th.wav",
+            "sha256": "2ac33615702832e1d2631ea52848e64e131ee0bc89a0a3cd7b65eba90f3d783c",
+            "source_request_sha256": "916294548c59448af985bf51534d0c107dc45b4a356657b333a40bf43152414e"
+          }
+        }
+      ]
+    }
+  ]
+}
