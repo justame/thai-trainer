@@ -1,0 +1,108 @@
+{
+  "content_sha256": "b0c14c9eb413c8b8452c83a6fe0653b14aa9c9e79821baf8ddc1ca34cb0170f8",
+  "lesson_id": "day-001",
+  "provider": "google_cloud_tts",
+  "revision": 3,
+  "schema_version": 1,
+  "tracks": [
+    {
+      "assembly": {
+        "channels": 1,
+        "input_encoding": "LINEAR16_WAV",
+        "output_bitrate_kbps": 48,
+        "output_encoding": "MP3",
+        "sample_rate_hertz": 24000,
+        "sample_width_bytes": 2,
+        "tool": "sox",
+        "version": 1
+      },
+      "bytes": 980208,
+      "content_sha256": "b0c14c9eb413c8b8452c83a6fe0653b14aa9c9e79821baf8ddc1ca34cb0170f8",
+      "file": "listening.mp3",
+      "generated_at": "2026-09-03T17:35:45.339934+00:00",
+      "lesson_id": "day-001",
+      "provider": "google_cloud_tts",
+      "request_sha256": "63b5218e415c302c82f2f51c901c0e20b595523d16779a6412ab1cba59590dfc",
+      "revision": 3,
+      "speech_segments": 40,
+      "track_id": "listening"
+    },
+    {
+      "assembly": {
+        "channels": 1,
+        "input_encoding": "LINEAR16_WAV",
+        "output_bitrate_kbps": 48,
+        "output_encoding": "MP3",
+        "sample_rate_hertz": 24000,
+        "sample_width_bytes": 2,
+        "tool": "sox",
+        "version": 1
+      },
+      "bytes": 1138320,
+      "content_sha256": "b0c14c9eb413c8b8452c83a6fe0653b14aa9c9e79821baf8ddc1ca34cb0170f8",
+      "file": "shadowing.mp3",
+      "generated_at": "2026-09-03T17:35:58.826902+00:00",
+      "lesson_id": "day-001",
+      "provider": "google_cloud_tts",
+      "request_sha256": "0293dbdabc81ce323e9e5e0cabcb498e9068b997bbc2099ee4bc9a3ad0c5ce3f",
+      "revision": 3,
+      "speech_segments": 60,
+      "track_id": "shadowing"
+    },
+    {
+      "assembly": {
+        "channels": 1,
+        "input_encoding": "LINEAR16_WAV",
+        "output_bitrate_kbps": 48,
+        "output_encoding": "MP3",
+        "sample_rate_hertz": 24000,
+        "sample_width_bytes": 2,
+        "tool": "sox",
+        "version": 1
+      },
+      "bytes": 1388880,
+      "content_sha256": "b0c14c9eb413c8b8452c83a6fe0653b14aa9c9e79821baf8ddc1ca34cb0170f8",
+      "file": "recall.mp3",
+      "generated_at": "2026-09-03T17:36:10.010382+00:00",
+      "lesson_id": "day-001",
+      "provider": "google_cloud_tts",
+      "request_sha256": "1354f8e2442613380a81a6a6d8daabc331ea5335506fd45937f1dfb2efc2a23c",
+      "revision": 3,
+      "speech_segments": 40,
+      "track_id": "recall"
+    },
+    {
+      "assembly": {
+        "channels": 1,
+        "input_encoding": "LINEAR16_WAV",
+        "output_bitrate_kbps": 48,
+        "output_encoding": "MP3",
+        "sample_rate_hertz": 24000,
+        "sample_width_bytes": 2,
+        "tool": "sox",
+        "version": 1
+      },
+      "bytes": 373824,
+      "content_sha256": "b0c14c9eb413c8b8452c83a6fe0653b14aa9c9e79821baf8ddc1ca34cb0170f8",
+      "file": "scenario.mp3",
+      "generated_at": "2026-09-03T17:36:10.265815+00:00",
+      "lesson_id": "day-001",
+      "provider": "google_cloud_tts",
+      "request_sha256": "6fc50daaee9cdbe870c6f00c5707cad94c4710b1661556cf072b397030fd2b0e",
+      "revision": 3,
+      "speech_segments": 20,
+      "track_id": "scenario"
+    }
+  ],
+  "voices": {
+    "hebrew": {
+      "language_code": "he-IL",
+      "name": "he-IL-Chirp3-HD-Charon"
+    },
+    "provider": "google_cloud_tts",
+    "thai": {
+      "language_code": "th-TH",
+      "name": "th-TH-Chirp3-HD-Erinome"
+    }
+  }
+}

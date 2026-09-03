@@ -1,0 +1,8 @@
+{
+  "audio_manifest_path": "packs/day-001/r3/audio-manifest.json",
+  "content_sha256": "b0c14c9eb413c8b8452c83a6fe0653b14aa9c9e79821baf8ddc1ca34cb0170f8",
+  "lesson_id": "day-001",
+  "lesson_path": "packs/day-001/r3/lesson.json",
+  "revision": 3,
+  "schema_version": 1
+}
