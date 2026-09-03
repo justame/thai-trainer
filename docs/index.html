@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thai Trainer</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        font-family: system-ui, sans-serif;
+      }
+
+      body {
+        display: grid;
+        min-height: 100vh;
+        margin: 0;
+        place-items: center;
+      }
+
+      main {
+        width: min(36rem, calc(100% - 3rem));
+      }
+
+      .status {
+        padding: 1rem 1.25rem;
+        border: 1px solid currentColor;
+        border-radius: 0.75rem;
+      }
+
+      a {
+        color: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Thai Trainer</h1>
+      <section class="status" aria-labelledby="publishing-status">
+        <h2 id="publishing-status">Publishing status</h2>
+        <p><strong>Day 1 is awaiting text approval.</strong></p>
+        <p>No audio has been published yet.</p>
+      </section>
+      <p>
+        The lesson feed will appear only after the approved lesson and its
+        separately authorized, locally generated audio pass validation.
+      </p>
+      <p>
+        <a href="https://github.com/justame/thai-trainer/blob/main/thai-learning/days/day-001.json">Review the current 20 written sentences</a>
+        ·
+        <a href="https://github.com/justame/thai-trainer">Open the project</a>
+      </p>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+.DS_Store
+**/__pycache__/
+*.py[cod]
+
+# Credentials stay outside this public repository.
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.mobileprovision
+
+# Local Xcode state and build products.
+DerivedData/
+xcuserdata/
+*.xcuserstate
+
+# Provider output is local; only validated copies under docs/packs are published.
+thai-learning/audio/generated/*
+!thai-learning/audio/generated/.gitkeep
+
+# Keep the locally extracted third-party YouTube captions/transcript out of the
+# public repository; the original research remains in this workspace.
+youtube-research/

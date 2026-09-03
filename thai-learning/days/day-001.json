@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "lesson_id": "day-001",
+  "revision": 2,
+  "day": 1,
+  "week": 1,
+  "theme": "Mixed everyday Thai: understanding, food, payments, friends, home, Muay Thai, and fuel",
+  "status": "pending_review",
+  "source": {
+    "project": "Thai language learning",
+    "thread_id": "6a9878d4-8760-83ec-8c30-43c5ed687a36"
+  },
+  "sentences": [
+    {
+      "id": "d001-s01",
+      "category": "conversation_repair",
+      "prompt_he": "אפשר להגיד את זה שוב?",
+      "thai": "ช่วยพูดอีกทีได้ไหมครับ",
+      "romanization": "chûai phûut ìik thii dâai mǎi khráp",
+      "literal_he": "בבקשה עזור + לומר + עוד פעם + אפשר? + מילת נימוס.",
+      "context_he": "בקשה טבעית לחזור על משפט שלא שמעת או לא הבנת.",
+      "pattern": "ช่วย + [פועל] + ได้ไหมครับ = אפשר בבקשה לעשות את הפעולה?",
+      "variation": {"prompt_he": "אפשר להגיד את זה עוד פעם אחת?", "thai": "ช่วยพูดอีกครั้งได้ไหมครับ"},
+      "review_status": "pending"
+    },
+    {
+      "id": "d001-s02",
+      "category": "conversation_repair",
+      "prompt_he": "אפשר לדבר קצת יותר לאט?",
+      "thai": "ช่วยพูดช้าลงหน่อยได้ไหมครับ",
+      "romanization": "chûai phûut cháa long nɔ̀i dâai mǎi khráp",
+      "literal_he": "בבקשה עזור + לדבר + לאט יותר + קצת + אפשר?",
+      "context_he": "טבעי כשמהירות הדיבור גבוהה מדי; ช้าลง פירושו להאט ביחס למהירות הנוכחית.",
+      "pattern": "[תואר] + ลงหน่อย = להפחית/להוריד קצת את המידה.",
+      "variation": {"prompt_he": "דבר קצת לאט, בבקשה.", "thai": "พูดช้า ๆ หน่อยครับ"},
+      "review_status": "pending"
+    },
+    {
+      "id": "d001-s03",
+      "category": "conversation_repair",
+      "prompt_he": "מה זה אומר?",
+      "thai": "อันนี้หมายความว่าอะไรครับ",
+      "romanization": "an níi mǎai-khwaam-wâa à-rai khráp",
+      "literal_he": "הדבר הזה + משמעותו ש־ + מה? + מילת נימוס.",
+      "context_he": "שואל על המשמעות של משפט, ביטוי או דבר שמישהו הראה לך.",
+      "pattern": "[דבר] + หมายความว่าอะไร = מה המשמעות של [דבר]?",
+      "variation": {"prompt_he": "מה פירוש המילה הזאת?", "thai": "คำนี้แปลว่าอะไรครับ"},
+      "review_status": "pending"
+    },
+    {
+      "id": "d001-s04",
+      "category": "conversation_repair",
+      "prompt_he": "אני עדיין לא כל כך מבין.",
+      "thai": "ผมยังไม่ค่อยเข้าใจครับ",
+      "romanization": "phǒm yang mâi khɔ̂i khâo-jai khráp",
+      "literal_he": "אני + עדיין + לא כל כך + מבין + מילת נימוס.",
+      "context_he": "ניסוח רך וטבעי שמבהיר שאתה עדיין מתקשה להבין.",
+      "pattern": "ยังไม่ค่อย + [פועל] = עדיין לא כל כך מבצע/מצליח בפעולה.",
+      "variation": {"prompt_he": "עכשיו הבנתי.", "thai": "ตอนนี้ผมเข้าใจแล้วครับ"},
+      "review_status": "pending"
+    },
+    {
+      "id": "d001-s05",
+      "category": "time_frequency",
+      "prompt_he": "את/ה מגיע/ה לכאן הרבה?",
+      "thai": "คุณมาที่นี่บ่อยไหมครับ",
+      "romanization": "khun maa thîi nîi bɔ̀i mǎi khráp",
+      "literal_he": "את/ה + מגיע/ה + לכאן + לעיתים קרובות + האם?",
+      "context_he": "שאלה טבעית על תדירות ההגעה למקום מסוים.",
+      "pattern": "[פעולה] + บ่อยไหม = האם עושים את הפעולה לעיתים קרובות?",
+      "variation": {"prompt_he": "כמה פעמים בשבוע?", "thai": "อาทิตย์ละกี่ครั้งครับ"},
+      "review_status": "pending"
+    },
+    {
+      "id": "d001-s06",
+      "category": "food",
+      "prompt_he": "אני אקח את זה, בבקשה.",
+      "thai": "เอาอันนี้ครับ",
+      "romanization": "ao an níi khráp",
+      "literal_he": "לקחת/לרצות + הדבר הזה + מילת נימוס.",
+      "context_he": "טבעי מאוד כשאתה מצביע על מנה או מוצר.",
+      "pattern": "เอา + [דבר] = אני רוצה/אקח את [הדבר].",
+      "variation": {"prompt_he": "אפשר את זה, בבקשה.", "thai": "ขออันนี้ครับ"},
+      "review_status": "pending"
+    },
+    {
+      "id": "d001-s07",
+      "category": "food",
+      "prompt_he": "לא חריף, בבקשה.",
+      "thai": "ไม่เผ็ดนะครับ",
+      "romanization": "mâi phèt ná khráp",
+      "literal_he": "לא + חריף + חלקיק מרכך + מילת נימוס.",
+      "context_he": "בקשה רגילה לרמת חריפות אפסית או נמוכה; אם אסור כלל צ'ילי, השתמש בווריאציה.",
+      "pattern": "ไม่ + [תואר] + นะครับ = בבקשה שיהיה לא [תואר].",
+      "variation": {"prompt_he": "בלי צ'ילי בכלל, בבקשה.", "thai": "ไม่ใส่พริกเลยนะครับ"},
+      "review_status": "pending"
+    },
+    {
+      "id": "d001-s08",
+      "category": "food",
+      "prompt_he": "פחות מתוק, בבקשה.",
+      "thai": "หวานน้อยครับ",
+      "romanization": "wǎan nɔ́ɔi khráp",
+      "literal_he": "מתוק + מעט + מילת נימוס.",
+      "context_he": "ניסוח נפוץ מאוד להזמנת משקה עם פחות סוכר.",
+      "pattern": "[טעם] + น้อย = מעט/פחות מהטעם הזה.",
+      "variation": {"prompt_he": "בלי סוכר, בבקשה.", "thai": "ไม่ใส่น้ำตาลครับ"},
+      "review_status": "pending"
+    },
+    {
+      "id": "d001-s09",
+      "category": "food",
+      "prompt_he": "לקחת, בבקשה.",
+      "thai": "เอากลับบ้านครับ",
+      "romanization": "ao klàp bâan khráp",
+      "literal_he": "לקחת + לחזור הביתה + מילת נימוס.",
+      "context_he": "דרך יומיומית לבקש שההזמנה תהיה לקחת ולא לאכול במקום.",
+      "pattern": "เอา + [יעד/אופן] = רוצה את הדבר באופן או ליעד הזה.",
+      "variation": {"prompt_he": "אפשר לארוז לי את זה בקופסה?", "thai": "รบกวนใส่กล่องให้หน่อยครับ"},
+      "review_status": "pending"
+    },
+    {
+      "id": "d001-s10",
+      "category": "payments",
+      "prompt_he": "חשבון, בבקשה.",
+      "thai": "เช็กบิลด้วยครับ",
+      "romanization": "chék bin dûai khráp",
+      "literal_he": "לעשות חשבון + גם/בבקשה + מילת נימוס.",
+      "context_he": "מתאים למסעדה עם שירות לשולחן.",
+      "pattern": "[פעולה] + ด้วยครับ = בבקשה לבצע גם/עבורי את הפעולה.",
+      "variation": {"prompt_he": "אפשר לחשב את התשלום?", "thai": "คิดเงินด้วยครับ"},
+      "review_status": "pending"
+    },
+    {
+      "id": "d001-s11",
+      "category": "payments",
+      "prompt_he": "אפשר לשלם בסריקת QR?",
+      "thai": "สแกนจ่ายได้ไหมครับ",
+      "romanization": "sà-gɛɛn jàai dâai mǎi khráp",
+      "literal_he": "לסרוק + לשלם + אפשר? + מילת נימוס.",
+      "context_he": "ניסוח יומיומי ונפוץ מאוד בתאילנד.",
+      "pattern": "[אופן תשלום] + ได้ไหมครับ = אפשר לשלם באופן הזה?",
+      "variation": {"prompt_he": "אפשר לשלם ב-QR?", "thai": "จ่ายด้วยคิวอาร์ได้ไหมครับ"},
+      "review_status": "pending"
+    },
+    {
+      "id": "d001-s12",
+      "category": "payments",
+      "prompt_he": "אני רוצה להטעין מאה באט, בבקשה.",
+      "thai": "ขอเติมเงินหนึ่งร้อยบาทครับ",
+      "romanization": "khɔ̌ɔ dtəəm ngən nʉ̀ng rɔ́ɔi bàat khráp",
+      "literal_he": "מבקש + להטעין כסף + מאה באט + מילת נימוס.",
+      "context_he": "צריך לציין את הכרטיס, הטלפון או הארנק אם ההקשר אינו ברור.",
+      "pattern": "ขอ + [פעולה/דבר] + [כמות] = מבקש לבצע/לקבל בכמות הזאת.",
+      "variation": {"prompt_he": "אני רוצה להטעין מאה באט בכרטיס Rabbit.", "thai": "ขอเติมเงินบัตรแรบบิทหนึ่งร้อยบาทครับ"},
+      "review_status": "pending"
+    },
+    {
+      "id": "d001-s13",
+      "category": "friends",
+      "prompt_he": "את/ה פנוי/ה הערב?",
+      "thai": "คืนนี้ว่างไหมครับ",
+      "romanization": "khʉʉn níi wâang mǎi khráp",
+      "literal_he": "הלילה/הערב הזה + פנוי/ה + האם? + מילת נימוס.",
+      "context_he": "ניטרלי ומנומס; עם חבר קרוב אפשר להשמיט ครับ.",
+      "pattern": "[זמן] + ว่างไหม = פנוי/ה בזמן הזה?",
+      "variation": {"prompt_he": "את/ה פנוי/ה היום?", "thai": "วันนี้ว่างไหม"},
+      "review_status": "pending"
+    },
+    {
+      "id": "d001-s14",
+      "category": "friends",
+      "prompt_he": "כשתגיע/י, תודיע/י לי.",
+      "thai": "ถึงแล้วบอกผมด้วยนะครับ",
+      "romanization": "thʉ̌ng lɛ́ɛo bɔ̀ɔk phǒm dûai ná khráp",
+      "literal_he": "כאשר הגעת + תגיד/י לי גם + חלקיק מרכך + מילת נימוס.",
+      "context_he": "ניסוח טבעי מאוד בהודעה או בשיחה לפני מפגש.",
+      "pattern": "[פעולה] + แล้ว + [פעולה] = אחרי שהפעולה הראשונה קורית, לבצע את השנייה.",
+      "variation": {"prompt_he": "כשתגיע/י, תודיע/י.", "thai": "ถึงแล้วบอกด้วยนะ"},
+      "review_status": "pending"
+    },
+    {
+      "id": "d001-s15",
+      "category": "location",
+      "prompt_he": "אפשר לשלוח לי מיקום?",
+      "thai": "ส่งโลเคชันมาให้หน่อยได้ไหมครับ",
+      "romanization": "sòng loo-khee-chan maa hâi nɔ̀i dâai mǎi khráp",
+      "literal_he": "לשלוח + לוקיישן + לכאן/אליי + לתת + קצת + אפשר?",
+      "context_he": "โลเคชัน היא המילה היומיומית באפליקציות; พิกัด מתאימה יותר לנקודת ציון/קואורדינטות.",
+      "pattern": "ส่ง + [דבר] + มาให้หน่อย = שלח/י לי את הדבר בבקשה.",
+      "variation": {"prompt_he": "אפשר לשלוח לי נקודת מיקום?", "thai": "ส่งพิกัดมาให้หน่อยได้ไหมครับ"},
+      "review_status": "pending"
+    },
+    {
+      "id": "d001-s16",
+      "category": "home_services",
+      "prompt_he": "באיזו שעה הטכנאי יגיע?",
+      "thai": "ช่างจะมาถึงกี่โมงครับ",
+      "romanization": "châang jà maa thʉ̌ng gìi moong khráp",
+      "literal_he": "טכנאי/איש מקצוע + עתיד + להגיע + באיזו שעה?",
+      "context_he": "ช่าง הוא טכנאי או בעל מקצוע; אפשר לדייק เช่น ช่างแอร์ לטכנאי מזגן.",
+      "pattern": "[אדם] + จะมาถึงกี่โมง = באיזו שעה האדם יגיע?",
+      "variation": {"prompt_he": "באיזו שעה טכנאי המזגן יגיע?", "thai": "ช่างแอร์จะมาถึงกี่โมงครับ"},
+      "review_status": "pending"
+    },
+    {
+      "id": "d001-s17",
+      "category": "home_services",
+      "prompt_he": "המזגן לא מקרר.",
+      "thai": "แอร์ไม่เย็นครับ",
+      "romanization": "ɛɛ mâi yen khráp",
+      "literal_he": "מזגן + לא קר + מילת נימוס.",
+      "context_he": "התלונה האידיומטית כשהמזגן פועל אבל אינו מקרר.",
+      "pattern": "[מכשיר/דבר] + ไม่ + [מצב] = הדבר אינו מגיע למצב הרצוי.",
+      "variation": {"prompt_he": "המזגן בכלל לא עובד.", "thai": "แอร์ไม่ทำงานครับ"},
+      "review_status": "pending"
+    },
+    {
+      "id": "d001-s18",
+      "category": "muay_thai",
+      "prompt_he": "אפשר להחזיק לי פדים?",
+      "thai": "ช่วยถือเป้าให้ผมหน่อยได้ไหมครับ",
+      "romanization": "chûai thʉ̌ʉ bpâo hâi phǒm nɔ̀i dâai mǎi khráp",
+      "literal_he": "בבקשה עזור + להחזיק פדים + עבורי + קצת + אפשר?",
+      "context_he": "เป้า היא המילה המקובלת לפדים באימון מואי תאי.",
+      "pattern": "ช่วย + [פועל] + ให้ผมหน่อย = אפשר בבקשה לעשות את הפעולה עבורי?",
+      "variation": {"prompt_he": "תחזיק לי פדים, בבקשה.", "thai": "ช่วยถือเป้าให้หน่อยครับ"},
+      "review_status": "pending"
+    },
+    {
+      "id": "d001-s19",
+      "category": "muay_thai",
+      "prompt_he": "כמה סיבובים אנחנו עושים היום?",
+      "thai": "วันนี้ซ้อมกี่ยกครับ",
+      "romanization": "wan-níi sɔ́ɔm gìi yók khráp",
+      "literal_he": "היום + מתאמנים + כמה סיבובים? + מילת נימוס.",
+      "context_he": "ยก היא יחידת סיבוב באימון או בקרב.",
+      "pattern": "[פעולה] + กี่ + [מסווג] = כמה יחידות עושים בפעולה?",
+      "variation": {"prompt_he": "כמה סיבובי ספארינג היום?", "thai": "วันนี้สปาร์กี่ยกครับ"},
+      "review_status": "pending"
+    },
+    {
+      "id": "d001-s20",
+      "category": "fuel",
+      "prompt_he": "מלא טנק בבקשה.",
+      "thai": "เต็มถังเลยครับ",
+      "romanization": "dtem thǎng ləəi khráp",
+      "literal_he": "מלא + טנק + עד הסוף/ממש + מילת נימוס.",
+      "context_he": "ניסוח קצר ואידיומטי בתחנת דלק; אפשר לציין קודם את סוג הדלק.",
+      "pattern": "[כמות/מצב] + เลยครับ = בקשה ישירה להשלים עד המצב הזה.",
+      "variation": {"prompt_he": "גזוהול 95, מלא טנק בבקשה.", "thai": "แก๊สโซฮอล์เก้าห้าเต็มถังครับ"},
+      "review_status": "pending"
+    }
+  ],
+  "voices": {
+    "provider": "azure_speech",
+    "thai": "th-TH-NiwatNeural",
+    "hebrew": "he-IL-AvriNeural"
+  },
+  "audio_program": {
+    "normal_speed_only": true,
+    "tracks": [
+      {
+        "id": "listening",
+        "sequence": ["d001-s01", "d001-s02", "d001-s03", "d001-s04", "d001-s05", "d001-s06", "d001-s07", "d001-s08", "d001-s09", "d001-s10", "d001-s11", "d001-s12", "d001-s13", "d001-s14", "d001-s15", "d001-s16", "d001-s17", "d001-s18", "d001-s19", "d001-s20"],
+        "thai_repetitions": 2,
+        "pause_between_repetitions_ms": 1200,
+        "pause_between_sentences_ms": 2800
+      },
+      {
+        "id": "shadowing",
+        "sequence": ["d001-s01", "d001-s02", "d001-s03", "d001-s04", "d001-s05", "d001-s06", "d001-s07", "d001-s08", "d001-s09", "d001-s10", "d001-s11", "d001-s12", "d001-s13", "d001-s14", "d001-s15", "d001-s16", "d001-s17", "d001-s18", "d001-s19", "d001-s20"],
+        "thai_repetitions": 3,
+        "pause_between_repetitions_ms": 700,
+        "pause_between_sentences_ms": 1800
+      },
+      {
+        "id": "recall",
+        "sequence": ["d001-s01", "d001-s02", "d001-s03", "d001-s04", "d001-s05", "d001-s06", "d001-s07", "d001-s08", "d001-s09", "d001-s10", "d001-s11", "d001-s12", "d001-s13", "d001-s14", "d001-s15", "d001-s16", "d001-s17", "d001-s18", "d001-s19", "d001-s20"],
+        "hebrew_prompt": true,
+        "recall_pause_ms": 5000,
+        "thai_repetitions": 1,
+        "pause_between_sentences_ms": 2500
+      },
+      {
+        "id": "scenario",
+        "sequence": ["d001-s01", "d001-s02", "d001-s03", "d001-s04", "d001-s05", "d001-s06", "d001-s07", "d001-s08", "d001-s09", "d001-s10", "d001-s11", "d001-s12", "d001-s13", "d001-s14", "d001-s15", "d001-s16", "d001-s17", "d001-s18", "d001-s19", "d001-s20"],
+        "thai_repetitions": 1,
+        "pause_between_sentences_ms": 1200
+      }
+    ]
+  }
+}
