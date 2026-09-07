@@ -1,26 +1,16 @@
 @preconcurrency import AVFoundation
 import SwiftUI
 
-private enum LearningStage {
-    case words
-    case sentence
-}
-
 struct TrainerView: View {
     @ObservedObject var lessonStore: LessonStore
     @ObservedObject var practicePlayer: PracticeSessionPlayer
     @ObservedObject var learningProgress: LearningProgressStore
-    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
-
     @State private var showsSettings = false
     @State private var showsLessonLibrary = false
     @State private var showsProgress = false
     @State private var feedbackMessage: String?
     @State private var settingsDetent: PresentationDetent = .large
-    @State private var learningStage: LearningStage = .words
-    @State private var selectedWordIndex = 0
-    @State private var attemptedWordIDs: Set<String> = []
-    @State private var sentencePlaybackAttempted = false
+    @State private var wordsExpanded = false
     @StateObject private var wordAudioPlayer = WordAudioPlayer()
 
     private let scheduler = ReviewScheduler()
@@ -49,7 +39,7 @@ struct TrainerView: View {
                                         + package.resourceRootURL.standardizedFileURL.path
                                 ) {
                                     practicePlayer.configure(for: package)
-                                    resetLearningFlow()
+                                    resetSentenceScreen()
                                     #if DEBUG
                                     if ProcessInfo.processInfo.arguments.contains("--screenshot-sentences") {
                                         try? await Task.sleep(for: .milliseconds(250))
@@ -70,35 +60,18 @@ struct TrainerView: View {
                                     if ProcessInfo.processInfo.arguments.contains("--screenshot-adaptive") {
                                         startAdaptiveSession()
                                     }
-                                    if ProcessInfo.processInfo.arguments.contains("--screenshot-learning")
-                                        || ProcessInfo.processInfo.arguments.contains("--screenshot-adaptive") {
-                                        try? await Task.sleep(for: .milliseconds(350))
-                                        proxy.scrollTo("word-learning-section", anchor: .top)
-                                    }
-                                    if ProcessInfo.processInfo.arguments.contains("--screenshot-word-two"),
-                                       let words = practicePlayer.currentQueueItem?.sentence.learningVocabulary,
-                                       words.count > 1 {
-                                        attemptedWordIDs.insert(words[0].id)
-                                        selectedWordIndex = 1
-                                    }
-                                    if ProcessInfo.processInfo.arguments.contains("--screenshot-sentence-stage") {
-                                        learningStage = .sentence
-                                        sentencePlaybackAttempted = false
-                                    }
-                                    if ProcessInfo.processInfo.arguments.contains("--screenshot-sentence-complete") {
-                                        learningStage = .sentence
-                                        sentencePlaybackAttempted = true
+                                    if ProcessInfo.processInfo.arguments.contains("--screenshot-words") {
+                                        try? await Task.sleep(for: .milliseconds(500))
+                                        wordsExpanded = true
                                     }
                                     if ProcessInfo.processInfo.arguments.contains("--autoplay-sentence") {
                                         try? await Task.sleep(for: .milliseconds(500))
-                                        learningStage = .sentence
-                                        sentencePlaybackAttempted = true
                                         practicePlayer.playCurrentSentenceOnce()
                                     }
                                     #endif
                                 }
                                 .onChange(of: practicePlayer.currentQueueItem?.id) { _, _ in
-                                    resetLearningFlow()
+                                    resetSentenceScreen()
                                 }
                                 .sheet(isPresented: $showsSettings) {
                                     PracticeSettingsSheet(
@@ -118,32 +91,33 @@ struct TrainerView: View {
                     .padding(.bottom, 28)
                 }
                 .background(Color(uiColor: .systemGroupedBackground))
-                .navigationTitle(currentNavigationTitle)
+                .navigationTitle("Everyday Thai")
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .topBarLeading) {
                         Button {
                             showsLessonLibrary = true
                         } label: {
-                            Label("Lessons", systemImage: "books.vertical")
+                            HStack(spacing: 3) {
+                                Image(systemName: "chevron.backward")
+                                Text(currentDayTitle)
+                            }
                         }
                         .accessibilityHint("Choose a saved lesson day")
                     }
-                    ToolbarItemGroup(placement: .topBarTrailing) {
-                        Button {
-                            showsProgress = true
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Menu {
+                            Button("Playback settings", systemImage: "slider.horizontal.3") {
+                                settingsDetent = .large
+                                showsSettings = true
+                            }
+                            Button("Weekly summary", systemImage: "chart.bar.xaxis") {
+                                showsProgress = true
+                            }
                         } label: {
-                            Image(systemName: "chart.bar.xaxis")
+                            Image(systemName: "ellipsis.circle")
                         }
-                        .accessibilityLabel("Adaptive plan and weekly summary")
-
-                        Button {
-                            settingsDetent = .large
-                            showsSettings = true
-                        } label: {
-                            Image(systemName: "slider.horizontal.3")
-                        }
-                        .accessibilityLabel("Practice settings")
+                        .accessibilityLabel("More")
                     }
                 }
                 .task {
@@ -168,22 +142,15 @@ struct TrainerView: View {
         }
     }
 
-    private var currentNavigationTitle: String {
-        "Learn sentence"
+    private var currentDayTitle: String {
+        guard case let .loaded(package) = lessonStore.state else { return "Lessons" }
+        return "Day \(package.lesson.day)"
     }
 
     private func lessonContent(_ package: LessonPackage) -> some View {
-        VStack(alignment: .leading, spacing: 16) {
-            sessionHeader(package)
-            learningStepHeader
+        VStack(alignment: .leading, spacing: 24) {
             if let item = practicePlayer.currentQueueItem {
-                learningContext(item)
-                if learningStage == .words, !item.sentence.learningVocabulary.isEmpty {
-                    wordLearningCard(item.sentence.learningVocabulary)
-                    wordNavigation(item.sentence.learningVocabulary)
-                } else {
-                    sentencePracticeCard(item)
-                }
+                sentenceScreen(item)
             } else if practicePlayer.isReviewSession {
                 ContentUnavailableView(
                     "Practice complete",
@@ -197,228 +164,41 @@ struct TrainerView: View {
                     .foregroundStyle(.red)
             }
         }
-        .padding(.top, 12)
+        .padding(.top, 24)
     }
 
-    @ViewBuilder
-    private var learningStepHeader: some View {
-        VStack(alignment: .leading, spacing: 9) {
-            ViewThatFits(in: .horizontal) {
-                HStack {
-                    learningWordsStepLabel
-                    Spacer()
-                    sentenceStepLabel
-                }
-                VStack(alignment: .leading, spacing: 8) {
-                    learningWordsStepLabel
-                    sentenceStepLabel
-                }
-            }
-
-            ProgressView(value: learningStage == .words ? 0.5 : 1)
-                .tint(.accentColor)
-        }
-        .accessibilityElement(children: .combine)
-        .accessibilityLabel(learningStage == .words ? "Step 1 of 2, learn words" : "Step 2 of 2, practice sentence")
-    }
-
-    private var learningWordsStepLabel: some View {
-        Label("Learn words", systemImage: learningStage == .words ? "1.circle.fill" : "checkmark.circle.fill")
-            .font(.subheadline.weight(.semibold))
-            .foregroundStyle(learningStage == .words ? Color.accentColor : Color.green)
-    }
-
-    private var sentenceStepLabel: some View {
-        Label("Practice sentence", systemImage: "2.circle.fill")
-            .font(.subheadline.weight(.semibold))
-            .foregroundStyle(learningStage == .sentence ? Color.accentColor : Color.secondary)
-    }
-
-    private func learningContext(_ item: PracticeQueueItem) -> some View {
-        VStack(alignment: .leading, spacing: 8) {
-            HStack {
-                Text("HEBREW MEANING")
-                    .font(.caption2.bold())
-                    .tracking(0.8)
-                    .foregroundStyle(.secondary)
-                    .lineLimit(1)
-                Spacer()
-                Text("Sentence \(practicePlayer.selectedSentenceIndex + 1) of \(practicePlayer.queueItems.count)")
-                    .font(.caption.bold().monospacedDigit())
-                    .foregroundStyle(.tint)
-                    .fixedSize()
-            }
-            Text(item.sentence.promptHebrew)
-                .font(.title2.bold())
-                .frame(maxWidth: .infinity, alignment: .trailing)
-                .multilineTextAlignment(.trailing)
-                .environment(\.layoutDirection, .rightToLeft)
-            Text(
-                learningStage == .words
-                    ? "Learn \(item.sentence.learningVocabulary.count) words, then practice the sentence."
-                    : "Now put the words together."
-            )
-            .font(.subheadline)
-            .foregroundStyle(.secondary)
-        }
-        .padding(16)
-        .background(Color(uiColor: .secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 18))
-    }
-
-    private func wordLearningCard(_ words: [LessonWord]) -> some View {
-        let index = min(selectedWordIndex, max(words.count - 1, 0))
-        let word = words[index]
-        let attempted = attemptedWordIDs.contains(word.id)
-
-        return VStack(spacing: 18) {
-            Text("WORD \(index + 1) OF \(words.count)")
-                .font(.caption.bold().monospacedDigit())
-                .tracking(0.8)
-                .foregroundStyle(.secondary)
-
-            VStack(spacing: 7) {
-                Text(word.thai)
-                    .font(.system(.largeTitle, design: .rounded, weight: .bold))
-                    .minimumScaleFactor(0.75)
-                    .multilineTextAlignment(.center)
-                Text(word.romanization)
-                    .font(.title3.weight(.medium))
-                    .foregroundStyle(.secondary)
-                    .multilineTextAlignment(.center)
-                HStack {
-                    Spacer(minLength: 0)
-                    Text(word.meaningHebrew)
-                        .font(.title3.bold())
-                        .multilineTextAlignment(.trailing)
-                        .environment(\.layoutDirection, .rightToLeft)
-                }
-            }
-            .accessibilityElement(children: .ignore)
-            .accessibilityLabel(
-                "Word \(index + 1) of \(words.count). \(word.thai). "
-                + "\(word.romanization). \(word.meaningHebrew)"
-            )
-
-            Button {
-                practicePlayer.stop()
-                attemptedWordIDs.insert(word.id)
-                wordAudioPlayer.speak(word.thai)
-            } label: {
-                Label(attempted ? "Listen again" : "Listen", systemImage: "speaker.wave.2.fill")
-                    .font(.headline)
-                    .frame(maxWidth: .infinity, minHeight: 52)
-            }
-            .buttonStyle(.borderedProminent)
-            .accessibilityHint("Plays this Thai word. Listen, then repeat aloud.")
-
-            Text("Listen, then repeat aloud.")
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
-
-            if let error = wordAudioPlayer.errorMessage {
-                Label(error, systemImage: "exclamationmark.circle.fill")
-                    .font(.footnote)
-                    .foregroundStyle(.red)
-            }
-        }
-        .padding(22)
-        .background(Color.accentColor.opacity(0.09), in: RoundedRectangle(cornerRadius: 24))
-        .overlay {
-            RoundedRectangle(cornerRadius: 24)
-                .stroke(Color.accentColor.opacity(0.16), lineWidth: 1)
-        }
-        .id("word-learning-section")
-        .accessibilityElement(children: .contain)
-    }
-
-    private func wordNavigation(_ words: [LessonWord]) -> some View {
-        let index = min(selectedWordIndex, max(words.count - 1, 0))
-        let canContinue = attemptedWordIDs.contains(words[index].id)
-        let isLast = index == words.count - 1
-
-        return HStack(spacing: 12) {
-            Button {
-                wordAudioPlayer.stop()
-                selectedWordIndex = max(0, index - 1)
-            } label: {
-                Group {
-                    if dynamicTypeSize.isAccessibilitySize {
-                        Image(systemName: "chevron.backward")
-                            .font(.title2.bold())
-                    } else {
-                        Label("Previous", systemImage: "chevron.backward")
-                    }
-                }
-                .frame(maxWidth: .infinity, minHeight: 46)
-            }
-            .buttonStyle(.bordered)
-            .disabled(index == 0)
-            .accessibilityLabel("Previous word")
-
-            Button {
-                wordAudioPlayer.stop()
-                if isLast {
-                    learningStage = .sentence
-                    sentencePlaybackAttempted = false
-                } else {
-                    selectedWordIndex = index + 1
-                }
-            } label: {
-                Group {
-                    if dynamicTypeSize.isAccessibilitySize {
-                        Image(systemName: isLast ? "text.bubble.fill" : "chevron.forward")
-                            .font(.title2.bold())
-                    } else {
-                        Label(isLast ? "Practice sentence" : "Next word", systemImage: "chevron.forward")
-                    }
-                }
-                .frame(maxWidth: .infinity, minHeight: 46)
-            }
-            .buttonStyle(.borderedProminent)
-            .disabled(!canContinue)
-            .accessibilityLabel(isLast ? "Practice sentence" : "Next word")
-            .accessibilityHint(canContinue ? "Continues to the next learning step" : "Listen to this word first")
-        }
-    }
-
-    private func sentencePracticeCard(_ item: PracticeQueueItem) -> some View {
+    private func sentenceScreen(_ item: PracticeQueueItem) -> some View {
         let sentence = item.sentence
-        return VStack(spacing: 17) {
-            Text("SENTENCE")
-                .font(.caption.bold())
-                .tracking(0.8)
-                .foregroundStyle(.secondary)
-
-            VStack(spacing: 7) {
+        return VStack(alignment: .leading, spacing: 24) {
+            VStack(spacing: 10) {
                 Text(sentence.thai)
-                    .font(.system(.title, design: .rounded, weight: .bold))
-                    .foregroundStyle(.tint)
+                    .font(.system(size: 36, weight: .semibold, design: .rounded))
                     .multilineTextAlignment(.center)
+                    .frame(maxWidth: .infinity)
                 Text(sentence.romanization)
                     .font(.body.weight(.medium))
                     .foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)
                 Text(sentence.promptHebrew)
-                    .font(.headline)
+                    .font(.title3.weight(.semibold))
                     .multilineTextAlignment(.center)
                     .environment(\.layoutDirection, .rightToLeft)
+                    .padding(.top, 6)
             }
 
             Button {
                 wordAudioPlayer.stop()
-                sentencePlaybackAttempted = true
-                practicePlayer.playCurrentSentenceOnce()
+                practicePlayer.toggleCurrentSentenceOnce()
             } label: {
-                Label(sentencePlaybackAttempted ? "Listen again" : "Listen to sentence", systemImage: "speaker.wave.2.fill")
+                Label(
+                    practicePlayer.isPlaying ? "Pause" : "Play sentence",
+                    systemImage: practicePlayer.isPlaying ? "pause.fill" : "play.fill"
+                )
                     .font(.headline)
                     .frame(maxWidth: .infinity, minHeight: 52)
             }
             .buttonStyle(.borderedProminent)
             .disabled(!practicePlayer.isReady)
-
-            Text("Repeat the whole sentence aloud.")
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
 
             if let error = practicePlayer.playbackError {
                 Label(error, systemImage: "exclamationmark.circle.fill")
@@ -426,86 +206,126 @@ struct TrainerView: View {
                     .foregroundStyle(.red)
             }
 
-            if sentencePlaybackAttempted {
-                if practicePlayer.isReviewSession {
-                    feedbackControls
-                } else {
-                    Button {
-                        practicePlayer.moveSentence(by: 1)
-                    } label: {
-                        Label("Next sentence", systemImage: "arrow.right.circle.fill")
-                            .frame(maxWidth: .infinity, minHeight: 46)
+            if !sentence.learningVocabulary.isEmpty {
+                DisclosureGroup(isExpanded: $wordsExpanded) {
+                    VStack(spacing: 0) {
+                        ForEach(sentence.learningVocabulary) { word in
+                            wordRow(word)
+                            if word.id != sentence.learningVocabulary.last?.id {
+                                Divider().padding(.leading, 48)
+                            }
+                        }
                     }
-                    .buttonStyle(.bordered)
-                    .disabled(practicePlayer.selectedSentenceIndex >= practicePlayer.queueItems.count - 1)
+                    .padding(.top, 8)
+                } label: {
+                    Text("Words")
+                        .font(.headline)
                 }
+                .tint(.primary)
             }
-        }
-        .padding(22)
-        .background(Color.accentColor.opacity(0.09), in: RoundedRectangle(cornerRadius: 24))
-        .overlay {
-            RoundedRectangle(cornerRadius: 24)
-                .stroke(Color.accentColor.opacity(0.16), lineWidth: 1)
-        }
-    }
 
-    private func resetLearningFlow() {
-        wordAudioPlayer.stop()
-        learningStage = .words
-        selectedWordIndex = 0
-        attemptedWordIDs = []
-        sentencePlaybackAttempted = false
-        #if DEBUG
-        let arguments = ProcessInfo.processInfo.arguments
-        if arguments.contains("--screenshot-sentence-stage") {
-            learningStage = .sentence
-        } else if arguments.contains("--screenshot-sentence-complete") {
-            learningStage = .sentence
-            sentencePlaybackAttempted = true
-        } else if arguments.contains("--screenshot-word-two"),
-                  let words = practicePlayer.currentQueueItem?.sentence.learningVocabulary,
-                  words.count > 1 {
-            attemptedWordIDs.insert(words[0].id)
-            selectedWordIndex = 1
-        }
-        if arguments.contains("--autoplay-word"),
-           let word = practicePlayer.currentQueueItem?.sentence.learningVocabulary.first {
-            attemptedWordIDs.insert(word.id)
-            wordAudioPlayer.speak(word.thai)
-        }
-        #endif
-    }
-
-    private func sessionHeader(_ package: LessonPackage) -> some View {
-        VStack(alignment: .leading, spacing: 7) {
-            Button {
-                showsLessonLibrary = true
+            NavigationLink {
+                relatedSentenceScreen(item)
             } label: {
-                HStack(spacing: 5) {
-                    Text("DAY \(package.lesson.day)")
-                    if let position = lessonStore.selectedLessonPosition {
-                        Text("· \(position) OF \(lessonStore.library.count)")
-                    }
-                    Image(systemName: "chevron.down")
-                        .font(.system(size: 9, weight: .bold))
+                HStack {
+                    Text("Related sentences")
+                    Spacer()
+                    Image(systemName: "chevron.forward")
+                        .font(.caption.bold())
+                        .foregroundStyle(.tertiary)
                 }
-                .font(.caption.weight(.bold))
-                .foregroundStyle(.tint)
+                .font(.body)
+                .contentShape(Rectangle())
             }
             .buttonStyle(.plain)
-            .accessibilityLabel(
-                "Day \(package.lesson.day), lesson \(lessonStore.selectedLessonPosition ?? 1) "
-                + "of \(lessonStore.library.count)"
-            )
-            .accessibilityHint("Opens the lesson library")
 
-            Text("Everyday Thai")
-                .font(.title2.bold())
-            Text(package.lesson.theme)
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
-                .fixedSize(horizontal: false, vertical: true)
+            sentenceNavigation
         }
+    }
+
+    private func wordRow(_ word: LessonWord) -> some View {
+        HStack(spacing: 12) {
+            Button {
+                practicePlayer.stop()
+                wordAudioPlayer.speak(word.thai)
+            } label: {
+                Image(systemName: "speaker.wave.2")
+                    .frame(width: 32, height: 44)
+            }
+            .buttonStyle(.plain)
+            .foregroundStyle(.tint)
+            .accessibilityLabel("Play \(word.thai)")
+
+            VStack(alignment: .leading, spacing: 2) {
+                Text(word.thai)
+                    .font(.body.weight(.semibold))
+                Text(word.romanization)
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+            Spacer(minLength: 12)
+            Text(word.meaningHebrew)
+                .font(.body)
+                .multilineTextAlignment(.trailing)
+                .environment(\.layoutDirection, .rightToLeft)
+        }
+        .frame(minHeight: 54)
+    }
+
+    private var sentenceNavigation: some View {
+        HStack {
+            Button {
+                wordAudioPlayer.stop()
+                practicePlayer.moveSentence(by: -1)
+            } label: {
+                Label("Previous", systemImage: "chevron.backward")
+            }
+            .disabled(practicePlayer.selectedSentenceIndex == 0)
+
+            Spacer()
+
+            Button {
+                wordAudioPlayer.stop()
+                practicePlayer.moveSentence(by: 1)
+            } label: {
+                Label("Next", systemImage: "chevron.forward")
+                    .labelStyle(.titleAndIcon)
+            }
+            .disabled(practicePlayer.selectedSentenceIndex >= practicePlayer.queueItems.count - 1)
+        }
+        .font(.subheadline.weight(.medium))
+    }
+
+    private func relatedSentenceScreen(_ item: PracticeQueueItem) -> some View {
+        VStack(spacing: 14) {
+            Text(item.sentence.variation.thai)
+                .font(.system(size: 34, weight: .semibold, design: .rounded))
+                .multilineTextAlignment(.center)
+            Text(item.sentence.variation.promptHebrew)
+                .font(.title3.weight(.semibold))
+                .multilineTextAlignment(.center)
+                .environment(\.layoutDirection, .rightToLeft)
+                .padding(.top, 6)
+            Button {
+                wordAudioPlayer.stop()
+                practicePlayer.playCurrentVariationOnce()
+            } label: {
+                Label("Play sentence", systemImage: "play.fill")
+                    .font(.headline)
+                    .frame(maxWidth: .infinity, minHeight: 52)
+            }
+            .buttonStyle(.borderedProminent)
+            .disabled(!practicePlayer.isReady)
+            Spacer()
+        }
+        .padding(24)
+        .navigationTitle("Related sentence")
+        .navigationBarTitleDisplayMode(.inline)
+    }
+
+    private func resetSentenceScreen() {
+        wordAudioPlayer.stop()
+        wordsExpanded = false
     }
 
     @ViewBuilder

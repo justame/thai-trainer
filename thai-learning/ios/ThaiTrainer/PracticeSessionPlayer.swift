@@ -616,6 +616,7 @@ final class PracticeSessionPlayer: ObservableObject {
     private var sessionToken = UUID()
     private var playsSingleSentence = false
     private var playsThaiOnly = false
+    private var oneOffClipURL: URL?
     private var silenceDataCache: [Int: Data] = [:]
     private lazy var nowPlaying = NowPlayingCoordinator()
 
@@ -751,6 +752,32 @@ final class PracticeSessionPlayer: ObservableObject {
         startSession(singleSentenceOnly: true, thaiOnly: true)
     }
 
+    func toggleCurrentSentenceOnce() {
+        guard isReady else { return }
+        if playTask == nil {
+            startSession(singleSentenceOnly: true, thaiOnly: true)
+        } else if isPlaying {
+            isPlaying = false
+            player?.pause()
+            publishNowPlaying()
+        } else {
+            isPlaying = true
+            if let player, player.currentTime < player.duration {
+                _ = player.play()
+            }
+            publishNowPlaying()
+        }
+    }
+
+    func playCurrentVariationOnce(at index: Int = 0) {
+        guard isReady,
+              let audio = currentQueueItem?.audio,
+              audio.variations.indices.contains(index) else { return }
+        stopPlayback(resetPhase: true)
+        oneOffClipURL = audio.variations[index].thaiURL
+        startSession(singleSentenceOnly: true, thaiOnly: true)
+    }
+
     func stop() {
         stopPlayback(resetPhase: true)
     }
@@ -841,9 +868,22 @@ final class PracticeSessionPlayer: ObservableObject {
             selectedSentenceIndex = sentenceIndex
             let audio = queueItems[sentenceIndex].audio
 
-            let steps: [PracticeSequenceStep] = playsThaiOnly
-                ? [.speech(url: audio.thaiURL, rate: 1, language: .thai(repetition: 1, total: 1))]
-                : PracticeSequenceBuilder.steps(for: audio, configuration: configuration)
+            let steps: [PracticeSequenceStep]
+            if let oneOffClipURL {
+                steps = [.speech(
+                    url: oneOffClipURL,
+                    rate: 1,
+                    language: .variationThai(index: 1, total: 1)
+                )]
+            } else if playsThaiOnly {
+                steps = [.speech(
+                    url: audio.thaiURL,
+                    rate: 1,
+                    language: .thai(repetition: 1, total: 1)
+                )]
+            } else {
+                steps = PracticeSequenceBuilder.steps(for: audio, configuration: configuration)
+            }
             for step in steps {
                 guard token == sessionToken, !Task.isCancelled else { return }
                 do {
@@ -1084,6 +1124,7 @@ final class PracticeSessionPlayer: ObservableObject {
         player?.stop()
         player = nil
         playTask = nil
+        oneOffClipURL = nil
         isPlaying = false
         phase = .idle
         currentTime = 0
@@ -1105,6 +1146,7 @@ final class PracticeSessionPlayer: ObservableObject {
         sessionToken = UUID()
         playTask?.cancel()
         playTask = nil
+        oneOffClipURL = nil
         player?.stop()
         player = nil
         isPlaying = false
