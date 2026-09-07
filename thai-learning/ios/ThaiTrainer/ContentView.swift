@@ -195,8 +195,14 @@ struct TrainerView: View {
                 .padding(.top, 8)
             } label: {
                 HStack {
-                    Label("Words in this phrase", systemImage: "character.book.closed")
-                        .font(.headline)
+                    VStack(alignment: .leading, spacing: 4) {
+                        Label("Words in this phrase", systemImage: "character.book.closed")
+                            .font(.headline)
+                        Text(sentence.thai)
+                            .font(.subheadline.weight(.semibold))
+                            .foregroundStyle(.primary)
+                            .lineLimit(2)
+                    }
                     Spacer()
                     Text("\(words.count)")
                         .font(.caption.bold().monospacedDigit())
@@ -424,7 +430,7 @@ struct TrainerView: View {
                     )
                     .monospacedDigit()
                 } else {
-                    Text("Ready")
+                    Text("Tap play")
                 }
             }
             .font(.caption)
