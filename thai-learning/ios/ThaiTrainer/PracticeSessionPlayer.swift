@@ -614,6 +614,8 @@ final class PracticeSessionPlayer: ObservableObject {
     private var player: AVAudioPlayer?
     private var playTask: Task<Void, Never>?
     private var sessionToken = UUID()
+    private var playsSingleSentence = false
+    private var playsThaiOnly = false
     private var silenceDataCache: [Int: Data] = [:]
     private lazy var nowPlaying = NowPlayingCoordinator()
 
@@ -743,6 +745,12 @@ final class PracticeSessionPlayer: ObservableObject {
         }
     }
 
+    func playCurrentSentenceOnce() {
+        guard isReady else { return }
+        stopPlayback(resetPhase: true)
+        startSession(singleSentenceOnly: true, thaiOnly: true)
+    }
+
     func stop() {
         stopPlayback(resetPhase: true)
     }
@@ -780,10 +788,15 @@ final class PracticeSessionPlayer: ObservableObject {
         userDefaults.set(data, forKey: Self.settingsKey)
     }
 
-    private func startSession() {
+    private func startSession(
+        singleSentenceOnly: Bool = false,
+        thaiOnly: Bool = false
+    ) {
         guard isReady, playTask == nil else { return }
         playbackError = nil
         isPlaying = true
+        playsSingleSentence = singleSentenceOnly
+        playsThaiOnly = thaiOnly
         let token = UUID()
         sessionToken = token
         playTask = Task { [weak self] in
@@ -813,12 +826,12 @@ final class PracticeSessionPlayer: ObservableObject {
             return
         }
 
-        var order = Array(queueItems.indices)
-        if configuration.order == .shuffle {
+        var order = playsSingleSentence ? [selectedSentenceIndex] : Array(queueItems.indices)
+        if !playsSingleSentence, configuration.order == .shuffle {
             order.shuffle()
             order.removeAll { $0 == selectedSentenceIndex }
             order.insert(selectedSentenceIndex, at: 0)
-        } else if let start = order.firstIndex(of: selectedSentenceIndex) {
+        } else if !playsSingleSentence, let start = order.firstIndex(of: selectedSentenceIndex) {
             order = Array(order[start...])
         }
 
@@ -828,10 +841,9 @@ final class PracticeSessionPlayer: ObservableObject {
             selectedSentenceIndex = sentenceIndex
             let audio = queueItems[sentenceIndex].audio
 
-            let steps = PracticeSequenceBuilder.steps(
-                for: audio,
-                configuration: configuration
-            )
+            let steps: [PracticeSequenceStep] = playsThaiOnly
+                ? [.speech(url: audio.thaiURL, rate: 1, language: .thai(repetition: 1, total: 1))]
+                : PracticeSequenceBuilder.steps(for: audio, configuration: configuration)
             for step in steps {
                 guard token == sessionToken, !Task.isCancelled else { return }
                 do {
@@ -869,6 +881,7 @@ final class PracticeSessionPlayer: ObservableObject {
                 }
             }
 
+            if playsSingleSentence { break }
             let currentConfiguration = configuration
             guard currentConfiguration.autoAdvance else { break }
             position += 1

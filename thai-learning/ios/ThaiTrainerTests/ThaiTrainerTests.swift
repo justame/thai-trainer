@@ -27,6 +27,24 @@ final class ThaiTrainerTests: XCTestCase {
         }
     }
 
+    func testOpeningSentenceForEveryDayUsesIndividualLearnableWords() throws {
+        let expected: [String: [String]] = [
+            "d001-s01": ["ช่วย", "พูด", "อีก", "ที", "ได้", "ไหม", "ครับ"],
+            "d002-s01": ["รบกวน", "กด", "มิเตอร์", "ด้วย", "ครับ"],
+            "d003-s01": ["ไฟ", "ใน", "ห้องน้ำ", "เสีย", "ครับ"],
+            "d004-s01": ["มี", "เมนู", "อะไร", "แนะนำ", "ไหม", "ครับ"],
+            "d005-s01": ["ผม", "จอง", "ไว้", "ใน", "ชื่อ", "ยารอน", "ครับ"],
+        ]
+
+        for (sentenceID, thaiWords) in expected {
+            XCTAssertEqual(
+                VocabularyCatalog.wordsBySentenceID[sentenceID]?.map(\.thai),
+                thaiWords,
+                sentenceID
+            )
+        }
+    }
+
     func testEasyUsesIntervalLadderAndAgainResetsIt() throws {
         let scheduler = ReviewScheduler(timeZone: try XCTUnwrap(TimeZone(identifier: "Asia/Bangkok")))
         let key = phraseKey(sentenceID: "d001-s01")
