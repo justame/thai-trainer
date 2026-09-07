@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import importlib.util
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -33,6 +34,12 @@ class PagesPublishHelperTests(unittest.TestCase):
             docs.mkdir()
             landing = docs / "index.html"
             landing.write_text("pending landing", encoding="utf-8")
+            pending_lesson = root / "pending-lesson.json"
+            lesson = json.loads(PENDING_LESSON.read_text(encoding="utf-8"))
+            lesson["status"] = "pending_review"
+            for sentence in lesson["sentences"]:
+                sentence["review_status"] = "pending"
+            pending_lesson.write_text(json.dumps(lesson), encoding="utf-8")
 
             with mock.patch.object(pages, "_run_git") as run_git:
                 with self.assertRaisesRegex(
@@ -40,7 +47,7 @@ class PagesPublishHelperTests(unittest.TestCase):
                     "Lesson is not publishable",
                 ):
                     pages.publish_to_pages(
-                        PENDING_LESSON,
+                        pending_lesson,
                         root / "missing-audio",
                         docs,
                         repository_root=root,

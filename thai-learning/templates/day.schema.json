@@ -2,12 +2,16 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Personalized Thai daily review pack",
   "type": "object",
+  "additionalProperties": false,
   "required": [
     "schema_version",
-    "day",
     "lesson_id",
     "revision",
+    "day",
+    "week",
+    "theme",
     "status",
+    "source",
     "sentences",
     "voices",
     "audio_program"
@@ -17,48 +21,269 @@
     "lesson_id": {"type": "string", "pattern": "^day-[0-9]{3}$"},
     "revision": {"type": "integer", "minimum": 1},
     "day": {"type": "integer", "minimum": 1},
-    "status": {
-      "enum": ["pending_review", "approved", "retired"]
+    "week": {"type": "integer", "minimum": 1},
+    "theme": {"type": "string", "minLength": 1},
+    "status": {"enum": ["pending_review", "approved", "retired"]},
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["project", "thread_id"],
+      "properties": {
+        "project": {"type": "string", "minLength": 1},
+        "thread_id": {"type": "string", "minLength": 1}
+      }
     },
     "sentences": {
       "type": "array",
       "minItems": 20,
       "maxItems": 20,
-      "items": {
-        "type": "object",
-        "required": [
-          "id",
-          "prompt_he",
-          "thai",
-          "romanization",
-          "literal_he",
-          "context_he",
-          "pattern",
-          "variation",
-          "review_status"
-        ],
-        "properties": {
-          "review_status": {
-            "enum": ["pending", "approved", "rejected"]
+      "items": {"$ref": "#/$defs/sentence"}
+    },
+    "voices": {"$ref": "#/$defs/googleVoices"},
+    "audio_program": {"$ref": "#/$defs/googleAudioProgram"}
+  },
+  "$defs": {
+    "nonEmptyText": {"type": "string", "minLength": 1},
+    "sentenceId": {
+      "type": "string",
+      "pattern": "^d[0-9]{3}-s(?:0[1-9]|1[0-9]|20)$"
+    },
+    "sentence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "category",
+        "prompt_he",
+        "thai",
+        "romanization",
+        "literal_he",
+        "context_he",
+        "pattern",
+        "variation",
+        "review_status"
+      ],
+      "properties": {
+        "id": {"$ref": "#/$defs/sentenceId"},
+        "category": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
+        "prompt_he": {"$ref": "#/$defs/nonEmptyText"},
+        "thai": {"$ref": "#/$defs/nonEmptyText"},
+        "romanization": {"$ref": "#/$defs/nonEmptyText"},
+        "literal_he": {"$ref": "#/$defs/nonEmptyText"},
+        "context_he": {"$ref": "#/$defs/nonEmptyText"},
+        "pattern": {"$ref": "#/$defs/nonEmptyText"},
+        "variation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["prompt_he", "thai"],
+          "properties": {
+            "prompt_he": {"$ref": "#/$defs/nonEmptyText"},
+            "thai": {"$ref": "#/$defs/nonEmptyText"}
           }
+        },
+        "vocabulary": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/vocabularyItem"}
+        },
+        "review_status": {"enum": ["pending", "approved", "rejected"]}
+      }
+    },
+    "vocabularyItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["thai", "romanization", "meaning_he"],
+      "properties": {
+        "thai": {"$ref": "#/$defs/nonEmptyText"},
+        "romanization": {"$ref": "#/$defs/nonEmptyText"},
+        "meaning_he": {"$ref": "#/$defs/nonEmptyText"}
+      }
+    },
+    "googleVoice": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["language_code", "name"],
+      "properties": {
+        "language_code": {"type": "string"},
+        "name": {"type": "string"}
+      }
+    },
+    "googleVoices": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider", "thai", "hebrew"],
+      "properties": {
+        "provider": {"const": "google_cloud_tts"},
+        "thai": {
+          "allOf": [
+            {"$ref": "#/$defs/googleVoice"},
+            {
+              "properties": {
+                "language_code": {"const": "th-TH"},
+                "name": {"const": "th-TH-Chirp3-HD-Erinome"}
+              }
+            }
+          ]
+        },
+        "hebrew": {
+          "allOf": [
+            {"$ref": "#/$defs/googleVoice"},
+            {
+              "properties": {
+                "language_code": {"const": "he-IL"},
+                "name": {"const": "he-IL-Chirp3-HD-Charon"}
+              }
+            }
+          ]
         }
       }
     },
-    "voices": {
+    "sequence": {
+      "type": "array",
+      "minItems": 20,
+      "maxItems": 20,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/sentenceId"}
+    },
+    "milliseconds": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 15000
+    },
+    "listeningTrack": {
       "type": "object",
-      "required": ["provider", "thai", "hebrew"],
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "sequence",
+        "thai_repetitions",
+        "thai_speaking_rates",
+        "pause_between_repetitions_ms",
+        "pause_between_sentences_ms"
+      ],
       "properties": {
-        "provider": {"const": "azure_speech"},
-        "thai": {"type": "string"},
-        "hebrew": {"type": "string"}
+        "id": {"const": "listening"},
+        "sequence": {"$ref": "#/$defs/sequence"},
+        "thai_repetitions": {"const": 2},
+        "thai_speaking_rates": {
+          "type": "array",
+          "prefixItems": [{"const": 0.82}, {"const": 1.0}],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "pause_between_repetitions_ms": {"$ref": "#/$defs/milliseconds"},
+        "pause_between_sentences_ms": {"$ref": "#/$defs/milliseconds"}
       }
     },
-    "audio_program": {
+    "shadowingTrack": {
       "type": "object",
-      "required": ["tracks", "normal_speed_only"],
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "sequence",
+        "thai_repetitions",
+        "thai_speaking_rates",
+        "pause_between_repetitions_ms",
+        "pause_between_sentences_ms"
+      ],
       "properties": {
-        "normal_speed_only": {"const": true},
-        "tracks": {"type": "array", "minItems": 1}
+        "id": {"const": "shadowing"},
+        "sequence": {"$ref": "#/$defs/sequence"},
+        "thai_repetitions": {"const": 3},
+        "thai_speaking_rates": {
+          "type": "array",
+          "prefixItems": [{"const": 0.9}, {"const": 0.9}, {"const": 0.9}],
+          "items": false,
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "pause_between_repetitions_ms": {"$ref": "#/$defs/milliseconds"},
+        "pause_between_sentences_ms": {"$ref": "#/$defs/milliseconds"}
+      }
+    },
+    "recallTrack": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "sequence",
+        "hebrew_prompt",
+        "hebrew_speaking_rate",
+        "recall_pause_ms",
+        "thai_repetitions",
+        "thai_speaking_rates",
+        "pause_between_sentences_ms"
+      ],
+      "properties": {
+        "id": {"const": "recall"},
+        "sequence": {"$ref": "#/$defs/sequence"},
+        "hebrew_prompt": {"const": true},
+        "hebrew_speaking_rate": {"const": 1.0},
+        "recall_pause_ms": {"$ref": "#/$defs/milliseconds"},
+        "thai_repetitions": {"const": 1},
+        "thai_speaking_rates": {
+          "type": "array",
+          "prefixItems": [{"const": 0.9}],
+          "items": false,
+          "minItems": 1,
+          "maxItems": 1
+        },
+        "pause_between_sentences_ms": {"$ref": "#/$defs/milliseconds"}
+      }
+    },
+    "scenarioTrack": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "sequence",
+        "thai_repetitions",
+        "thai_speaking_rates",
+        "pause_between_sentences_ms"
+      ],
+      "properties": {
+        "id": {"const": "scenario"},
+        "sequence": {"$ref": "#/$defs/sequence"},
+        "thai_repetitions": {"const": 1},
+        "thai_speaking_rates": {
+          "type": "array",
+          "prefixItems": [{"const": 1.0}],
+          "items": false,
+          "minItems": 1,
+          "maxItems": 1
+        },
+        "pause_between_sentences_ms": {"$ref": "#/$defs/milliseconds"}
+      }
+    },
+    "practiceVariations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["hebrew_speaking_rate", "thai_speaking_rate"],
+      "properties": {
+        "hebrew_speaking_rate": {"const": 1.0},
+        "thai_speaking_rate": {"const": 1.0}
+      }
+    },
+    "googleAudioProgram": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pitch_semitones", "tracks"],
+      "properties": {
+        "pitch_semitones": {"const": 0},
+        "practice_variations": {"$ref": "#/$defs/practiceVariations"},
+        "tracks": {
+          "type": "array",
+          "prefixItems": [
+            {"$ref": "#/$defs/listeningTrack"},
+            {"$ref": "#/$defs/shadowingTrack"},
+            {"$ref": "#/$defs/recallTrack"},
+            {"$ref": "#/$defs/scenarioTrack"}
+          ],
+          "items": false,
+          "minItems": 4,
+          "maxItems": 4
+        }
       }
     }
   }

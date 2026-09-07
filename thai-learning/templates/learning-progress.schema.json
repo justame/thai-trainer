@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Thai Echo private learning progress",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "timezone", "updated_at", "events"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "timezone": {"const": "Asia/Bangkok"},
+    "updated_at": {"type": "string", "format": "date-time"},
+    "events": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/event"}
+    }
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "phrase": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lesson_id", "revision", "content_sha256", "sentence_id"],
+      "properties": {
+        "lesson_id": {"type": "string", "minLength": 1},
+        "revision": {"type": "integer", "minimum": 1},
+        "content_sha256": {"$ref": "#/$defs/sha256"},
+        "sentence_id": {"type": "string", "minLength": 1}
+      }
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "phrase", "rating", "reviewed_at"],
+      "properties": {
+        "id": {"type": "string", "format": "uuid"},
+        "phrase": {"$ref": "#/$defs/phrase"},
+        "rating": {"enum": ["again", "easy"]},
+        "reviewed_at": {"type": "string", "format": "date-time"}
+      }
+    }
+  }
+}

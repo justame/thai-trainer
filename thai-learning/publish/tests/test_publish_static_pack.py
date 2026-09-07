@@ -17,15 +17,21 @@ publisher = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(publisher)
 
 LESSON_PATH = Path(__file__).resolve().parents[2] / "days" / "day-001.json"
+PRACTICE_ROOT = Path(__file__).resolve().parents[2] / "audio" / "practice"
 
 
 class FakeProvider:
     def __init__(self) -> None:
         self.calls = 0
 
-    def synthesize(self, _ssml: str) -> bytes:
+    def synthesize_segment(self, _request: dict) -> bytes:
         self.calls += 1
-        return b"ID3-fake-audio-" + str(self.calls).encode("ascii")
+        return b"offline-fake-linear16-wav"
+
+
+def fake_google_assembler(track_request: dict, _segment_audio: dict[str, bytes]) -> bytes:
+    request_hash = publisher.audio.request_sha256(track_request)
+    return b"ID3-fake-audio-" + request_hash.encode("ascii")
 
 
 class StaticPackPublisherTests(unittest.TestCase):
@@ -43,6 +49,7 @@ class StaticPackPublisherTests(unittest.TestCase):
     def generate_fake_audio(self, lesson: dict, root: Path) -> tuple[Path, FakeProvider]:
         digest = publisher.audio.content_sha256(lesson)
         approval = {
+            "schema_version": 1,
             "lesson_id": lesson["lesson_id"],
             "revision": lesson["revision"],
             "approved_sentence_ids": [item["id"] for item in lesson["sentences"]],
@@ -50,12 +57,16 @@ class StaticPackPublisherTests(unittest.TestCase):
             "approved_at": "2026-09-03T00:00:00Z",
         }
         authorization = {
+            "schema_version": 1,
             "lesson_id": lesson["lesson_id"],
             "revision": lesson["revision"],
             "provider": lesson["voices"]["provider"],
             "content_sha256": digest,
             "authorized_at": "2026-09-03T00:01:00Z",
         }
+        receipt_suffix = f"{lesson['lesson_id']}-r{lesson['revision']}-fixture.json"
+        self.write_json(root.parent / "approvals" / receipt_suffix, approval)
+        self.write_json(root.parent / "authorizations" / receipt_suffix, authorization)
         provider = FakeProvider()
         publisher.audio.generate_tracks(
             lesson,
@@ -63,9 +74,67 @@ class StaticPackPublisherTests(unittest.TestCase):
             authorization,
             root,
             lambda: provider,
+            fake_google_assembler,
         )
         revision_directory = root / lesson["lesson_id"] / f"r{lesson['revision']}"
         return revision_directory, provider
+
+    def test_missing_or_stale_receipts_fail_before_audio_or_output(self) -> None:
+        lesson = self.approved_lesson()
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            lesson_path = root / "lesson.json"
+            self.write_json(lesson_path, lesson)
+
+            with mock.patch.object(publisher, "_find_generated_revision") as find_audio:
+                with self.assertRaisesRegex(
+                    publisher.PublishError,
+                    "Missing exact immutable text-approval receipt",
+                ):
+                    publisher.publish_static_pack(
+                        lesson_path,
+                        root / "generated",
+                        root / "site",
+                    )
+            find_audio.assert_not_called()
+            self.assertFalse((root / "site").exists())
+
+            digest = publisher.audio.content_sha256(lesson)
+            receipt_name = (
+                f"{lesson['lesson_id']}-r{lesson['revision']}-fixture.json"
+            )
+            self.write_json(
+                root / "approvals" / receipt_name,
+                {
+                    "schema_version": 1,
+                    "lesson_id": lesson["lesson_id"],
+                    "revision": lesson["revision"],
+                    "approved_sentence_ids": [item["id"] for item in lesson["sentences"]],
+                    "content_sha256": digest,
+                    "approved_at": "2026-09-03T00:00:00Z",
+                },
+            )
+            self.write_json(
+                root / "authorizations" / receipt_name,
+                {
+                    "schema_version": 1,
+                    "lesson_id": lesson["lesson_id"],
+                    "revision": lesson["revision"],
+                    "provider": lesson["voices"]["provider"],
+                    "content_sha256": "0" * 64,
+                    "authorized_at": "2026-09-03T00:01:00Z",
+                },
+            )
+            with self.assertRaisesRegex(
+                publisher.PublishError,
+                "Missing exact immutable paid-request authorization receipt",
+            ):
+                publisher.publish_static_pack(
+                    lesson_path,
+                    root / "generated",
+                    root / "site",
+                )
+            self.assertFalse((root / "site").exists())
 
     def test_publishes_exact_deterministic_tree_from_existing_audio(self) -> None:
         lesson = self.approved_lesson()
@@ -137,6 +206,38 @@ class StaticPackPublisherTests(unittest.TestCase):
             }
             self.assertEqual(first_bytes, second_bytes)
             self.assertEqual(first_inodes, second_inodes)
+
+    def test_publishes_validated_configurable_practice_audio_for_remote_days(self) -> None:
+        lesson = self.approved_lesson()
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            lesson_path = root / "approved.json"
+            generated_root = root / "generated"
+            site = root / "site"
+            self.write_json(lesson_path, lesson)
+            self.generate_fake_audio(lesson, generated_root)
+
+            latest = publisher.publish_static_pack(
+                lesson_path,
+                generated_root,
+                site,
+                PRACTICE_ROOT,
+            )
+
+            practice_path = Path(latest["practice_manifest_path"])
+            self.assertTrue((site / practice_path).is_file())
+            practice_directory = (site / practice_path).parent
+            self.assertEqual(len(list(practice_directory.glob("*.wav"))), 80)
+            source_manifest = (
+                PRACTICE_ROOT
+                / lesson["lesson_id"]
+                / f"r{lesson['revision']}"
+                / "practice-manifest.json"
+            )
+            self.assertEqual(
+                (site / practice_path).read_bytes(),
+                publisher._encoded_json(json.loads(source_manifest.read_text(encoding="utf-8"))),
+            )
 
     def test_conflicting_republish_preserves_live_pack_and_latest(self) -> None:
         lesson = self.approved_lesson()

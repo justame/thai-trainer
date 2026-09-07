@@ -1,0 +1,29 @@
+{
+  "approved_at": "2026-09-06T13:36:22Z",
+  "approved_sentence_ids": [
+    "d004-s01",
+    "d004-s02",
+    "d004-s03",
+    "d004-s04",
+    "d004-s05",
+    "d004-s06",
+    "d004-s07",
+    "d004-s08",
+    "d004-s09",
+    "d004-s10",
+    "d004-s11",
+    "d004-s12",
+    "d004-s13",
+    "d004-s14",
+    "d004-s15",
+    "d004-s16",
+    "d004-s17",
+    "d004-s18",
+    "d004-s19",
+    "d004-s20"
+  ],
+  "content_sha256": "8ebc79bb8e7082073ff2760e1f490f78f7fa79f9db1f54cfe61f72ed4d5d6b30",
+  "lesson_id": "day-004",
+  "revision": 1,
+  "schema_version": 1
+}

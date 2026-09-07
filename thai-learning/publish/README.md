@@ -36,8 +36,9 @@ python3 thai-learning/publish/publish_static_pack.py \
   thai-learning/publish/site
 ```
 
-Publishing fails unless the lesson and all 20 sentences are approved, the content
-hash and every generated request hash are current, and the manifest describes
+Publishing fails unless the lesson and all 20 sentences are approved, exact immutable
+text-approval and paid-request authorization receipts exist for the same revision and
+content hash, every generated request hash is current, and the manifest describes
 exactly four nonempty files: `listening.mp3`, `shadowing.mp3`, `recall.mp3`, and
 `scenario.mp3` with their exact byte sizes.
 

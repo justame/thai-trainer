@@ -18,6 +18,15 @@
 		010000000000000000000009 /* days in Resources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000009 /* days */; };
 		01000000000000000000000A /* generated in Resources */ = {isa = PBXBuildFile; fileRef = 02000000000000000000000A /* generated */; };
 		01000000000000000000000B /* RemoteContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02000000000000000000000C /* RemoteContentRepository.swift */; };
+		01000000000000000000000C /* PracticeSessionPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02000000000000000000000D /* PracticeSessionPlayer.swift */; };
+		01000000000000000000000D /* practice in Resources */ = {isa = PBXBuildFile; fileRef = 02000000000000000000000E /* practice */; };
+		01000000000000000000000E /* practice in Resources */ = {isa = PBXBuildFile; fileRef = 02000000000000000000000E /* practice */; };
+		01000000000000000000000F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02000000000000000000000F /* Assets.xcassets */; };
+		010000000000000000000010 /* NowPlayingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000010 /* NowPlayingCoordinator.swift */; };
+		010000000000000000000011 /* LearningProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000011 /* LearningProgress.swift */; };
+		010000000000000000000012 /* LearningProgressStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000012 /* LearningProgressStore.swift */; };
+		010000000000000000000013 /* ReviewScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000013 /* ReviewScheduler.swift */; };
+		010000000000000000000014 /* VocabularyCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020000000000000000000014 /* VocabularyCatalog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +52,14 @@
 		02000000000000000000000A /* generated */ = {isa = PBXFileReference; lastKnownFileType = folder; name = generated; path = ../audio/generated; sourceTree = "<group>"; };
 		02000000000000000000000B /* ThaiTrainerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThaiTrainerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02000000000000000000000C /* RemoteContentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteContentRepository.swift; sourceTree = "<group>"; };
+		02000000000000000000000D /* PracticeSessionPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSessionPlayer.swift; sourceTree = "<group>"; };
+		02000000000000000000000E /* practice */ = {isa = PBXFileReference; lastKnownFileType = folder; name = practice; path = ../audio/practice; sourceTree = "<group>"; };
+		02000000000000000000000F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		020000000000000000000010 /* NowPlayingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingCoordinator.swift; sourceTree = "<group>"; };
+		020000000000000000000011 /* LearningProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningProgress.swift; sourceTree = "<group>"; };
+		020000000000000000000012 /* LearningProgressStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningProgressStore.swift; sourceTree = "<group>"; };
+		020000000000000000000013 /* ReviewScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewScheduler.swift; sourceTree = "<group>"; };
+		020000000000000000000014 /* VocabularyCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyCatalog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +98,15 @@
 				020000000000000000000003 /* Models.swift */,
 				020000000000000000000004 /* LessonRepository.swift */,
 				020000000000000000000005 /* AudioPlayerModel.swift */,
+				020000000000000000000010 /* NowPlayingCoordinator.swift */,
+				020000000000000000000011 /* LearningProgress.swift */,
+				020000000000000000000012 /* LearningProgressStore.swift */,
+				020000000000000000000013 /* ReviewScheduler.swift */,
+				020000000000000000000014 /* VocabularyCatalog.swift */,
+				02000000000000000000000D /* PracticeSessionPlayer.swift */,
 				02000000000000000000000C /* RemoteContentRepository.swift */,
 				020000000000000000000006 /* Info.plist */,
+				02000000000000000000000F /* Assets.xcassets */,
 			);
 			path = ThaiTrainer;
 			sourceTree = "<group>";
@@ -100,6 +124,7 @@
 			children = (
 				020000000000000000000009 /* days */,
 				02000000000000000000000A /* generated */,
+				02000000000000000000000E /* practice */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -198,6 +223,8 @@
 			files = (
 				010000000000000000000006 /* days in Resources */,
 				010000000000000000000007 /* generated in Resources */,
+				01000000000000000000000D /* practice in Resources */,
+				01000000000000000000000F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +234,7 @@
 			files = (
 				010000000000000000000009 /* days in Resources */,
 				01000000000000000000000A /* generated in Resources */,
+				01000000000000000000000E /* practice in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +250,12 @@
 				010000000000000000000003 /* Models.swift in Sources */,
 				010000000000000000000004 /* LessonRepository.swift in Sources */,
 				010000000000000000000005 /* AudioPlayerModel.swift in Sources */,
+				010000000000000000000010 /* NowPlayingCoordinator.swift in Sources */,
+				010000000000000000000011 /* LearningProgress.swift in Sources */,
+				010000000000000000000012 /* LearningProgressStore.swift in Sources */,
+				010000000000000000000013 /* ReviewScheduler.swift in Sources */,
+				010000000000000000000014 /* VocabularyCatalog.swift in Sources */,
+				01000000000000000000000C /* PracticeSessionPlayer.swift in Sources */,
 				01000000000000000000000B /* RemoteContentRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,9 +399,10 @@
 		0C0000000000000000000003 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = A8KGSP277P;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = ThaiTrainer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -389,9 +424,10 @@
 		0C0000000000000000000004 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = A8KGSP277P;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = ThaiTrainer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;

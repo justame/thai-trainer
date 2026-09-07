@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "draft_type": "written_only",
+  "lesson_id": "day-008",
+  "revision": 1,
+  "day": 8,
+  "week": 2,
+  "theme": "Documents, home repairs, weather plans, training, and conversation repair",
+  "status": "pending_review",
+  "provisional": true,
+  "adaptation": {
+    "progress_export_used": false,
+    "note": "No progress export was available; this written-only candidate contains no learner-specific adaptation."
+  },
+  "sentences": [
+    {
+      "id": "d008-s01", "category": "visa_documents", "prompt_he": "אני רוצה להאריך את הוויזה שלי.",
+      "thai": "ผมต้องการต่อวีซ่าครับ", "romanization": "phǒm dtɔ̂ŋ-gaan dtɔ̀ɔ wii-sâa khráp",
+      "literal_he": "אני + רוצה + להאריך + ויזה + מילת נימוס.", "context_he": "פתיחה בדלפק הגירה או מול סוכן המטפל בהארכה.",
+      "pattern": "ผมต้องการต่อ + [מסמך או שירות] + ครับ = אני רוצה להאריך את הדבר.",
+      "variation": {"prompt_he": "אילו מסמכים חסרים לי?", "thai": "ผมยังขาดเอกสารอะไรบ้างครับ"}, "review_status": "pending"
+    },
+    {
+      "id": "d008-s02", "category": "visa_documents", "prompt_he": "איפה ממלאים את הטופס הזה?",
+      "thai": "ต้องกรอกแบบฟอร์มนี้ที่ไหนครับ", "romanization": "dtɔ̂ng grɔ̀ɔk bɛ̀ɛp-fɔɔm níi thîi nǎi khráp",
+      "literal_he": "צריך + למלא + טופס הזה + איפה + מילת נימוס.", "context_he": "כשלא ברור אם יש למלא טופס בדלפק או במקום אחר.",
+      "pattern": "ต้อง + [פעולה] + ที่ไหนครับ = איפה צריך לבצע את הפעולה?",
+      "variation": {"prompt_he": "אפשר לעזור לי לבדוק את הטופס?", "thai": "ช่วยตรวจแบบฟอร์มให้ผมได้ไหมครับ"}, "review_status": "pending"
+    },
+    {
+      "id": "d008-s03", "category": "visa_documents", "prompt_he": "צריך להביא את המסמך המקורי?",
+      "thai": "ต้องนำเอกสารตัวจริงมาด้วยไหมครับ", "romanization": "dtɔ̂ng nam èek-gà-sǎan dtua jiŋ maa dûai mǎi khráp",
+      "literal_he": "צריך + להביא + מסמך מקורי + גם + האם + מילת נימוס.", "context_he": "לבירור אם צילום מספיק או שנדרש מקור.",
+      "pattern": "ต้องนำ + [דבר] + มาด้วยไหมครับ = האם צריך להביא גם את הדבר?",
+      "variation": {"prompt_he": "צילום צבעוני מספיק?", "thai": "ใช้สำเนาสีได้ไหมครับ"}, "review_status": "pending"
+    },
+    {
+      "id": "d008-s04", "category": "visa_documents", "prompt_he": "מתי אפשר לבוא לקחת את הדרכון?",
+      "thai": "ผมมารับหนังสือเดินทางได้เมื่อไหร่ครับ", "romanization": "phǒm maa ráp nǎŋ-sʉ̌ʉ dəən-thaaŋ dâai mʉ̂a-rài khráp",
+      "literal_he": "אני + לבוא לקבל + דרכון + יכול + מתי + מילת נימוס.", "context_he": "בסיום הגשת מסמכים כשהדרכון נשאר לטיפול.",
+      "pattern": "ผมมารับ + [דבר] + ได้เมื่อไหร่ครับ = מתי אוכל לבוא לקחת את הדבר?",
+      "variation": {"prompt_he": "אפשר לשלוח לי הודעה כשהוא מוכן?", "thai": "พอเสร็จแล้วช่วยส่งข้อความบอกผมได้ไหมครับ"}, "review_status": "pending"
+    },
+    {
+      "id": "d008-s05", "category": "home_repairs", "prompt_he": "יש נזילה מתחת לכיור.",
+      "thai": "มีน้ำรั่วใต้ซิงก์ครับ", "romanization": "mii náam rûa dtâi síŋ khráp",
+      "literal_he": "יש + מים דולפים + מתחת לכיור + מילת נימוס.", "context_he": "לדיווח לבעל הדירה או לאחזקה על תקלה בבית.",
+      "pattern": "มี + [תקלה] + ใต้ + [מקום] + ครับ = יש תקלה מתחת למקום.",
+      "variation": {"prompt_he": "המים מטפטפים כל הזמן.", "thai": "น้ำหยดตลอดเลยครับ"}, "review_status": "pending"
+    },
+    {
+      "id": "d008-s06", "category": "home_repairs", "prompt_he": "הדלת לא נסגרת כמו שצריך.",
+      "thai": "ประตูปิดไม่สนิทครับ", "romanization": "bprà-dtuu bpìt mâi sà-nìt khráp",
+      "literal_he": "דלת + נסגרת + לא צמודה היטב + מילת נימוס.", "context_he": "לתיאור דלת שאינה נסגרת או נאטמת היטב.",
+      "pattern": "[דבר] + [פעולה] + ไม่สนิทครับ = הדבר אינו נסגר או מתחבר היטב.",
+      "variation": {"prompt_he": "נראה שהמנעול תקוע.", "thai": "เหมือนกุญแจล็อกจะติดครับ"}, "review_status": "pending"
+    },
+    {
+      "id": "d008-s07", "category": "home_repairs", "prompt_he": "אפשר לתקן את זה היום?",
+      "thai": "วันนี้เข้ามาซ่อมได้ไหมครับ", "romanization": "wan-níi khâo maa sɔ̂ɔm dâai mǎi khráp",
+      "literal_he": "היום + להיכנס ולבוא + לתקן + יכול האם + מילת נימוס.", "context_he": "לתיאום ביקור טכנאי עוד באותו יום.",
+      "pattern": "วันนี้ + [פעולה] + ได้ไหมครับ = האם אפשר לבצע את הפעולה היום?",
+      "variation": {"prompt_he": "בבקשה תתקשר אליי לפני שאתה עולה.", "thai": "กรุณาโทรหาผมก่อนขึ้นมาครับ"}, "review_status": "pending"
+    },
+    {
+      "id": "d008-s08", "category": "home_repairs", "prompt_he": "צריך להחליף את כל החלק?",
+      "thai": "ต้องเปลี่ยนทั้งชิ้นไหมครับ", "romanization": "dtɔ̂ng bplìan tháŋ chín mǎi khráp",
+      "literal_he": "צריך + להחליף + כל הפריט + האם + מילת נימוס.", "context_he": "לבדוק אם תיקון קטן יספיק לפני החלפה מלאה.",
+      "pattern": "ต้องเปลี่ยนทั้ง + [דבר] + ไหมครับ = האם צריך להחליף את כולו?",
+      "variation": {"prompt_he": "אפשר לתקן בלי להחליף?", "thai": "ซ่อมโดยไม่ต้องเปลี่ยนได้ไหมครับ"}, "review_status": "pending"
+    },
+    {
+      "id": "d008-s09", "category": "weather_plans", "prompt_he": "נראה שהגשם לא ייפסק בקרוב.",
+      "thai": "ดูเหมือนฝนจะไม่หยุดง่าย ๆ ครับ", "romanization": "duu mʉ̌an fǒn jà mâi yùt ŋâai ŋâai khráp",
+      "literal_he": "נראה כמו + גשם + עתיד לא להיפסק + בקלות + מילת נימוס.", "context_he": "להעריך יחד אם כדאי להמתין או לשנות תוכנית.",
+      "pattern": "ดูเหมือน + [מצב] + จะไม่ + [פעולה] + ครับ = נראה שהמצב לא ישתנה בקרוב.",
+      "variation": {"prompt_he": "נחכה עד שהגשם ייחלש.", "thai": "รอให้ฝนเบาลงก่อนนะครับ"}, "review_status": "pending"
+    },
+    {
+      "id": "d008-s10", "category": "weather_plans", "prompt_he": "אם ירד גשם נשנה את התוכנית.",
+      "thai": "ถ้าฝนตก เราเปลี่ยนแผนนะครับ", "romanization": "thâa fǒn dtòk rao bplìan phɛ̌ɛn ná khráp",
+      "literal_he": "אם + גשם יורד + אנחנו + משנים תוכנית + מילת נימוס.", "context_he": "לקבוע מראש חלופה לפעילות בחוץ.",
+      "pattern": "ถ้า + [תנאי] + เรา + [פעולה] + นะครับ = אם התנאי יקרה נעשה פעולה.",
+      "variation": {"prompt_he": "אפשר לעשות את זה בפנים במקום?", "thai": "เปลี่ยนไปทำข้างในได้ไหมครับ"}, "review_status": "pending"
+    },
+    {
+      "id": "d008-s11", "category": "weather_plans", "prompt_he": "היום יותר קריר מאתמול.",
+      "thai": "วันนี้อากาศเย็นกว่าเมื่อวานครับ", "romanization": "wan-níi aa-gàat yen gwàa mʉ̂a-waan khráp",
+      "literal_he": "היום + מזג אוויר קריר + יותר מאתמול + מילת נימוס.", "context_he": "השוואה טבעית בשיחת חולין על מזג האוויר.",
+      "pattern": "วันนี้ + [תיאור] + กว่าเมื่อวานครับ = היום יותר מתואר מאתמול.",
+      "variation": {"prompt_he": "בערב כנראה יהיה קריר יותר.", "thai": "ตอนเย็นน่าจะเย็นกว่านี้ครับ"}, "review_status": "pending"
+    },
+    {
+      "id": "d008-s12", "category": "weather_plans", "prompt_he": "אל תשכח לקחת מטרייה.",
+      "thai": "อย่าลืมเอาร่มไปนะครับ", "romanization": "yàa lʉʉm ao rôm bpai ná khráp",
+      "literal_he": "אל + לשכוח + לקחת + מטרייה + ללכת + מילת נימוס.", "context_he": "תזכורת ידידותית לפני יציאה בגשם.",
+      "pattern": "อย่าลืม + [פעולה] + นะครับ = אל תשכח לבצע את הפעולה.",
+      "variation": {"prompt_he": "יש לי מטרייה נוספת.", "thai": "ผมมีร่มอีกคันครับ"}, "review_status": "pending"
+    },
+    {
+      "id": "d008-s13", "category": "gym_training", "prompt_he": "אפשר להשתמש במכשיר אחריך?",
+      "thai": "ต่อจากคุณ ผมใช้เครื่องนี้ได้ไหมครับ", "romanization": "dtɔ̀ɔ jàak khun phǒm chái khrʉ̂aŋ níi dâai mǎi khráp",
+      "literal_he": "אחריך + אני + להשתמש + מכשיר הזה + יכול האם + מילת נימוס.", "context_he": "לבקש תור על מכשיר תפוס בחדר כושר.",
+      "pattern": "ต่อจากคุณ ผม + [פעולה] + ได้ไหมครับ = האם אוכל לבצע את הפעולה אחריך?",
+      "variation": {"prompt_he": "בעוד כמה דקות תסיים?", "thai": "อีกกี่นาทีคุณจะเสร็จครับ"}, "review_status": "pending"
+    },
+    {
+      "id": "d008-s14", "category": "gym_training", "prompt_he": "תוכל לבדוק את התנוחה שלי?",
+      "thai": "ช่วยดูท่าของผมหน่อยได้ไหมครับ", "romanization": "chûai duu thâa khɔ̌ɔŋ phǒm nɔ̀i dâai mǎi khráp",
+      "literal_he": "לעזור + לראות + תנוחה שלי + קצת + יכול האם + מילת נימוס.", "context_he": "לבקש בדיקת טכניקה ממאמן או שותף.",
+      "pattern": "ช่วยดู + [דבר] + หน่อยได้ไหมครับ = אפשר לעזור ולבדוק את הדבר?",
+      "variation": {"prompt_he": "הגב שלי ישר מספיק?", "thai": "หลังผมตรงพอไหมครับ"}, "review_status": "pending"
+    },
+    {
+      "id": "d008-s15", "category": "gym_training", "prompt_he": "היום אני מתאמן קל.",
+      "thai": "วันนี้ผมซ้อมเบา ๆ ครับ", "romanization": "wan-níi phǒm sɔ́ɔm bao bao khráp",
+      "literal_he": "היום + אני + מתאמן + קל + מילת נימוס.", "context_he": "להסביר שמתוכנן אימון בעומס נמוך.",
+      "pattern": "วันนี้ผม + [פעולה] + เบา ๆ ครับ = היום אני עושה את הפעולה בעדינות.",
+      "variation": {"prompt_he": "אני עדיין מתאושש מהאימון הקודם.", "thai": "ผมยังไม่หายล้าจากครั้งก่อนครับ"}, "review_status": "pending"
+    },
+    {
+      "id": "d008-s16", "category": "gym_training", "prompt_he": "בוא נעשה עוד סיבוב אחד.",
+      "thai": "ทำอีกหนึ่งรอบกันครับ", "romanization": "tham ìik nʉ̀ŋ rɔ̂ɔp gan khráp",
+      "literal_he": "לעשות + עוד + סיבוב אחד + יחד + מילת נימוס.", "context_he": "לעודד שותף להשלים סבב נוסף.",
+      "pattern": "ทำอีก + [כמות] + กันครับ = בוא נעשה עוד כמות יחד.",
+      "variation": {"prompt_he": "אחר כך נעשה מתיחות.", "thai": "เสร็จแล้วเรายืดกล้ามเนื้อกันครับ"}, "review_status": "pending"
+    },
+    {
+      "id": "d008-s17", "category": "conversation_repair", "prompt_he": "תן לי לנסח את זה אחרת.",
+      "thai": "ขอผมพูดใหม่อีกแบบนะครับ", "romanization": "khɔ̌ɔ phǒm phûut mài ìik bɛ̀ɛp ná khráp",
+      "literal_he": "מבקש + אני + לומר מחדש + בדרך אחרת + מילת נימוס.", "context_he": "לעצור ולנסח מחדש אחרי הסבר לא מוצלח.",
+      "pattern": "ขอผม + [פעולה] + ใหม่อีกแบบนะครับ = תן לי לבצע מחדש בדרך אחרת.",
+      "variation": {"prompt_he": "לא הסברתי את זה ברור.", "thai": "ผมอธิบายไม่ชัดครับ"}, "review_status": "pending"
+    },
+    {
+      "id": "d008-s18", "category": "conversation_repair", "prompt_he": "זאת לא בדיוק הכוונה שלי.",
+      "thai": "ผมไม่ได้หมายถึงแบบนั้นซะทีเดียวครับ", "romanization": "phǒm mâi dâai mǎai thʉ̌ŋ bɛ̀ɛp nán sá thii diao khráp",
+      "literal_he": "אני + לא התכוונתי + באופן ההוא + בדיוק לגמרי + מילת נימוס.", "context_he": "לתקן הבנה חלקית בלי לדחות את דברי הצד השני לגמרי.",
+      "pattern": "ไม่ได้หมายถึงแบบนั้นซะทีเดียว = לא לזה בדיוק התכוונתי.",
+      "variation": {"prompt_he": "אני מסכים רק עם החלק הראשון.", "thai": "ผมเห็นด้วยแค่ส่วนแรกครับ"}, "review_status": "pending"
+    },
+    {
+      "id": "d008-s19", "category": "conversation_repair", "prompt_he": "אפשר לתת לי דוגמה?",
+      "thai": "ยกตัวอย่างให้ผมฟังได้ไหมครับ", "romanization": "yók dtua-yàaŋ hâi phǒm faŋ dâai mǎi khráp",
+      "literal_he": "להעלות + דוגמה + לתת לי לשמוע + יכול האם + מילת נימוס.", "context_he": "לבקש המחשה כשהסבר מופשט אינו מספיק.",
+      "pattern": "[פעולה] + ให้ผม + ได้ไหมครับ = אפשר לבצע את הפעולה בשבילי?",
+      "variation": {"prompt_he": "דוגמה קצרה תעזור לי.", "thai": "ถ้ามีตัวอย่างสั้น ๆ ผมจะเข้าใจง่ายขึ้นครับ"}, "review_status": "pending"
+    },
+    {
+      "id": "d008-s20", "category": "conversation_repair", "prompt_he": "עכשיו אני מבין את ההבדל.",
+      "thai": "ตอนนี้ผมเข้าใจความแตกต่างแล้วครับ", "romanization": "dtɔɔn-níi phǒm khâo-jai khwaam dtɛ̀ɛk-dtàaŋ lɛ́ɛo khráp",
+      "literal_he": "עכשיו + אני + מבין + הבדל + כבר + מילת נימוס.", "context_he": "לאשר שההסבר החדש פתר את אי ההבנה.",
+      "pattern": "ตอนนี้ผมเข้าใจ + [דבר] + แล้วครับ = עכשיו כבר הבנתי את הדבר.",
+      "variation": {"prompt_he": "קודם חשבתי שזה אותו הדבר.", "thai": "ตอนแรกผมนึกว่าเหมือนกันครับ"}, "review_status": "pending"
+    }
+  ],
+  "mini_dialogue": [
+    {"id": "d008-dialogue-01", "speaker": "learner", "prompt_he": "יש נזילה מתחת לכיור.", "thai": "มีน้ำรั่วใต้ซิงก์ครับ", "review_status": "pending"},
+    {"id": "d008-dialogue-02", "speaker": "partner", "prompt_he": "מתי התחילה הנזילה?", "thai": "เริ่มรั่วตั้งแต่เมื่อไหร่ครับ", "review_status": "pending"},
+    {"id": "d008-dialogue-03", "speaker": "learner", "prompt_he": "שמתי לב אליה הבוקר.", "thai": "ผมเพิ่งสังเกตเห็นเมื่อเช้าครับ", "review_status": "pending"},
+    {"id": "d008-dialogue-04", "speaker": "partner", "prompt_he": "אשלח טכנאי אחר הצהריים.", "thai": "เดี๋ยวส่งช่างไปช่วงบ่ายครับ", "review_status": "pending"}
+  ],
+  "approval_checklist": [
+    {"sentence_id": "d008-s01", "decision": "pending"}, {"sentence_id": "d008-s02", "decision": "pending"},
+    {"sentence_id": "d008-s03", "decision": "pending"}, {"sentence_id": "d008-s04", "decision": "pending"},
+    {"sentence_id": "d008-s05", "decision": "pending"}, {"sentence_id": "d008-s06", "decision": "pending"},
+    {"sentence_id": "d008-s07", "decision": "pending"}, {"sentence_id": "d008-s08", "decision": "pending"},
+    {"sentence_id": "d008-s09", "decision": "pending"}, {"sentence_id": "d008-s10", "decision": "pending"},
+    {"sentence_id": "d008-s11", "decision": "pending"}, {"sentence_id": "d008-s12", "decision": "pending"},
+    {"sentence_id": "d008-s13", "decision": "pending"}, {"sentence_id": "d008-s14", "decision": "pending"},
+    {"sentence_id": "d008-s15", "decision": "pending"}, {"sentence_id": "d008-s16", "decision": "pending"},
+    {"sentence_id": "d008-s17", "decision": "pending"}, {"sentence_id": "d008-s18", "decision": "pending"},
+    {"sentence_id": "d008-s19", "decision": "pending"}, {"sentence_id": "d008-s20", "decision": "pending"}
+  ]
+}

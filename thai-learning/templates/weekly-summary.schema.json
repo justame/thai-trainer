@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Thai Echo derived weekly summary",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "timezone",
+    "generated_at",
+    "week_start",
+    "week_end_exclusive",
+    "review_count",
+    "easy_count",
+    "again_count",
+    "unique_phrase_count",
+    "practice_day_count",
+    "easy_rate",
+    "due_review_count",
+    "new_phrase_count"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "timezone": {"const": "Asia/Bangkok"},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "week_start": {"type": "string", "format": "date"},
+    "week_end_exclusive": {"type": "string", "format": "date"},
+    "review_count": {"type": "integer", "minimum": 0},
+    "easy_count": {"type": "integer", "minimum": 0},
+    "again_count": {"type": "integer", "minimum": 0},
+    "unique_phrase_count": {"type": "integer", "minimum": 0},
+    "practice_day_count": {"type": "integer", "minimum": 0, "maximum": 7},
+    "easy_rate": {"type": "number", "minimum": 0, "maximum": 1},
+    "due_review_count": {"type": "integer", "minimum": 0},
+    "new_phrase_count": {"type": "integer", "minimum": 0}
+  }
+}

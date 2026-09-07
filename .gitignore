@@ -19,6 +19,12 @@ xcuserdata/
 # Provider output is local; only validated copies under docs/packs are published.
 thai-learning/audio/generated/*
 !thai-learning/audio/generated/.gitkeep
+thai-learning/audio/.google-segment-cache-v1/
+
+# Learner feedback exports and derived summaries are private local data.
+thai-learning/imports/*.json
+thai-learning/summaries/*.json
+!thai-learning/summaries/README.md
 
 # Keep the locally extracted third-party YouTube captions/transcript out of the
 # public repository; the original research remains in this workspace.

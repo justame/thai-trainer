@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "lesson_id": "day-001",
+  "revision": 3,
+  "content_sha256": "b0c14c9eb413c8b8452c83a6fe0653b14aa9c9e79821baf8ddc1ca34cb0170f8",
+  "provider": "google_cloud_tts",
+  "authorized_at": "2026-09-03T17:25:31Z"
+}

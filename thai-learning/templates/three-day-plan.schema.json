@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Thai Echo three-day adaptive practice preview",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "timezone",
+    "generated_at",
+    "source_event_count",
+    "forecast_assumption",
+    "days"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "timezone": {"const": "Asia/Bangkok"},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "source_event_count": {"type": "integer", "minimum": 0},
+    "forecast_assumption": {"type": "string", "minLength": 1},
+    "days": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["date", "review_count", "new_count", "items"],
+        "properties": {
+          "date": {"type": "string", "format": "date"},
+          "review_count": {"type": "integer", "minimum": 0},
+          "new_count": {"type": "integer", "minimum": 0},
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "kind",
+                "phrase",
+                "lesson_day",
+                "lesson_theme",
+                "prompt_he",
+                "thai",
+                "romanization"
+              ],
+              "properties": {
+                "kind": {"enum": ["review", "new"]},
+                "phrase": {
+                  "type": "object",
+                  "required": ["lesson_id", "revision", "content_sha256", "sentence_id"]
+                },
+                "lesson_day": {"type": "integer", "minimum": 1},
+                "lesson_theme": {"type": "string", "minLength": 1},
+                "prompt_he": {"type": "string", "minLength": 1},
+                "thai": {"type": "string", "minLength": 1},
+                "romanization": {"type": "string", "minLength": 1}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

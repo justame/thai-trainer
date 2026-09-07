@@ -33,8 +33,10 @@ is never presented as matching the new revision.
 ## Daily workflow
 
 At 11:00 Asia/Bangkok, the course returns to the ongoing Thai-learning context and
-prepares or continues one written review pack. It must not generate audio. A pack
-contains:
+maintains a rolling horizon of three written lesson drafts. Drafts live outside the
+app's bundled `days/` directory, remain `pending_review`, and must not generate audio.
+Only the earliest unresolved draft is presented for approval; the later two are
+provisional and may be reshaped by new learner feedback. A pack contains:
 
 - 20 Hebrew recall prompts drawn across several real-life categories;
 - natural spoken Thai;
@@ -45,17 +47,41 @@ contains:
 - due reviews from days 1, 3, 7, 14, and 30;
 - an explicit approval checklist.
 
+The heartbeat may adapt those drafts only from a learner-provided progress export or
+an explicit chat report. Phone progress is private local data and is never uploaded to
+the public lesson feed. If no new progress is available, the heartbeat keeps the
+existing horizon instead of inventing results or personal facts.
+
 After approval and separate audio authorization, the approved pack can produce:
 
-- a normal-speed listening track;
-- a pause-and-repeat track;
-- a normal-speed shadowing track;
+- a listening track that presents each Thai sentence once at learner speed and once
+  at natural speed;
+- a clear near-natural-speed pause-and-repeat shadowing track;
 - a Hebrew-cue recall track;
-- a mini-dialogue track when dialogue lines were approved.
+- a natural-speed scenario track using the approved items in sequence.
 
-The target voices are `th-TH-NiwatNeural` for Thai and `he-IL-AvriNeural` for Hebrew.
-Tracks use SSML pauses rather than slowed or distorted speech. Proper names and unusual
-phrases must be manually reviewed before audio authorization.
+The selected provider is Google Cloud Text-to-Speech with
+`th-TH-Chirp3-HD-Erinome` for Thai and `he-IL-Chirp3-HD-Charon` for Hebrew. Thai
+learner playback uses provider-native speaking-rate control—initially `0.82x` for a
+learner repetition, `0.90x` for shadowing and recall, and `1.0x` for the natural
+repetition and scenario—without changing pitch. Tracks use SSML sentence boundaries
+for the legacy Azure path. The Google path synthesizes one complete utterance at a
+time with an explicit voice and rate, reuses identical segments, inserts exact silence
+from a validated hash-keyed cache, inserts exact silence locally, and assembles the
+four final MP3s with SoX after checking encoder capability before any cloud call. This
+avoids mixed-language synthesis, duplicate retry charges, and provider request-size
+limits while keeping pauses deterministic. Proper names,
+loanwords, and unusual phrases must be manually reviewed before audio authorization.
+
+`thai-learning/audio/generate_audio.py` remains the sole owner of provider requests,
+authentication lookup, response decoding, and generated-file metadata. The day and
+authorization schemas own the provider/voice/rate contract; the static publisher only
+validates already-generated artifacts plus matching immutable approval and paid-request
+receipts; the iOS app remains provider-agnostic and only downloads MP3 files. This
+extends the existing approval-gated generator rather than creating a second generation
+path or putting provider logic in the publisher or app. Provider billing, API
+enablement, and credentials remain outside the repository and require the separate
+authorization gate before any real request.
 
 ## Personal offline iPhone player
 
@@ -82,6 +108,27 @@ seeking, and background listening for the existing `listening`, `shadowing`, `re
 and `scenario` MP3s. Sentence-by-sentence playback is deferred because the current
 generator produces complete lesson tracks without per-sentence files or timestamps.
 
+The configurable sentence player extends that background-listening contract. Its
+Hebrew-to-Thai, repetition, variation, and next-sentence pauses are represented as
+real silent audio segments rather than foreground-only timers, so one continuous
+practice sequence can survive device locking and app backgrounding. It reuses the
+same `.playback`/`.spokenAudio` session and `audio` background mode as the track player.
+Both players write bounded persistent playback diagnostics for physical-device
+verification without storing lesson text or credentials.
+
+The adaptive layer stores Easy/Again events in the app's private Application Support
+directory. Each phrase identity binds lesson ID, revision, canonical content hash, and
+sentence ID, so edited lesson text never inherits old progress accidentally. A due
+review session may mix validated sentence audio from several saved lesson packages.
+The app can export an explicit progress snapshot for desktop curriculum drafting, but
+it never writes progress, summaries, or feedback into the public `docs/` feed.
+
+Each released sentence also exposes a pedagogical vocabulary breakdown: meaningful
+Thai chunks, tone-marked romanization, and concise Hebrew meaning. The lesson schema
+accepts vocabulary inline for future packs, while the app keeps a catalog for the
+already released immutable packs so their approved audio hashes and public artifacts
+do not change.
+
 The static host contract is:
 
 ```text
@@ -100,11 +147,16 @@ repository `justame/thai-trainer`. GitHub Pages serves the static content from
 built-in default, so normal use needs no URL entry. The app checks that location on
 launch and retains a manual Refresh control plus its last-good offline cache.
 
-A local 11:00 Asia/Bangkok Codex heartbeat prepares or continues the next written
-review pack only. It never approves text on the user's behalf, generates speech, or
-authorizes a paid request. After explicit text and cost authorization, one local
-publish command validates existing generated audio, updates `docs/`, and pushes the
-new immutable pack to the same repository.
+Full application and curriculum development uses the private repository
+`justame/thai-echo` as the source of truth. The public `justame/thai-trainer` repository
+continues to serve the credential-free static Pages feed; no app secret or learner
+progress is added to that public delivery path.
+
+A local 11:00 Asia/Bangkok Codex heartbeat maintains the next three written drafts
+only. It never approves text on the user's behalf, generates speech, authorizes a paid
+request, publishes, or pushes. After explicit text and cost authorization, one local
+publish command validates the exact receipts and existing generated audio before any
+`docs/` update; pushing remains a separate explicit action.
 
 ## Practice and adaptation
 
@@ -118,10 +170,20 @@ The focused session lasts 30 minutes:
 5. Five minutes using the material in an improvised role-play.
 
 Optional passive listening lasts 20–40 minutes during commuting, walking, or chores.
-Each review is scored `immediate`, `hesitant`, `incorrect`, or `not_understood`. A
-sentence becomes `automatic` only after correct production and normal-speed recognition
-on two separated days. Weekly delayed recall below 80% reduces the next week's new
-material until weak sentences recover.
+Each active phrase gets one simple learner decision:
+
+- `Again` records difficulty, resets the success ladder, and returns the phrase later
+  in the current session; it remains due for another short review.
+- `Easy` advances the phrase through the 1, 3, 7, 14, and 30 day intervals using
+  Asia/Bangkok calendar boundaries.
+
+Unseen and overdue phrases are mixed across saved approved lesson revisions, with due
+reviews ahead of new material and a default cap of six phrases per focused session.
+The app previews three daily practice drafts by simulating an Easy result for planned
+items, without mutating real progress. A weekly summary is derived from immutable
+events and reports Easy/Again counts, unique phrases, practice days, Easy rate, and the
+current due backlog. It is a view of event history, not a second mutable source of
+truth. Weak weeks reduce new material automatically until the backlog recovers.
 
 New questions from the Thai project enter a sentence inbox. Recurring daily-life needs
 outrank one-off specialist translations. Every 20-sentence pack must span multiple
@@ -151,9 +213,11 @@ for a themed pack.
    speech credentials outside the workspace and generate the approved tracks. The
    generator validates both receipts before reading credentials or creating a provider
    client. Gate: files match the approved hash and play on phone and desktop.
-7. **Weekly integration:** run an unscripted conversation, record errors, and reprioritize
-   the next week's queue. Gate: 80% delayed recall and recognition, or a documented
-   remediation week.
+7. **Weekly integration:** capture revision-bound Easy/Again events, schedule cross-day
+   reviews, preview the next three practice days, export a private weekly summary, and
+   use it to reprioritize the rolling written-draft horizon. Gate: deterministic
+   scheduling/persistence tests pass, the iOS flow is usable with no network or TTS,
+   and the written heartbeat remains unable to synthesize or publish.
 
 ## Acceptance criteria
 
@@ -169,6 +233,12 @@ for a themed pack.
   downloaded tracks offline after a matching manifest exists.
 - Publishing requires only copying a static folder; changing `latest.json` makes a new
   pack available without rebuilding or reinstalling the app.
+- Publishing refuses a lesson whose exact immutable text approval and paid-request
+  authorization receipts are absent or stale.
+- Easy/Again feedback survives relaunch, edited revisions start with independent
+  progress, and Again is requeued while Easy follows the configured interval ladder.
+- A three-day preview never mutates real progress, and weekly totals are reproducible
+  from the stored immutable event history.
 - Weekly target: at least 80% delayed recall, 80% normal-speed recognition, and four of
   each six-sentence active subset used successfully in role-play.
 - Six-week target: three mixed daily-life conversations with limited prompting and the

@@ -1,7 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Immutable paid TTS authorization receipt",
+  "title": "Immutable Google Cloud TTS authorization receipt",
   "type": "object",
+  "additionalProperties": false,
   "required": [
     "schema_version",
     "lesson_id",
@@ -12,10 +13,13 @@
   ],
   "properties": {
     "schema_version": {"const": 1},
-    "lesson_id": {"type": "string"},
+    "lesson_id": {"type": "string", "pattern": "^day-[0-9]{3}$"},
     "revision": {"type": "integer", "minimum": 1},
     "content_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
-    "provider": {"const": "azure_speech"},
-    "authorized_at": {"type": "string"}
+    "provider": {"const": "google_cloud_tts"},
+    "max_cost_usd": {"type": "number", "exclusiveMinimum": 0},
+    "price_usd_per_character": {"type": "number", "exclusiveMinimum": 0},
+    "max_billable_characters": {"type": "integer", "minimum": 1},
+    "authorized_at": {"type": "string", "format": "date-time"}
   }
 }

@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Thai Echo written-only lesson draft",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "draft_type",
+    "lesson_id",
+    "revision",
+    "day",
+    "week",
+    "theme",
+    "status",
+    "provisional",
+    "adaptation",
+    "sentences",
+    "mini_dialogue",
+    "approval_checklist"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "draft_type": {"const": "written_only"},
+    "lesson_id": {"type": "string", "pattern": "^day-[0-9]{3}$"},
+    "revision": {"type": "integer", "minimum": 1},
+    "day": {"type": "integer", "minimum": 1},
+    "week": {"type": "integer", "minimum": 1},
+    "theme": {"type": "string", "minLength": 1},
+    "status": {"const": "pending_review"},
+    "provisional": {"type": "boolean"},
+    "adaptation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["progress_export_used", "note"],
+      "properties": {
+        "progress_export_used": {"type": "boolean"},
+        "note": {"type": "string", "minLength": 1}
+      }
+    },
+    "sentences": {
+      "type": "array",
+      "minItems": 20,
+      "maxItems": 20,
+      "items": {"$ref": "#/$defs/sentence"}
+    },
+    "mini_dialogue": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 6,
+      "items": {"$ref": "#/$defs/dialogueLine"}
+    },
+    "approval_checklist": {
+      "type": "array",
+      "minItems": 20,
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["sentence_id", "decision"],
+        "properties": {
+          "sentence_id": {"$ref": "#/$defs/sentenceId"},
+          "decision": {"const": "pending"}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "text": {"type": "string", "minLength": 1},
+    "sentenceId": {
+      "type": "string",
+      "pattern": "^d[0-9]{3}-s(?:0[1-9]|1[0-9]|20)$"
+    },
+    "dialogueId": {
+      "type": "string",
+      "pattern": "^d[0-9]{3}-dialogue-0[1-6]$"
+    },
+    "dialogueLine": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "speaker", "prompt_he", "thai", "review_status"],
+      "properties": {
+        "id": {"$ref": "#/$defs/dialogueId"},
+        "speaker": {"type": "string", "minLength": 1},
+        "prompt_he": {"$ref": "#/$defs/text"},
+        "thai": {"$ref": "#/$defs/text"},
+        "review_status": {"const": "pending"}
+      }
+    },
+    "sentence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "category",
+        "prompt_he",
+        "thai",
+        "romanization",
+        "literal_he",
+        "context_he",
+        "pattern",
+        "variation",
+        "review_status"
+      ],
+      "properties": {
+        "id": {"$ref": "#/$defs/sentenceId"},
+        "category": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
+        "prompt_he": {"$ref": "#/$defs/text"},
+        "thai": {"$ref": "#/$defs/text"},
+        "romanization": {"$ref": "#/$defs/text"},
+        "literal_he": {"$ref": "#/$defs/text"},
+        "context_he": {"$ref": "#/$defs/text"},
+        "pattern": {"$ref": "#/$defs/text"},
+        "variation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["prompt_he", "thai"],
+          "properties": {
+            "prompt_he": {"$ref": "#/$defs/text"},
+            "thai": {"$ref": "#/$defs/text"}
+          }
+        },
+        "vocabulary": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/vocabularyItem"}
+        },
+        "review_status": {"const": "pending"}
+      }
+    },
+    "vocabularyItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["thai", "romanization", "meaning_he"],
+      "properties": {
+        "thai": {"$ref": "#/$defs/text"},
+        "romanization": {"$ref": "#/$defs/text"},
+        "meaning_he": {"$ref": "#/$defs/text"}
+      }
+    }
+  }
+}

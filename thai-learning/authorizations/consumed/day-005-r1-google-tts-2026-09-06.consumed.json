@@ -1,0 +1,9 @@
+{
+  "authorization_receipt": "thai-learning/authorizations/day-005-r1-google-tts-2026-09-06.json",
+  "authorization_sha256": "7785b2cd170dfaa33ef4671f3ad5df4345c4f2cca894f2eedca86e7401ab4478",
+  "consumed_at": "2026-09-06T13:18:46Z",
+  "content_sha256": "562c3573786628a4812ff5bd595c82e3df6dfa0ce80bdb31fb20bbb024f8f4ab",
+  "lesson_id": "day-005",
+  "revision": 1,
+  "schema_version": 1
+}

@@ -23,6 +23,7 @@ from typing import Any
 REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_LESSON = REPOSITORY_ROOT / "thai-learning" / "days" / "day-001.json"
 DEFAULT_AUDIO_DIRECTORY = REPOSITORY_ROOT / "thai-learning" / "audio" / "generated"
+DEFAULT_PRACTICE_DIRECTORY = REPOSITORY_ROOT / "thai-learning" / "audio" / "practice"
 DOCS_DIRECTORY = REPOSITORY_ROOT / "docs"
 
 
@@ -111,6 +112,7 @@ def publish_to_pages(
     docs_directory: Path,
     *,
     repository_root: Path,
+    practice_audio_directory: Path | None = None,
     dry_run: bool = False,
     push: bool = False,
 ) -> dict[str, Any]:
@@ -121,17 +123,15 @@ def publish_to_pages(
 
     if dry_run:
         with tempfile.TemporaryDirectory(prefix="thai-trainer-pages-check-") as temporary:
-            return publisher.publish_static_pack(
-                lesson_path,
-                generated_audio_directory,
-                Path(temporary),
-            )
+            arguments = [lesson_path, generated_audio_directory, Path(temporary)]
+            if practice_audio_directory is not None:
+                arguments.append(practice_audio_directory)
+            return publisher.publish_static_pack(*arguments)
 
-    latest = publisher.publish_static_pack(
-        lesson_path,
-        generated_audio_directory,
-        docs_directory,
-    )
+    arguments = [lesson_path, generated_audio_directory, docs_directory]
+    if practice_audio_directory is not None:
+        arguments.append(practice_audio_directory)
+    latest = publisher.publish_static_pack(*arguments)
     if push:
         _commit_and_push(repository_root, docs_directory, latest)
     return latest
@@ -144,6 +144,12 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
         type=Path,
         default=DEFAULT_LESSON,
         help=f"Approved lesson JSON (default: {DEFAULT_LESSON})",
+    )
+    parser.add_argument(
+        "--practice-dir",
+        type=Path,
+        default=DEFAULT_PRACTICE_DIRECTORY,
+        help="Existing configurable practice-audio root or matching lesson revision directory",
     )
     parser.add_argument(
         "--audio-dir",
@@ -173,6 +179,7 @@ def main(argv: list[str] | None = None) -> int:
             args.audio_dir,
             DOCS_DIRECTORY,
             repository_root=REPOSITORY_ROOT,
+            practice_audio_directory=args.practice_dir,
             dry_run=args.dry_run,
             push=args.push,
         )

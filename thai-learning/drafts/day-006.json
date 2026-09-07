@@ -1,0 +1,369 @@
+{
+  "schema_version": 1,
+  "draft_type": "written_only",
+  "lesson_id": "day-006",
+  "revision": 1,
+  "day": 6,
+  "week": 1,
+  "theme": "City routines: transit, personal care, condo life, work coordination, and social nuance",
+  "status": "pending_review",
+  "provisional": false,
+  "adaptation": {
+    "progress_export_used": false,
+    "note": "No progress export was available; this written-only candidate contains no learner-specific adaptation."
+  },
+  "sentences": [
+    {
+      "id": "d006-s01",
+      "category": "public_transit",
+      "prompt_he": "כמה תחנות נשארו?",
+      "thai": "เหลืออีกกี่สถานีครับ",
+      "romanization": "lʉ̌a ìik gìi sà-thǎa-nii khráp",
+      "literal_he": "נשאר + עוד + כמה + תחנות + מילת נימוס.",
+      "context_he": "שאלה שימושית ברכבת עירונית כשצריך לעקוב אחרי המרחק ליעד.",
+      "pattern": "เหลืออีกกี่ + [יחידה] = כמה יחידות עוד נשארו.",
+      "variation": {
+        "prompt_he": "התחנה הבאה היא סיאם?",
+        "thai": "สถานีต่อไปคือสยามใช่ไหมครับ"
+      },
+      "review_status": "pending"
+    },
+    {
+      "id": "d006-s02",
+      "category": "public_transit",
+      "prompt_he": "צריך להחליף קו?",
+      "thai": "ต้องเปลี่ยนสายไหมครับ",
+      "romanization": "dtɔ̂ng bplìan sǎai mǎi khráp",
+      "literal_he": "צריך + להחליף + קו + האם + מילת נימוס.",
+      "context_he": "לבירור אם המסלול דורש מעבר בין קווי רכבת.",
+      "pattern": "ต้อง + [פעולה] + ไหมครับ = האם צריך לבצע פעולה?",
+      "variation": {
+        "prompt_he": "באיזו תחנה מחליפים לקו הכחול?",
+        "thai": "ต้องเปลี่ยนไปสายสีน้ำเงินที่สถานีไหนครับ"
+      },
+      "review_status": "pending"
+    },
+    {
+      "id": "d006-s03",
+      "category": "public_transit",
+      "prompt_he": "באיזה צד הדלת תיפתח?",
+      "thai": "ประตูจะเปิดฝั่งไหนครับ",
+      "romanization": "bprà-dtuu jà bpə̀ət fàŋ nǎi khráp",
+      "literal_he": "דלת + עתיד + להיפתח + צד איזה + מילת נימוס.",
+      "context_he": "שאלה מעשית לפני הירידה מרכבת צפופה.",
+      "pattern": "[דבר] + จะ + [פעולה] + ฝั่งไหนครับ = באיזה צד הדבר יעשה את הפעולה?",
+      "variation": {
+        "prompt_he": "הדלת תיפתח בצד שמאל, נכון?",
+        "thai": "ประตูจะเปิดทางซ้ายใช่ไหมครับ"
+      },
+      "review_status": "pending"
+    },
+    {
+      "id": "d006-s04",
+      "category": "public_transit",
+      "prompt_he": "יש מעלית בתחנה הזאת?",
+      "thai": "สถานีนี้มีลิฟต์ไหมครับ",
+      "romanization": "sà-thǎa-nii níi mii líp mǎi khráp",
+      "literal_he": "תחנה הזאת + יש + מעלית + האם + מילת נימוס.",
+      "context_he": "מתאים כשנוסעים עם מזוודה או רוצים להימנע ממדרגות.",
+      "pattern": "[מקום] + มี + [מתקן] + ไหมครับ = האם יש מתקן במקום?",
+      "variation": {
+        "prompt_he": "באיזו יציאה יש מעלית?",
+        "thai": "ทางออกไหนมีลิฟต์ครับ"
+      },
+      "review_status": "pending"
+    },
+    {
+      "id": "d006-s05",
+      "category": "personal_care",
+      "prompt_he": "אני רוצה רק לקצץ קצת.",
+      "thai": "ขอเล็มออกนิดเดียวครับ",
+      "romanization": "khɔ̌ɔ lem ɔ̀ɔk nít diao khráp",
+      "literal_he": "מבקש + לקצץ החוצה + מעט בלבד + מילת נימוס.",
+      "context_he": "הנחיה ברורה לספר כשרוצים לשמור כמעט את כל האורך.",
+      "pattern": "ขอ + [פעולה] + นิดเดียวครับ = מבקש לבצע רק מעט מן הפעולה.",
+      "variation": {
+        "prompt_he": "אל תקצר יותר מדי, בבקשה.",
+        "thai": "อย่าตัดสั้นเกินไปนะครับ"
+      },
+      "review_status": "pending"
+    },
+    {
+      "id": "d006-s06",
+      "category": "personal_care",
+      "prompt_he": "בצדדים קצר יותר, ולמעלה תשאיר ארוך.",
+      "thai": "ด้านข้างเอาสั้นกว่าด้านบนครับ",
+      "romanization": "dâan khâaŋ ao sân gwàa dâan bon khráp",
+      "literal_he": "בצדדים + לקחת קצר יותר + מאשר למעלה + מילת נימוס.",
+      "context_he": "תיאור פשוט של תספורת נפוצה בלי להזדקק לשם מקצועי.",
+      "pattern": "[חלק] + เอา + [תיאור] + กว่า + [חלק] = לבקש הבדל בין שני חלקים.",
+      "variation": {
+        "prompt_he": "למעלה תשאיר את האורך הזה.",
+        "thai": "ด้านบนเอาไว้ยาวเท่านี้ครับ"
+      },
+      "review_status": "pending"
+    },
+    {
+      "id": "d006-s07",
+      "category": "personal_care",
+      "prompt_he": "לא צריך לחפוף לי את השיער.",
+      "thai": "ไม่ต้องสระผมครับ",
+      "romanization": "mâi dtɔ̂ng sà phǒm khráp",
+      "literal_he": "לא צריך + לחפוף + שיער + מילת נימוס.",
+      "context_he": "לביטול שלב החפיפה במספרה באופן קצר ומנומס.",
+      "pattern": "ไม่ต้อง + [פעולה] + ครับ = אין צורך לבצע את הפעולה.",
+      "variation": {
+        "prompt_he": "בבקשה תעצב לי גם את השיער.",
+        "thai": "ช่วยเซ็ตผมให้ด้วยครับ"
+      },
+      "review_status": "pending"
+    },
+    {
+      "id": "d006-s08",
+      "category": "personal_care",
+      "prompt_he": "אני רוצה עיסוי תאילנדי לשעה.",
+      "thai": "ผมขอนวดไทยหนึ่งชั่วโมงครับ",
+      "romanization": "phǒm khɔ̌ɔ nûat thai nʉ̀ŋ chûa-mooŋ khráp",
+      "literal_he": "אני + מבקש + עיסוי תאילנדי + שעה אחת + מילת נימוס.",
+      "context_he": "להזמנת טיפול בסיסי במקום עיסוי.",
+      "pattern": "ขอ + [שירות] + [משך] + ครับ = מבקש שירות למשך זמן מסוים.",
+      "variation": {
+        "prompt_he": "בבקשה תתמקד בכתפיים ובגב.",
+        "thai": "ช่วยเน้นไหล่กับหลังให้หน่อยครับ"
+      },
+      "review_status": "pending"
+    },
+    {
+      "id": "d006-s09",
+      "category": "condo_living",
+      "prompt_he": "כרטיס הכניסה שלי לא פותח את הדלת.",
+      "thai": "คีย์การ์ดผมเปิดประตูไม่ได้ครับ",
+      "romanization": "khii-gàat phǒm bpə̀ət bprà-dtuu mâi dâai khráp",
+      "literal_he": "כרטיס כניסה שלי + לפתוח דלת + לא יכול + מילת נימוס.",
+      "context_he": "לדיווח בקבלה או למשרד הבניין על כרטיס כניסה תקול.",
+      "pattern": "[דבר] + [פעולה] + ไม่ได้ครับ = הדבר אינו מצליח לבצע את הפעולה.",
+      "variation": {
+        "prompt_he": "אפשר להנפיק לי כרטיס חדש?",
+        "thai": "ช่วยออกบัตรใหม่ให้ผมได้ไหมครับ"
+      },
+      "review_status": "pending"
+    },
+    {
+      "id": "d006-s10",
+      "category": "condo_living",
+      "prompt_he": "יש בשבילי חבילה בקבלה?",
+      "thai": "มีพัสดุฝากไว้ให้ผมไหมครับ",
+      "romanization": "mii phát-sà-dù fàak wái hâi phǒm mǎi khráp",
+      "literal_he": "יש + חבילה + שהושארה + בשבילי + האם + מילת נימוס.",
+      "context_he": "לבירור עם הקבלה אם משלוח כבר נשמר עבורך.",
+      "pattern": "มี + [דבר] + ฝากไว้ให้ผมไหมครับ = האם השאירו בשבילי דבר?",
+      "variation": {
+        "prompt_he": "אני מחדר שלוש מאות ושתיים.",
+        "thai": "ผมอยู่ห้องสามศูนย์สองครับ"
+      },
+      "review_status": "pending"
+    },
+    {
+      "id": "d006-s11",
+      "category": "condo_living",
+      "prompt_he": "איפה האורח שלי יכול לחנות?",
+      "thai": "แขกของผมจอดรถได้ที่ไหนครับ",
+      "romanization": "khɛ̀ɛk khɔ̌ɔŋ phǒm jɔ̀ɔt rót dâai thîi nǎi khráp",
+      "literal_he": "אורח שלי + להחנות רכב + יכול + איפה + מילת נימוס.",
+      "context_he": "שאלה לקבלה או לשומר על חניית אורחים בבניין.",
+      "pattern": "[אדם] + [פעולה] + ได้ที่ไหนครับ = איפה האדם יכול לבצע את הפעולה?",
+      "variation": {
+        "prompt_he": "צריך למסור בקבלה את מספר הרכב?",
+        "thai": "ต้องแจ้งทะเบียนรถที่ล็อบบี้ไหมครับ"
+      },
+      "review_status": "pending"
+    },
+    {
+      "id": "d006-s12",
+      "category": "condo_living",
+      "prompt_he": "אפשר להזמין את חדר הישיבות המשותף?",
+      "thai": "ผมจองห้องประชุมส่วนกลางได้ไหมครับ",
+      "romanization": "phǒm jɔɔŋ hɔ̂ŋ bprà-chum sùan glaaŋ dâai mǎi khráp",
+      "literal_he": "אני + להזמין + חדר ישיבות משותף + יכול האם + מילת נימוס.",
+      "context_he": "לבירור על שימוש בחלל משותף בבניין מגורים.",
+      "pattern": "ผม + [פעולה] + ได้ไหมครับ = האם אני יכול לבצע את הפעולה?",
+      "variation": {
+        "prompt_he": "חדר הישיבות פנוי מחר בבוקר?",
+        "thai": "พรุ่งนี้เช้าห้องประชุมว่างไหมครับ"
+      },
+      "review_status": "pending"
+    },
+    {
+      "id": "d006-s13",
+      "category": "work_coordination",
+      "prompt_he": "עדיין לא קיבלתי את הקובץ.",
+      "thai": "ผมยังไม่ได้รับไฟล์ครับ",
+      "romanization": "phǒm yaŋ mâi dâai ráp fai khráp",
+      "literal_he": "אני + עדיין + לא + קיבלתי + קובץ + מילת נימוס.",
+      "context_he": "עדכון ענייני לעמית כשחומר עבודה טרם הגיע.",
+      "pattern": "ผมยังไม่ได้ + [פעולה] + ครับ = עדיין לא ביצעתי או קיבלתי דבר.",
+      "variation": {
+        "prompt_he": "קיבלת את הקובץ ששלחתי?",
+        "thai": "ได้รับไฟล์ที่ผมส่งไปหรือยังครับ"
+      },
+      "review_status": "pending"
+    },
+    {
+      "id": "d006-s14",
+      "category": "work_coordination",
+      "prompt_he": "באיזה חלק כדאי לי לטפל קודם?",
+      "thai": "ผมควรทำส่วนไหนก่อนครับ",
+      "romanization": "phǒm khuan tham sùan nǎi gɔ̀ɔn khráp",
+      "literal_he": "אני + כדאי + לעשות + חלק איזה + קודם + מילת נימוס.",
+      "context_he": "לבירור סדר עדיפויות לפני שמתחילים משימה.",
+      "pattern": "ผมควรทำ + [חלק] + ไหนก่อนครับ = באיזה חלק כדאי לטפל קודם?",
+      "variation": {
+        "prompt_he": "מה הכי דחוף כרגע?",
+        "thai": "ตอนนี้เรื่องไหนด่วนที่สุดครับ"
+      },
+      "review_status": "pending"
+    },
+    {
+      "id": "d006-s15",
+      "category": "work_coordination",
+      "prompt_he": "אני אסיים את זה לפני הצהריים.",
+      "thai": "ผมจะทำให้เสร็จก่อนเที่ยงครับ",
+      "romanization": "phǒm jà tham hâi sèt gɔ̀ɔn thîaŋ khráp",
+      "literal_he": "אני + עתיד + לעשות עד שמושלם + לפני צהריים + מילת נימוס.",
+      "context_he": "התחייבות ברורה לזמן מסירה במהלך יום העבודה.",
+      "pattern": "ผมจะ + [פעולה] + ให้เสร็จก่อน + [זמן] = אסיים פעולה לפני זמן מסוים.",
+      "variation": {
+        "prompt_he": "אם יהיה עיכוב, אעדכן אותך.",
+        "thai": "ถ้าล่าช้า ผมจะแจ้งให้ทราบครับ"
+      },
+      "review_status": "pending"
+    },
+    {
+      "id": "d006-s16",
+      "category": "work_coordination",
+      "prompt_he": "אפשר לעבור יחד על הפרטים?",
+      "thai": "เราดูรายละเอียดด้วยกันได้ไหมครับ",
+      "romanization": "rao duu raai-lá-ìat dûai gan dâai mǎi khráp",
+      "literal_he": "אנחנו + לעבור על פרטים + ביחד + יכול האם + מילת נימוס.",
+      "context_he": "הצעה קצרה לבדוק מידע משותף לפני החלטה או מסירה.",
+      "pattern": "เรา + [פעולה] + ด้วยกันได้ไหมครับ = האם אפשר לעשות פעולה יחד?",
+      "variation": {
+        "prompt_he": "יש לי עוד שתי שאלות קצרות.",
+        "thai": "ผมมีคำถามสั้น ๆ อีกสองข้อครับ"
+      },
+      "review_status": "pending"
+    },
+    {
+      "id": "d006-s17",
+      "category": "social_nuance",
+      "prompt_he": "אני רק צוחק.",
+      "thai": "ผมล้อเล่นครับ",
+      "romanization": "phǒm lɔ́ɔ lên khráp",
+      "literal_he": "אני + צוחק ולא מתכוון ברצינות + מילת נימוס.",
+      "context_he": "להבהרה ידידותית אחרי בדיחה שעלולה להתפרש ברצינות.",
+      "pattern": "[אדם] + ล้อเล่นครับ = האדם רק צוחק.",
+      "variation": {
+        "prompt_he": "אל תחשוב על זה יותר מדי.",
+        "thai": "อย่าคิดมากนะครับ"
+      },
+      "review_status": "pending"
+    },
+    {
+      "id": "d006-s18",
+      "category": "social_nuance",
+      "prompt_he": "לא התכוונתי לזה ככה.",
+      "thai": "ผมไม่ได้หมายความแบบนั้นครับ",
+      "romanization": "phǒm mâi dâai mǎai khwaam bɛ̀ɛp nán khráp",
+      "literal_he": "אני + לא + התכוונתי + משמעות + באופן ההוא + מילת נימוס.",
+      "context_he": "לתיקון אי הבנה בלי להסלים את השיחה.",
+      "pattern": "ไม่ได้หมายความแบบนั้น = לא התכוונתי למשמעות הזאת.",
+      "variation": {
+        "prompt_he": "אל תבין אותי לא נכון.",
+        "thai": "อย่าเข้าใจผมผิดนะครับ"
+      },
+      "review_status": "pending"
+    },
+    {
+      "id": "d006-s19",
+      "category": "social_nuance",
+      "prompt_he": "הפעם אני מזמין.",
+      "thai": "มื้อนี้ผมเลี้ยงเองครับ",
+      "romanization": "mʉ́ʉ níi phǒm líaŋ eeŋ khráp",
+      "literal_he": "ארוחה הזאת + אני + מזמין על חשבוני + מילת נימוס.",
+      "context_he": "דרך טבעית להציע לשלם על הארוחה עבור כולם.",
+      "pattern": "[ארוחה] + ผมเลี้ยงเองครับ = הארוחה על חשבוני.",
+      "variation": {
+        "prompt_he": "בפעם הבאה אתה יכול להזמין.",
+        "thai": "คราวหน้าคุณค่อยเลี้ยงนะครับ"
+      },
+      "review_status": "pending"
+    },
+    {
+      "id": "d006-s20",
+      "category": "social_nuance",
+      "prompt_he": "מבחינתי כל אפשרות טובה.",
+      "thai": "ผมได้หมดครับ",
+      "romanization": "phǒm dâai mòt khráp",
+      "literal_he": "אני + יכול עם הכול + מילת נימוס.",
+      "context_he": "תגובה יומיומית כשאין לך העדפה בין האפשרויות שהוצעו.",
+      "pattern": "ผมได้หมดครับ = כל האפשרויות מתאימות לי.",
+      "variation": {
+        "prompt_he": "תחליט אתה.",
+        "thai": "แล้วแต่คุณเลยครับ"
+      },
+      "review_status": "pending"
+    }
+  ],
+  "mini_dialogue": [
+    {
+      "id": "d006-dialogue-01",
+      "speaker": "learner",
+      "prompt_he": "יש בשבילי חבילה בקבלה?",
+      "thai": "มีพัสดุฝากไว้ให้ผมไหมครับ",
+      "review_status": "pending"
+    },
+    {
+      "id": "d006-dialogue-02",
+      "speaker": "partner",
+      "prompt_he": "כן, היא הגיעה הבוקר.",
+      "thai": "มีครับ มาถึงเมื่อเช้านี้ครับ",
+      "review_status": "pending"
+    },
+    {
+      "id": "d006-dialogue-03",
+      "speaker": "learner",
+      "prompt_he": "מה צריך להראות כדי לקבל אותה?",
+      "thai": "ผมต้องแสดงอะไรตอนรับพัสดุครับ",
+      "review_status": "pending"
+    },
+    {
+      "id": "d006-dialogue-04",
+      "speaker": "partner",
+      "prompt_he": "כרטיס הכניסה מספיק.",
+      "thai": "ใช้คีย์การ์ดก็พอครับ",
+      "review_status": "pending"
+    }
+  ],
+  "approval_checklist": [
+    {"sentence_id": "d006-s01", "decision": "pending"},
+    {"sentence_id": "d006-s02", "decision": "pending"},
+    {"sentence_id": "d006-s03", "decision": "pending"},
+    {"sentence_id": "d006-s04", "decision": "pending"},
+    {"sentence_id": "d006-s05", "decision": "pending"},
+    {"sentence_id": "d006-s06", "decision": "pending"},
+    {"sentence_id": "d006-s07", "decision": "pending"},
+    {"sentence_id": "d006-s08", "decision": "pending"},
+    {"sentence_id": "d006-s09", "decision": "pending"},
+    {"sentence_id": "d006-s10", "decision": "pending"},
+    {"sentence_id": "d006-s11", "decision": "pending"},
+    {"sentence_id": "d006-s12", "decision": "pending"},
+    {"sentence_id": "d006-s13", "decision": "pending"},
+    {"sentence_id": "d006-s14", "decision": "pending"},
+    {"sentence_id": "d006-s15", "decision": "pending"},
+    {"sentence_id": "d006-s16", "decision": "pending"},
+    {"sentence_id": "d006-s17", "decision": "pending"},
+    {"sentence_id": "d006-s18", "decision": "pending"},
+    {"sentence_id": "d006-s19", "decision": "pending"},
+    {"sentence_id": "d006-s20", "decision": "pending"}
+  ]
+}

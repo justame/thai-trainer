@@ -1,0 +1,463 @@
+{
+  "schema_version": 1,
+  "lesson_id": "day-003",
+  "revision": 1,
+  "day": 3,
+  "week": 1,
+  "theme": "Home, errands, and everyday conversation",
+  "status": "approved",
+  "source": {
+    "project": "Thai language learning",
+    "thread_id": "01a072ea-9260-7bf3-aeb7-31bf9b4bf90e"
+  },
+  "sentences": [
+    {
+      "id": "d003-s01",
+      "category": "home_living",
+      "prompt_he": "האור בחדר האמבטיה לא עובד.",
+      "thai": "ไฟในห้องน้ำเสียครับ",
+      "romanization": "fai nai hɔ̂ng-náam sǐa khráp",
+      "literal_he": "אור + בתוך + חדר אמבטיה + מקולקל + מילת נימוס.",
+      "context_he": "לדיווח לבעל הדירה או לקבלה על תקלה בסיסית בדירה.",
+      "pattern": "[สิ่งของ] + เสียครับ = לומר שחפץ או מתקן מקולקל.",
+      "variation": {
+        "prompt_he": "מחמם המים לא עובד.",
+        "thai": "เครื่องทำน้ำอุ่นไม่ทำงานครับ"
+      },
+      "review_status": "approved"
+    },
+    {
+      "id": "d003-s02",
+      "category": "home_living",
+      "prompt_he": "אפשר לשלוח מישהו לבדוק את זה?",
+      "thai": "ช่วยส่งคนมาดูให้หน่อยได้ไหมครับ",
+      "romanization": "chûai sòng khon maa duu hâi nɔ̀i dâai mǎi khráp",
+      "literal_he": "לעזור + לשלוח מישהו + לבוא להסתכל + בבקשה + האם אפשר + מילת נימוס.",
+      "context_he": "בקשה מהקבלה או מבעל הדירה לשלוח איש תחזוקה.",
+      "pattern": "ช่วย + [פעולה] + ให้หน่อยได้ไหมครับ = אפשר בבקשה לעזור ולעשות פעולה?",
+      "variation": {
+        "prompt_he": "בבקשה תודיע לי לפני שהטכנאי מגיע.",
+        "thai": "ก่อนช่างมา รบกวนแจ้งผมด้วยครับ"
+      },
+      "review_status": "approved"
+    },
+    {
+      "id": "d003-s03",
+      "category": "home_living",
+      "prompt_he": "איפה אני צריך לזרוק את הזבל?",
+      "thai": "ผมต้องเอาขยะไปทิ้งตรงไหนครับ",
+      "romanization": "phǒm dtɔ̂ng ao khà-yà bpai thíng dtrong nǎi khráp",
+      "literal_he": "אני + צריך + לקחת זבל + ללכת לזרוק + איפה + מילת נימוס.",
+      "context_he": "שאלה שימושית בבניין מגורים כשלא ברור היכן נמצא חדר האשפה.",
+      "pattern": "ต้องเอา + [สิ่งของ] + ไป + [פעולה] + ตรงไหนครับ = לאן צריך לקחת דבר כדי לבצע פעולה?",
+      "variation": {
+        "prompt_he": "באיזה יום אוספים כאן את הזבל?",
+        "thai": "ที่นี่เก็บขยะวันไหนครับ"
+      },
+      "review_status": "approved"
+    },
+    {
+      "id": "d003-s04",
+      "category": "home_living",
+      "prompt_he": "אפשר להאריך את החוזה בעוד חודש?",
+      "thai": "ผมขอต่อสัญญาอีกหนึ่งเดือนได้ไหมครับ",
+      "romanization": "phǒm khɔ̌ɔ dtɔ̀ɔ sǎn-yaa ìik nʉ̀ng dʉan dâai mǎi khráp",
+      "literal_he": "אני מבקש + להאריך חוזה + עוד חודש אחד + האם אפשר + מילת נימוס.",
+      "context_he": "בקשה מבעל הדירה או ממשרד הבניין להאריך את תקופת השכירות.",
+      "pattern": "ขอต่อ + [ข้อตกลง] + อีก + [ระยะเวลา] + ได้ไหมครับ = אפשר להאריך הסכם בתקופה נוספת?",
+      "variation": {
+        "prompt_he": "אני רוצה לחדש את חוזה השכירות.",
+        "thai": "ผมอยากต่อสัญญาเช่าครับ"
+      },
+      "review_status": "approved"
+    },
+    {
+      "id": "d003-s05",
+      "category": "laundry",
+      "prompt_he": "בבקשה תכבס וגם תייבש.",
+      "thai": "ซักแล้วอบแห้งให้ด้วยครับ",
+      "romanization": "sák lɛ́ɛo òp hɛ̂ng hâi dûai khráp",
+      "literal_he": "לכבס + ואז + לייבש + בשבילי גם + מילת נימוס.",
+      "context_he": "בקשה בחנות כביסה שמציעה גם ייבוש.",
+      "pattern": "[פעולה] + แล้ว + [פעולה] + ให้ด้วยครับ = לבצע פעולה אחת ואז גם פעולה נוספת.",
+      "variation": {
+        "prompt_he": "בלי מרכך כביסה, בבקשה.",
+        "thai": "ไม่ต้องใส่น้ำยาปรับผ้านุ่มนะครับ"
+      },
+      "review_status": "approved"
+    },
+    {
+      "id": "d003-s06",
+      "category": "laundry",
+      "prompt_he": "באיזו שעה הכביסה תהיה מוכנה?",
+      "thai": "ผ้าจะเสร็จกี่โมงครับ",
+      "romanization": "phâa jà sèt gìi moong khráp",
+      "literal_he": "הכביסה + תהיה מוכנה + באיזו שעה + מילת נימוס.",
+      "context_he": "בירור זמן האיסוף בחנות כביסה.",
+      "pattern": "[สิ่งของ] + จะเสร็จกี่โมงครับ = באיזו שעה הדבר יהיה מוכן?",
+      "variation": {
+        "prompt_he": "אפשר לאסוף מחר בבוקר?",
+        "thai": "พรุ่งนี้เช้ามารับได้ไหมครับ"
+      },
+      "review_status": "approved"
+    },
+    {
+      "id": "d003-s07",
+      "category": "mobile_service",
+      "prompt_he": "אני רוצה כרטיס סים נטען אחד.",
+      "thai": "ผมขอซิมเติมเงินหนึ่งซิมครับ",
+      "romanization": "phǒm khɔ̌ɔ sim dtəəm-ngən nʉ̀ng sim khráp",
+      "literal_he": "אני מבקש + סים בתשלום מראש + אחד + מילת נימוס.",
+      "context_he": "בקנייה בדוכן תקשורת או בחנות סלולר.",
+      "pattern": "ขอ + [สินค้า] + หนึ่ง + [ลักษณนาม] + ครับ = לבקש יחידה אחת של מוצר.",
+      "variation": {
+        "prompt_he": "אני צריך חבילת אינטרנט לשלושים יום.",
+        "thai": "ผมขอแพ็กเกจเน็ตสามสิบวันครับ"
+      },
+      "review_status": "approved"
+    },
+    {
+      "id": "d003-s08",
+      "category": "mobile_service",
+      "prompt_he": "כמה אינטרנט נשאר לי?",
+      "thai": "เน็ตผมเหลือเท่าไหร่ครับ",
+      "romanization": "nét phǒm lʉ̌a thâo-rài khráp",
+      "literal_he": "האינטרנט שלי + נשאר + כמה + מילת נימוס.",
+      "context_he": "בירור יתרת הגלישה מול נציג סלולר.",
+      "pattern": "[ยอดหรือปริมาณ] + ผมเหลือเท่าไหร่ครับ = כמה מהיתרה או הכמות נשאר לי?",
+      "variation": {
+        "prompt_he": "אפשר להפעיל בשבילי את החבילה הזאת?",
+        "thai": "ช่วยสมัครแพ็กเกจนี้ให้ผมหน่อยได้ไหมครับ"
+      },
+      "review_status": "approved"
+    },
+    {
+      "id": "d003-s09",
+      "category": "banking",
+      "prompt_he": "הכספומט בלע לי את הכרטיס.",
+      "thai": "ตู้เอทีเอ็มกินบัตรผมครับ",
+      "romanization": "dtûu ee-thii-em gin bàt phǒm khráp",
+      "literal_he": "כספומט + אכל + את הכרטיס שלי + מילת נימוס.",
+      "context_he": "תיאור יומיומי וברור של כרטיס שנשאר בתוך הכספומט.",
+      "pattern": "[เครื่อง] + กิน + [สิ่งของ] + ผมครับ = לומר באופן דיבורי שמכשיר בלע חפץ.",
+      "variation": {
+        "prompt_he": "הכרטיס שלי תקוע בכספומט.",
+        "thai": "บัตรผมติดอยู่ในตู้เอทีเอ็มครับ"
+      },
+      "review_status": "approved"
+    },
+    {
+      "id": "d003-s10",
+      "category": "banking",
+      "prompt_he": "אפשר להעביר לחשבון הזה?",
+      "thai": "โอนเข้าบัญชีนี้ได้ไหมครับ",
+      "romanization": "oon khâo ban-chii níi dâai mǎi khráp",
+      "literal_he": "להעביר + אל תוך + החשבון הזה + האם אפשר + מילת נימוס.",
+      "context_he": "בקשה להעברה בנקאית לחשבון שמוצג לנציג או למוכר.",
+      "pattern": "[פעולה] + เข้าบัญชีนี้ได้ไหมครับ = אפשר לבצע פעולה אל החשבון הזה?",
+      "variation": {
+        "prompt_he": "אפשר לבדוק אם הכסף כבר נכנס?",
+        "thai": "ช่วยเช็กว่าเงินเข้าแล้วหรือยังครับ"
+      },
+      "review_status": "approved"
+    },
+    {
+      "id": "d003-s11",
+      "category": "banking",
+      "prompt_he": "אני לא יודע מהי העסקה הזאת.",
+      "thai": "ผมไม่รู้ว่ารายการนี้คืออะไรครับ",
+      "romanization": "phǒm mâi rúu wâa raai-gaan níi khʉʉ à-rai khráp",
+      "literal_he": "אני + לא יודע + שהרשומה הזאת + היא מה + מילת נימוס.",
+      "context_he": "פנייה לבנק או לבית עסק לגבי חיוב לא מוכר.",
+      "pattern": "ไม่รู้ว่า + [สิ่งนี้] + คืออะไรครับ = איני יודע מהו הדבר הזה.",
+      "variation": {
+        "prompt_he": "אפשר לבדוק בשבילי את העסקה הזאת?",
+        "thai": "ช่วยตรวจสอบรายการนี้ให้หน่อยครับ"
+      },
+      "review_status": "approved"
+    },
+    {
+      "id": "d003-s12",
+      "category": "weather",
+      "prompt_he": "נראה שעומד לרדת גשם.",
+      "thai": "เหมือนฝนกำลังจะตกนะครับ",
+      "romanization": "mʉ̌an fǒn gam-lang jà dtòk ná khráp",
+      "literal_he": "נראה כמו + גשם + עומד לרדת + מילת ריכוך + מילת נימוס.",
+      "context_he": "הערה טבעית לפני יציאה או תוך כדי שיחה קצרה.",
+      "pattern": "เหมือน + [เหตุการณ์] + กำลังจะ + [פעולה] + นะครับ = נראה שאירוע עומד לקרות.",
+      "variation": {
+        "prompt_he": "ירד היום גשם?",
+        "thai": "วันนี้ฝนจะตกไหมครับ"
+      },
+      "review_status": "approved"
+    },
+    {
+      "id": "d003-s13",
+      "category": "weather",
+      "prompt_he": "מאוד מחניק היום.",
+      "thai": "วันนี้อากาศอบอ้าวมากครับ",
+      "romanization": "wan-níi aa-gàat òp-âao mâak khráp",
+      "literal_he": "היום + מזג האוויר + מחניק מאוד + מילת נימוס.",
+      "context_he": "שיחת חולין טבעית על מזג האוויר החם והלח בתאילנד.",
+      "pattern": "วันนี้อากาศ + [ลักษณะ] + มากครับ = מזג האוויר היום מאוד בעל תכונה מסוימת.",
+      "variation": {
+        "prompt_he": "השמש מאוד חזקה היום.",
+        "thai": "วันนี้แดดแรงมากครับ"
+      },
+      "review_status": "approved"
+    },
+    {
+      "id": "d003-s14",
+      "category": "directions",
+      "prompt_he": "מאיזו יציאה אני צריך לצאת?",
+      "thai": "ผมต้องออกทางออกไหนครับ",
+      "romanization": "phǒm dtɔ̂ng ɔ̀ɔk thaang-ɔ̀ɔk nǎi khráp",
+      "literal_he": "אני + צריך + לצאת + מאיזו יציאה + מילת נימוס.",
+      "context_he": "בירור יציאה בתחנת רכבת, קניון או בניין גדול.",
+      "pattern": "ต้องออกทางออกไหนครับ = מאיזו יציאה צריך לצאת?",
+      "variation": {
+        "prompt_he": "היציאה הזאת קרובה יותר?",
+        "thai": "ทางออกนี้ใกล้กว่าไหมครับ"
+      },
+      "review_status": "approved"
+    },
+    {
+      "id": "d003-s15",
+      "category": "directions",
+      "prompt_he": "נראה שכבר עברנו את המקום.",
+      "thai": "เหมือนเราเลยมาแล้วครับ",
+      "romanization": "mʉ̌an rao ləəi maa lɛ́ɛo khráp",
+      "literal_he": "נראה + שאנחנו + עברנו מעבר + כבר + מילת נימוס.",
+      "context_he": "הערה לנהג כשנדמה שעבר את היעד.",
+      "pattern": "เหมือนเรา + [פעולה] + มาแล้วครับ = נראה שכבר ביצענו את הפעולה.",
+      "variation": {
+        "prompt_he": "בבקשה תעשה פרסה בהמשך.",
+        "thai": "ข้างหน้าช่วยกลับรถให้หน่อยครับ"
+      },
+      "review_status": "approved"
+    },
+    {
+      "id": "d003-s16",
+      "category": "social_smalltalk",
+      "prompt_he": "כמה זמן אתה גר כאן?",
+      "thai": "คุณอยู่ที่นี่มานานแค่ไหนแล้วครับ",
+      "romanization": "khun yùu thîi nîi maa naan khâe nǎi lɛ́ɛo khráp",
+      "literal_he": "אתה + גר + כאן + במשך כמה זמן כבר + מילת נימוס.",
+      "context_he": "שיחת היכרות עם שכן, עמית או אדם מקומי.",
+      "pattern": "อยู่ + [สถานที่] + มานานแค่ไหนแล้วครับ = כמה זמן אתה כבר גר במקום?",
+      "variation": {
+        "prompt_he": "נולדת בצ'יאנג מאי?",
+        "thai": "คุณเกิดที่เชียงใหม่เหรอครับ"
+      },
+      "review_status": "approved"
+    },
+    {
+      "id": "d003-s17",
+      "category": "social_smalltalk",
+      "prompt_he": "מה אתה עושה בדרך כלל ביום חופש?",
+      "thai": "ปกติวันหยุดคุณทำอะไรครับ",
+      "romanization": "bpòk-gà-dtì wan-yùt khun tham à-rai khráp",
+      "literal_he": "בדרך כלל + ביום חופש + אתה עושה מה + מילת נימוס.",
+      "context_he": "שיחת חולין על פנאי בלי לנסח הזמנה ישירה.",
+      "pattern": "ปกติ + [ช่วงเวลา] + คุณทำอะไรครับ = מה אתה עושה בדרך כלל בזמן מסוים?",
+      "variation": {
+        "prompt_he": "יש לך תוכניות לסוף השבוע?",
+        "thai": "สุดสัปดาห์นี้มีแผนไหมครับ"
+      },
+      "review_status": "approved"
+    },
+    {
+      "id": "d003-s18",
+      "category": "social_smalltalk",
+      "prompt_he": "ממש כיף לדבר איתך.",
+      "thai": "คุยกับคุณสนุกมากครับ",
+      "romanization": "khui gàp khun sà-nùk mâak khráp",
+      "literal_he": "לדבר + איתך + כיף מאוד + מילת נימוס.",
+      "context_he": "סיום חם אך לא מוגזם לשיחה נעימה.",
+      "pattern": "[פעולה] + กับคุณ + [คุณศัพท์] + มากครับ = לעשות פעולה איתך הוא מאוד בעל תכונה מסוימת.",
+      "variation": {
+        "prompt_he": "נדבר שוב בהזדמנות.",
+        "thai": "ไว้คุยกันอีกนะครับ"
+      },
+      "review_status": "approved"
+    },
+    {
+      "id": "d003-s19",
+      "category": "conversation_management",
+      "prompt_he": "איך אומרים את זה בתאית?",
+      "thai": "อันนี้ภาษาไทยพูดว่ายังไงครับ",
+      "romanization": "an níi phaa-sǎa thai phûut wâa yang-ngai khráp",
+      "literal_he": "הדבר הזה + בשפה התאילנדית + אומרים איך + מילת נימוס.",
+      "context_he": "בקשה שימושית ממורה, חבר או עמית לעזור בניסוח תאילנדי.",
+      "pattern": "[สิ่งนี้] + ภาษาไทยพูดว่ายังไงครับ = איך אומרים דבר מסוים בתאית?",
+      "variation": {
+        "prompt_he": "המשפט הזה נשמע טבעי?",
+        "thai": "ประโยคนี้ฟังเป็นธรรมชาติไหมครับ"
+      },
+      "review_status": "approved"
+    },
+    {
+      "id": "d003-s20",
+      "category": "conversation_management",
+      "prompt_he": "אני מבטא את זה נכון?",
+      "thai": "ผมออกเสียงถูกไหมครับ",
+      "romanization": "phǒm ɔ̀ɔk-sǐang thùuk mǎi khráp",
+      "literal_he": "אני + מבטא + נכון + האם + מילת נימוס.",
+      "context_he": "בקשת משוב ישירה בזמן תרגול שיחה.",
+      "pattern": "ผม + [פעולה] + ถูกไหมครับ = האם אני מבצע את הפעולה נכון?",
+      "variation": {
+        "prompt_he": "אם אני טועה, בבקשה תתקן אותי.",
+        "thai": "ถ้าผมพูดผิด ช่วยแก้ให้ด้วยนะครับ"
+      },
+      "review_status": "approved"
+    }
+  ],
+  "voices": {
+    "provider": "google_cloud_tts",
+    "thai": {
+      "language_code": "th-TH",
+      "name": "th-TH-Chirp3-HD-Erinome"
+    },
+    "hebrew": {
+      "language_code": "he-IL",
+      "name": "he-IL-Chirp3-HD-Charon"
+    }
+  },
+  "audio_program": {
+    "pitch_semitones": 0,
+    "practice_variations": {
+      "hebrew_speaking_rate": 1,
+      "thai_speaking_rate": 1
+    },
+    "tracks": [
+      {
+        "id": "listening",
+        "sequence": [
+          "d003-s01",
+          "d003-s02",
+          "d003-s03",
+          "d003-s04",
+          "d003-s05",
+          "d003-s06",
+          "d003-s07",
+          "d003-s08",
+          "d003-s09",
+          "d003-s10",
+          "d003-s11",
+          "d003-s12",
+          "d003-s13",
+          "d003-s14",
+          "d003-s15",
+          "d003-s16",
+          "d003-s17",
+          "d003-s18",
+          "d003-s19",
+          "d003-s20"
+        ],
+        "thai_repetitions": 2,
+        "thai_speaking_rates": [
+          0.82,
+          1
+        ],
+        "pause_between_repetitions_ms": 1200,
+        "pause_between_sentences_ms": 2800
+      },
+      {
+        "id": "shadowing",
+        "sequence": [
+          "d003-s01",
+          "d003-s02",
+          "d003-s03",
+          "d003-s04",
+          "d003-s05",
+          "d003-s06",
+          "d003-s07",
+          "d003-s08",
+          "d003-s09",
+          "d003-s10",
+          "d003-s11",
+          "d003-s12",
+          "d003-s13",
+          "d003-s14",
+          "d003-s15",
+          "d003-s16",
+          "d003-s17",
+          "d003-s18",
+          "d003-s19",
+          "d003-s20"
+        ],
+        "thai_repetitions": 3,
+        "thai_speaking_rates": [
+          0.9,
+          0.9,
+          0.9
+        ],
+        "pause_between_repetitions_ms": 700,
+        "pause_between_sentences_ms": 1800
+      },
+      {
+        "id": "recall",
+        "sequence": [
+          "d003-s01",
+          "d003-s02",
+          "d003-s03",
+          "d003-s04",
+          "d003-s05",
+          "d003-s06",
+          "d003-s07",
+          "d003-s08",
+          "d003-s09",
+          "d003-s10",
+          "d003-s11",
+          "d003-s12",
+          "d003-s13",
+          "d003-s14",
+          "d003-s15",
+          "d003-s16",
+          "d003-s17",
+          "d003-s18",
+          "d003-s19",
+          "d003-s20"
+        ],
+        "hebrew_prompt": true,
+        "hebrew_speaking_rate": 1,
+        "recall_pause_ms": 5000,
+        "thai_repetitions": 1,
+        "thai_speaking_rates": [
+          0.9
+        ],
+        "pause_between_sentences_ms": 2500
+      },
+      {
+        "id": "scenario",
+        "sequence": [
+          "d003-s01",
+          "d003-s02",
+          "d003-s03",
+          "d003-s04",
+          "d003-s05",
+          "d003-s06",
+          "d003-s07",
+          "d003-s08",
+          "d003-s09",
+          "d003-s10",
+          "d003-s11",
+          "d003-s12",
+          "d003-s13",
+          "d003-s14",
+          "d003-s15",
+          "d003-s16",
+          "d003-s17",
+          "d003-s18",
+          "d003-s19",
+          "d003-s20"
+        ],
+        "thai_repetitions": 1,
+        "thai_speaking_rates": [
+          1
+        ],
+        "pause_between_sentences_ms": 1200
+      }
+    ]
+  }
+}

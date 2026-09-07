@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "lesson_id": "day-001",
+  "revision": 5,
+  "approved_sentence_ids": [
+    "d001-s01", "d001-s02", "d001-s03", "d001-s04", "d001-s05",
+    "d001-s06", "d001-s07", "d001-s08", "d001-s09", "d001-s10",
+    "d001-s11", "d001-s12", "d001-s13", "d001-s14", "d001-s15",
+    "d001-s16", "d001-s17", "d001-s18", "d001-s19", "d001-s20"
+  ],
+  "content_sha256": "2ee17250cd9ca59e8218e62fcb1b8c6b3e80aed406aa7ddfe58a83100df1138c",
+  "approved_at": "2026-09-03T21:20:31Z"
+}

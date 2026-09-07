@@ -1,0 +1,11 @@
+{
+  "authorized_at": "2026-09-06T13:36:22Z",
+  "content_sha256": "8ebc79bb8e7082073ff2760e1f490f78f7fa79f9db1f54cfe61f72ed4d5d6b30",
+  "lesson_id": "day-004",
+  "max_billable_characters": 3000,
+  "max_cost_usd": 0.09,
+  "price_usd_per_character": 3e-05,
+  "provider": "google_cloud_tts",
+  "revision": 1,
+  "schema_version": 1
+}

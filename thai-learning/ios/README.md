@@ -1,13 +1,15 @@
 # Thai Trainer for iPhone
 
-This is a deliberately small personal SwiftUI player. The Mac generates approved
-audio and publishes a static content folder; the iPhone downloads that folder and
-always plays the resulting local MP3 files.
+This is a focused personal SwiftUI practice player. The Mac generates approved
+audio and publishes a static content folder; the iPhone keeps all playback local.
+The main practice flow uses approved sentence-level clips so its timing, repetition,
+speed, ordering, and auto-advance controls change real playback rather than only the
+interface.
 
 ## Why generation stays on the Mac
 
-- The iOS app contains no Azure key, login, authentication, or TTS client. Its only
-  network job is downloading public static files.
+- The iOS app contains no Google Cloud credential, login, authentication, or TTS
+  client. Its only network job is downloading public static files.
 - Text approval and paid-request authorization remain enforced by the existing Python
   generator before it reads credentials.
 - Once generated, the tracks play entirely offline, including while the phone is
@@ -17,6 +19,7 @@ The Xcode project also bundles these existing workspace folders as a fallback:
 
 - `thai-learning/days/` as `days/`
 - `thai-learning/audio/generated/` as `generated/`
+- `thai-learning/audio/practice/` as `practice/`
 
 No rebuild is required for a remotely published update.
 
@@ -42,10 +45,34 @@ shows only a short informational status and continues using its local content.
 
 ## Current behavior
 
-The bundled Day 1 text remains readable when no download is available. Its Play
-controls stay disabled until a valid four-file audio pack is downloaded (or valid
-audio is bundled). The app never falls back to device speech synthesis and never
+Each saved day opens as a phrase-centered practice session with four independently saved modes:
+Listen, Shadow, Recall, and Scene. Each mode can configure the Hebrew prompt, the
+Hebrew-to-Thai pause, Thai repetitions, gaps, first/later Thai speed, sentence order,
+auto-advance, and session looping. A collapsible **Words in this phrase** section shows
+meaningful Thai chunks, tone-marked pronunciation, and Hebrew meaning for every released
+core phrase. The adaptive mix records Easy/Again feedback and schedules reviews across
+lesson days. The player validates each lesson's Hebrew/Thai clip pairs against byte
+counts and SHA-256 values before enabling playback.
+
+The existing four-track download/cache flow remains available for content refresh and
+offline fallback. The app never falls back to device speech synthesis and never
 requests TTS itself.
+
+## Rebuild the bundled practice clips
+
+After Day 1 text and generated Google audio have been approved, derive the sentence
+clips from the already-authorized local cache:
+
+```bash
+python3 thai-learning/audio/build_practice_audio.py \
+  thai-learning/days/day-001.json \
+  thai-learning/audio/practice/day-001/r3
+```
+
+This command performs no provider initialization and no network request. It validates
+the approved revision and exact cached request hashes, then writes a deterministic
+manifest plus 20 Hebrew/Thai WAV pairs. It refuses to replace a different existing
+bundle.
 
 ## Build in the simulator
 
@@ -79,5 +106,7 @@ the explicit `--execute-paid-request` flag, and this output root:
 thai-learning/audio/generated
 ```
 
-Keep `AZURE_SPEECH_KEY` and `AZURE_SPEECH_REGION` in the desktop terminal environment;
-never add them to Swift, Info.plist, an Xcode configuration, or this workspace.
+Keep Google Cloud authentication in the Mac's external Application Default
+Credentials or `gcloud` configuration; never add access tokens, service-account JSON,
+API keys, or other credentials to Swift, Info.plist, an Xcode configuration, or this
+workspace.

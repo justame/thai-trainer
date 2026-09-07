@@ -1,3 +1,4 @@
+import CryptoKit
 import Foundation
 
 struct RemoteContentIndex: Decodable, Sendable {
@@ -7,6 +8,7 @@ struct RemoteContentIndex: Decodable, Sendable {
     let contentSHA256: String
     let lessonPath: String
     let audioManifestPath: String
+    let practiceManifestPath: String?
 
     enum CodingKeys: String, CodingKey {
         case schemaVersion = "schema_version"
@@ -15,6 +17,7 @@ struct RemoteContentIndex: Decodable, Sendable {
         case contentSHA256 = "content_sha256"
         case lessonPath = "lesson_path"
         case audioManifestPath = "audio_manifest_path"
+        case practiceManifestPath = "practice_manifest_path"
     }
 }
 
@@ -23,6 +26,8 @@ enum RemoteContentProgress: Equatable, Sendable {
     case downloadingLesson
     case downloadingManifest
     case downloadingAudio(current: Int, total: Int)
+    case downloadingPracticeManifest
+    case downloadingPracticeAudio(current: Int, total: Int)
     case validating
 
     var message: String {
@@ -35,6 +40,10 @@ enum RemoteContentProgress: Equatable, Sendable {
             "Downloading the audio manifest…"
         case let .downloadingAudio(current, total):
             "Downloading audio \(current) of \(total)…"
+        case .downloadingPracticeManifest:
+            "Downloading practice audio index…"
+        case let .downloadingPracticeAudio(current, total):
+            "Downloading practice clips \(current) of \(total)…"
         case .validating:
             "Validating the downloaded pack…"
         }
@@ -59,6 +68,10 @@ struct RemoteContentRepository {
 
     func loadCachedPackage() throws -> LessonPackage {
         try cache.loadCurrentPackage()
+    }
+
+    func loadCachedPackages() -> [LessonPackage] {
+        cache.loadAllPackages()
     }
 
     func refresh(
@@ -97,6 +110,9 @@ struct RemoteContentRepository {
             relativePath: index.audioManifestPath,
             under: baseURL
         )
+        let practiceManifestURL = try index.practiceManifestPath.map {
+            try RemoteContentURLValidator.resolve(relativePath: $0, under: baseURL)
+        }
 
         await progress(.downloadingLesson)
         let lessonData = try await fetch(lessonURL)
@@ -135,6 +151,31 @@ struct RemoteContentRepository {
             index: index,
             lessonContentSHA256: lessonContentSHA256
         )
+
+        var practiceManifestData: Data?
+        var practiceClips: [PracticeAudioClipManifest] = []
+        if let practiceManifestURL {
+            await progress(.downloadingPracticeManifest)
+            let downloadedManifestData = try await fetch(practiceManifestURL)
+            let practiceManifest: PracticeAudioManifest
+            do {
+                practiceManifest = try decoder.decode(
+                    PracticeAudioManifest.self,
+                    from: downloadedManifestData
+                )
+            } catch {
+                throw RemoteContentError.invalidPack(
+                    "The practice audio manifest cannot be decoded."
+                )
+            }
+            practiceClips = try validate(
+                practiceManifest,
+                lesson: lesson,
+                index: index,
+                lessonContentSHA256: lessonContentSHA256
+            )
+            practiceManifestData = downloadedManifestData
+        }
 
         let stagingURL = try cache.makeStagingDirectory()
         var stagingStillExists = true
@@ -176,17 +217,65 @@ struct RemoteContentRepository {
             )
         }
 
+        if let practiceManifestURL, let practiceManifestData {
+            let stagedPracticeURL = stagingURL
+                .appendingPathComponent("practice", isDirectory: true)
+                .appendingPathComponent(lesson.lessonID, isDirectory: true)
+                .appendingPathComponent("r\(lesson.revision)", isDirectory: true)
+            try cache.createDirectory(at: stagedPracticeURL)
+            try practiceManifestData.write(
+                to: stagedPracticeURL.appendingPathComponent("practice-manifest.json"),
+                options: .atomic
+            )
+            let remotePracticeDirectory = practiceManifestURL.deletingLastPathComponent()
+            for (offset, clip) in practiceClips.enumerated() {
+                await progress(
+                    .downloadingPracticeAudio(current: offset + 1, total: practiceClips.count)
+                )
+                let clipData = try await fetch(
+                    remotePracticeDirectory.appendingPathComponent(clip.file)
+                )
+                guard Int64(clipData.count) == clip.byteCount else {
+                    throw RemoteContentError.invalidPack(
+                        "Practice clip \(clip.file) does not match its declared byte count."
+                    )
+                }
+                let digest = SHA256.hash(data: clipData)
+                    .map { String(format: "%02x", $0) }
+                    .joined()
+                guard digest == clip.sha256 else {
+                    throw RemoteContentError.invalidPack(
+                        "Practice clip \(clip.file) failed integrity checking."
+                    )
+                }
+                try clipData.write(
+                    to: stagedPracticeURL.appendingPathComponent(clip.file),
+                    options: .atomic
+                )
+            }
+        }
+
         await progress(.validating)
         let stagedPackage = try LessonPackageLoader(resourceRoot: stagingURL).load()
         guard case let .ready(stagedTracks) = stagedPackage.audioState,
               stagedTracks.count == PracticeTrack.allCases.count else {
             throw RemoteContentError.invalidPack("The staged audio pack did not pass validation.")
         }
+        if practiceManifestData != nil {
+            do {
+                _ = try PracticeAudioPackageLoader(resourceRoot: stagingURL).load(for: lesson)
+            } catch {
+                throw RemoteContentError.invalidPack(
+                    "The staged practice audio did not pass validation."
+                )
+            }
+        }
 
         let committedURL = try cache.commit(
             stagingURL: stagingURL,
             lessonID: lesson.lessonID,
-            revision: lesson.revision
+            revision: lesson.revision,
+            contentSHA256: lessonContentSHA256
         )
         stagingStillExists = false
         return try LessonPackageLoader(resourceRoot: committedURL).load()
@@ -246,6 +335,9 @@ struct RemoteContentRepository {
         }
         _ = try RemoteContentURLValidator.validate(relativePath: index.lessonPath)
         _ = try RemoteContentURLValidator.validate(relativePath: index.audioManifestPath)
+        if let practiceManifestPath = index.practiceManifestPath {
+            _ = try RemoteContentURLValidator.validate(relativePath: practiceManifestPath)
+        }
     }
 
     private func validate(_ lesson: Lesson, matches index: RemoteContentIndex) throws {
@@ -262,6 +354,12 @@ struct RemoteContentRepository {
               lesson.sentences.allSatisfy({ $0.reviewStatus == "approved" }) else {
             throw RemoteContentError.invalidPack(
                 "The remote lesson and all 20 sentences must be approved."
+            )
+        }
+        if lesson.audioProgram.practiceVariations != nil,
+           index.practiceManifestPath == nil {
+            throw RemoteContentError.invalidPack(
+                "This lesson needs its configurable practice audio package."
             )
         }
 
@@ -330,6 +428,64 @@ struct RemoteContentRepository {
             return track
         }
     }
+
+    private func validate(
+        _ manifest: PracticeAudioManifest,
+        lesson: Lesson,
+        index: RemoteContentIndex,
+        lessonContentSHA256: String
+    ) throws -> [PracticeAudioClipManifest] {
+        guard [1, 2].contains(manifest.schemaVersion),
+              manifest.lessonID == lesson.lessonID,
+              manifest.lessonID == index.lessonID,
+              manifest.revision == lesson.revision,
+              manifest.revision == index.revision,
+              manifest.sampleRateHertz == 24_000,
+              manifest.contentSHA256 == lessonContentSHA256,
+              manifest.contentSHA256 == index.contentSHA256 else {
+            throw RemoteContentError.invalidPack(
+                "The practice manifest does not match the approved lesson."
+            )
+        }
+
+        let expectedIDs = lesson.sentences.map(\.id)
+        let actualIDs = manifest.sentences.map(\.sentenceID)
+        guard actualIDs == expectedIDs, Set(actualIDs).count == expectedIDs.count else {
+            throw RemoteContentError.invalidPack(
+                "The practice audio order does not match the approved lesson."
+            )
+        }
+
+        var clips: [PracticeAudioClipManifest] = []
+        for sentence in manifest.sentences {
+            clips.append(sentence.core.hebrew)
+            clips.append(sentence.core.thai)
+            if manifest.schemaVersion == 2, sentence.variations.isEmpty {
+                throw RemoteContentError.invalidPack(
+                    "Every sentence needs at least one related practice version."
+                )
+            }
+            for variation in sentence.variations {
+                clips.append(variation.hebrew)
+                clips.append(variation.thai)
+            }
+        }
+
+        guard Set(clips.map(\.file)).count == clips.count else {
+            throw RemoteContentError.invalidPack("Practice clip filenames must be unique.")
+        }
+        for clip in clips {
+            guard RemoteContentURLValidator.isSafePathComponent(clip.file),
+                  clip.file.hasSuffix(".wav"),
+                  clip.byteCount > 44,
+                  PublisherContentIntegrity.isValidSHA256(clip.sha256) else {
+                throw RemoteContentError.invalidPack(
+                    "The practice manifest contains an invalid clip declaration."
+                )
+            }
+        }
+        return clips
+    }
 }
 
 private struct RemoteContentCache {
@@ -368,21 +524,45 @@ private struct RemoteContentCache {
         let packageURL = rootURL
             .appendingPathComponent("packs", isDirectory: true)
             .appendingPathComponent(pointer.directory, isDirectory: true)
-        let package: LessonPackage
-        do {
-            package = try LessonPackageLoader(
-                resourceRoot: packageURL,
-                fileManager: fileManager
-            ).load()
-        } catch {
-            throw RemoteContentError.noCachedPack
-        }
-        guard case let .ready(tracks) = package.audioState,
-              tracks.count == PracticeTrack.allCases.count,
-              Set(tracks.map(\.id)) == Set(PracticeTrack.allCases.map(\.rawValue)) else {
+        guard let package = loadValidPackage(at: packageURL) else {
             throw RemoteContentError.noCachedPack
         }
         return package
+    }
+
+    func loadAllPackages() -> [LessonPackage] {
+        guard let rootURL = try? resolvedRootURL() else { return [] }
+        let packsURL = rootURL.appendingPathComponent("packs", isDirectory: true)
+        let keys: Set<URLResourceKey> = [.isDirectoryKey, .isSymbolicLinkKey]
+        guard let entries = try? fileManager.contentsOfDirectory(
+            at: packsURL,
+            includingPropertiesForKeys: Array(keys),
+            options: [.skipsHiddenFiles]
+        ) else {
+            return []
+        }
+
+        var newestByLessonID: [String: LessonPackage] = [:]
+        for entry in entries {
+            guard let values = try? entry.resourceValues(forKeys: keys),
+                  values.isDirectory == true,
+                  values.isSymbolicLink != true,
+                  let package = loadValidPackage(at: entry) else {
+                continue
+            }
+            let lessonID = package.lesson.lessonID
+            if let existing = newestByLessonID[lessonID],
+               existing.lesson.revision >= package.lesson.revision {
+                continue
+            }
+            newestByLessonID[lessonID] = package
+        }
+        return newestByLessonID.values.sorted {
+            if $0.lesson.day == $1.lesson.day {
+                return $0.lesson.lessonID < $1.lesson.lessonID
+            }
+            return $0.lesson.day < $1.lesson.day
+        }
     }
 
     func makeStagingDirectory() throws -> URL {
@@ -394,26 +574,44 @@ private struct RemoteContentCache {
         return stagingURL
     }
 
-    func commit(stagingURL: URL, lessonID: String, revision: Int) throws -> URL {
+    func commit(
+        stagingURL: URL,
+        lessonID: String,
+        revision: Int,
+        contentSHA256: String
+    ) throws -> URL {
         let rootURL = try resolvedRootURL()
         let packsURL = rootURL.appendingPathComponent("packs", isDirectory: true)
         try createDirectory(at: packsURL)
 
-        let directory = "\(lessonID)-r\(revision)-\(UUID().uuidString)"
+        let directory = "\(lessonID)-r\(revision)-\(contentSHA256.prefix(12))"
         let committedURL = packsURL.appendingPathComponent(directory, isDirectory: true)
+        if fileManager.fileExists(atPath: committedURL.path) {
+            guard loadValidPackage(at: committedURL) != nil else {
+                throw RemoteContentError.cache("The existing offline pack is invalid.")
+            }
+            try removeItem(at: stagingURL)
+            try writePointer(directory: directory, rootURL: rootURL)
+            pruneSupersededLessonDirectories(
+                in: packsURL,
+                lessonID: lessonID,
+                preserving: committedURL
+            )
+            return committedURL
+        }
+
         do {
             try fileManager.moveItem(at: stagingURL, to: committedURL)
-            let pointer = Pointer(schemaVersion: 1, directory: directory)
-            let pointerData = try JSONEncoder().encode(pointer)
-            try pointerData.write(
-                to: rootURL.appendingPathComponent("current.json", isDirectory: false),
-                options: .atomic
-            )
+            try writePointer(directory: directory, rootURL: rootURL)
         } catch {
             try? fileManager.removeItem(at: committedURL)
             throw RemoteContentError.cache("The downloaded pack could not be saved.")
         }
-        prunePackDirectories(in: packsURL, preserving: committedURL)
+        pruneSupersededLessonDirectories(
+            in: packsURL,
+            lessonID: lessonID,
+            preserving: committedURL
+        )
         return committedURL
     }
 
@@ -426,7 +624,33 @@ private struct RemoteContentCache {
         try fileManager.removeItem(at: url)
     }
 
-    private func prunePackDirectories(in packsURL: URL, preserving currentURL: URL) {
+    private func writePointer(directory: String, rootURL: URL) throws {
+        let pointer = Pointer(schemaVersion: 1, directory: directory)
+        let pointerData = try JSONEncoder().encode(pointer)
+        try pointerData.write(
+            to: rootURL.appendingPathComponent("current.json", isDirectory: false),
+            options: .atomic
+        )
+    }
+
+    private func loadValidPackage(at packageURL: URL) -> LessonPackage? {
+        guard let package = try? LessonPackageLoader(
+            resourceRoot: packageURL,
+            fileManager: fileManager
+        ).load(),
+        case let .ready(tracks) = package.audioState,
+        tracks.count == PracticeTrack.allCases.count,
+        Set(tracks.map(\.id)) == Set(PracticeTrack.allCases.map(\.rawValue)) else {
+            return nil
+        }
+        return package
+    }
+
+    private func pruneSupersededLessonDirectories(
+        in packsURL: URL,
+        lessonID: String,
+        preserving currentURL: URL
+    ) {
         let keys: Set<URLResourceKey> = [.isDirectoryKey, .isSymbolicLinkKey]
         guard let entries = try? fileManager.contentsOfDirectory(
             at: packsURL,
@@ -436,7 +660,10 @@ private struct RemoteContentCache {
             return
         }
 
-        for entry in entries where entry.standardizedFileURL != currentURL.standardizedFileURL {
+        let lessonPrefix = "\(lessonID)-r"
+        for entry in entries
+        where entry.standardizedFileURL != currentURL.standardizedFileURL
+            && entry.lastPathComponent.hasPrefix(lessonPrefix) {
             guard let values = try? entry.resourceValues(forKeys: keys),
                   values.isDirectory == true,
                   values.isSymbolicLink != true else {
