@@ -5,7 +5,7 @@ instructions: none
 program_status: in_progress
 current_wave: weekly_integration
 current_task: run_week_001_review
-last_verified_commit: 2528142
+last_verified_commit: 126df4d
 updated_at: 2026-09-07
 ---
 
@@ -290,7 +290,7 @@ updated_at: 2026-09-07
 | Day 3 static release | PASS: the approval-bound existing MP3 and 80-WAV practice pack was validated without TTS, committed only under `docs/` as `17314a3`, pushed to `origin/main`, deployed successfully by GitHub Pages, and the cache-bypassed live `latest.json` selects Day 3 revision 1 with canonical hash `8c4d57d0...df65` | `17314a3` | 2026-09-06 |
 | timed Day 5 pipeline release | PASS: review calculation 0.32s; approval-to-push pipeline 135.87s; GitHub Pages completed successfully and cache-bypassed live `latest.json` selected Day 5 at 238s total. Verified 4 MP3s, 80 WAVs, matching manifests/hash, immutable approval and US$0.10 authorization, consumption marker, and `origin/main` commit `a8b77f7` | `a8b77f7` | 2026-09-06 |
 | Day 4 pipeline release | PASS: approval-to-push pipeline 175.65s; live feed selected Day 4 at 224s; full deployment and local integrity checks completed by 248s. Verified 4 MP3s, 80 WAVs, matching manifests/hash, immutable approval and US$0.09 authorization, consumption marker, successful Pages run, and `origin/main` commit `7892aa2` | `7892aa2` | 2026-09-06 |
-| private-source vocabulary upgrade | PASS: generic simulator build-for-testing; 21/21 iPhone 17 Pro XCTest cases; all 100 released sentences have non-empty, exact-cover word breakdowns; 9/9 curriculum tests; normal and adaptive simulator captures; UI repair gate 19/19 with self-review boundary retained; secret-pattern scan found no credential or private-key match | `2528142` | 2026-09-07 |
+| private-source vocabulary upgrade | PASS: 21/21 iPhone 17 Pro XCTest cases; all 100 released sentences have non-empty, exact-cover word breakdowns; 9/9 curriculum tests; normal and adaptive simulator captures; UI repair gate 19/19 with self-review boundary retained; neutral screenshot discovery led to a persistent active-phrase label and unambiguous idle playback copy; secret-pattern scan found no credential or private-key match | `126df4d` | 2026-09-07 |
 
 ## Decisions and Blockers
 
