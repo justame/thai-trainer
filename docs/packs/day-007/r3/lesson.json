@@ -1,0 +1,463 @@
+{
+  "audio_program": {
+    "pitch_semitones": 0,
+    "practice_variations": {
+      "hebrew_speaking_rate": 1,
+      "thai_speaking_rate": 1
+    },
+    "tracks": [
+      {
+        "id": "listening",
+        "pause_between_repetitions_ms": 1200,
+        "pause_between_sentences_ms": 2800,
+        "sequence": [
+          "d007-s01",
+          "d007-s02",
+          "d007-s03",
+          "d007-s04",
+          "d007-s05",
+          "d007-s06",
+          "d007-s07",
+          "d007-s08",
+          "d007-s09",
+          "d007-s10",
+          "d007-s11",
+          "d007-s12",
+          "d007-s13",
+          "d007-s14",
+          "d007-s15",
+          "d007-s16",
+          "d007-s17",
+          "d007-s18",
+          "d007-s19",
+          "d007-s20"
+        ],
+        "thai_repetitions": 2,
+        "thai_speaking_rates": [
+          0.82,
+          1
+        ]
+      },
+      {
+        "id": "shadowing",
+        "pause_between_repetitions_ms": 700,
+        "pause_between_sentences_ms": 1800,
+        "sequence": [
+          "d007-s01",
+          "d007-s02",
+          "d007-s03",
+          "d007-s04",
+          "d007-s05",
+          "d007-s06",
+          "d007-s07",
+          "d007-s08",
+          "d007-s09",
+          "d007-s10",
+          "d007-s11",
+          "d007-s12",
+          "d007-s13",
+          "d007-s14",
+          "d007-s15",
+          "d007-s16",
+          "d007-s17",
+          "d007-s18",
+          "d007-s19",
+          "d007-s20"
+        ],
+        "thai_repetitions": 3,
+        "thai_speaking_rates": [
+          0.9,
+          0.9,
+          0.9
+        ]
+      },
+      {
+        "hebrew_prompt": true,
+        "hebrew_speaking_rate": 1,
+        "id": "recall",
+        "pause_between_sentences_ms": 2500,
+        "recall_pause_ms": 5000,
+        "sequence": [
+          "d007-s01",
+          "d007-s02",
+          "d007-s03",
+          "d007-s04",
+          "d007-s05",
+          "d007-s06",
+          "d007-s07",
+          "d007-s08",
+          "d007-s09",
+          "d007-s10",
+          "d007-s11",
+          "d007-s12",
+          "d007-s13",
+          "d007-s14",
+          "d007-s15",
+          "d007-s16",
+          "d007-s17",
+          "d007-s18",
+          "d007-s19",
+          "d007-s20"
+        ],
+        "thai_repetitions": 1,
+        "thai_speaking_rates": [
+          0.9
+        ]
+      },
+      {
+        "id": "scenario",
+        "pause_between_sentences_ms": 1200,
+        "sequence": [
+          "d007-s01",
+          "d007-s02",
+          "d007-s03",
+          "d007-s04",
+          "d007-s05",
+          "d007-s06",
+          "d007-s07",
+          "d007-s08",
+          "d007-s09",
+          "d007-s10",
+          "d007-s11",
+          "d007-s12",
+          "d007-s13",
+          "d007-s14",
+          "d007-s15",
+          "d007-s16",
+          "d007-s17",
+          "d007-s18",
+          "d007-s19",
+          "d007-s20"
+        ],
+        "thai_repetitions": 1,
+        "thai_speaking_rates": [
+          1
+        ]
+      }
+    ]
+  },
+  "day": 7,
+  "lesson_id": "day-007",
+  "revision": 3,
+  "schema_version": 1,
+  "sentences": [
+    {
+      "category": "recent_search_schedule",
+      "context_he": "לעדכון קצר על פגישה שכבר קבועה להיום.",
+      "id": "d007-s01",
+      "literal_he": "היום + יש + פגישה + בזמן אחר הצהריים + שעה שתיים + מילת נימוס.",
+      "pattern": "วันนี้มี + [אירוע] + ตอน + [שעה] + ครับ = היום יש אירוע בשעה מסוימת.",
+      "prompt_he": "יש לי פגישה היום בשתיים אחר הצהריים.",
+      "review_status": "approved",
+      "romanization": "wan-níi mii bprà-chum dtɔɔn bàai sɔ̌ɔŋ mooŋ khráp",
+      "thai": "วันนี้มีประชุมตอนบ่ายสองโมงครับ",
+      "variation": {
+        "prompt_he": "אם אחר הצהריים לא נוח לך אפשר מחר בבוקר.",
+        "thai": "ถ้าช่วงบ่ายไม่สะดวก พรุ่งนี้เช้าก็ได้ครับ"
+      }
+    },
+    {
+      "category": "recent_search_schedule",
+      "context_he": "בקשה טבעית לשנות מועד קיים ליום ולחלק יום חדשים.",
+      "id": "d007-s02",
+      "literal_he": "מבקש + לדחות + אל + יום שלישי + בזמן בוקר + אפשר האם + מילת נימוס.",
+      "pattern": "ขอเลื่อนไป + [יום או שעה] + ได้ไหมครับ = אפשר לדחות למועד הזה?",
+      "prompt_he": "אפשר לדחות את זה ליום שלישי בבוקר?",
+      "review_status": "approved",
+      "romanization": "khɔ̌ɔ lʉ̂an bpai wan aŋ-khaan dtɔɔn cháo dâai mǎi khráp",
+      "thai": "ขอเลื่อนไปวันอังคารตอนเช้าได้ไหมครับ",
+      "variation": {
+        "prompt_he": "אם יום שלישי לא מתאים נדחה ליום רביעי בעשר.",
+        "thai": "ถ้าวันอังคารไม่ได้ เลื่อนไปวันพุธตอนสิบโมงครับ"
+      }
+    },
+    {
+      "category": "recent_search_schedule",
+      "context_he": "לבדיקת זמינות עם יום ושעה מדויקים.",
+      "id": "d007-s03",
+      "literal_he": "יום רביעי + בזמן שלוש אחר הצהריים + נוח + האם + מילת נימוס.",
+      "pattern": "[יום ושעה] + สะดวกไหมครับ = האם המועד נוח?",
+      "prompt_he": "נוח לך ביום רביעי בשלוש אחר הצהריים?",
+      "review_status": "approved",
+      "romanization": "wan phút dtɔɔn bàai sǎam mooŋ sà-dùak mǎi khráp",
+      "thai": "วันพุธตอนบ่ายสามโมงสะดวกไหมครับ",
+      "variation": {
+        "prompt_he": "ביום חמישי אחרי ארבע אני פנוי.",
+        "thai": "วันพฤหัสบดีหลังสี่โมงเย็นผมว่างครับ"
+      }
+    },
+    {
+      "category": "recent_search_clock_time",
+      "context_he": "להדגיש שההגעה הייתה בדיוק בשעה שנקבעה.",
+      "id": "d007-s04",
+      "literal_he": "אני + הגעתי + בזמן שעה שמונה + בדיוק + מילת נימוס.",
+      "pattern": "[פעולה] + ตอน + [שעה] + พอดีครับ = הפעולה קרתה בדיוק בשעה הזאת.",
+      "prompt_he": "הגעתי בדיוק בשמונה.",
+      "review_status": "approved",
+      "romanization": "phǒm maa thʉ̌ng dtɔɔn bpɛ̀ɛt mooŋ phɔɔ-dii khráp",
+      "thai": "ผมมาถึงตอนแปดโมงพอดีครับ",
+      "variation": {
+        "prompt_he": "הרכבת יצאה בדיוק בתשע.",
+        "thai": "รถไฟออกตอนเก้าโมงตรงครับ"
+      }
+    },
+    {
+      "category": "recent_search_daily_routine",
+      "context_he": "ביטוי יומיומי ולא רשמי לקשר בין שעת שינה מאוחרת לעייפות חזקה.",
+      "id": "d007-s05",
+      "literal_he": "אתמול בלילה + אני + ישנתי מאוחר + היום + עייף כמעט למות + מילת נימוס.",
+      "pattern": "เมื่อคืน + [פעולה בעבר] วันนี้ + [תוצאה] + ครับ = אתמול בלילה קרה דבר והיום זאת התוצאה.",
+      "prompt_he": "אתמול בלילה הלכתי לישון מאוחר והיום אני מת מעייפות.",
+      "review_status": "approved",
+      "romanization": "mʉ̂a-khʉʉn phǒm nɔɔn dʉ̀k wan-níi nʉ̀ai thɛ̂ɛp dtaai khráp",
+      "thai": "เมื่อคืนผมนอนดึก วันนี้เหนื่อยแทบตายครับ",
+      "variation": {
+        "prompt_he": "הלילה אלך לישון לפני אחת עשרה.",
+        "thai": "คืนนี้ผมจะนอนก่อนห้าทุ่มครับ"
+      }
+    },
+    {
+      "category": "recent_search_duration",
+      "context_he": "לתיאור בוקר לחוץ שבו כמעט לא נשאר זמן לארוחה.",
+      "id": "d007-s06",
+      "literal_he": "הבוקר הזה + אני + כמעט שלא + יש זמן + לאכול + מילת נימוס.",
+      "pattern": "แทบจะไม่มีเวลา + [פעולה] + ครับ = כמעט שאין זמן לבצע את הפעולה.",
+      "prompt_he": "הבוקר בקושי היה לי זמן לאכול.",
+      "review_status": "approved",
+      "romanization": "cháo-níi phǒm thɛ̂ɛp jà mâi mii wee-laa gin khâao khráp",
+      "thai": "เช้านี้ผมแทบจะไม่มีเวลากินข้าวครับ",
+      "variation": {
+        "prompt_he": "נשארו לי רק חמש דקות לפני הפגישה.",
+        "thai": "ผมเหลือเวลาแค่ห้านาทีก่อนประชุมครับ"
+      }
+    },
+    {
+      "category": "recent_search_appointment",
+      "context_he": "לתיאור תור איסוף עם יום ושעה מדויקים.",
+      "id": "d007-s07",
+      "literal_he": "יום שישי + שתיים אחר הצהריים + אני + אלך לקבל + משקפיים + מילת נימוס.",
+      "pattern": "[יום ושעה] + ผมจะไป + [פעולה] + ครับ = ביום ובשעה האלה אלך לבצע פעולה.",
+      "prompt_he": "ביום שישי בשתיים אחר הצהריים אלך לקחת את המשקפיים.",
+      "review_status": "approved",
+      "romanization": "wan sùk bàai sɔ̌ɔŋ mooŋ phǒm jà bpai ráp wɛ̂ɛn-dtaa khráp",
+      "thai": "วันศุกร์บ่ายสองโมงผมจะไปรับแว่นตาครับ",
+      "variation": {
+        "prompt_he": "אלך לקחת את המשקפיים אחרי העבודה.",
+        "thai": "เลิกงานแล้วผมจะไปรับแว่นตาครับ"
+      }
+    },
+    {
+      "category": "recent_search_deadline",
+      "context_he": "להצבת מועד אחרון ברור להחלטה.",
+      "id": "d007-s08",
+      "literal_he": "היום + אני + צריך + להחליט + לפני + שעה שש בערב + מילת נימוס.",
+      "pattern": "ต้อง + [פעולה] + ก่อน + [שעה] + ครับ = צריך לבצע את הפעולה לפני השעה.",
+      "prompt_he": "היום אני צריך להחליט לפני שש בערב.",
+      "review_status": "approved",
+      "romanization": "wan-níi phǒm dtɔ̂ng dtàt-sǐn-jai gɔ̀ɔn hòk mooŋ yen khráp",
+      "thai": "วันนี้ผมต้องตัดสินใจก่อนหกโมงเย็นครับ",
+      "variation": {
+        "prompt_he": "אתן לך תשובה לפני הצהריים.",
+        "thai": "ผมจะให้คำตอบคุณก่อนเที่ยงครับ"
+      }
+    },
+    {
+      "category": "recent_search_relative_day",
+      "context_he": "לקביעת פגישה ביחס להיום בלי לומר את שם היום.",
+      "id": "d007-s09",
+      "literal_he": "מחרתיים + נפגשים + בזמן שעה תשע בבוקר + מילת נימוס.",
+      "pattern": "มะรืนนี้ + [פעולה] + ตอน + [שעה] + ครับ = מחרתיים נעשה פעולה בשעה הזאת.",
+      "prompt_he": "ניפגש מחרתיים בתשע בבוקר.",
+      "review_status": "approved",
+      "romanization": "má-rʉʉn níi jəə gan dtɔɔn gâao mooŋ cháo khráp",
+      "thai": "มะรืนนี้เจอกันตอนเก้าโมงเช้าครับ",
+      "variation": {
+        "prompt_he": "מחרתיים ניפגש בערב.",
+        "thai": "มะรืนนี้เจอกันตอนเย็นครับ"
+      }
+    },
+    {
+      "category": "recent_search_booking",
+      "context_he": "לבירור כמה מוקדם כדאי להזמין לקראת יום מסוים.",
+      "id": "d007-s10",
+      "literal_he": "אם + נלך + שבת הבאה + כדאי + להזמין + בזמן איזה + טוב + מילת נימוס.",
+      "pattern": "ถ้าจะ + [תוכנית] + ควร + [פעולה] + ตอนไหนดีครับ = אם מתכננים דבר מתי כדאי לבצע אותו?",
+      "prompt_he": "אם הולכים בשבת הבאה מתי כדאי להזמין?",
+      "review_status": "approved",
+      "romanization": "thâa jà bpai wan sǎo nâa khuan jɔɔŋ dtɔɔn nǎi dii khráp",
+      "thai": "ถ้าจะไปวันเสาร์หน้า ควรจองตอนไหนดีครับ",
+      "variation": {
+        "prompt_he": "כדאי להזמין לפחות יומיים מראש.",
+        "thai": "ควรจองล่วงหน้าอย่างน้อยสองวันครับ"
+      }
+    },
+    {
+      "category": "spaced_recall_days",
+      "context_he": "לתיאור יום חופש קבוע בשבוע.",
+      "id": "d007-s11",
+      "literal_he": "בדרך כלל + יום ראשון + הוא + יום חופש + שלי + מילת נימוס.",
+      "pattern": "ปกติ + [יום] + เป็นวันหยุดของผมครับ = בדרך כלל היום הזה הוא יום החופש שלי.",
+      "prompt_he": "בדרך כלל יום ראשון הוא יום החופש שלי.",
+      "review_status": "approved",
+      "romanization": "bpòk-gà-dtì wan aa-thít bpen wan-yùt khɔ̌ɔng phǒm khráp",
+      "thai": "ปกติวันอาทิตย์เป็นวันหยุดของผมครับ",
+      "variation": {
+        "prompt_he": "שבת היא לא יום החופש שלי.",
+        "thai": "วันเสาร์ไม่ใช่วันหยุดของผมครับ"
+      }
+    },
+    {
+      "category": "spaced_recall_meeting_time",
+      "context_he": "שאלה פתוחה לבחירת שעה משותפת ביום שכבר הוסכם.",
+      "id": "d007-s12",
+      "literal_he": "יום שבת + אנחנו + נפגשים + שעה כמה + טוב + מילת נימוס.",
+      "pattern": "[יום] + เรา + [פעולה] + กี่โมงดีครับ = באיזו שעה כדאי לעשות את הפעולה ביום הזה?",
+      "prompt_he": "באיזו שעה כדאי להיפגש בשבת?",
+      "review_status": "approved",
+      "romanization": "wan sǎo rao jəə gan gìi mooŋ dii khráp",
+      "thai": "วันเสาร์เราเจอกันกี่โมงดีครับ",
+      "variation": {
+        "prompt_he": "יום ראשון בארבע אחר הצהריים מתאים?",
+        "thai": "วันอาทิตย์ตอนสี่โมงเย็นดีไหมครับ"
+      }
+    },
+    {
+      "category": "spaced_recall_reschedule",
+      "context_he": "שילוב טבעי של דחייה ליום יחסי ולשעה מדויקת.",
+      "id": "d007-s13",
+      "literal_he": "מבקש + לדחות + אל מחר + בזמן שעה אחת עשרה + אפשר האם + מילת נימוס.",
+      "pattern": "ขอเลื่อนไป + [יום ושעה] + ได้ไหมครับ = אפשר לדחות ליום ולשעה האלה?",
+      "prompt_he": "אפשר לדחות למחר בשעה אחת עשרה?",
+      "review_status": "approved",
+      "romanization": "khɔ̌ɔ lʉ̂an bpai phrûng-níi dtɔɔn sìp-èt mooŋ dâai mǎi khráp",
+      "thai": "ขอเลื่อนไปพรุ่งนี้ตอนสิบเอ็ดโมงได้ไหมครับ",
+      "variation": {
+        "prompt_he": "מחר אני לא יכול אבל מחרתיים בבוקר כן.",
+        "thai": "พรุ่งนี้ผมไม่ได้ แต่มะรืนตอนเช้าได้ครับ"
+      }
+    },
+    {
+      "category": "spaced_recall_lateness",
+      "context_he": "הודעה קצרה כשכבר ברור שלא מגיעים בזמן.",
+      "id": "d007-s14",
+      "literal_he": "אני + אאחר + בערך + עשר דקות + מילת נימוס.",
+      "pattern": "ผมจะสายประมาณ + [משך] + ครับ = אאחר בערך במשך הזמן הזה.",
+      "prompt_he": "אני אאחר בערך בעשר דקות.",
+      "review_status": "approved",
+      "romanization": "phǒm jà sǎai bprà-maan sìp naa-thii khráp",
+      "thai": "ผมจะสายประมาณสิบนาทีครับ",
+      "variation": {
+        "prompt_he": "אני בדרך ואגיע בשמונה ועשר.",
+        "thai": "ผมกำลังไป น่าจะถึงตอนสองทุ่มสิบนาทีครับ"
+      }
+    },
+    {
+      "category": "spaced_recall_duration",
+      "context_he": "לתכנון יציאה לפי משך נסיעה משוער.",
+      "id": "d007-s15",
+      "literal_he": "משתמש בזמן נסיעה + בערך + שלוש שעות + מילת נימוס.",
+      "pattern": "ใช้เวลา + [פעולה] + ประมาณ + [משך] + ครับ = הפעולה לוקחת בערך את משך הזמן.",
+      "prompt_he": "הנסיעה לוקחת בערך שלוש שעות.",
+      "review_status": "approved",
+      "romanization": "chái wee-laa dəən-thaaŋ bprà-maan sǎam chûa-mooŋ khráp",
+      "thai": "ใช้เวลาเดินทางประมาณสามชั่วโมงครับ",
+      "variation": {
+        "prompt_he": "הטיסה לוקחת שעה ועשרים דקות.",
+        "thai": "เที่ยวบินใช้เวลาหนึ่งชั่วโมงยี่สิบนาทีครับ"
+      }
+    },
+    {
+      "category": "common_wake_up_time",
+      "context_he": "לתיאור שעת התעוררות קבועה ביום מסוים בשבוע.",
+      "id": "d007-s16",
+      "literal_he": "בכל + יום שני + אני + מתעורר משינה + בזמן שעה שבע + מילת נימוס.",
+      "pattern": "ทุก + [יום] + ผมตื่นนอนตอน + [שעה] + ครับ = בכל יום כזה אני מתעורר בשעה הזאת.",
+      "prompt_he": "בכל יום שני אני מתעורר בשעה שבע.",
+      "review_status": "approved",
+      "romanization": "thúk wan jan phǒm dtʉ̀ʉn nɔɔn dtɔɔn jèt mooŋ khráp",
+      "thai": "ทุกวันจันทร์ผมตื่นนอนตอนเจ็ดโมงครับ",
+      "variation": {
+        "prompt_he": "ביום ראשון אני מתעורר מוקדם בשעה שש.",
+        "thai": "วันอาทิตย์ผมตื่นเช้าตอนหกโมงครับ"
+      }
+    },
+    {
+      "category": "common_wake_up_late",
+      "context_he": "הדרך הטבעית לומר שהתעוררת מאוחר מהרגיל או מהמתוכנן.",
+      "id": "d007-s17",
+      "literal_he": "היום + אני + התעוררתי מאוחר + מילת נימוס.",
+      "pattern": "วันนี้ผมตื่น + [מוקדם או מאוחר] + ครับ = היום התעוררתי בזמן המתואר.",
+      "prompt_he": "היום קמתי מאוחר.",
+      "review_status": "approved",
+      "romanization": "wan-níi phǒm dtʉ̀ʉn sǎai khráp",
+      "thai": "วันนี้ผมตื่นสายครับ",
+      "variation": {
+        "prompt_he": "השעון המעורר לא צלצל ולכן קמתי מאוחר.",
+        "thai": "นาฬิกาปลุกไม่ดัง ผมเลยตื่นสายครับ"
+      }
+    },
+    {
+      "category": "common_get_out_of_bed",
+      "context_he": "להבדיל בין הרגע שבו מתעוררים לבין הרגע שבו באמת יוצאים מהמיטה.",
+      "id": "d007-s18",
+      "literal_he": "אני + קמתי מתוך + מיטה + בזמן שעה שבע חמש עשרה דקות + מילת נימוס.",
+      "pattern": "ผมลุกจากเตียงตอน + [שעה] + ครับ = קמתי מהמיטה בשעה הזאת.",
+      "prompt_he": "קמתי מהמיטה בשבע ורבע.",
+      "review_status": "approved",
+      "romanization": "phǒm lúk jàak dtiang dtɔɔn jèt mooŋ sìp-hâa naa-thii khráp",
+      "thai": "ผมลุกจากเตียงตอนเจ็ดโมงสิบห้านาทีครับ",
+      "variation": {
+        "prompt_he": "אחרי שהשעון צלצל המשכתי לישון עוד עשר דקות.",
+        "thai": "พอนาฬิกาปลุกดัง ผมนอนต่ออีกสิบนาทีครับ"
+      }
+    },
+    {
+      "category": "common_go_to_bed",
+      "context_he": "לתיאור שעת השינה הרגילה בשפת יום יום.",
+      "id": "d007-s19",
+      "literal_he": "בדרך כלל + אני + נכנס לישון + בזמן חמש שעות ערב + מילת נימוס.",
+      "pattern": "ปกติผมเข้านอนตอน + [שעה] + ครับ = בדרך כלל אני הולך לישון בשעה הזאת.",
+      "prompt_he": "בדרך כלל אני הולך לישון בשעה אחת עשרה בלילה.",
+      "review_status": "approved",
+      "romanization": "bpòk-gà-dtì phǒm khâo nɔɔn dtɔɔn hâa thûm khráp",
+      "thai": "ปกติผมเข้านอนตอนห้าทุ่มครับ",
+      "variation": {
+        "prompt_he": "בסוף השבוע אני בדרך כלל הולך לישון מאוחר.",
+        "thai": "วันเสาร์อาทิตย์ผมมักนอนดึกครับ"
+      }
+    },
+    {
+      "category": "common_fall_asleep",
+      "context_he": "בתאילנדית מדוברת משתמשים בתבנית ตีหนึ่ง עד ตีห้า לשעות אחת עד חמש לפנות בוקר.",
+      "id": "d007-s20",
+      "literal_he": "אתמול בלילה + אני + נרדמתי + בזמן שתיים לפנות בוקר + מילת נימוס.",
+      "pattern": "ตอนตี + [אחת עד חמש] = בשעה הזאת לפנות בוקר.",
+      "prompt_he": "אתמול בלילה נרדמתי בשתיים בלילה.",
+      "review_status": "approved",
+      "romanization": "mʉ̂a-khʉʉn phǒm làp dtɔɔn dtii sɔ̌ɔŋ khráp",
+      "thai": "เมื่อคืนผมหลับตอนตีสองครับ",
+      "variation": {
+        "prompt_he": "היום ישנתי בצהריים בשעה שתיים.",
+        "thai": "วันนี้ผมงีบตอนบ่ายสองโมงครับ"
+      }
+    }
+  ],
+  "source": {
+    "project": "Thai language learning",
+    "thread_id": "01a072ea-9260-7bf3-aeb7-31bf9b4bf90e"
+  },
+  "status": "approved",
+  "theme": "Days, clock times, daily sleep routines, schedules, and recent searched vocabulary",
+  "voices": {
+    "hebrew": {
+      "language_code": "he-IL",
+      "name": "he-IL-Chirp3-HD-Charon"
+    },
+    "provider": "google_cloud_tts",
+    "thai": {
+      "language_code": "th-TH",
+      "name": "th-TH-Chirp3-HD-Erinome"
+    }
+  },
+  "week": 1
+}

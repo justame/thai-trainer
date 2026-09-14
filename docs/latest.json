@@ -1,9 +1,9 @@
 {
-  "audio_manifest_path": "packs/day-004/r1/audio-manifest.json",
-  "content_sha256": "8ebc79bb8e7082073ff2760e1f490f78f7fa79f9db1f54cfe61f72ed4d5d6b30",
-  "lesson_id": "day-004",
-  "lesson_path": "packs/day-004/r1/lesson.json",
-  "practice_manifest_path": "packs/day-004/r1/practice/practice-manifest.json",
-  "revision": 1,
+  "audio_manifest_path": "packs/day-007/r3/audio-manifest.json",
+  "content_sha256": "103e30a3b4e8da638994b8e617c695db222f4dd000475d64260a0c636210e1cb",
+  "lesson_id": "day-007",
+  "lesson_path": "packs/day-007/r3/lesson.json",
+  "practice_manifest_path": "packs/day-007/r3/practice/practice-manifest.json",
+  "revision": 3,
   "schema_version": 1
 }
