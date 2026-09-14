@@ -1,0 +1,213 @@
+{
+  "billable_characters": 225,
+  "entries": [
+    {
+      "bytes": 96044,
+      "file": "d007-s01-word-01-th.wav",
+      "meaning_hebrew": "פגישה היום אחר הצהריים",
+      "romanization": "bprà-chum dtɔɔn bàai níi",
+      "sha256": "588040463d5473dd85d12abacdafc72d90079cb4ad7cf62f3f7434413304e83b",
+      "source_request_sha256": "d02efef5240971bd542f2a2277db06d7bcc90351956ccdf97c4f47976b439710",
+      "thai": "ประชุมตอนบ่ายนี้",
+      "word_id": "d007-s01#1"
+    },
+    {
+      "bytes": 80684,
+      "file": "d007-s02-word-01-th.wav",
+      "meaning_hebrew": "לדחות ליום שלישי",
+      "romanization": "lʉ̂an bpai wan aŋ-khaan",
+      "sha256": "cb142d6bb1e3e7ef834d1ff3cb1a6aae6c3dc7b75370b9716bf3c510d10f371d",
+      "source_request_sha256": "5ede42087a98c013e101f6c526c18dd696670f113059d64bfe5d74e71deb3275",
+      "thai": "เลื่อนไปวันอังคาร",
+      "word_id": "d007-s02#1"
+    },
+    {
+      "bytes": 94124,
+      "file": "d007-s03-word-01-th.wav",
+      "meaning_hebrew": "נוח בשלוש אחר הצהריים",
+      "romanization": "sà-dùak dtɔɔn bàai sǎam",
+      "sha256": "d7ef9427b7f4294a0dd662d9ae1b852afb5e097b692f95716b36bd355caa16c7",
+      "source_request_sha256": "98a3ed998d1fa99cae7f88dfca2439475224261c22a647b1b41545d2d931e909",
+      "thai": "สะดวกตอนบ่ายสาม",
+      "word_id": "d007-s03#1"
+    },
+    {
+      "bytes": 80684,
+      "file": "d007-s04-word-01-th.wav",
+      "meaning_hebrew": "בדיוק בשמונה",
+      "romanization": "bpɛ̀ɛt mooŋ phɔɔ-dii",
+      "sha256": "cab92cd604bbb24333cc770bc67fe0e0568b18bd53370fe5cb260db581ffae3a",
+      "source_request_sha256": "9f3e6bd728bb50d9934a0cf767214d5ca402aa40c9711fa3e567b86b0dd37287",
+      "thai": "แปดโมงพอดี",
+      "word_id": "d007-s04#1"
+    },
+    {
+      "bytes": 48044,
+      "file": "d007-s05-word-01-th.wav",
+      "meaning_hebrew": "ללכת לישון מאוחר",
+      "romanization": "nɔɔn dʉ̀k",
+      "sha256": "c13d75c48877d19ca2189147dd591da35e6e7812a4c05c9573bfa46e4b0f39ee",
+      "source_request_sha256": "a347bd53dea849c121ab23bef496bbc2b12be98c09082a7b688db12492b63094",
+      "thai": "นอนดึก",
+      "word_id": "d007-s05#1"
+    },
+    {
+      "bytes": 101804,
+      "file": "d007-s06-word-01-th.wav",
+      "meaning_hebrew": "בקושי יש זמן",
+      "romanization": "thɛ̂ɛp jà mâi mii wee-laa",
+      "sha256": "f5b4a60e66578f49ebf94cfb41ff669c1035f34527f35b4019a6201a696458ad",
+      "source_request_sha256": "f79adf90704e1d37583ea94283a2baecf68ffe1b7366da4ea1c0eb5d86c138da",
+      "thai": "แทบจะไม่มีเวลา",
+      "word_id": "d007-s06#1"
+    },
+    {
+      "bytes": 80684,
+      "file": "d007-s07-word-01-th.wav",
+      "meaning_hebrew": "ללכת לקחת משקפיים",
+      "romanization": "bpai ráp wɛ̂ɛn-dtaa",
+      "sha256": "e65ad82070387d26feee79d6928568eb886eaf3f1419564f128b0b5d0fd8f623",
+      "source_request_sha256": "455ad09819360994c4595806ae56ecea16f520a28dbc557b537b3780ec25b4f7",
+      "thai": "ไปรับแว่นตา",
+      "word_id": "d007-s07#1"
+    },
+    {
+      "bytes": 80684,
+      "file": "d007-s08-word-01-th.wav",
+      "meaning_hebrew": "להחליט לפני",
+      "romanization": "dtàt-sǐn-jai gɔ̀ɔn",
+      "sha256": "9d86f1a86a9089df737c87279e5e3593ad9527d628c7b111487fce8586bfdc74",
+      "source_request_sha256": "8eb38a998885f14b599555a5931f3aa743d18b3011bb1c6110cad9309b7dcd9d",
+      "thai": "ตัดสินใจก่อน",
+      "word_id": "d007-s08#1"
+    },
+    {
+      "bytes": 69164,
+      "file": "d007-s09-word-01-th.wav",
+      "meaning_hebrew": "מחרתיים",
+      "romanization": "má-rʉʉn",
+      "sha256": "b32628c8172f8fd451029bd09728257a348ba987012cdabe0baf7ec823a202c8",
+      "source_request_sha256": "3187addb7912c386158dff40b6e1418b6e0f0b649c507197d9ae3ca338a489a1",
+      "thai": "มะรืน",
+      "word_id": "d007-s09#1"
+    },
+    {
+      "bytes": 94124,
+      "file": "d007-s10-word-01-th.wav",
+      "meaning_hebrew": "מתי כדאי להזמין",
+      "romanization": "khuan jɔɔŋ dtɔɔn nǎi",
+      "sha256": "f742b0b6e61d353567e375b2bafcbef47dd862742b68771a8c61e4aa398c39c5",
+      "source_request_sha256": "5330f56fcf13dc78c8aea44903509904d82ce7850e2fb36aac05b8a69d37d0f7",
+      "thai": "ควรจองตอนไหน",
+      "word_id": "d007-s10#1"
+    },
+    {
+      "bytes": 57644,
+      "file": "d007-s11-word-01-th.wav",
+      "meaning_hebrew": "יום חופש",
+      "romanization": "wan-yùt",
+      "sha256": "3e7a00bf3763fd5357a5e2edbe9ad8aba7fc92bf7ca38e74eb23bd56c258a3fe",
+      "source_request_sha256": "3933cabae75de429737646f8b31613164876aef6ba95dbda491e14611d6ccc4d",
+      "thai": "วันหยุด",
+      "word_id": "d007-s11#1"
+    },
+    {
+      "bytes": 84524,
+      "file": "d007-s12-word-01-th.wav",
+      "meaning_hebrew": "באיזו שעה כדאי",
+      "romanization": "gìi mooŋ dii",
+      "sha256": "b29e7eb678db2d1a21ddf9fedf7d19cb5d70600b4b65839ee8c0469f207eb86e",
+      "source_request_sha256": "65a7f421399c6edd2ebb2b61b0a2fa86212f8125ee4e1cbac07244c68b05ad92",
+      "thai": "กี่โมงดี",
+      "word_id": "d007-s12#1"
+    },
+    {
+      "bytes": 74924,
+      "file": "d007-s13-word-01-th.wav",
+      "meaning_hebrew": "לדחות למחר",
+      "romanization": "lʉ̂an bpai phrûng-níi",
+      "sha256": "1d416df711bd859dfdba0d2e287f55629ca30c79235ecbd0b6d3ad04b231a620",
+      "source_request_sha256": "8dfe6755187cad19d47af4908d09dbfc5805346b9f37ad152d4e8aeb5624b26e",
+      "thai": "เลื่อนไปพรุ่งนี้",
+      "word_id": "d007-s13#1"
+    },
+    {
+      "bytes": 86444,
+      "file": "d007-s14-word-01-th.wav",
+      "meaning_hebrew": "אאחר",
+      "romanization": "jà sǎai",
+      "sha256": "cbcf28e33cdcbef368150daec5ef0ad41a18ea550cddc03fe888669a6e61e35a",
+      "source_request_sha256": "534e364400fa9ffcb471599550b4dc4fd0bd4afc194b0ce92e49ea1da9056f8d",
+      "thai": "จะสาย",
+      "word_id": "d007-s14#1"
+    },
+    {
+      "bytes": 92204,
+      "file": "d007-s15-word-01-th.wav",
+      "meaning_hebrew": "משך הנסיעה",
+      "romanization": "chái wee-laa dəən-thaaŋ",
+      "sha256": "9ece21381fccee1527d87a0ed11bda818ae31bd38e2fd1888a4d54155589777e",
+      "source_request_sha256": "fd139036d9b6bcf2c99dd23fc3e2bcb1e84e0b664d1b05e831ef9fd14b656e1a",
+      "thai": "ใช้เวลาเดินทาง",
+      "word_id": "d007-s15#1"
+    },
+    {
+      "bytes": 103724,
+      "file": "d007-s16-word-01-th.wav",
+      "meaning_hebrew": "להתעורר בשבע",
+      "romanization": "dtʉ̀ʉn nɔɔn dtɔɔn jèt mooŋ",
+      "sha256": "d3365d7dcdbbf18952b56522d3dbc2c859599612cfd1477d47948c9a526c54f6",
+      "source_request_sha256": "ed77f4eb4f2391476d28791a4f49cfd98444b8f18a6c72bc3c5bc3d93ad3e9d9",
+      "thai": "ตื่นนอนตอนเจ็ดโมง",
+      "word_id": "d007-s16#1"
+    },
+    {
+      "bytes": 82604,
+      "file": "d007-s17-word-01-th.wav",
+      "meaning_hebrew": "לקום מאוחר",
+      "romanization": "dtʉ̀ʉn sǎai",
+      "sha256": "a553cfdac69ab88f726f325b1582d285ffd49575e5c98d6f8d36f218f16a5ac9",
+      "source_request_sha256": "6da0f712a983f59e553a99ea609caa5910c45cc7658a7959d2526f0db02e429d",
+      "thai": "ตื่นสาย",
+      "word_id": "d007-s17#1"
+    },
+    {
+      "bytes": 76844,
+      "file": "d007-s18-word-01-th.wav",
+      "meaning_hebrew": "לקום מהמיטה",
+      "romanization": "lúk jàak dtiang",
+      "sha256": "0e9f949e35c9a00168e23faae4fba256e17d5461310de6aaa88d50fdbf6ac347",
+      "source_request_sha256": "c2df991aa331e818f9e8d92b91f9e6090c18951c0ac97613ddfc07638943978b",
+      "thai": "ลุกจากเตียง",
+      "word_id": "d007-s18#1"
+    },
+    {
+      "bytes": 97964,
+      "file": "d007-s19-word-01-th.wav",
+      "meaning_hebrew": "ללכת לישון באחת עשרה",
+      "romanization": "khâo nɔɔn dtɔɔn hâa thûm",
+      "sha256": "1460ddb5b6e8c01e75eaf8e69f8f8fe3838a28bba7d4a3109d5033544d9ed541",
+      "source_request_sha256": "7260be85efbc0da43682799b63d501db13a1a5c190f14b58058fda468f197c10",
+      "thai": "เข้านอนตอนห้าทุ่ม",
+      "word_id": "d007-s19#1"
+    },
+    {
+      "bytes": 65324,
+      "file": "d007-s20-word-01-th.wav",
+      "meaning_hebrew": "שתיים בלילה",
+      "romanization": "dtii sɔ̌ɔŋ",
+      "sha256": "b5198f16cab53b5801b6f0f251b219d5071bcb6fceb8acefcb38527077768645",
+      "source_request_sha256": "c0fc3cc8e64706948cb048f833140873ffc0cea6b7612b6d4875bdf665a61d8d",
+      "thai": "ตีสอง",
+      "word_id": "d007-s20#1"
+    }
+  ],
+  "estimated_cost_usd": 0.00675,
+  "generated_at": "2026-09-14T17:10:11.117229+00:00",
+  "lesson_id": "day-007",
+  "provider": "google_cloud_tts",
+  "revision": 3,
+  "sample_rate_hertz": 24000,
+  "schema_version": 1,
+  "vocabulary_sha256": "e99d3be1d78345140b067268d7adb9e741e2753d47244bc1ebf73a435871d1b1"
+}

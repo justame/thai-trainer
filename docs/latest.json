@@ -5,5 +5,6 @@
   "lesson_path": "packs/day-007/r3/lesson.json",
   "practice_manifest_path": "packs/day-007/r3/practice/practice-manifest.json",
   "revision": 3,
-  "schema_version": 1
+  "schema_version": 1,
+  "word_manifest_path": "word-packs/day-007/r3/word-audio-manifest.json"
 }
