@@ -1,0 +1,678 @@
+{
+  "audio_program": {
+    "pitch_semitones": 0,
+    "practice_variations": {
+      "hebrew_speaking_rate": 1,
+      "thai_speaking_rate": 1
+    },
+    "tracks": [
+      {
+        "id": "listening",
+        "pause_between_repetitions_ms": 1200,
+        "pause_between_sentences_ms": 2800,
+        "sequence": [
+          "d008-s01",
+          "d008-s02",
+          "d008-s03",
+          "d008-s04",
+          "d008-s05",
+          "d008-s06",
+          "d008-s07",
+          "d008-s08",
+          "d008-s09",
+          "d008-s10",
+          "d008-s11",
+          "d008-s12",
+          "d008-s13",
+          "d008-s14",
+          "d008-s15",
+          "d008-s16",
+          "d008-s17",
+          "d008-s18",
+          "d008-s19",
+          "d008-s20"
+        ],
+        "thai_repetitions": 2,
+        "thai_speaking_rates": [
+          0.82,
+          1
+        ]
+      },
+      {
+        "id": "shadowing",
+        "pause_between_repetitions_ms": 700,
+        "pause_between_sentences_ms": 1800,
+        "sequence": [
+          "d008-s01",
+          "d008-s02",
+          "d008-s03",
+          "d008-s04",
+          "d008-s05",
+          "d008-s06",
+          "d008-s07",
+          "d008-s08",
+          "d008-s09",
+          "d008-s10",
+          "d008-s11",
+          "d008-s12",
+          "d008-s13",
+          "d008-s14",
+          "d008-s15",
+          "d008-s16",
+          "d008-s17",
+          "d008-s18",
+          "d008-s19",
+          "d008-s20"
+        ],
+        "thai_repetitions": 3,
+        "thai_speaking_rates": [
+          0.9,
+          0.9,
+          0.9
+        ]
+      },
+      {
+        "hebrew_prompt": true,
+        "hebrew_speaking_rate": 1,
+        "id": "recall",
+        "pause_between_sentences_ms": 2500,
+        "recall_pause_ms": 5000,
+        "sequence": [
+          "d008-s01",
+          "d008-s02",
+          "d008-s03",
+          "d008-s04",
+          "d008-s05",
+          "d008-s06",
+          "d008-s07",
+          "d008-s08",
+          "d008-s09",
+          "d008-s10",
+          "d008-s11",
+          "d008-s12",
+          "d008-s13",
+          "d008-s14",
+          "d008-s15",
+          "d008-s16",
+          "d008-s17",
+          "d008-s18",
+          "d008-s19",
+          "d008-s20"
+        ],
+        "thai_repetitions": 1,
+        "thai_speaking_rates": [
+          0.9
+        ]
+      },
+      {
+        "id": "scenario",
+        "pause_between_sentences_ms": 1200,
+        "sequence": [
+          "d008-s01",
+          "d008-s02",
+          "d008-s03",
+          "d008-s04",
+          "d008-s05",
+          "d008-s06",
+          "d008-s07",
+          "d008-s08",
+          "d008-s09",
+          "d008-s10",
+          "d008-s11",
+          "d008-s12",
+          "d008-s13",
+          "d008-s14",
+          "d008-s15",
+          "d008-s16",
+          "d008-s17",
+          "d008-s18",
+          "d008-s19",
+          "d008-s20"
+        ],
+        "thai_repetitions": 1,
+        "thai_speaking_rates": [
+          1
+        ]
+      }
+    ]
+  },
+  "day": 8,
+  "lesson_id": "day-008",
+  "revision": 1,
+  "schema_version": 1,
+  "sentences": [
+    {
+      "category": "modes",
+      "context_he": "משפט יומיומי להבהרה שעכשיו מתמקדים ועובדים ברצינות.",
+      "id": "d008-s01",
+      "literal_he": "היום + אני + נמצא בתוך + מצב רציני + מילת נימוס.",
+      "pattern": "อยู่ในโหมด + [מצב] = להיות במצב מסוים.",
+      "prompt_he": "היום אני במצב רציני.",
+      "review_status": "approved",
+      "romanization": "wan-níi phǒm yùu nai mòot jing-jang khráp",
+      "thai": "วันนี้ผมอยู่ในโหมดจริงจังครับ",
+      "variation": {
+        "prompt_he": "בפגישה אני עובר למצב רציני.",
+        "thai": "ตอนประชุมผมจะเข้าโหมดจริงจังครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "מצב",
+          "romanization": "mòot",
+          "thai": "โหมด"
+        },
+        {
+          "meaning_he": "רציני",
+          "romanization": "jing-jang",
+          "thai": "จริงจัง"
+        }
+      ]
+    },
+    {
+      "category": "modes",
+      "context_he": "אחרי תקופה לחוצה, שינוי, תקלה או מצב חריג.",
+      "id": "d008-s02",
+      "literal_he": "עכשיו + אני + רוצה + לחזור ולהיכנס אל + מצב רגיל + מילת נימוס.",
+      "pattern": "กลับเข้าสู่ + [מצב] = לחזור למצב מסוים.",
+      "prompt_he": "עכשיו אני רוצה לחזור למצב רגיל.",
+      "review_status": "approved",
+      "romanization": "dtɔɔn-níi phǒm yàak glàp khâo sùu mòot bpòk-gà-dtì khráp",
+      "thai": "ตอนนี้ผมอยากกลับเข้าสู่โหมดปกติครับ",
+      "variation": {
+        "prompt_he": "בקרוב הכול יחזור למצב רגיל.",
+        "thai": "อีกไม่นานทุกอย่างจะกลับเข้าสู่โหมดปกติครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "להיכנס או לחזור למצב רגיל",
+          "romanization": "khâo sùu mòot bpòk-gà-dtì",
+          "thai": "เข้าสู่โหมดปกติ"
+        }
+      ]
+    },
+    {
+      "category": "modes",
+      "context_he": "דרך קלילה לומר שלאחר העבודה מפסיקים להתעסק במשימות.",
+      "id": "d008-s03",
+      "literal_he": "אחרי + לסיים עבודה + אני + אכנס + מצב מנוחה + מילת נימוס.",
+      "pattern": "หลัง + [אירוע] + จะเข้าโหมด + [מצב] = אחרי האירוע אעבור למצב הזה.",
+      "prompt_he": "אחרי העבודה אעבור למצב מנוחה.",
+      "review_status": "approved",
+      "romanization": "lǎng lə̂ək-ngaan phǒm jà khâo mòot phák-phɔ̀n khráp",
+      "thai": "หลังเลิกงานผมจะเข้าโหมดพักผ่อนครับ",
+      "variation": {
+        "prompt_he": "הלילה אני רוצה להיות במצב מנוחה.",
+        "thai": "คืนนี้ผมอยากอยู่ในโหมดพักผ่อนครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "מצב מנוחה",
+          "romanization": "mòot phák-phɔ̀n",
+          "thai": "โหมดพักผ่อน"
+        }
+      ]
+    },
+    {
+      "category": "modes",
+      "context_he": "ניסוח משועשע למעבר ממנוחה לעבודה ממוקדת.",
+      "id": "d008-s04",
+      "literal_he": "אם + צריך + להתרכז + אני + אכבה + מצב מנוחה + מילת נימוס.",
+      "pattern": "ถ้าต้อง + [פעולה] + จะปิดโหมด + [מצב] = אם צריך לפעול, אצא מהמצב הזה.",
+      "prompt_he": "אם אני צריך להתרכז, אכבה את מצב המנוחה.",
+      "review_status": "approved",
+      "romanization": "thâa dtɔ̂ng dtâng-jai phǒm jà bpìt mòot phák-phɔ̀n khráp",
+      "thai": "ถ้าต้องตั้งใจ ผมจะปิดโหมดพักผ่อนครับ",
+      "variation": {
+        "prompt_he": "אחרי שאסיים לעבוד אפעיל שוב מצב מנוחה.",
+        "thai": "ทำงานเสร็จแล้วผมจะเปิดโหมดพักผ่อนอีกครั้งครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "להתרכז; להתכוון ברצינות",
+          "romanization": "dtâng-jai",
+          "thai": "ตั้งใจ"
+        },
+        {
+          "meaning_he": "לכבות מצב",
+          "romanization": "bpìt mòot",
+          "thai": "ปิดโหมด"
+        }
+      ]
+    },
+    {
+      "category": "action_preference",
+      "context_he": "להסביר שאתה מעדיף פעולה ממשית על פני הרבה דיבורים.",
+      "id": "d008-s05",
+      "literal_he": "אני + לא כל כך אוהב + לדבר + אוהב להתחיל לעשות + יותר + מילת נימוס.",
+      "pattern": "ชอบ + [א] + มากกว่า + [ב] = להעדיף א על ב.",
+      "prompt_he": "אני לא כל כך אוהב לדבר; אני מעדיף לפעול.",
+      "review_status": "approved",
+      "romanization": "phǒm mâi khɔ̂i chɔ̂ɔp phûut chɔ̂ɔp long-mʉʉ tham mâak gwàa khráp",
+      "thai": "ผมไม่ค่อยชอบพูด ชอบลงมือทำมากกว่าครับ",
+      "variation": {
+        "prompt_he": "אני מעדיף לפתור את הבעיה מאשר לדבר עליה.",
+        "thai": "ผมชอบแก้ปัญหามากกว่าพูดถึงปัญหาครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "להתחיל לעשות בפועל",
+          "romanization": "long-mʉʉ tham",
+          "thai": "ลงมือทำ"
+        },
+        {
+          "meaning_he": "יותר מאשר",
+          "romanization": "mâak gwàa",
+          "thai": "มากกว่า"
+        }
+      ]
+    },
+    {
+      "category": "action_preference",
+      "context_he": "להדגיש שלאחר קבלת החלטה עוברים מיד לביצוע.",
+      "id": "d008-s06",
+      "literal_he": "ברגע ש + החלטתי + כבר + אני + אתחיל לעשות + מיד + מילת נימוס.",
+      "pattern": "พอ + [פעולה] + แล้ว จะ + [פעולה] = ברגע שהפעולה הראשונה תסתיים, אעשה את השנייה.",
+      "prompt_he": "אחרי שהחלטתי, אתחיל מיד.",
+      "review_status": "approved",
+      "romanization": "phɔɔ dtàt-sǐn-jai lɛ́ɛo phǒm jà long-mʉʉ tham than-thii khráp",
+      "thai": "พอตัดสินใจแล้ว ผมจะลงมือทำทันทีครับ",
+      "variation": {
+        "prompt_he": "אל תחשוב יותר מדי; פשוט תתחיל.",
+        "thai": "อย่าคิดนาน ลงมือทำเลยครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "להחליט",
+          "romanization": "dtàt-sǐn-jai",
+          "thai": "ตัดสินใจ"
+        },
+        {
+          "meaning_he": "מיד",
+          "romanization": "than-thii",
+          "thai": "ทันที"
+        }
+      ]
+    },
+    {
+      "category": "action_preference",
+      "context_he": "דרך טבעית לתאר גישה מעשית למשימה.",
+      "id": "d008-s07",
+      "literal_he": "אני + מעדיף + לעבוד עד שיסתיים + יותר מאשר + לדבר עליו + מילת נימוס.",
+      "pattern": "ทำ + [דבר] + ให้เสร็จ = לעשות את הדבר עד שיושלם.",
+      "prompt_he": "אני מעדיף לסיים את העבודה מאשר לדבר עליה.",
+      "review_status": "approved",
+      "romanization": "phǒm chɔ̂ɔp tham-ngaan hâi sèt mâak gwàa phûut thʉ̌ng man khráp",
+      "thai": "ผมชอบทำงานให้เสร็จมากกว่าพูดถึงมันครับ",
+      "variation": {
+        "prompt_he": "אני מעדיף לעשות את זה בעצמי מאשר לחכות לאחרים.",
+        "thai": "ผมชอบทำเองมากกว่ารอคนอื่นครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "עד לסיום",
+          "romanization": "hâi sèt",
+          "thai": "ให้เสร็จ"
+        },
+        {
+          "meaning_he": "לדבר על",
+          "romanization": "phûut thʉ̌ng",
+          "thai": "พูดถึง"
+        }
+      ]
+    },
+    {
+      "category": "action_preference",
+      "context_he": "לעודד מעבר משיחה לפתרון מעשי.",
+      "id": "d008-s08",
+      "literal_he": "אם + יש בעיה + אנחנו + צריכים + להתחיל לפתור + מיד + מילת נימוס.",
+      "pattern": "ถ้ามี + [בעיה] + ควรลงมือ + [פתרון] = אם קיימת בעיה, כדאי להתחיל בפתרון.",
+      "prompt_he": "אם יש בעיה, כדאי שנתחיל לפתור אותה מיד.",
+      "review_status": "approved",
+      "romanization": "thâa mii bpan-hǎa rao khuan long-mʉʉ gâe ləəi khráp",
+      "thai": "ถ้ามีปัญหา เราควรลงมือแก้เลยครับ",
+      "variation": {
+        "prompt_he": "נתחיל ממשהו קטן ואז נפעל.",
+        "thai": "เริ่มจากเรื่องเล็ก ๆ แล้วลงมือทำครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "להתחיל לפתור",
+          "romanization": "long-mʉʉ gâe",
+          "thai": "ลงมือแก้"
+        },
+        {
+          "meaning_he": "כדאי; צריך",
+          "romanization": "khuan",
+          "thai": "ควร"
+        }
+      ]
+    },
+    {
+      "category": "confidence_patience",
+      "context_he": "לתיאור הקשר בין תרגול חוזר לבין עלייה בביטחון.",
+      "id": "d008-s09",
+      "literal_he": "אני + יש ביטחון עצמי + יותר + בזמן ש + זוכה לתרגל + לעיתים קרובות + מילת נימוס.",
+      "pattern": "มีความมั่นใจมากขึ้นเวลา + [מצב] = הביטחון גדל כאשר קורה המצב.",
+      "prompt_he": "יש לי יותר ביטחון כשאני מתרגל לעיתים קרובות.",
+      "review_status": "approved",
+      "romanization": "phǒm mii khwaam mân-jai mâak khʉ̂n wee-laa dâai fʉ̀k bɔ̀i bɔ̀i khráp",
+      "thai": "ผมมีความมั่นใจมากขึ้นเวลาได้ฝึกบ่อย ๆ ครับ",
+      "variation": {
+        "prompt_he": "עכשיו יש לי יותר ביטחון מבעבר.",
+        "thai": "ตอนนี้ผมมั่นใจกว่าเมื่อก่อนครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "להיות בעל ביטחון עצמי",
+          "romanization": "mii khwaam mân-jai",
+          "thai": "มีความมั่นใจ"
+        },
+        {
+          "meaning_he": "לעיתים קרובות",
+          "romanization": "bɔ̀i bɔ̀i",
+          "thai": "บ่อย ๆ"
+        }
+      ]
+    },
+    {
+      "category": "confidence_patience",
+      "context_he": "לתאר משימה איטית, מורכבת או כזאת שדורשת התמדה.",
+      "id": "d008-s10",
+      "literal_he": "עבודה הזאת + צריכה להשתמש + סבלנות + הרבה + מילת נימוס.",
+      "pattern": "ต้องใช้ + [תכונה או משאב] + มาก = דורש הרבה מהתכונה או המשאב.",
+      "prompt_he": "העבודה הזאת דורשת הרבה סבלנות.",
+      "review_status": "approved",
+      "romanization": "ngaan níi dtɔ̂ng chái khwaam òt-thon mâak khráp",
+      "thai": "งานนี้ต้องใช้ความอดทนมากครับ",
+      "variation": {
+        "prompt_he": "לימוד שפה דורש סבלנות.",
+        "thai": "การเรียนภาษาต้องใช้ความอดทนครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "סבלנות; התמדה",
+          "romanization": "khwaam òt-thon",
+          "thai": "ความอดทน"
+        }
+      ]
+    },
+    {
+      "category": "confidence_patience",
+      "context_he": "משפט לעידוד עצמי כשמשימה דורשת התמדה.",
+      "id": "d008-s11",
+      "literal_he": "אף על פי שיהיה קשה + אני עדיין + אתאזר בסבלנות + ואמשיך לעשות + מילת נימוס.",
+      "pattern": "ถึงจะ + [קושי] + ก็จะ + [פעולה] = גם אם יהיה קושי, עדיין אבצע את הפעולה.",
+      "prompt_he": "גם אם זה קשה, אתאזר בסבלנות ואמשיך.",
+      "review_status": "approved",
+      "romanization": "thʉ̌ng jà yâak phǒm gɔ̂ɔ jà òt-thon lɛ́ tham dtɔ̀ɔ khráp",
+      "thai": "ถึงจะยาก ผมก็จะอดทนและทำต่อครับ",
+      "variation": {
+        "prompt_he": "אני לא אוותר בקלות.",
+        "thai": "ผมจะไม่ยอมแพ้ง่าย ๆ ครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "להיות סבלני; להתמיד",
+          "romanization": "òt-thon",
+          "thai": "อดทน"
+        },
+        {
+          "meaning_he": "להמשיך לעשות",
+          "romanization": "tham dtɔ̀ɔ",
+          "thai": "ทำต่อ"
+        }
+      ]
+    },
+    {
+      "category": "confidence_patience",
+      "context_he": "הסבר טבעי לבן שיחה כשצריכים זמן או עזרה בניסוח.",
+      "id": "d008-s12",
+      "literal_he": "בזמן לדבר + שפה תאית + אני + עדיין לא כל כך + בטוח + מילת נימוס.",
+      "pattern": "ตอน + [פעולה] + ยังไม่ค่อย + [מצב] = בזמן הפעולה אני עדיין לא כל כך במצב הזה.",
+      "prompt_he": "כשאני מדבר תאית אני עדיין לא כל כך בטוח בעצמי.",
+      "review_status": "approved",
+      "romanization": "dtɔɔn phûut phaa-sǎa thai phǒm yang mâi khɔ̂i mân-jai khráp",
+      "thai": "ตอนพูดภาษาไทย ผมยังไม่ค่อยมั่นใจครับ",
+      "variation": {
+        "prompt_he": "אם אתרגל שוב, יהיה לי יותר ביטחון.",
+        "thai": "ถ้าได้ฝึกอีกครั้ง ผมจะมั่นใจขึ้นครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "לא כל כך בטוח בעצמו",
+          "romanization": "mâi khɔ̂i mân-jai",
+          "thai": "ไม่ค่อยมั่นใจ"
+        }
+      ]
+    },
+    {
+      "category": "groups_personal",
+      "context_he": "לתיאור השתלבות חברתית טובה בקבוצה קיימת.",
+      "id": "d008-s13",
+      "literal_he": "אני + מסתדר עם + חברים בתוך הקבוצה + יכול בקלות + מילת נימוס.",
+      "pattern": "เข้ากับ + [אנשים] + ได้ง่าย = להסתדר בקלות עם האנשים.",
+      "prompt_he": "קל לי להסתדר עם החברים בקבוצה.",
+      "review_status": "approved",
+      "romanization": "phǒm khâo gàp phʉ̂an nai glùm dâai ngâai khráp",
+      "thai": "ผมเข้ากับเพื่อนในกลุ่มได้ง่ายครับ",
+      "variation": {
+        "prompt_he": "קל לו להסתדר עם האנשים בצוות.",
+        "thai": "เขาเข้ากับคนในทีมได้ง่ายครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "להסתדר בקלות עם חברים",
+          "romanization": "khâo gàp phʉ̂an dâai ngâai",
+          "thai": "เข้ากับเพื่อนได้ง่าย"
+        },
+        {
+          "meaning_he": "קבוצה",
+          "romanization": "glùm",
+          "thai": "กลุ่ม"
+        }
+      ]
+    },
+    {
+      "category": "groups_personal",
+      "context_he": "במסגרת עבודה, שיעור או אימון משותף.",
+      "id": "d008-s14",
+      "literal_he": "היום + אנחנו + עובדים בתור + קבוצה קטנה + מילת נימוס.",
+      "pattern": "ทำงานเป็นกลุ่ม + [תיאור] = לעבוד בקבוצה מהסוג המתואר.",
+      "prompt_he": "היום אנחנו עובדים בקבוצה קטנה.",
+      "review_status": "approved",
+      "romanization": "wan-níi rao tham-ngaan bpen glùm lék lék khráp",
+      "thai": "วันนี้เราทำงานเป็นกลุ่มเล็ก ๆ ครับ",
+      "variation": {
+        "prompt_he": "בואו נתחלק לשתי קבוצות.",
+        "thai": "แบ่งเป็นสองกลุ่มนะครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "לעבוד בקבוצה",
+          "romanization": "tham-ngaan bpen glùm",
+          "thai": "ทำงานเป็นกลุ่ม"
+        }
+      ]
+    },
+    {
+      "category": "groups_personal",
+      "context_he": "לבקש שיחה אחד על אחד במקום לדון בנושא מול כולם.",
+      "id": "d008-s15",
+      "literal_he": "אני + מעדיף לדבר + באופן פרטי + יותר מאשר + בקבוצה גדולה + מילת נימוס.",
+      "pattern": "ชอบ + [אפשרות] + มากกว่า + [אפשרות] = להעדיף אפשרות אחת על האחרת.",
+      "prompt_he": "אני מעדיף שיחה פרטית על פני שיחה בקבוצה גדולה.",
+      "review_status": "approved",
+      "romanization": "phǒm chɔ̂ɔp khui bɛ̀ɛp sùan-dtua mâak gwàa nai glùm yài khráp",
+      "thai": "ผมชอบคุยแบบส่วนตัวมากกว่าในกลุ่มใหญ่ครับ",
+      "variation": {
+        "prompt_he": "אפשר לדבר איתך בפרטיות?",
+        "thai": "ขอคุยกับคุณเป็นการส่วนตัวได้ไหมครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "אישי; פרטי",
+          "romanization": "sùan-dtua",
+          "thai": "ส่วนตัว"
+        },
+        {
+          "meaning_he": "קבוצה גדולה",
+          "romanization": "glùm yài",
+          "thai": "กลุ่มใหญ่"
+        }
+      ]
+    },
+    {
+      "category": "groups_personal",
+      "context_he": "להציב גבול מנומס כשלא רוצים לשתף פרטים אישיים.",
+      "id": "d008-s16",
+      "literal_he": "עניין הזה + די + אישי + מילת נימוס.",
+      "pattern": "เรื่องนี้ค่อนข้าง + [תיאור] = הנושא הזה די מתואר.",
+      "prompt_he": "הנושא הזה די אישי.",
+      "review_status": "approved",
+      "romanization": "rʉ̂ang níi khɔ̂n-khâang sùan-dtua khráp",
+      "thai": "เรื่องนี้ค่อนข้างส่วนตัวครับ",
+      "variation": {
+        "prompt_he": "אני עדיין לא רוצה לספר על עניינים אישיים.",
+        "thai": "ผมยังไม่อยากเล่าเรื่องส่วนตัวครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "די; במידה ניכרת",
+          "romanization": "khɔ̂n-khâang",
+          "thai": "ค่อนข้าง"
+        },
+        {
+          "meaning_he": "עניין אישי",
+          "romanization": "rʉ̂ang sùan-dtua",
+          "thai": "เรื่องส่วนตัว"
+        }
+      ]
+    },
+    {
+      "category": "social_atmosphere",
+      "context_he": "לתאר בית קפה, מקום עבודה, אירוע או מפגש נינוח.",
+      "id": "d008-s17",
+      "literal_he": "אווירה + כאן + רגועה ונינוחה + מילת נימוס.",
+      "pattern": "บรรยากาศที่นี่ + [תיאור] = האווירה כאן מתוארת כך.",
+      "prompt_he": "האווירה כאן רגועה.",
+      "review_status": "approved",
+      "romanization": "ban-yaa-gàat thîi-nîi sà-baai sà-baai khráp",
+      "thai": "บรรยากาศที่นี่สบาย ๆ ครับ",
+      "variation": {
+        "prompt_he": "למסעדה הזאת יש אווירה טובה מאוד.",
+        "thai": "ร้านนี้มีบรรยากาศดีมากครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "אווירה",
+          "romanization": "ban-yaa-gàat",
+          "thai": "บรรยากาศ"
+        },
+        {
+          "meaning_he": "רגוע; נינוח",
+          "romanization": "sà-baai sà-baai",
+          "thai": "สบาย ๆ"
+        }
+      ]
+    },
+    {
+      "category": "social_atmosphere",
+      "context_he": "לקשר בין סביבה נעימה לבין שיחה חופשית ובטוחה יותר.",
+      "id": "d008-s18",
+      "literal_he": "אם + האווירה טובה + אני + אוכל לדבר + בביטחון רב יותר + מילת נימוס.",
+      "pattern": "ถ้า + [תנאי] + จะ + [תוצאה] = אם התנאי מתקיים, התוצאה תקרה.",
+      "prompt_he": "כשהאווירה טובה, אני מדבר בביטחון רב יותר.",
+      "review_status": "approved",
+      "romanization": "thâa ban-yaa-gàat dii phǒm jà khui dâai yàang mân-jai khʉ̂n khráp",
+      "thai": "ถ้าบรรยากาศดี ผมจะคุยได้อย่างมั่นใจขึ้นครับ",
+      "variation": {
+        "prompt_he": "אווירה שקטה עוזרת לי להתרכז.",
+        "thai": "บรรยากาศเงียบ ๆ ช่วยให้ผมมีสมาธิครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "בביטחון",
+          "romanization": "yàang mân-jai",
+          "thai": "อย่างมั่นใจ"
+        },
+        {
+          "meaning_he": "להיות בטוח יותר",
+          "romanization": "mân-jai khʉ̂n",
+          "thai": "มั่นใจขึ้น"
+        }
+      ]
+    },
+    {
+      "category": "social_atmosphere",
+      "context_he": "לתיאור צוות מקצועי שבו עדיין מרגישים בנוח לדבר.",
+      "id": "d008-s19",
+      "literal_he": "קבוצה הזאת + רצינית + אבל + האווירה + ידידותית ולא רשמית + מילת נימוס.",
+      "pattern": "[דבר] + [תיאור] + แต่ + [ניגוד] = הדבר מתואר כך, אבל יש בו גם ניגוד.",
+      "prompt_he": "הקבוצה הזאת רצינית, אבל האווירה ידידותית.",
+      "review_status": "approved",
+      "romanization": "glùm níi jing-jang dtɛ̀ɛ ban-yaa-gàat bpen gan-eeng khráp",
+      "thai": "กลุ่มนี้จริงจัง แต่บรรยากาศเป็นกันเองครับ",
+      "variation": {
+        "prompt_he": "כולם רציניים לגבי העבודה, אבל מדברים בנינוחות.",
+        "thai": "ทุกคนจริงจังกับงาน แต่คุยกันสบาย ๆ ครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "ידידותי; לא רשמי",
+          "romanization": "bpen gan-eeng",
+          "thai": "เป็นกันเอง"
+        },
+        {
+          "meaning_he": "רציני",
+          "romanization": "jing-jang",
+          "thai": "จริงจัง"
+        }
+      ]
+    },
+    {
+      "category": "social_atmosphere",
+      "context_he": "לבקש מרחב קצר אחרי עומס, מפגש חברתי או יום עבודה.",
+      "id": "d008-s20",
+      "literal_he": "אני + צריך + זמן אישי + לפני + לחזור ולהיכנס + מצב רגיל + מילת נימוס.",
+      "pattern": "ต้องการ + [דבר] + ก่อน + [פעולה] = צריך את הדבר לפני ביצוע הפעולה.",
+      "prompt_he": "אני צריך קצת זמן פרטי לפני שאחזור למצב רגיל.",
+      "review_status": "approved",
+      "romanization": "phǒm dtɔ̂ng-gaan wee-laa sùan-dtua gɔ̀ɔn glàp khâo sùu mòot bpòk-gà-dtì khráp",
+      "thai": "ผมต้องการเวลาส่วนตัวก่อนกลับเข้าสู่โหมดปกติครับ",
+      "variation": {
+        "prompt_he": "אפשר לי לנוח לבד לרגע?",
+        "thai": "ขอพักคนเดียวสักครู่ได้ไหมครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "זמן פרטי",
+          "romanization": "wee-laa sùan-dtua",
+          "thai": "เวลาส่วนตัว"
+        },
+        {
+          "meaning_he": "לחזור למצב רגיל",
+          "romanization": "glàp khâo sùu mòot bpòk-gà-dtì",
+          "thai": "กลับเข้าสู่โหมดปกติ"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "project": "Thai language learning",
+    "thread_id": "01a072ea-9260-7bf3-aeb7-31bf9b4bf90e"
+  },
+  "status": "approved",
+  "theme": "Modes, action, confidence, and social settings",
+  "voices": {
+    "hebrew": {
+      "language_code": "he-IL",
+      "name": "he-IL-Chirp3-HD-Charon"
+    },
+    "provider": "google_cloud_tts",
+    "thai": {
+      "language_code": "th-TH",
+      "name": "th-TH-Chirp3-HD-Erinome"
+    }
+  },
+  "week": 2
+}

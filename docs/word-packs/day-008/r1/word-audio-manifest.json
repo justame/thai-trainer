@@ -1,0 +1,213 @@
+{
+  "billable_characters": 193,
+  "entries": [
+    {
+      "bytes": 30764,
+      "file": "d008-s01-word-01-th.wav",
+      "meaning_hebrew": "מצב",
+      "romanization": "mòot",
+      "sha256": "7f0acd66c9ee9c5a8415a604b6416a54272b194b2e1689761b01779aea5e120d",
+      "source_request_sha256": "ded12032299c7c93c93d27712ae4947718f2419c35858a5ac2ef55d486f379ef",
+      "thai": "โหมด",
+      "word_id": "d008-s01#1"
+    },
+    {
+      "bytes": 109484,
+      "file": "d008-s02-word-01-th.wav",
+      "meaning_hebrew": "להיכנס או לחזור למצב רגיל",
+      "romanization": "khâo sùu mòot bpòk-gà-dtì",
+      "sha256": "34d78f073befa41adfcf26b05357272718e48f095767229008306a2059a40645",
+      "source_request_sha256": "7ab295f06b7a55f569d55cddad4deacfdc2d2627ec69d90da8065b57da5fb6d5",
+      "thai": "เข้าสู่โหมดปกติ",
+      "word_id": "d008-s02#1"
+    },
+    {
+      "bytes": 78764,
+      "file": "d008-s03-word-01-th.wav",
+      "meaning_hebrew": "מצב מנוחה",
+      "romanization": "mòot phák-phɔ̀n",
+      "sha256": "05e9028e2efadd54d951e8b3c0f70683b477861b41cc6be41db0308bb941605b",
+      "source_request_sha256": "c34503aa198a6f626a27659a26f804ce15f550699f8c7ef5f98c0606bda57e8b",
+      "thai": "โหมดพักผ่อน",
+      "word_id": "d008-s03#1"
+    },
+    {
+      "bytes": 69164,
+      "file": "d008-s04-word-01-th.wav",
+      "meaning_hebrew": "להתרכז; להתכוון ברצינות",
+      "romanization": "dtâng-jai",
+      "sha256": "588b3b832568cfa6dbaf7e538425838908d1a1e3206d99744e9a135486fc5b22",
+      "source_request_sha256": "67070f209816b64688f96323af5a464b397061ad0d117a5ffe2421cd2062fd93",
+      "thai": "ตั้งใจ",
+      "word_id": "d008-s04#1"
+    },
+    {
+      "bytes": 82604,
+      "file": "d008-s05-word-01-th.wav",
+      "meaning_hebrew": "להתחיל לעשות בפועל",
+      "romanization": "long-mʉʉ tham",
+      "sha256": "032926df2bf64b0314b3c3c40129e3e6147cbd859cc3d9e834713d5062aa4484",
+      "source_request_sha256": "9df08f5603f67062004a6d824fc020df0be2bfe6d3fde931a1062a6652853800",
+      "thai": "ลงมือทำ",
+      "word_id": "d008-s05#1"
+    },
+    {
+      "bytes": 73004,
+      "file": "d008-s06-word-01-th.wav",
+      "meaning_hebrew": "להחליט",
+      "romanization": "dtàt-sǐn-jai",
+      "sha256": "750b7d27f80503bb4c728d1de40288a81d8b08289e084f726a6543030b407d3f",
+      "source_request_sha256": "167cd496398118f3974d1b28f3032f4961dfed4edd0fcb2573b3fa4bd91552f6",
+      "thai": "ตัดสินใจ",
+      "word_id": "d008-s06#1"
+    },
+    {
+      "bytes": 73004,
+      "file": "d008-s07-word-01-th.wav",
+      "meaning_hebrew": "עד לסיום",
+      "romanization": "hâi sèt",
+      "sha256": "24a88a23d0bef8789e8d69cbf790d77d84b0741ab73f66aacd9fef0fcfb3a068",
+      "source_request_sha256": "7fff7c15e6d1ea4876610a82c091fd84df48e574f495cf7e6ed65f91992cf545",
+      "thai": "ให้เสร็จ",
+      "word_id": "d008-s07#1"
+    },
+    {
+      "bytes": 71084,
+      "file": "d008-s08-word-01-th.wav",
+      "meaning_hebrew": "להתחיל לפתור",
+      "romanization": "long-mʉʉ gâe",
+      "sha256": "f0e695e2e0c6e1eb1ddeea7a832a69a93cd5b48251f8d7f3add3dcaad91f0417",
+      "source_request_sha256": "6153f0bf0d5b815382305ec92425ada517454448bbfa6e0b0859a8511ef7e5ef",
+      "thai": "ลงมือแก้",
+      "word_id": "d008-s08#1"
+    },
+    {
+      "bytes": 76844,
+      "file": "d008-s09-word-01-th.wav",
+      "meaning_hebrew": "להיות בעל ביטחון עצמי",
+      "romanization": "mii khwaam mân-jai",
+      "sha256": "50a6657990f3a8f888402aae16fd644ab838624dbb21649819c8d7515b8fdcae",
+      "source_request_sha256": "1ebff203f9e50fadd8dde1a22b051d8b74e9187c1d7cc075fba3d24c278f4e22",
+      "thai": "มีความมั่นใจ",
+      "word_id": "d008-s09#1"
+    },
+    {
+      "bytes": 80684,
+      "file": "d008-s10-word-01-th.wav",
+      "meaning_hebrew": "סבלנות; התמדה",
+      "romanization": "khwaam òt-thon",
+      "sha256": "91d27e9608e47aee271e830e174f53e0ecb482455bf1583a58d5edd0fde346b0",
+      "source_request_sha256": "1ca7b297c4fd7069768384dd13b16d85a3f835a2262f9e515b7880752fb591cd",
+      "thai": "ความอดทน",
+      "word_id": "d008-s10#1"
+    },
+    {
+      "bytes": 71084,
+      "file": "d008-s11-word-01-th.wav",
+      "meaning_hebrew": "להיות סבלני; להתמיד",
+      "romanization": "òt-thon",
+      "sha256": "f797f682b877f9b3d821da3cd54a3c049537a9114b9f3415b3a1f7aa1014d374",
+      "source_request_sha256": "7ba68c749cb7082b6a15b0fbb44b3c2f0c7e19b93b52a46e4a2efd93016ba663",
+      "thai": "อดทน",
+      "word_id": "d008-s11#1"
+    },
+    {
+      "bytes": 74924,
+      "file": "d008-s12-word-01-th.wav",
+      "meaning_hebrew": "לא כל כך בטוח בעצמו",
+      "romanization": "mâi khɔ̂i mân-jai",
+      "sha256": "eeb288c9f69717f6a8b525946c405c5d0396d65ccc253c388a988652e1fe61de",
+      "source_request_sha256": "0a0ef848457a4a94f6c7b8085b1ed4f5125f3dbf08cff83f14fece17cf57098f",
+      "thai": "ไม่ค่อยมั่นใจ",
+      "word_id": "d008-s12#1"
+    },
+    {
+      "bytes": 90284,
+      "file": "d008-s13-word-01-th.wav",
+      "meaning_hebrew": "להסתדר בקלות עם חברים",
+      "romanization": "khâo gàp phʉ̂an dâai ngâai",
+      "sha256": "287f64a4b176cd5c782172394c883e74596aa6463e3286421af5daf0dad49e26",
+      "source_request_sha256": "0473e695bccc59d4ad751d5ed72f7951266b9d72773e333821c738e5a0b90ace",
+      "thai": "เข้ากับเพื่อนได้ง่าย",
+      "word_id": "d008-s13#1"
+    },
+    {
+      "bytes": 80684,
+      "file": "d008-s14-word-01-th.wav",
+      "meaning_hebrew": "לעבוד בקבוצה",
+      "romanization": "tham-ngaan bpen glùm",
+      "sha256": "d0b972998276c9dccc5f732ff200fa9683f89cbd0c11f7959513dea574d80d24",
+      "source_request_sha256": "320a57b90c71ffa8558c0cb7c34cdcec12af8cee78c2e78a93cb1230e9eb2b37",
+      "thai": "ทำงานเป็นกลุ่ม",
+      "word_id": "d008-s14#1"
+    },
+    {
+      "bytes": 80684,
+      "file": "d008-s15-word-01-th.wav",
+      "meaning_hebrew": "אישי; פרטי",
+      "romanization": "sùan-dtua",
+      "sha256": "2d1b2cb26af6be487cbed8b86449b8fd286c2ae28bc6144306ebe03aa239b248",
+      "source_request_sha256": "bf2edc3bb483e694f27b2641bef58507447b0d168bd9f823abf2ac77989e8e13",
+      "thai": "ส่วนตัว",
+      "word_id": "d008-s15#1"
+    },
+    {
+      "bytes": 76844,
+      "file": "d008-s16-word-01-th.wav",
+      "meaning_hebrew": "די; במידה ניכרת",
+      "romanization": "khɔ̂n-khâang",
+      "sha256": "d12173ee9d43cfe09a65145724f28cc0e9f9bf70379eddb032fb9cd18d35757b",
+      "source_request_sha256": "2f2f5667de04b9e5134f3926e205a58d8e08f0f60875157a7798c1731adeeb18",
+      "thai": "ค่อนข้าง",
+      "word_id": "d008-s16#1"
+    },
+    {
+      "bytes": 57644,
+      "file": "d008-s17-word-01-th.wav",
+      "meaning_hebrew": "אווירה",
+      "romanization": "ban-yaa-gàat",
+      "sha256": "5d91e029b28d1b24f31fc4b513f07dbab3dc1e659b7c7c544c7b12035894807d",
+      "source_request_sha256": "b0f20e90ac5e03dd464962068106a933d3a494c5813208040950dfea201cb27a",
+      "thai": "บรรยากาศ",
+      "word_id": "d008-s17#1"
+    },
+    {
+      "bytes": 71084,
+      "file": "d008-s18-word-01-th.wav",
+      "meaning_hebrew": "בביטחון",
+      "romanization": "yàang mân-jai",
+      "sha256": "446a252800e393ba111c7ee621b59716fab47f68a88c04ced8cff91860f78740",
+      "source_request_sha256": "d83d0260df810169c6c061e0c92eee9cb326e2028f7d5371caabc7c43761931a",
+      "thai": "อย่างมั่นใจ",
+      "word_id": "d008-s18#1"
+    },
+    {
+      "bytes": 69164,
+      "file": "d008-s19-word-01-th.wav",
+      "meaning_hebrew": "ידידותי; לא רשמי",
+      "romanization": "bpen gan-eeng",
+      "sha256": "6384ad16a61bc684c9880b07c2160d92521042a92d90f095d516ff57c9c6a405",
+      "source_request_sha256": "1236ad05fc9af0a68597d908f094ec7d4c8dedc0378498b4506af7ebe0032d35",
+      "thai": "เป็นกันเอง",
+      "word_id": "d008-s19#1"
+    },
+    {
+      "bytes": 94124,
+      "file": "d008-s20-word-01-th.wav",
+      "meaning_hebrew": "זמן פרטי",
+      "romanization": "wee-laa sùan-dtua",
+      "sha256": "6f213e5c88e35e756dcffeef6cedf27d7498930e66bdc294c38d08c55ad31a6f",
+      "source_request_sha256": "1a17c792142d1b3854defce18aaf36bf3e8438ddf652a2b747d26b65530cda79",
+      "thai": "เวลาส่วนตัว",
+      "word_id": "d008-s20#1"
+    }
+  ],
+  "estimated_cost_usd": 0.00579,
+  "generated_at": "2026-09-28T08:08:14.033841+00:00",
+  "lesson_id": "day-008",
+  "provider": "google_cloud_tts",
+  "revision": 1,
+  "sample_rate_hertz": 24000,
+  "schema_version": 1,
+  "vocabulary_sha256": "6b91c5e8868654c1725f3717456838271c5f5eef255366b015b8cf1d948d8923"
+}
