@@ -1,0 +1,213 @@
+{
+  "billable_characters": 140,
+  "entries": [
+    {
+      "bytes": 86444,
+      "file": "d009-s01-word-01-th.wav",
+      "meaning_hebrew": "אלרגי לתרופות",
+      "romanization": "phɛ́ɛ yaa",
+      "sha256": "185eae0fe10ac0b32660f7581e43407294be368dd1097ea2b86d6f5fbc9fc6a6",
+      "source_request_sha256": "c2cfa3b7cee50b6351bca2a0df21b7ca97f2d6b1d49a7ebdef2f69aaff48a621",
+      "thai": "แพ้ยา",
+      "word_id": "d009-s01#1"
+    },
+    {
+      "bytes": 80684,
+      "file": "d009-s02-word-01-th.wav",
+      "meaning_hebrew": "תסמינים",
+      "romanization": "aa-gaan",
+      "sha256": "dc32887334179ac0467bf9d03cb319d98349f98ad83116a2ff0f43d620848bf2",
+      "source_request_sha256": "b2da90dda9315783c984e240e63521c218351e806675fc6a10b6dec0b93d3076",
+      "thai": "อาการ",
+      "word_id": "d009-s02#1"
+    },
+    {
+      "bytes": 86444,
+      "file": "d009-s03-word-01-th.wav",
+      "meaning_hebrew": "תסמינים כאלה",
+      "romanization": "aa-gaan bɛ̀ɛp níi",
+      "sha256": "d36a9326d2f31d8d2319e13b60bd223d4ecc65371ab505a78a76e1ba26fb07e1",
+      "source_request_sha256": "501df21a00ad57cff4a126c3fbc238bcd34eb9e2bbc0050934bac0259987ddf3",
+      "thai": "อาการแบบนี้",
+      "word_id": "d009-s03#1"
+    },
+    {
+      "bytes": 78764,
+      "file": "d009-s04-word-01-th.wav",
+      "meaning_hebrew": "ממה זה נגרם",
+      "romanization": "gə̀ət jàak à-rai",
+      "sha256": "fb9a0deefc8e01ba2c0f10a4b565e393f678e8e9a1523a63630abe97324268d8",
+      "source_request_sha256": "05dd0c06b942bbc99f600407105fe9db044d07e6c4ba191e54fcd881e4bbed7f",
+      "thai": "เกิดจากอะไร",
+      "word_id": "d009-s04#1"
+    },
+    {
+      "bytes": 57644,
+      "file": "d009-s05-word-01-th.wav",
+      "meaning_hebrew": "פצע",
+      "romanization": "phlɛ̌ɛ",
+      "sha256": "bca90047a5a9f2fb07a86e7b323a57bdd8ea28b963306a815f10a81e9e2f6f95",
+      "source_request_sha256": "bd8d1ff8ed94b6030fb9d730ff506babf6f146a34157db09174a64ae2a944f85",
+      "thai": "แผล",
+      "word_id": "d009-s05#1"
+    },
+    {
+      "bytes": 53804,
+      "file": "d009-s06-word-01-th.wav",
+      "meaning_hebrew": "להחלים או לחלוף",
+      "romanization": "hǎai",
+      "sha256": "914bb16327dc1cbe5788b51d8e77706f6f5e361af8cc5c1e4943ae0e2f46340f",
+      "source_request_sha256": "9cd76717c0ca23562beb598eb38d6388c74a630bd8791097965e940f6191a312",
+      "thai": "หาย",
+      "word_id": "d009-s06#1"
+    },
+    {
+      "bytes": 74924,
+      "file": "d009-s07-word-01-th.wav",
+      "meaning_hebrew": "דחוף",
+      "romanization": "dùan",
+      "sha256": "0591b71ddd8888e2b75a8cba355abcac2dcd38c63ce36f30e09a8cd1280f53d4",
+      "source_request_sha256": "68b9bc17f74927e8f99d9e61bd2d70678a392460a6efe4a52caf0ea551304d3d",
+      "thai": "ด่วน",
+      "word_id": "d009-s07#1"
+    },
+    {
+      "bytes": 67244,
+      "file": "d009-s08-word-01-th.wav",
+      "meaning_hebrew": "ליצור קשר",
+      "romanization": "dtìt-dtɔ̀ɔ",
+      "sha256": "38a5e2341668447d9065db890b0ee11795e583a3ca16230062e781f04f0ebe2a",
+      "source_request_sha256": "2f625c3343f939545363fe5de499b019e3101019f5a67f068d529b70cd1df02b",
+      "thai": "ติดต่อ",
+      "word_id": "d009-s08#1"
+    },
+    {
+      "bytes": 57644,
+      "file": "d009-s09-word-01-th.wav",
+      "meaning_hebrew": "רגע אחד",
+      "romanization": "sàk-khrûu",
+      "sha256": "733514be2e5a2323e361328e3b3ba1f2915a8fb5f2d0c2b25376188ddf5786be",
+      "source_request_sha256": "8e0a929c8889390bce5125a7fee23f07008c52aa43dc3ed8289d6737f9c5eeb2",
+      "thai": "สักครู่",
+      "word_id": "d009-s09#1"
+    },
+    {
+      "bytes": 67244,
+      "file": "d009-s10-word-01-th.wav",
+      "meaning_hebrew": "עניין דחוף",
+      "romanization": "rʉ̂ang dùan",
+      "sha256": "566bb140b711c6a25f0c7cd1de40c6d67526f097103d4510304844410bcef590",
+      "source_request_sha256": "16cc6ceaf0a1ed4e87ebae3550024807e615f2f5682c08a6af63b203d7ae7eb6",
+      "thai": "เรื่องด่วน",
+      "word_id": "d009-s10#1"
+    },
+    {
+      "bytes": 71084,
+      "file": "d009-s11-word-01-th.wav",
+      "meaning_hebrew": "כואב קצת",
+      "romanization": "jèp nít nɔ̀i",
+      "sha256": "0cd2f1f1488c588b062ad39ffbb89e4bb29bdd17ae857a6c06fa7f7557865739",
+      "source_request_sha256": "35dc3b4ccb89dd68c5ad319fbfd30f0537fe79c9e79c3b243cf7fcf6ee69e49c",
+      "thai": "เจ็บนิดหน่อย",
+      "word_id": "d009-s11#1"
+    },
+    {
+      "bytes": 71084,
+      "file": "d009-s12-word-01-th.wav",
+      "meaning_hebrew": "יש חום",
+      "romanization": "mii khâi",
+      "sha256": "fb8418862aba7055361cd79c1cd2c72c43e5d90e619b0cb5e0f57ef8ad459fe7",
+      "source_request_sha256": "94ec3d6b6aa38d0ef4444b417b9c8add1043be495309dff0748e464035d47bfa",
+      "thai": "มีไข้",
+      "word_id": "d009-s12#1"
+    },
+    {
+      "bytes": 107564,
+      "file": "d009-s13-word-01-th.wav",
+      "meaning_hebrew": "לקחת תרופה",
+      "romanization": "gin yaa",
+      "sha256": "4190f0e05622ccadcf1572dbde0adad31876b445ccb7d99dbe27ff47fb564772",
+      "source_request_sha256": "4278c267bf7014496e2d47b04f44b6cceb0d659590e75f27140b6d3834c490b3",
+      "thai": "กินยา",
+      "word_id": "d009-s13#1"
+    },
+    {
+      "bytes": 94124,
+      "file": "d009-s14-word-01-th.wav",
+      "meaning_hebrew": "אמבולנס",
+      "romanization": "rót phá-yaa-baan",
+      "sha256": "84eb5d17fef20a7da4a78aab9b5918493332830bc7c2405645bfbaad2f54ac54",
+      "source_request_sha256": "ee37007a5987b6c1181d3140e53de5918edc0c770905d4370fa982cc33b8aa1a",
+      "thai": "รถพยาบาล",
+      "word_id": "d009-s14#1"
+    },
+    {
+      "bytes": 86444,
+      "file": "d009-s15-word-01-th.wav",
+      "meaning_hebrew": "לשלוח מיקום",
+      "romanization": "sòng loo-khee-chan",
+      "sha256": "ed9d27c5bbc5bfccabaa15398faf4c55c053088542248c14f7ba7a86602f8523",
+      "source_request_sha256": "4b58fe0b99f65fa1c15abed41fa089a3e25cb83eac052c52b931c47ff6c58f9c",
+      "thai": "ส่งโลเคชัน",
+      "word_id": "d009-s15#1"
+    },
+    {
+      "bytes": 71084,
+      "file": "d009-s16-word-01-th.wav",
+      "meaning_hebrew": "לטפל בפצע",
+      "romanization": "tham phlɛ̌ɛ",
+      "sha256": "ed7fba27a2027cee03bac3a624851f0e77857e36a94b1685fdde9ee8fc603bed",
+      "source_request_sha256": "7e07609fd9467a4af56a6c53cdc9e7d8abc675c09470c386a56c76ea0cc60b1a",
+      "thai": "ทำแผล",
+      "word_id": "d009-s16#1"
+    },
+    {
+      "bytes": 74924,
+      "file": "d009-s17-word-01-th.wav",
+      "meaning_hebrew": "תמיסת מלח",
+      "romanization": "náam-glʉa",
+      "sha256": "8c153362d7be0fc678662300134b64f6f8265e41bb3723ad0287f96350415dbb",
+      "source_request_sha256": "504815eb06c66ebfcae016a68d350a6c8e077ee566fbd6877e6275f4fe5a8c7a",
+      "thai": "น้ำเกลือ",
+      "word_id": "d009-s17#1"
+    },
+    {
+      "bytes": 53804,
+      "file": "d009-s18-word-01-th.wav",
+      "meaning_hebrew": "נפוח",
+      "romanization": "buam",
+      "sha256": "ee7e0fde4883d15606fc55f8a7d872f547971a81ec220831d37ad40f4bbe515a",
+      "source_request_sha256": "02649c1540245ce85aa3e45fe212a30939e006e08c2f9799dfcad68f0f424980",
+      "thai": "บวม",
+      "word_id": "d009-s18#1"
+    },
+    {
+      "bytes": 51884,
+      "file": "d009-s19-word-01-th.wav",
+      "meaning_hebrew": "מסוחרר",
+      "romanization": "wian hǔa",
+      "sha256": "55b4c9748ea9db05c13397ae36f4c0e7cfcd508cf5c549ce305db13ae238df52",
+      "source_request_sha256": "1ba76fa64d3022ec094cb78249fc944318e73bd5119d98fb1828f6593fa501f1",
+      "thai": "เวียนหัว",
+      "word_id": "d009-s19#1"
+    },
+    {
+      "bytes": 86444,
+      "file": "d009-s20-word-01-th.wav",
+      "meaning_hebrew": "חדר מיון",
+      "romanization": "hɔ̂ng chùk-chə̌ən",
+      "sha256": "98b368369190517ac0f0a0f1fde56405a48fd186a438dae13c46612ebcf73271",
+      "source_request_sha256": "5c2f1de0a626fc1c8e017512eb86a9b004ea0c6dcfc0809d5eaef7b24d2dfb31",
+      "thai": "ห้องฉุกเฉิน",
+      "word_id": "d009-s20#1"
+    }
+  ],
+  "estimated_cost_usd": 0.0042,
+  "generated_at": "2026-10-06T08:09:11.062430+00:00",
+  "lesson_id": "day-009",
+  "provider": "google_cloud_tts",
+  "revision": 1,
+  "sample_rate_hertz": 24000,
+  "schema_version": 1,
+  "vocabulary_sha256": "b895cfba55df01b29fd1abf87d33414e634f21a81f53f9506b1b5cfdaf8421c6"
+}

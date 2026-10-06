@@ -1,0 +1,603 @@
+{
+  "audio_program": {
+    "pitch_semitones": 0,
+    "practice_variations": {
+      "hebrew_speaking_rate": 1,
+      "thai_speaking_rate": 1
+    },
+    "tracks": [
+      {
+        "id": "listening",
+        "pause_between_repetitions_ms": 1200,
+        "pause_between_sentences_ms": 2800,
+        "sequence": [
+          "d009-s01",
+          "d009-s02",
+          "d009-s03",
+          "d009-s04",
+          "d009-s05",
+          "d009-s06",
+          "d009-s07",
+          "d009-s08",
+          "d009-s09",
+          "d009-s10",
+          "d009-s11",
+          "d009-s12",
+          "d009-s13",
+          "d009-s14",
+          "d009-s15",
+          "d009-s16",
+          "d009-s17",
+          "d009-s18",
+          "d009-s19",
+          "d009-s20"
+        ],
+        "thai_repetitions": 2,
+        "thai_speaking_rates": [
+          0.82,
+          1
+        ]
+      },
+      {
+        "id": "shadowing",
+        "pause_between_repetitions_ms": 700,
+        "pause_between_sentences_ms": 1800,
+        "sequence": [
+          "d009-s01",
+          "d009-s02",
+          "d009-s03",
+          "d009-s04",
+          "d009-s05",
+          "d009-s06",
+          "d009-s07",
+          "d009-s08",
+          "d009-s09",
+          "d009-s10",
+          "d009-s11",
+          "d009-s12",
+          "d009-s13",
+          "d009-s14",
+          "d009-s15",
+          "d009-s16",
+          "d009-s17",
+          "d009-s18",
+          "d009-s19",
+          "d009-s20"
+        ],
+        "thai_repetitions": 3,
+        "thai_speaking_rates": [
+          0.9,
+          0.9,
+          0.9
+        ]
+      },
+      {
+        "hebrew_prompt": true,
+        "hebrew_speaking_rate": 1,
+        "id": "recall",
+        "pause_between_sentences_ms": 2500,
+        "recall_pause_ms": 5000,
+        "sequence": [
+          "d009-s01",
+          "d009-s02",
+          "d009-s03",
+          "d009-s04",
+          "d009-s05",
+          "d009-s06",
+          "d009-s07",
+          "d009-s08",
+          "d009-s09",
+          "d009-s10",
+          "d009-s11",
+          "d009-s12",
+          "d009-s13",
+          "d009-s14",
+          "d009-s15",
+          "d009-s16",
+          "d009-s17",
+          "d009-s18",
+          "d009-s19",
+          "d009-s20"
+        ],
+        "thai_repetitions": 1,
+        "thai_speaking_rates": [
+          0.9
+        ]
+      },
+      {
+        "id": "scenario",
+        "pause_between_sentences_ms": 1200,
+        "sequence": [
+          "d009-s01",
+          "d009-s02",
+          "d009-s03",
+          "d009-s04",
+          "d009-s05",
+          "d009-s06",
+          "d009-s07",
+          "d009-s08",
+          "d009-s09",
+          "d009-s10",
+          "d009-s11",
+          "d009-s12",
+          "d009-s13",
+          "d009-s14",
+          "d009-s15",
+          "d009-s16",
+          "d009-s17",
+          "d009-s18",
+          "d009-s19",
+          "d009-s20"
+        ],
+        "thai_repetitions": 1,
+        "thai_speaking_rates": [
+          1
+        ]
+      }
+    ]
+  },
+  "day": 9,
+  "lesson_id": "day-009",
+  "revision": 1,
+  "schema_version": 1,
+  "sentences": [
+    {
+      "category": "allergies_symptoms",
+      "context_he": "לספר לרופא או לרוקח על אלרגיה ידועה לתרופות.",
+      "id": "d009-s01",
+      "literal_he": "אני + אלרגי לתרופות + סוגים מסוימים + מילת נימוס.",
+      "pattern": "แพ้ + [חומר] = להיות אלרגי לחומר.",
+      "prompt_he": "אני אלרגי לתרופות מסוימות.",
+      "review_status": "approved",
+      "romanization": "phǒm phɛ́ɛ yaa baang chá-nít khráp",
+      "thai": "ผมแพ้ยาบางชนิดครับ",
+      "variation": {
+        "prompt_he": "אני לא בטוח אם אני אלרגי לתרופה הזאת.",
+        "thai": "ผมไม่แน่ใจว่าแพ้ยาตัวนี้หรือเปล่าครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "אלרגי לתרופות",
+          "romanization": "phɛ́ɛ yaa",
+          "thai": "แพ้ยา"
+        }
+      ]
+    },
+    {
+      "category": "allergies_symptoms",
+      "context_he": "לבקש בדיקה בלי לנסות לאבחן בעצמך.",
+      "id": "d009-s02",
+      "literal_he": "אני + רוצה ש + רופא + יבדוק תסמינים + בבקשה + מילת נימוס.",
+      "pattern": "อยากให้ + [אדם] + [פעולה] = רוצה שהאדם יעשה את הפעולה.",
+      "prompt_he": "אני רוצה שהרופא יבדוק את התסמינים שלי.",
+      "review_status": "approved",
+      "romanization": "phǒm yàak hâi mɔ̌ɔ duu aa-gaan nɔ̀i khráp",
+      "thai": "ผมอยากให้หมอดูอาการหน่อยครับ",
+      "variation": {
+        "prompt_he": "התסמינים שלי התחילו הבוקר.",
+        "thai": "อาการของผมเริ่มเมื่อเช้าครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "תסמינים",
+          "romanization": "aa-gaan",
+          "thai": "อาการ"
+        }
+      ]
+    },
+    {
+      "category": "allergies_symptoms",
+      "context_he": "לתאר לרופא מצב חדש שלא חווית בעבר.",
+      "id": "d009-s03",
+      "literal_he": "אני + אף פעם לא + היו לי + תסמינים כאלה + קודם + מילת נימוס.",
+      "pattern": "ไม่เคย + [פעולה] + มาก่อน = מעולם לא עשיתי זאת קודם.",
+      "prompt_he": "אף פעם לא היו לי תסמינים כאלה.",
+      "review_status": "approved",
+      "romanization": "phǒm mâi khəəi mii aa-gaan bɛ̀ɛp níi maa gɔ̀ɔn khráp",
+      "thai": "ผมไม่เคยมีอาการแบบนี้มาก่อนครับ",
+      "variation": {
+        "prompt_he": "כבר היו לי תסמינים כאלה פעם.",
+        "thai": "ผมเคยมีอาการแบบนี้ครั้งหนึ่งครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "תסמינים כאלה",
+          "romanization": "aa-gaan bɛ̀ɛp níi",
+          "thai": "อาการแบบนี้"
+        }
+      ]
+    },
+    {
+      "category": "allergies_symptoms",
+      "context_he": "שאלה לרופא על הסיבה לתסמינים, בלי להציע אבחנה.",
+      "id": "d009-s04",
+      "literal_he": "תסמינים כאלה + נגרמים מ + מה + מילת נימוס.",
+      "pattern": "[דבר] + เกิดจากอะไร = ממה נגרם הדבר?",
+      "prompt_he": "ממה נגרמים תסמינים כאלה?",
+      "review_status": "approved",
+      "romanization": "aa-gaan bɛ̀ɛp níi gə̀ət jàak à-rai khráp",
+      "thai": "อาการแบบนี้เกิดจากอะไรครับ",
+      "variation": {
+        "prompt_he": "האם זה יכול להיגרם מהתרופה הזאת?",
+        "thai": "อาจเกิดจากยาตัวนี้ได้ไหมครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "ממה זה נגרם",
+          "romanization": "gə̀ət jàak à-rai",
+          "thai": "เกิดจากอะไร"
+        }
+      ]
+    },
+    {
+      "category": "wound_recovery",
+      "context_he": "להראות לרופא או לרוקח היכן נמצא הפצע.",
+      "id": "d009-s05",
+      "literal_he": "אני + יש פצע + ב + יד + מילת נימוס.",
+      "pattern": "มีแผลที่ + [איבר] = יש פצע באיבר.",
+      "prompt_he": "יש לי פצע ביד.",
+      "review_status": "approved",
+      "romanization": "phǒm mii phlɛ̌ɛ thîi mʉʉ khráp",
+      "thai": "ผมมีแผลที่มือครับ",
+      "variation": {
+        "prompt_he": "הפצע הזה כואב כשאני נוגע בו.",
+        "thai": "แผลนี้เจ็บเวลาจับครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "פצע",
+          "romanization": "phlɛ̌ɛ",
+          "thai": "แผล"
+        }
+      ]
+    },
+    {
+      "category": "wound_recovery",
+      "context_he": "לשאול את המטפל על זמן ההחלמה הצפוי.",
+      "id": "d009-s06",
+      "literal_he": "פצע הזה + עתיד + להחלים + מתי + מילת נימוס.",
+      "pattern": "[מצב] + จะหายเมื่อไหร่ = מתי המצב יחלוף?",
+      "prompt_he": "מתי הפצע הזה יחלים?",
+      "review_status": "approved",
+      "romanization": "phlɛ̌ɛ níi jà hǎai mʉ̂a-rài khráp",
+      "thai": "แผลนี้จะหายเมื่อไหร่ครับ",
+      "variation": {
+        "prompt_he": "התסמינים עדיין לא חלפו.",
+        "thai": "อาการยังไม่หายครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "להחלים או לחלוף",
+          "romanization": "hǎai",
+          "thai": "หาย"
+        }
+      ]
+    },
+    {
+      "category": "urgent_contact",
+      "context_he": "להבהיר לנהג או לאדם שעוזר לך שהנסיעה דחופה.",
+      "id": "d009-s07",
+      "literal_he": "אני + צריך + ללכת לבית חולים + בדחיפות + מילת נימוס.",
+      "pattern": "ต้อง + [פעולה] + ด่วน = צריך לעשות בדחיפות.",
+      "prompt_he": "אני צריך להגיע לבית החולים בדחיפות.",
+      "review_status": "approved",
+      "romanization": "phǒm dtɔ̂ng bpai roong-phá-yaa-baan dùan khráp",
+      "thai": "ผมต้องไปโรงพยาบาลด่วนครับ",
+      "variation": {
+        "prompt_he": "אתה יכול לעזור לי בדחיפות?",
+        "thai": "ช่วยผมด่วนได้ไหมครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "דחוף",
+          "romanization": "dùan",
+          "thai": "ด่วน"
+        }
+      ]
+    },
+    {
+      "category": "urgent_contact",
+      "context_he": "לבקש מאדם לידך ליצור קשר עם רופא.",
+      "id": "d009-s08",
+      "literal_he": "בבקשה + צור קשר + רופא + בשבילי + בבקשה + מילת נימוס.",
+      "pattern": "ช่วยติดต่อ + [אדם] + ให้หน่อย = בבקשה צור קשר עם האדם עבורי.",
+      "prompt_he": "בבקשה צור קשר עם רופא בשבילי.",
+      "review_status": "approved",
+      "romanization": "chûai dtìt-dtɔ̀ɔ mɔ̌ɔ hâi phǒm nɔ̀i khráp",
+      "thai": "ช่วยติดต่อหมอให้ผมหน่อยครับ",
+      "variation": {
+        "prompt_he": "איך אפשר ליצור קשר עם המרפאה הזאת?",
+        "thai": "ติดต่อคลินิกนี้ได้ยังไงครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "ליצור קשר",
+          "romanization": "dtìt-dtɔ̀ɔ",
+          "thai": "ติดต่อ"
+        }
+      ]
+    },
+    {
+      "category": "contact_coordination",
+      "context_he": "לבקש רגע בזמן שאתה מתקשר לקבל עזרה.",
+      "id": "d009-s09",
+      "literal_he": "חכה + רגע + מילת נימוס + אני + אתקשר אל + מרפאה.",
+      "pattern": "รอสักครู่ + [הסבר] = חכה רגע, והסיבה היא ההסבר.",
+      "prompt_he": "חכה רגע בבקשה, אני אתקשר למרפאה.",
+      "review_status": "approved",
+      "romanization": "rɔɔ sàk-khrûu ná khráp phǒm jà thoo hǎa khlí-ník",
+      "thai": "รอสักครู่นะครับ ผมจะโทรหาคลินิก",
+      "variation": {
+        "prompt_he": "אני צריך לדבר עם הרופא לרגע.",
+        "thai": "ผมขอคุยกับหมอสักครู่ครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "רגע אחד",
+          "romanization": "sàk-khrûu",
+          "thai": "สักครู่"
+        }
+      ]
+    },
+    {
+      "category": "contact_coordination",
+      "context_he": "לתאם עם חבר איך ליצור קשר כשיש עניין דחוף.",
+      "id": "d009-s10",
+      "literal_he": "אם + יש עניין דחוף + התקשר אליי + אפשר מיד + מילת נימוס.",
+      "pattern": "ถ้ามี + [מצב] + [פעולה] + ได้เลย = אם יש מצב כזה, אפשר לפעול מיד.",
+      "prompt_he": "אם יש משהו דחוף, אתה יכול להתקשר אליי מיד.",
+      "review_status": "approved",
+      "romanization": "thâa mii rʉ̂ang dùan thoo hǎa phǒm dâai ləəi khráp",
+      "thai": "ถ้ามีเรื่องด่วน โทรหาผมได้เลยครับ",
+      "variation": {
+        "prompt_he": "אם זה דחוף, שלח לי הודעה קודם.",
+        "thai": "ถ้าเป็นเรื่องด่วน ส่งข้อความมาหาผมก่อนนะครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "עניין דחוף",
+          "romanization": "rʉ̂ang dùan",
+          "thai": "เรื่องด่วน"
+        }
+      ]
+    },
+    {
+      "category": "symptom_recall",
+      "context_he": "חזרה על เจ็บนิดหน่อย מיום ארבע, בהקשר חדש של הליכה.",
+      "id": "d009-s11",
+      "literal_he": "כש + הולך + קרסול שלי + כואב קצת + מילת נימוס.",
+      "pattern": "เวลา + [פעולה] + [תיאור] = בזמן הפעולה קורה התיאור.",
+      "prompt_he": "כשאני הולך, כואב לי קצת בקרסול.",
+      "review_status": "approved",
+      "romanization": "wee-laa dəən khɔ̂ɔ-tháao phǒm jèp nít nɔ̀i khráp",
+      "thai": "เวลาเดิน ข้อเท้าผมเจ็บนิดหน่อยครับ",
+      "variation": {
+        "prompt_he": "היום כואב לי פחות מאתמול.",
+        "thai": "วันนี้เจ็บน้อยกว่าเมื่อวานครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "כואב קצת",
+          "romanization": "jèp nít nɔ̀i",
+          "thai": "เจ็บนิดหน่อย"
+        }
+      ]
+    },
+    {
+      "category": "symptom_recall",
+      "context_he": "חזרה על มีไข้ מיום שתיים, כדי לדווח שהחום נמשך.",
+      "id": "d009-s12",
+      "literal_he": "בוקר הזה + אני + עדיין + יש חום + מילת נימוס.",
+      "pattern": "ยัง + [מצב] = המצב עדיין נמשך.",
+      "prompt_he": "עדיין יש לי חום הבוקר.",
+      "review_status": "approved",
+      "romanization": "cháao níi phǒm yang mii khâi khráp",
+      "thai": "เช้านี้ผมยังมีไข้ครับ",
+      "variation": {
+        "prompt_he": "החום שלי ירד.",
+        "thai": "ไข้ของผมลดลงแล้วครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "יש חום",
+          "romanization": "mii khâi",
+          "thai": "มีไข้"
+        }
+      ]
+    },
+    {
+      "category": "symptom_recall",
+      "context_he": "חזרה על תרופה מיום חמש, עם זמן נטילה לצורך דיווח.",
+      "id": "d009-s13",
+      "literal_he": "אני + לקחתי תרופה הזאת + לפני שעה + מילת נימוס.",
+      "pattern": "เมื่อ + [פרק זמן] + ที่แล้ว = לפני פרק הזמן הזה.",
+      "prompt_he": "לקחתי את התרופה הזאת לפני שעה.",
+      "review_status": "approved",
+      "romanization": "phǒm gin yaa dtua níi mʉ̂a chûa-moong thîi lɛ́ɛo khráp",
+      "thai": "ผมกินยาตัวนี้เมื่อชั่วโมงที่แล้วครับ",
+      "variation": {
+        "prompt_he": "מאז שלקחתי את התרופה הזאת אני מרגיש ישנוני.",
+        "thai": "หลังจากกินยาตัวนี้ ผมรู้สึกง่วงครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "לקחת תרופה",
+          "romanization": "gin yaa",
+          "thai": "กินยา"
+        }
+      ]
+    },
+    {
+      "category": "emergency_recall",
+      "context_he": "חזרה על รถพยาบาล מיום חמש, בשאלה על הגעתו.",
+      "id": "d009-s14",
+      "literal_he": "אמבולנס + הגיע + או עדיין + מילת נימוס.",
+      "pattern": "[פעולה] + หรือยัง = האם הפעולה כבר קרתה?",
+      "prompt_he": "האמבולנס כבר הגיע?",
+      "review_status": "approved",
+      "romanization": "rót phá-yaa-baan maa thʉ̌ng rʉ̌ʉ yang khráp",
+      "thai": "รถพยาบาลมาถึงหรือยังครับ",
+      "variation": {
+        "prompt_he": "האמבולנס בדרך.",
+        "thai": "รถพยาบาลกำลังมาครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "אמבולנס",
+          "romanization": "rót phá-yaa-baan",
+          "thai": "รถพยาบาล"
+        }
+      ]
+    },
+    {
+      "category": "emergency_recall",
+      "context_he": "חזרה על ส่งโลเคชัน מיום אחד, כדי שחבר יוכל להגיע.",
+      "id": "d009-s15",
+      "literal_he": "בבקשה + שלח מיקום בית חולים + לחבר שלי + בבקשה + מילת נימוס.",
+      "pattern": "ส่ง + [דבר] + ให้ + [אדם] = לשלוח דבר לאדם.",
+      "prompt_he": "בבקשה שלח את המיקום של בית החולים לחבר שלי.",
+      "review_status": "approved",
+      "romanization": "chûai sòng loo-khee-chan roong-phá-yaa-baan hâi phʉ̂an phǒm nɔ̀i khráp",
+      "thai": "ช่วยส่งโลเคชันโรงพยาบาลให้เพื่อนผมหน่อยครับ",
+      "variation": {
+        "prompt_he": "אני אשלח לך את המיקום כשאגיע לבית החולים.",
+        "thai": "ถึงโรงพยาบาลแล้ว ผมจะส่งโลเคชันให้ครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "לשלוח מיקום",
+          "romanization": "sòng loo-khee-chan",
+          "thai": "ส่งโลเคชัน"
+        }
+      ]
+    },
+    {
+      "category": "wound_care",
+      "context_he": "לשאול במרפאה אם מציעים טיפול בפצע.",
+      "id": "d009-s16",
+      "literal_he": "כאן + לטפל בפצע + בשבילי + אפשר + מילת שאלה + מילת נימוס.",
+      "pattern": "[מקום] + [פעולה] + ให้ผมได้ไหม = האם אפשר לבצע עבורי את הפעולה במקום הזה?",
+      "prompt_he": "אפשר לטפל לי בפצע כאן?",
+      "review_status": "approved",
+      "romanization": "thîi nîi tham phlɛ̌ɛ hâi phǒm dâai mǎi khráp",
+      "thai": "ที่นี่ทำแผลให้ผมได้ไหมครับ",
+      "variation": {
+        "prompt_he": "מתי עליי לחזור כדי שיטפלו לי בפצע?",
+        "thai": "ผมต้องกลับมาทำแผลเมื่อไหร่ครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "לטפל בפצע",
+          "romanization": "tham phlɛ̌ɛ",
+          "thai": "ทำแผล"
+        }
+      ]
+    },
+    {
+      "category": "wound_care",
+      "context_he": "לבקש מוצר בבית מרקחת; זו שאלה על זמינותו.",
+      "id": "d009-s17",
+      "literal_he": "יש + תמיסת מלח + עבור + ניקוי פצע + מילת שאלה + מילת נימוס.",
+      "pattern": "มี + [מוצר] + สำหรับ + [שימוש] + ไหม = האם יש מוצר לשימוש הזה?",
+      "prompt_he": "יש לך תמיסת מלח לניקוי פצע?",
+      "review_status": "approved",
+      "romanization": "mii náam-glʉa sǎm-ràp láang phlɛ̌ɛ mǎi khráp",
+      "thai": "มีน้ำเกลือสำหรับล้างแผลไหมครับ",
+      "variation": {
+        "prompt_he": "אפשר לקבל בקבוק אחד של תמיסת מלח?",
+        "thai": "ขอน้ำเกลือหนึ่งขวดครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "תמיסת מלח",
+          "romanization": "náam-glʉa",
+          "thai": "น้ำเกลือ"
+        }
+      ]
+    },
+    {
+      "category": "wound_recovery",
+      "context_he": "לתאר נפיחות לרופא או למאמן.",
+      "id": "d009-s18",
+      "literal_he": "יד שלי + נפוחה + קצת + מילת נימוס.",
+      "pattern": "[איבר] + บวม + [מידה] = האיבר נפוח במידה הזאת.",
+      "prompt_he": "היד שלי קצת נפוחה.",
+      "review_status": "approved",
+      "romanization": "mʉʉ phǒm buam nít nɔ̀i khráp",
+      "thai": "มือผมบวมนิดหน่อยครับ",
+      "variation": {
+        "prompt_he": "הנפיחות גדולה יותר מאתמול.",
+        "thai": "บวมมากกว่าเมื่อวานครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "נפוח",
+          "romanization": "buam",
+          "thai": "บวม"
+        }
+      ]
+    },
+    {
+      "category": "symptom_recall",
+      "context_he": "לדווח על התחושה ועל הרגע שבו היא מופיעה.",
+      "id": "d009-s19",
+      "literal_he": "אני + מסוחרר + כש + קם + מילת נימוס.",
+      "pattern": "[תחושה] + เวลา + [פעולה] = התחושה מופיעה בזמן הפעולה.",
+      "prompt_he": "יש לי סחרחורת כשאני קם.",
+      "review_status": "approved",
+      "romanization": "phǒm wian hǔa wee-laa lúk khʉ̂n khráp",
+      "thai": "ผมเวียนหัวเวลาลุกขึ้นครับ",
+      "variation": {
+        "prompt_he": "אני עדיין מסוחרר, ואני רוצה לשבת קודם.",
+        "thai": "ผมยังเวียนหัวอยู่ ขอนั่งก่อนครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "מסוחרר",
+          "romanization": "wian hǔa",
+          "thai": "เวียนหัว"
+        }
+      ]
+    },
+    {
+      "category": "urgent_contact",
+      "context_he": "לבקש הכוונה לחדר המיון בבית החולים.",
+      "id": "d009-s20",
+      "literal_he": "חדר חירום + נמצא + איפה + מילת נימוס.",
+      "pattern": "[מקום] + อยู่ที่ไหน = איפה המקום נמצא?",
+      "prompt_he": "איפה חדר המיון?",
+      "review_status": "approved",
+      "romanization": "hɔ̂ng chùk-chə̌ən yùu thîi nǎi khráp",
+      "thai": "ห้องฉุกเฉินอยู่ที่ไหนครับ",
+      "variation": {
+        "prompt_he": "אתה יכול לקחת אותי לחדר המיון?",
+        "thai": "ช่วยพาผมไปห้องฉุกเฉินได้ไหมครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "חדר מיון",
+          "romanization": "hɔ̂ng chùk-chə̌ən",
+          "thai": "ห้องฉุกเฉิน"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "project": "Thai language learning",
+    "thread_id": "01a072ea-9260-7bf3-aeb7-31bf9b4bf90e"
+  },
+  "status": "approved",
+  "theme": "Symptoms, wounds, and urgent contact",
+  "voices": {
+    "hebrew": {
+      "language_code": "he-IL",
+      "name": "he-IL-Chirp3-HD-Charon"
+    },
+    "provider": "google_cloud_tts",
+    "thai": {
+      "language_code": "th-TH",
+      "name": "th-TH-Chirp3-HD-Erinome"
+    }
+  },
+  "week": 2
+}
