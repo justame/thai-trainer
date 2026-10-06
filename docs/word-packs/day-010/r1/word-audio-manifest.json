@@ -1,0 +1,213 @@
+{
+  "billable_characters": 160,
+  "entries": [
+    {
+      "bytes": 78764,
+      "file": "d010-s01-word-01-th.wav",
+      "meaning_hebrew": "שוק לילה",
+      "romanization": "dtà-làat glaang khʉʉn",
+      "sha256": "e7c8732d92f1def9887ee4714c7df708717edc9db05b07ad13aa2d2378452eba",
+      "source_request_sha256": "d73a8ecfb61b9a5892f22108704febc729aab7bf108e52d52454a937fffcfca7",
+      "thai": "ตลาดกลางคืน",
+      "word_id": "d010-s01#1"
+    },
+    {
+      "bytes": 69164,
+      "file": "d010-s02-word-01-th.wav",
+      "meaning_hebrew": "חצות",
+      "romanization": "thîang khʉʉn",
+      "sha256": "e21bbe90f924192b9079e8d254d46ae3bf4e7847b30e2e40e029f61bf8529a67",
+      "source_request_sha256": "767efc52179a2f9c65da78f9f575d611e1a50ff0cf9f4b90dd0738b411cb065c",
+      "thai": "เที่ยงคืน",
+      "word_id": "d010-s02#1"
+    },
+    {
+      "bytes": 65324,
+      "file": "d010-s03-word-01-th.wav",
+      "meaning_hebrew": "מפה",
+      "romanization": "phɛ̌ɛn-thîi",
+      "sha256": "e7a4ee9e4b4e0b7f8f89445765f1542b85c170360a8d4c1775e34046e66894ea",
+      "source_request_sha256": "dc94fc1b81bf138c3d3862706b7edcc6093b804abf59396d7fc168f7f2ddadcb",
+      "thai": "แผนที่",
+      "word_id": "d010-s03#1"
+    },
+    {
+      "bytes": 88364,
+      "file": "d010-s04-word-01-th.wav",
+      "meaning_hebrew": "ללכת לאיבוד",
+      "romanization": "lǒng thaang",
+      "sha256": "2088e1e75a7eab1f4c123eb1def51f399778720ea9e86beca8f3515132bf9e15",
+      "source_request_sha256": "769eb3ce7109d24c6e42cd929fbe72adcc0cc8f2a1f688a03b906168e82ef6cf",
+      "thai": "หลงทาง",
+      "word_id": "d010-s04#1"
+    },
+    {
+      "bytes": 53804,
+      "file": "d010-s05-word-01-th.wav",
+      "meaning_hebrew": "קבלה",
+      "romanization": "bai-sèt",
+      "sha256": "c4b25234431c334afc507ee27ab181966faf6a5506defec4a98d5b1c4dd9c1a4",
+      "source_request_sha256": "84adf72feea86b10e1771324cbb248e4460595e9b890e12b722abe7fbea060ba",
+      "thai": "ใบเสร็จ",
+      "word_id": "d010-s05#1"
+    },
+    {
+      "bytes": 51884,
+      "file": "d010-s06-word-01-th.wav",
+      "meaning_hebrew": "לשאול חפץ",
+      "romanization": "yʉʉm",
+      "sha256": "084e0ad22385a8c5ccec9715de002cc3fd584207c77958b1069b9bd737dc7049",
+      "source_request_sha256": "3d8836c40feb8cab4ac9721de9047c06e5ed66ef19fd7877690f30a1257e0728",
+      "thai": "ยืม",
+      "word_id": "d010-s06#1"
+    },
+    {
+      "bytes": 82604,
+      "file": "d010-s07-word-01-th.wav",
+      "meaning_hebrew": "הסבב האחרון",
+      "romanization": "rɔ̂ɔp sùt-tháai",
+      "sha256": "f0ec9305f4b06973e26360c87f950833330ae167880b6190a4d39938625c4947",
+      "source_request_sha256": "aa35479b3b9069a7fb5ee50b61f88b50b59c3a774c0a0f8f60731b7de442835c",
+      "thai": "รอบสุดท้าย",
+      "word_id": "d010-s07#1"
+    },
+    {
+      "bytes": 71084,
+      "file": "d010-s08-word-01-th.wav",
+      "meaning_hebrew": "בטוח",
+      "romanization": "bplɔ̀ɔt-phai",
+      "sha256": "865f07b8a92d0e61cec52a958e27efc7deb1c52b40c78402cadf527c87389df0",
+      "source_request_sha256": "487e42202c3228aa7b49480e1a3d0faa0fdbd5ab396eaaeff3f07f9943abbf6f",
+      "thai": "ปลอดภัย",
+      "word_id": "d010-s08#1"
+    },
+    {
+      "bytes": 80684,
+      "file": "d010-s09-word-01-th.wav",
+      "meaning_hebrew": "רועש",
+      "romanization": "sǐang dang",
+      "sha256": "9558c6dd10f5e0746460a4dd25fcc182591cd1b5da984a63a017e78fe52108b6",
+      "source_request_sha256": "72a36be9c17bdd7a1f6217956e67d359460cf3b456043fd1e0e0b3bf094cf875",
+      "thai": "เสียงดัง",
+      "word_id": "d010-s09#1"
+    },
+    {
+      "bytes": 40364,
+      "file": "d010-s10-word-01-th.wav",
+      "meaning_hebrew": "הדרך חזרה",
+      "romanization": "thaang glàp",
+      "sha256": "bd3b11ae439bb5b5c06b53a7e86353033454c76908637bc418c7b9d1585537ab",
+      "source_request_sha256": "3ee77a10929f479625322126d6d7b95294a48dde634ea9588906bf721e3ee3f9",
+      "thai": "ทางกลับ",
+      "word_id": "d010-s10#1"
+    },
+    {
+      "bytes": 84524,
+      "file": "d010-s11-word-01-th.wav",
+      "meaning_hebrew": "להפעיל את המונה",
+      "romanization": "gòt mí-dtə̂ə",
+      "sha256": "d661c4db6625654f8152f6e71c681e8d17e937bea008d1ba118a2fd17cf79ffe",
+      "source_request_sha256": "aa42547fae841cbfcfb70b8afb678eb7590ad9985f6df1b5897eb618c3dfd2b6",
+      "thai": "กดมิเตอร์",
+      "word_id": "d010-s11#1"
+    },
+    {
+      "bytes": 78764,
+      "file": "d010-s12-word-01-th.wav",
+      "meaning_hebrew": "לעצור כאן",
+      "romanization": "jɔ̀ɔt dtrong níi",
+      "sha256": "be26a80e2d122fdd5522fcf67da00d04edd14aa0b753a337e691444919cf164e",
+      "source_request_sha256": "7e8abd45dabcccd3249dbcc00ddee373afeb123ee3d44227f953b76f27d48acf",
+      "thai": "จอดตรงนี้",
+      "word_id": "d010-s12#1"
+    },
+    {
+      "bytes": 71084,
+      "file": "d010-s13-word-01-th.wav",
+      "meaning_hebrew": "לשלם בסריקה",
+      "romanization": "sà-gɛɛn jàai",
+      "sha256": "fee99fcdda518fc670f8e71a0c870495095d2c027984799e83a4594ae5bdeaa3",
+      "source_request_sha256": "159e7d107ee327d7973b1f936ad58192fb5d8f5620b551be9ccd2da0b22f7f0d",
+      "thai": "สแกนจ่าย",
+      "word_id": "d010-s13#1"
+    },
+    {
+      "bytes": 86444,
+      "file": "d010-s14-word-01-th.wav",
+      "meaning_hebrew": "לשלוח מיקום",
+      "romanization": "sòng loo-khee-chan",
+      "sha256": "ed9d27c5bbc5bfccabaa15398faf4c55c053088542248c14f7ba7a86602f8523",
+      "source_request_sha256": "4b58fe0b99f65fa1c15abed41fa089a3e25cb83eac052c52b931c47ff6c58f9c",
+      "thai": "ส่งโลเคชัน",
+      "word_id": "d010-s14#1"
+    },
+    {
+      "bytes": 92204,
+      "file": "d010-s15-word-01-th.wav",
+      "meaning_hebrew": "משך הנסיעה",
+      "romanization": "chái wee-laa dəən-thaang",
+      "sha256": "9ece21381fccee1527d87a0ed11bda818ae31bd38e2fd1888a4d54155589777e",
+      "source_request_sha256": "fd139036d9b6bcf2c99dd23fc3e2bcb1e84e0b664d1b05e831ef9fd14b656e1a",
+      "thai": "ใช้เวลาเดินทาง",
+      "word_id": "d010-s15#1"
+    },
+    {
+      "bytes": 82604,
+      "file": "d010-s16-word-01-th.wav",
+      "meaning_hebrew": "כניסה",
+      "romanization": "thaang khâo",
+      "sha256": "27df6d00e5e4a0965bd6235106c5c0c784b4c13fdf9dd266819d43b5fc07cbe3",
+      "source_request_sha256": "8530bc2bc15939d8fd2fcc8df4e81d1e5905a181f307d0c616c96cfe6bc8aef3",
+      "thai": "ทางเข้า",
+      "word_id": "d010-s16#1"
+    },
+    {
+      "bytes": 63404,
+      "file": "d010-s17-word-01-th.wav",
+      "meaning_hebrew": "נקודת מפגש",
+      "romanization": "jùt nát phóp",
+      "sha256": "1c61d86de1e55cd2340c0aad4ebb8a5e38ca876a750414c02b4c029057f5ce80",
+      "source_request_sha256": "4dc6492d8bea28e4b48d2cc0c5cebb7ce17214ccf5ba0f848845d810cc06a28c",
+      "thai": "จุดนัดพบ",
+      "word_id": "d010-s17#1"
+    },
+    {
+      "bytes": 74924,
+      "file": "d010-s18-word-01-th.wav",
+      "meaning_hebrew": "הסוללה כמעט נגמרה",
+      "romanization": "bɛ̀ɛt glâi mòt",
+      "sha256": "63b790facd4ef13f8412025b93b70021b5012ef3e1c4e851a4e81c5fb331e0d8",
+      "source_request_sha256": "aab72df1edf1620335e53c9120d0973424f875eea56b57bf600ae7d2d450b182",
+      "thai": "แบตใกล้หมด",
+      "word_id": "d010-s18#1"
+    },
+    {
+      "bytes": 71084,
+      "file": "d010-s19-word-01-th.wav",
+      "meaning_hebrew": "פקק תנועה",
+      "romanization": "rót dtìt",
+      "sha256": "9dc4da63c34f21b405f2374cf6cccff431a1dfaa6cf0a294d9a1f57ca0bbc797",
+      "source_request_sha256": "0264812a7145c9f6191f37b5552279905f0cbaa141b41db50b7840f586f3849a",
+      "thai": "รถติด",
+      "word_id": "d010-s19#1"
+    },
+    {
+      "bytes": 57644,
+      "file": "d010-s20-word-01-th.wav",
+      "meaning_hebrew": "מקום לינה",
+      "romanization": "thîi phák",
+      "sha256": "508487084f257aa249f5693a67a8b0f252aac4812b6b0379450e22e7d2e62b32",
+      "source_request_sha256": "493ba08722c24a8e0d5bfe8edddfee5ead524d68a5db36fc4472b1f151e81158",
+      "thai": "ที่พัก",
+      "word_id": "d010-s20#1"
+    }
+  ],
+  "estimated_cost_usd": 0.0048000000000000004,
+  "generated_at": "2026-10-06T08:16:06.778197+00:00",
+  "lesson_id": "day-010",
+  "provider": "google_cloud_tts",
+  "revision": 1,
+  "sample_rate_hertz": 24000,
+  "schema_version": 1,
+  "vocabulary_sha256": "ce4f3ef5e152d2203af7f404fee7adf1a3164845e0c0f71cc313ca80422b8650"
+}

@@ -1,0 +1,603 @@
+{
+  "audio_program": {
+    "pitch_semitones": 0,
+    "practice_variations": {
+      "hebrew_speaking_rate": 1,
+      "thai_speaking_rate": 1
+    },
+    "tracks": [
+      {
+        "id": "listening",
+        "pause_between_repetitions_ms": 1200,
+        "pause_between_sentences_ms": 2800,
+        "sequence": [
+          "d010-s01",
+          "d010-s02",
+          "d010-s03",
+          "d010-s04",
+          "d010-s05",
+          "d010-s06",
+          "d010-s07",
+          "d010-s08",
+          "d010-s09",
+          "d010-s10",
+          "d010-s11",
+          "d010-s12",
+          "d010-s13",
+          "d010-s14",
+          "d010-s15",
+          "d010-s16",
+          "d010-s17",
+          "d010-s18",
+          "d010-s19",
+          "d010-s20"
+        ],
+        "thai_repetitions": 2,
+        "thai_speaking_rates": [
+          0.82,
+          1
+        ]
+      },
+      {
+        "id": "shadowing",
+        "pause_between_repetitions_ms": 700,
+        "pause_between_sentences_ms": 1800,
+        "sequence": [
+          "d010-s01",
+          "d010-s02",
+          "d010-s03",
+          "d010-s04",
+          "d010-s05",
+          "d010-s06",
+          "d010-s07",
+          "d010-s08",
+          "d010-s09",
+          "d010-s10",
+          "d010-s11",
+          "d010-s12",
+          "d010-s13",
+          "d010-s14",
+          "d010-s15",
+          "d010-s16",
+          "d010-s17",
+          "d010-s18",
+          "d010-s19",
+          "d010-s20"
+        ],
+        "thai_repetitions": 3,
+        "thai_speaking_rates": [
+          0.9,
+          0.9,
+          0.9
+        ]
+      },
+      {
+        "hebrew_prompt": true,
+        "hebrew_speaking_rate": 1,
+        "id": "recall",
+        "pause_between_sentences_ms": 2500,
+        "recall_pause_ms": 5000,
+        "sequence": [
+          "d010-s01",
+          "d010-s02",
+          "d010-s03",
+          "d010-s04",
+          "d010-s05",
+          "d010-s06",
+          "d010-s07",
+          "d010-s08",
+          "d010-s09",
+          "d010-s10",
+          "d010-s11",
+          "d010-s12",
+          "d010-s13",
+          "d010-s14",
+          "d010-s15",
+          "d010-s16",
+          "d010-s17",
+          "d010-s18",
+          "d010-s19",
+          "d010-s20"
+        ],
+        "thai_repetitions": 1,
+        "thai_speaking_rates": [
+          0.9
+        ]
+      },
+      {
+        "id": "scenario",
+        "pause_between_sentences_ms": 1200,
+        "sequence": [
+          "d010-s01",
+          "d010-s02",
+          "d010-s03",
+          "d010-s04",
+          "d010-s05",
+          "d010-s06",
+          "d010-s07",
+          "d010-s08",
+          "d010-s09",
+          "d010-s10",
+          "d010-s11",
+          "d010-s12",
+          "d010-s13",
+          "d010-s14",
+          "d010-s15",
+          "d010-s16",
+          "d010-s17",
+          "d010-s18",
+          "d010-s19",
+          "d010-s20"
+        ],
+        "thai_repetitions": 1,
+        "thai_speaking_rates": [
+          1
+        ]
+      }
+    ]
+  },
+  "day": 10,
+  "lesson_id": "day-010",
+  "revision": 1,
+  "schema_version": 1,
+  "sentences": [
+    {
+      "category": "market_plans",
+      "context_he": "להציע בילוי בשוק הלילה.",
+      "id": "d010-s01",
+      "literal_he": "הערב + אני + רוצה + ללכת + שוק לילה + מילת נימוס.",
+      "pattern": "อยากไป + [מקום] = רוצה ללכת למקום.",
+      "prompt_he": "הערב אני רוצה ללכת לשוק הלילה.",
+      "review_status": "approved",
+      "romanization": "khʉʉn níi phǒm yàak bpai dtà-làat glaang khʉʉn khráp",
+      "thai": "คืนนี้ผมอยากไปตลาดกลางคืนครับ",
+      "variation": {
+        "prompt_he": "יש שוק לילה ליד המלון?",
+        "thai": "มีตลาดกลางคืนใกล้โรงแรมไหมครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "שוק לילה",
+          "romanization": "dtà-làat glaang khʉʉn",
+          "thai": "ตลาดกลางคืน"
+        }
+      ]
+    },
+    {
+      "category": "market_plans",
+      "context_he": "לברר את שעת הסגירה לפני שמתכננים את הדרך הביתה.",
+      "id": "d010-s02",
+      "literal_he": "שוק הזה + נסגר + בשעה + חצות + מילת שאלה + מילת נימוס.",
+      "pattern": "ปิดตอน + [שעה] + ไหม = האם נסגר בשעה הזאת?",
+      "prompt_he": "השוק הזה נסגר בחצות?",
+      "review_status": "approved",
+      "romanization": "dtà-làat níi bpìt dtɔɔn thîang khʉʉn mǎi khráp",
+      "thai": "ตลาดนี้ปิดตอนเที่ยงคืนไหมครับ",
+      "variation": {
+        "prompt_he": "אני רוצה לחזור לפני חצות.",
+        "thai": "ผมอยากกลับก่อนเที่ยงคืนครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "חצות",
+          "romanization": "thîang khʉʉn",
+          "thai": "เที่ยงคืน"
+        }
+      ]
+    },
+    {
+      "category": "navigation",
+      "context_he": "לבקש ממישהו להראות את היעד במפה.",
+      "id": "d010-s03",
+      "literal_he": "שוק הזה + נמצא + היכן + במפה + מילת נימוס.",
+      "pattern": "[מקום] + อยู่ตรงไหนในแผนที่ = היכן המקום נמצא במפה?",
+      "prompt_he": "איפה השוק הזה במפה?",
+      "review_status": "approved",
+      "romanization": "dtà-làat níi yùu dtrong nǎi nai phɛ̌ɛn-thîi khráp",
+      "thai": "ตลาดนี้อยู่ตรงไหนในแผนที่ครับ",
+      "variation": {
+        "prompt_he": "אני אבדוק את המפה קודם.",
+        "thai": "ผมขอดูแผนที่ก่อนครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "מפה",
+          "romanization": "phɛ̌ɛn-thîi",
+          "thai": "แผนที่"
+        }
+      ]
+    },
+    {
+      "category": "navigation",
+      "context_he": "לבקש הכוונה כשאינך יודע היכן אתה.",
+      "id": "d010-s04",
+      "literal_he": "אני + הלכתי לאיבוד + בבקשה + אמור דרך + ללכת לשוק + בבקשה + מילת נימוס.",
+      "pattern": "หลงทาง + ช่วยบอกทางไป + [יעד] = הלכתי לאיבוד, בבקשה כוון אותי ליעד.",
+      "prompt_he": "הלכתי לאיבוד, תוכל לכוון אותי לשוק?",
+      "review_status": "approved",
+      "romanization": "phǒm lǒng thaang chûai bɔ̀ɔk thaang bpai dtà-làat nɔ̀i khráp",
+      "thai": "ผมหลงทาง ช่วยบอกทางไปตลาดหน่อยครับ",
+      "variation": {
+        "prompt_he": "אני חושב שהלכנו לאיבוד.",
+        "thai": "ผมว่าเราหลงทางแล้วครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "ללכת לאיבוד",
+          "romanization": "lǒng thaang",
+          "thai": "หลงทาง"
+        }
+      ]
+    },
+    {
+      "category": "shopping",
+      "context_he": "אחרי קנייה, כדי לשמור תיעוד של התשלום.",
+      "id": "d010-s05",
+      "literal_he": "אני + רוצה + לשמור + קבלה + להשאיר ברשותי + מילת נימוס.",
+      "pattern": "เก็บ + [דבר] + ไว้ = לשמור את הדבר להמשך.",
+      "prompt_he": "אני רוצה לשמור את הקבלה.",
+      "review_status": "approved",
+      "romanization": "phǒm yàak gèp bai-sèt wái khráp",
+      "thai": "ผมอยากเก็บใบเสร็จไว้ครับ",
+      "variation": {
+        "prompt_he": "אפשר לשים את הקבלה בשקית?",
+        "thai": "ใส่ใบเสร็จในถุงให้หน่อยได้ไหมครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "קבלה",
+          "romanization": "bai-sèt",
+          "thai": "ใบเสร็จ"
+        }
+      ]
+    },
+    {
+      "category": "contact",
+      "context_he": "לבקש מחבר להשתמש בטלפון שלו.",
+      "id": "d010-s06",
+      "literal_he": "מבקש + לשאול + טלפון + להתקשר לחבר + בבקשה אפשר + מילת שאלה + מילת נימוס.",
+      "pattern": "ขอยืม + [חפץ] + [מטרה] + ได้ไหม = אפשר לשאול את החפץ לצורך המטרה?",
+      "prompt_he": "אפשר לשאול את הטלפון שלך כדי להתקשר לחבר?",
+      "review_status": "approved",
+      "romanization": "khɔ̌ɔ yʉʉm thoo-rá-sàp thoo hǎa phʉ̂an nɔ̀i dâai mǎi khráp",
+      "thai": "ขอยืมโทรศัพท์โทรหาเพื่อนหน่อยได้ไหมครับ",
+      "variation": {
+        "prompt_he": "אפשר לשאול את המטען שלך לרגע?",
+        "thai": "ขอยืมที่ชาร์จหน่อยได้ไหมครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "לשאול חפץ",
+          "romanization": "yʉʉm",
+          "thai": "ยืม"
+        }
+      ]
+    },
+    {
+      "category": "return_transport",
+      "context_he": "לברר מתי מסתיימת התחבורה חזרה.",
+      "id": "d010-s07",
+      "literal_he": "אוטובוס + סבב אחרון + יוצא + באיזו שעה + מילת נימוס.",
+      "pattern": "[שירות] + รอบสุดท้าย + [פעולה] + กี่โมง = באיזו שעה הסבב האחרון?",
+      "prompt_he": "באיזו שעה יוצא האוטובוס האחרון?",
+      "review_status": "approved",
+      "romanization": "rót mee rɔ̂ɔp sùt-tháai ɔ̀ɔk gìi moong khráp",
+      "thai": "รถเมล์รอบสุดท้ายออกกี่โมงครับ",
+      "variation": {
+        "prompt_he": "זה האוטובוס האחרון?",
+        "thai": "นี่คือรถเมล์รอบสุดท้ายใช่ไหมครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "הסבב האחרון",
+          "romanization": "rɔ̂ɔp sùt-tháai",
+          "thai": "รอบสุดท้าย"
+        }
+      ]
+    },
+    {
+      "category": "night_safety",
+      "context_he": "לשאול אדם שמכיר את האזור לפני שבוחרים דרך חזרה.",
+      "id": "d010-s08",
+      "literal_he": "אזור הזה + ללכת חזרה + לבד + בטוח + מילת שאלה + מילת נימוס.",
+      "pattern": "[פעולה] + ปลอดภัยไหม = האם הפעולה בטוחה?",
+      "prompt_he": "בטוח ללכת כאן לבד בדרך חזרה?",
+      "review_status": "approved",
+      "romanization": "thɛ̌ɛo níi dəən glàp khon diao bplɔ̀ɔt-phai mǎi khráp",
+      "thai": "แถวนี้เดินกลับคนเดียวปลอดภัยไหมครับ",
+      "variation": {
+        "prompt_he": "איזו דרך בטוחה יותר?",
+        "thai": "ทางไหนปลอดภัยกว่าครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "בטוח",
+          "romanization": "bplɔ̀ɔt-phai",
+          "thai": "ปลอดภัย"
+        }
+      ]
+    },
+    {
+      "category": "contact",
+      "context_he": "לבחור מקום שבו אפשר לשמוע זה את זה בשוק.",
+      "id": "d010-s09",
+      "literal_he": "כאן + רעש חזק + אנחנו + נלך לדבר במקום אחר + יחד + מילת שאלה + מילת נימוס.",
+      "pattern": "[מקום] + เสียงดัง + ไป + [פעולה] + ที่อื่นกันไหม = רועש במקום הזה, אולי נעבור למקום אחר?",
+      "prompt_he": "רועש כאן, אולי נלך לדבר במקום אחר?",
+      "review_status": "approved",
+      "romanization": "dtrong níi sǐang dang rao bpai khui thîi ʉ̀ʉn gan mǎi khráp",
+      "thai": "ตรงนี้เสียงดัง เราไปคุยที่อื่นกันไหมครับ",
+      "variation": {
+        "prompt_he": "אני לא שומע טוב כי רועש.",
+        "thai": "ผมได้ยินไม่ชัดเพราะเสียงดังครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "רועש",
+          "romanization": "sǐang dang",
+          "thai": "เสียงดัง"
+        }
+      ]
+    },
+    {
+      "category": "navigation",
+      "context_he": "להסביר שאתה צריך הכוונה לדרך שבה חוזרים.",
+      "id": "d010-s10",
+      "literal_he": "אני + זוכר + דרך חזרה + מלון + לא מצליח + מילת נימוס.",
+      "pattern": "จำ + [דבר] + ไม่ได้ = לא מצליח לזכור את הדבר.",
+      "prompt_he": "אני לא זוכר את הדרך חזרה למלון.",
+      "review_status": "approved",
+      "romanization": "phǒm jam thaang glàp roong-rɛɛm mâi dâai khráp",
+      "thai": "ผมจำทางกลับโรงแรมไม่ได้ครับ",
+      "variation": {
+        "prompt_he": "בבקשה הסבר לי את הדרך חזרה לתחנת הרכבת העירונית.",
+        "thai": "ช่วยบอกทางกลับสถานีรถไฟฟ้าหน่อยครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "הדרך חזרה",
+          "romanization": "thaang glàp",
+          "thai": "ทางกลับ"
+        }
+      ]
+    },
+    {
+      "category": "return_transport",
+      "context_he": "חזרה על גดมิเตอร์ מיום שתיים, בהצבת תנאי לפני נסיעה.",
+      "id": "d010-s11",
+      "literal_he": "אם + לא מפעיל מונה + אני + מבקש + לרדת + כאן + מילת נימוס.",
+      "pattern": "ถ้าไม่ + [פעולה] + ผมขอ + [תגובה] = אם הפעולה לא מתבצעת, אני מבקש להגיב כך.",
+      "prompt_he": "אם אתה לא מפעיל את המונה, אני מבקש לרדת כאן.",
+      "review_status": "approved",
+      "romanization": "thâa mâi gòt mí-dtə̂ə phǒm khɔ̌ɔ long dtrong níi khráp",
+      "thai": "ถ้าไม่กดมิเตอร์ ผมขอลงตรงนี้ครับ",
+      "variation": {
+        "prompt_he": "כבר הפעלת את המונה?",
+        "thai": "กดมิเตอร์แล้วหรือยังครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "להפעיל את המונה",
+          "romanization": "gòt mí-dtə̂ə",
+          "thai": "กดมิเตอร์"
+        }
+      ]
+    },
+    {
+      "category": "return_transport",
+      "context_he": "חזרה על จอดตรงนี้ מיום שתיים, בבחירת נקודת ירידה.",
+      "id": "d010-s12",
+      "literal_he": "אם + עוצרים כאן + אני + צריך + ללכת רחוק + מילת שאלה + מילת נימוס.",
+      "pattern": "ถ้า + [פעולה] + ต้อง + [תוצאה] + ไหม = אם נפעל כך, האם אצטרך לעשות את התוצאה?",
+      "prompt_he": "אם נעצור כאן, אצטרך ללכת רחוק?",
+      "review_status": "approved",
+      "romanization": "thâa jɔ̀ɔt dtrong níi phǒm dtɔ̂ng dəən glai mǎi khráp",
+      "thai": "ถ้าจอดตรงนี้ ผมต้องเดินไกลไหมครับ",
+      "variation": {
+        "prompt_he": "אפשר לעצור ליד הכניסה?",
+        "thai": "จอดใกล้ทางเข้าได้ไหมครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "לעצור כאן",
+          "romanization": "jɔ̀ɔt dtrong níi",
+          "thai": "จอดตรงนี้"
+        }
+      ]
+    },
+    {
+      "category": "shopping",
+      "context_he": "חזרה על สแกนจ่าย מיום אחד, עם הסבר לבחירת התשלום.",
+      "id": "d010-s13",
+      "literal_he": "אני + מבקש + לסרוק ולשלם + כי + לא הבאתי + כסף מזומן + מילת נימוס.",
+      "pattern": "ขอ + [פעולה] + เพราะ + [סיבה] = מבקש לפעול כך בגלל הסיבה.",
+      "prompt_he": "אני מבקש לשלם בסריקה כי לא הבאתי מזומן.",
+      "review_status": "approved",
+      "romanization": "phǒm khɔ̌ɔ sà-gɛɛn jàai phrɔ́ mâi dâai phók ngən sòt khráp",
+      "thai": "ผมขอสแกนจ่าย เพราะไม่ได้พกเงินสดครับ",
+      "variation": {
+        "prompt_he": "אני כבר שילמתי בסריקה.",
+        "thai": "ผมสแกนจ่ายแล้วครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "לשלם בסריקה",
+          "romanization": "sà-gɛɛn jàai",
+          "thai": "สแกนจ่าย"
+        }
+      ]
+    },
+    {
+      "category": "contact",
+      "context_he": "חזרה על ส่งโลเคชัน מיום אחד, לתיאום מפגש בשוק.",
+      "id": "d010-s14",
+      "literal_he": "אני + שלחתי מיקום + עבורך + כבר + ניפגש + שם + מילת נימוס.",
+      "pattern": "[פעולה] + ให้แล้ว = הפעולה עבור האדם כבר בוצעה.",
+      "prompt_he": "כבר שלחתי לך את המיקום, ניפגש שם.",
+      "review_status": "approved",
+      "romanization": "phǒm sòng loo-khee-chan hâi lɛ́ɛo jəə gan dtrong nán ná khráp",
+      "thai": "ผมส่งโลเคชันให้แล้ว เจอกันตรงนั้นนะครับ",
+      "variation": {
+        "prompt_he": "בבקשה שלח לי את המיקום של הכניסה.",
+        "thai": "ช่วยส่งโลเคชันทางเข้าให้ผมหน่อยครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "לשלוח מיקום",
+          "romanization": "sòng loo-khee-chan",
+          "thai": "ส่งโลเคชัน"
+        }
+      ]
+    },
+    {
+      "category": "travel_time",
+      "context_he": "חזרה על ใช้เวลาเดินทาง מימים חמש ושבע, בשאלה על החזרה עכשיו.",
+      "id": "d010-s15",
+      "literal_he": "אם + חוזר עכשיו + עתיד + להשתמש בזמן נסיעה + ארוך + מילת שאלה + מילת נימוס.",
+      "pattern": "ถ้า + [בחירה] + จะ + [תוצאה] + ไหม = אם אבחר כך, האם זו תהיה התוצאה?",
+      "prompt_he": "אם אחזור עכשיו, הנסיעה תיקח הרבה זמן?",
+      "review_status": "approved",
+      "romanization": "thâa glàp dtɔɔn níi jà chái wee-laa dəən-thaang naan mǎi khráp",
+      "thai": "ถ้ากลับตอนนี้ จะใช้เวลาเดินทางนานไหมครับ",
+      "variation": {
+        "prompt_he": "בדרך כלל הנסיעה נמשכת חצי שעה.",
+        "thai": "ปกติใช้เวลาเดินทางครึ่งชั่วโมงครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "משך הנסיעה",
+          "romanization": "chái wee-laa dəən-thaang",
+          "thai": "ใช้เวลาเดินทาง"
+        }
+      ]
+    },
+    {
+      "category": "navigation",
+      "context_he": "למצוא את הכניסה כשנמצאים ליד השוק.",
+      "id": "d010-s16",
+      "literal_he": "כניסה לשוק + נמצאת + צד איזה + מילת נימוס.",
+      "pattern": "[מקום] + อยู่ฝั่งไหน = באיזה צד נמצא המקום?",
+      "prompt_he": "באיזה צד נמצאת הכניסה לשוק?",
+      "review_status": "approved",
+      "romanization": "thaang khâo dtà-làat yùu fàng nǎi khráp",
+      "thai": "ทางเข้าตลาดอยู่ฝั่งไหนครับ",
+      "variation": {
+        "prompt_he": "אני מחכה ליד הכניסה הראשית.",
+        "thai": "ผมรออยู่ใกล้ทางเข้าหลักครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "כניסה",
+          "romanization": "thaang khâo",
+          "thai": "ทางเข้า"
+        }
+      ]
+    },
+    {
+      "category": "meeting_point",
+      "context_he": "לבחור מקום ברור למפגש אם נפרדים בשוק.",
+      "id": "d010-s17",
+      "literal_he": "כאן + יש + נקודת מפגש + מילת שאלה + מילת נימוס.",
+      "pattern": "มี + [מקום או שירות] + ไหม = האם המקום או השירות קיימים?",
+      "prompt_he": "יש כאן נקודת מפגש?",
+      "review_status": "approved",
+      "romanization": "thîi nîi mii jùt nát phóp mǎi khráp",
+      "thai": "ที่นี่มีจุดนัดพบไหมครับ",
+      "variation": {
+        "prompt_he": "נקבע את הכניסה הראשית כנקודת המפגש?",
+        "thai": "ใช้ทางเข้าหลักเป็นจุดนัดพบไหมครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "נקודת מפגש",
+          "romanization": "jùt nát phóp",
+          "thai": "จุดนัดพบ"
+        }
+      ]
+    },
+    {
+      "category": "night_safety",
+      "context_he": "לבקש עזרה בהזמנת נסיעה כשהטלפון עומד להתרוקן.",
+      "id": "d010-s18",
+      "literal_he": "סוללה + כמעט נגמרה + כבר + בבקשה + הזמן רכב + בשבילי + בבקשה + מילת נימוס.",
+      "pattern": "[משאב] + ใกล้หมดแล้ว = המשאב כמעט נגמר.",
+      "prompt_he": "הסוללה כמעט נגמרה, בבקשה הזמן לי רכב.",
+      "review_status": "approved",
+      "romanization": "bɛ̀ɛt glâi mòt lɛ́ɛo chûai rîak rót hâi phǒm nɔ̀i khráp",
+      "thai": "แบตใกล้หมดแล้ว ช่วยเรียกรถให้ผมหน่อยครับ",
+      "variation": {
+        "prompt_he": "יש כאן מקום להטעין את הטלפון?",
+        "thai": "ที่นี่มีที่ชาร์จโทรศัพท์ไหมครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "הסוללה כמעט נגמרה",
+          "romanization": "bɛ̀ɛt glâi mòt",
+          "thai": "แบตใกล้หมด"
+        }
+      ]
+    },
+    {
+      "category": "travel_delays",
+      "context_he": "לתאר לנהג מה תעשה אם התנועה תיעצר.",
+      "id": "d010-s19",
+      "literal_he": "אם + תנועה תקועה + אני + ארד + ואז + אמשיך ללכת + מילת נימוס.",
+      "pattern": "ถ้า + [מצב] + จะ + [פעולה] = אם המצב יקרה, אבצע את הפעולה.",
+      "prompt_he": "אם יהיה פקק, ארד ואמשיך ברגל.",
+      "review_status": "approved",
+      "romanization": "thâa rót dtìt phǒm jà long lɛ́ɛo dəən dtɔ̀ɔ khráp",
+      "thai": "ถ้ารถติด ผมจะลงแล้วเดินต่อครับ",
+      "variation": {
+        "prompt_he": "עכשיו יש פקק בדרך חזרה?",
+        "thai": "ตอนนี้ทางกลับรถติดไหมครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "פקק תנועה",
+          "romanization": "rót dtìt",
+          "thai": "รถติด"
+        }
+      ]
+    },
+    {
+      "category": "night_safety",
+      "context_he": "לתאם עם חבר שתעדכן אחרי שתגיע.",
+      "id": "d010-s20",
+      "literal_he": "מגיע למקום לינה + ואז + אני + אשלח הודעה + להודיע + מילת נימוס.",
+      "pattern": "ถึง + [יעד] + แล้ว จะ + [פעולה] = אחרי שאגיע ליעד, אבצע את הפעולה.",
+      "prompt_he": "כשאגיע למקום הלינה, אשלח הודעה.",
+      "review_status": "approved",
+      "romanization": "thʉ̌ng thîi phák lɛ́ɛo phǒm jà sòng khɔ̂ɔ-khwaam bɔ̀ɔk khráp",
+      "thai": "ถึงที่พักแล้ว ผมจะส่งข้อความบอกครับ",
+      "variation": {
+        "prompt_he": "כבר הגעתי למקום הלינה, תודה.",
+        "thai": "ผมถึงที่พักแล้วครับ ขอบคุณครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "מקום לינה",
+          "romanization": "thîi phák",
+          "thai": "ที่พัก"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "project": "Thai language learning",
+    "thread_id": "01a072ea-9260-7bf3-aeb7-31bf9b4bf90e"
+  },
+  "status": "approved",
+  "theme": "Night market, navigation, and getting home safely",
+  "voices": {
+    "hebrew": {
+      "language_code": "he-IL",
+      "name": "he-IL-Chirp3-HD-Charon"
+    },
+    "provider": "google_cloud_tts",
+    "thai": {
+      "language_code": "th-TH",
+      "name": "th-TH-Chirp3-HD-Erinome"
+    }
+  },
+  "week": 2
+}
