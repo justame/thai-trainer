@@ -1,9 +1,9 @@
 {
-  "audio_manifest_path": "packs/day-009/r1/audio-manifest.json",
-  "content_sha256": "a0a99857b1e816e0736c0da4eb5c82ec4a17f0e3d680201b5c6bca72b6df3716",
-  "lesson_id": "day-009",
-  "lesson_path": "packs/day-009/r1/lesson.json",
-  "practice_manifest_path": "packs/day-009/r1/practice/practice-manifest.json",
+  "audio_manifest_path": "packs/day-012/r1/audio-manifest.json",
+  "content_sha256": "1bd226ed9b2ba58f7d4dacf41b723fde7cbf2b3662f2a0e0fcb12517b22adda2",
+  "lesson_id": "day-012",
+  "lesson_path": "packs/day-012/r1/lesson.json",
+  "practice_manifest_path": "packs/day-012/r1/practice/practice-manifest.json",
   "published_lessons": [
     {
       "audio_manifest_path": "packs/day-001/r5/audio-manifest.json",
@@ -89,9 +89,19 @@
       "revision": 1,
       "schema_version": 1,
       "word_manifest_path": "word-packs/day-010/r1/word-audio-manifest.json"
+    },
+    {
+      "audio_manifest_path": "packs/day-012/r1/audio-manifest.json",
+      "content_sha256": "1bd226ed9b2ba58f7d4dacf41b723fde7cbf2b3662f2a0e0fcb12517b22adda2",
+      "lesson_id": "day-012",
+      "lesson_path": "packs/day-012/r1/lesson.json",
+      "practice_manifest_path": "packs/day-012/r1/practice/practice-manifest.json",
+      "revision": 1,
+      "schema_version": 1,
+      "word_manifest_path": "word-packs/day-012/r1/word-audio-manifest.json"
     }
   ],
   "revision": 1,
   "schema_version": 1,
-  "word_manifest_path": "word-packs/day-009/r1/word-audio-manifest.json"
+  "word_manifest_path": "word-packs/day-012/r1/word-audio-manifest.json"
 }

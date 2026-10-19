@@ -1,0 +1,213 @@
+{
+  "billable_characters": 111,
+  "entries": [
+    {
+      "bytes": 73004,
+      "file": "d012-s01-word-01-th.wav",
+      "meaning_hebrew": "להחליט",
+      "romanization": "dtàt-sǐn-jai",
+      "sha256": "750b7d27f80503bb4c728d1de40288a81d8b08289e084f726a6543030b407d3f",
+      "source_request_sha256": "167cd496398118f3974d1b28f3032f4961dfed4edd0fcb2573b3fa4bd91552f6",
+      "thai": "ตัดสินใจ",
+      "word_id": "d012-s01#1"
+    },
+    {
+      "bytes": 59564,
+      "file": "d012-s02-word-01-th.wav",
+      "meaning_hebrew": "לשנות או להחליף",
+      "romanization": "bplìan",
+      "sha256": "d556f06a8564682c3e780df55a22b435296458374f11cfcf0de317252181f0d0",
+      "source_request_sha256": "64b8a1ea90403c50918b66068ed67c8c604c5734576d3f080dfe367810624516",
+      "thai": "เปลี่ยน",
+      "word_id": "d012-s02#1"
+    },
+    {
+      "bytes": 71084,
+      "file": "d012-s03-word-01-th.wav",
+      "meaning_hebrew": "לתכנן",
+      "romanization": "waang-phɛ̌ɛn",
+      "sha256": "287fe12b966f12e5a2561f107548bdfa79cdfbb6aac96ce3b7a2b05f2fe33849",
+      "source_request_sha256": "50e2055fa8e256855d887000b9bf134712ed16be24491aa44ce3567c3fca7dbb",
+      "thai": "วางแผน",
+      "word_id": "d012-s03#1"
+    },
+    {
+      "bytes": 53804,
+      "file": "d012-s04-word-01-th.wav",
+      "meaning_hebrew": "לנסות",
+      "romanization": "lɔɔng",
+      "sha256": "7200f5c9f3d7d63e768631c50b4575a8c239167e8f9cd5bdc352a2876f975063",
+      "source_request_sha256": "aea081db4e3b0f1a6c95031359cf71960faaef4024e71ae678438507a9ac0e7c",
+      "thai": "ลอง",
+      "word_id": "d012-s04#1"
+    },
+    {
+      "bytes": 69164,
+      "file": "d012-s05-word-01-th.wav",
+      "meaning_hebrew": "להמשיך לעשות",
+      "romanization": "tham dtɔ̀ɔ",
+      "sha256": "6f8eaca5efbe7c0de9a5c64421ab820f0b43e13ef6fc46900de0d74f781e55aa",
+      "source_request_sha256": "dcdb27e25078384ba31c9ede50164945bedd5dab455bd2a343c1ab1f76c604dc",
+      "thai": "ทำต่อ",
+      "word_id": "d012-s05#1"
+    },
+    {
+      "bytes": 74924,
+      "file": "d012-s06-word-01-th.wav",
+      "meaning_hebrew": "להסביר",
+      "romanization": "à-thí-baai",
+      "sha256": "1cd55b3377ee0b2949c8b568853ea7532ace6fbe8b853a4ae3ccd95f2564a5cc",
+      "source_request_sha256": "600f1ed4e1d0f4d5c9c36bc393dd23d44f63a5933ba1564e6e9ca897cf1fb283",
+      "thai": "อธิบาย",
+      "word_id": "d012-s06#1"
+    },
+    {
+      "bytes": 48044,
+      "file": "d012-s07-word-01-th.wav",
+      "meaning_hebrew": "להתכוון",
+      "romanization": "mǎai-thʉ̌ng",
+      "sha256": "ceb35696df0ddc164e61f5faad8aef174637d031a014f738d4c59a4830e870b8",
+      "source_request_sha256": "85ed19336f9c0987399dc3133138bda9c1a7574fd11510e091a3a22ce4e69105",
+      "thai": "หมายถึง",
+      "word_id": "d012-s07#1"
+    },
+    {
+      "bytes": 53804,
+      "file": "d012-s08-word-01-th.wav",
+      "meaning_hebrew": "לזכור",
+      "romanization": "jam",
+      "sha256": "158ed1c317788fa606ee4e4aac8a42a3a4c1533ac8021ea20bcee983507d8b83",
+      "source_request_sha256": "71d2c4f06c5ce69dd86f00cbf66efea90289e9d0fa0b48203163a56fef24c57e",
+      "thai": "จำ",
+      "word_id": "d012-s08#1"
+    },
+    {
+      "bytes": 51884,
+      "file": "d012-s09-word-01-th.wav",
+      "meaning_hebrew": "לשכוח",
+      "romanization": "lʉʉm",
+      "sha256": "7c103b6ed0525f6673b58da304b9de33d1ecd15b7e5d2c3e3eaa2179b15925a1",
+      "source_request_sha256": "3ff57cbd35ff2404e28eef895976e10e891f3e0b49e322f9652cc48ee10ff886",
+      "thai": "ลืม",
+      "word_id": "d012-s09#1"
+    },
+    {
+      "bytes": 65324,
+      "file": "d012-s10-word-01-th.wav",
+      "meaning_hebrew": "לשים לב או להבחין",
+      "romanization": "sǎng-gèet",
+      "sha256": "210b755a86efb973c1d90f7960e034032c783282a4443bb807ab23dd9cf0650b",
+      "source_request_sha256": "31e18b7db0549951a1be8a8ffa4df60b6e42e5090904f286e210f986c4d8fc21",
+      "thai": "สังเกต",
+      "word_id": "d012-s10#1"
+    },
+    {
+      "bytes": 59564,
+      "file": "d012-s11-word-01-th.wav",
+      "meaning_hebrew": "לבדוק",
+      "romanization": "dtrùat",
+      "sha256": "f1e712d14064a8460dc4bd92da49f568dba3970bdeff3ba15a63124afa1a1b60",
+      "source_request_sha256": "50d43b37a972e88318a215ed12a6fd9bc1ab60abb8591deb92fd3886dd64eab3",
+      "thai": "ตรวจ",
+      "word_id": "d012-s11#1"
+    },
+    {
+      "bytes": 80684,
+      "file": "d012-s12-word-01-th.wav",
+      "meaning_hebrew": "לתקן או לפתור",
+      "romanization": "gâe-khǎi",
+      "sha256": "31943a14270daf28d028b787f2bbc97ff8312e6b30800dbae34b7f02ac556b6d",
+      "source_request_sha256": "538e2da35f59d7a5536eb30698a2f8562a00e1b2632dbe8451460ef7e3ef8df2",
+      "thai": "แก้ไข",
+      "word_id": "d012-s12#1"
+    },
+    {
+      "bytes": 76844,
+      "file": "d012-s13-word-01-th.wav",
+      "meaning_hebrew": "לבטל",
+      "romanization": "yók-lə̂ək",
+      "sha256": "2a36be48fe2bf2667244004155eb89b1d984857209509fba52e0e34ed12357e5",
+      "source_request_sha256": "419ace7dd84e50f072e1dab93771dd31560ff15486f7fcb18d6ad5087aab4cf6",
+      "thai": "ยกเลิก",
+      "word_id": "d012-s13#1"
+    },
+    {
+      "bytes": 67244,
+      "file": "d012-s14-word-01-th.wav",
+      "meaning_hebrew": "להזיז או לדחות מועד",
+      "romanization": "lʉ̂an",
+      "sha256": "83522dd410b2c92716cfce6380aca737aecec8edaecc0d077eabaa4d1bc4c517",
+      "source_request_sha256": "93aa4369da36cd3675594d0901e2b573d7d2226511218867258ee82f732a8d29",
+      "thai": "เลื่อน",
+      "word_id": "d012-s14#1"
+    },
+    {
+      "bytes": 40364,
+      "file": "d012-s15-word-01-th.wav",
+      "meaning_hebrew": "לקבוע פגישה או תור",
+      "romanization": "nát",
+      "sha256": "2a0a03bce93eb1c09a22526fb0379da119fef47831e5c6c20dc8be122ab134db",
+      "source_request_sha256": "2904faf115f228ec87567662623e43f7dbd4d6b53d3ea4bcf651375abe831bc8",
+      "thai": "นัด",
+      "word_id": "d012-s15#1"
+    },
+    {
+      "bytes": 65324,
+      "file": "d012-s16-word-01-th.wav",
+      "meaning_hebrew": "לאשר",
+      "romanization": "yʉʉn-yan",
+      "sha256": "28d0e0422ba379b189149c186a3a5114ae9a1931a7bf2c163a7b767d516160ec",
+      "source_request_sha256": "6ee7deff7abb08db804898c893d84fb52b952d1a6b37a4d255c2516a54bf11df",
+      "thai": "ยืนยัน",
+      "word_id": "d012-s16#1"
+    },
+    {
+      "bytes": 65324,
+      "file": "d012-s17-word-01-th.wav",
+      "meaning_hebrew": "להמליץ או להציג מישהו",
+      "romanization": "náe-nam",
+      "sha256": "da7db444e0483ff48b02e247041de021afef072a82aa5cea18e179a28d1759b7",
+      "source_request_sha256": "ba5fa8602585275a5eb76dfcaf34bae7c0cbd4bbceb716feabe072ddfafd1a0d",
+      "thai": "แนะนำ",
+      "word_id": "d012-s17#1"
+    },
+    {
+      "bytes": 65324,
+      "file": "d012-s18-word-01-th.wav",
+      "meaning_hebrew": "להשוות",
+      "romanization": "bprìap-thîap",
+      "sha256": "fae133f34b7c2c0020dc00b224f9426afa576e9ee3f1352ba0b75c8b673ef7b0",
+      "source_request_sha256": "01396d3cc39b89c8ee45b814c7938798017e0c702e3d7ebe3e6489d60e7baa1a",
+      "thai": "เปรียบเทียบ",
+      "word_id": "d012-s18#1"
+    },
+    {
+      "bytes": 63404,
+      "file": "d012-s19-word-01-th.wav",
+      "meaning_hebrew": "להשתדל או להתאמץ",
+      "romanization": "phá-yaa-yaam",
+      "sha256": "90192347c0564ca3957d3f117d6d7f1ffcb3cb5a912b093b90f7def14f393fa0",
+      "source_request_sha256": "3146ebd88b4093b6064a908efdb16fac81940e5c20c360d35cf2533df6bce8fc",
+      "thai": "พยายาม",
+      "word_id": "d012-s19#1"
+    },
+    {
+      "bytes": 65324,
+      "file": "d012-s20-word-01-th.wav",
+      "meaning_hebrew": "לטפל בעניין או לנהל",
+      "romanization": "jàt-gaan",
+      "sha256": "08dc74b9930ac10c753c375926373bfd33c86d89c7cf302df246cc446c611c60",
+      "source_request_sha256": "b490f9bb89d6315160b21592ed2f1f0f8aa72accc56a642635d894602606ecac",
+      "thai": "จัดการ",
+      "word_id": "d012-s20#1"
+    }
+  ],
+  "estimated_cost_usd": 0.00333,
+  "generated_at": "2026-10-19T08:01:06.286894+00:00",
+  "lesson_id": "day-012",
+  "provider": "google_cloud_tts",
+  "revision": 1,
+  "sample_rate_hertz": 24000,
+  "schema_version": 1,
+  "vocabulary_sha256": "92021c8c1557b4fa1d03d225e297abc531ba7cfaad59544c106e1ceba3141a2d"
+}

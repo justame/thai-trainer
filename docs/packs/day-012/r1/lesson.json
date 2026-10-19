@@ -1,0 +1,603 @@
+{
+  "audio_program": {
+    "pitch_semitones": 0,
+    "practice_variations": {
+      "hebrew_speaking_rate": 1,
+      "thai_speaking_rate": 1
+    },
+    "tracks": [
+      {
+        "id": "listening",
+        "pause_between_repetitions_ms": 1200,
+        "pause_between_sentences_ms": 2800,
+        "sequence": [
+          "d012-s01",
+          "d012-s02",
+          "d012-s03",
+          "d012-s04",
+          "d012-s05",
+          "d012-s06",
+          "d012-s07",
+          "d012-s08",
+          "d012-s09",
+          "d012-s10",
+          "d012-s11",
+          "d012-s12",
+          "d012-s13",
+          "d012-s14",
+          "d012-s15",
+          "d012-s16",
+          "d012-s17",
+          "d012-s18",
+          "d012-s19",
+          "d012-s20"
+        ],
+        "thai_repetitions": 2,
+        "thai_speaking_rates": [
+          0.82,
+          1
+        ]
+      },
+      {
+        "id": "shadowing",
+        "pause_between_repetitions_ms": 700,
+        "pause_between_sentences_ms": 1800,
+        "sequence": [
+          "d012-s01",
+          "d012-s02",
+          "d012-s03",
+          "d012-s04",
+          "d012-s05",
+          "d012-s06",
+          "d012-s07",
+          "d012-s08",
+          "d012-s09",
+          "d012-s10",
+          "d012-s11",
+          "d012-s12",
+          "d012-s13",
+          "d012-s14",
+          "d012-s15",
+          "d012-s16",
+          "d012-s17",
+          "d012-s18",
+          "d012-s19",
+          "d012-s20"
+        ],
+        "thai_repetitions": 3,
+        "thai_speaking_rates": [
+          0.9,
+          0.9,
+          0.9
+        ]
+      },
+      {
+        "hebrew_prompt": true,
+        "hebrew_speaking_rate": 1,
+        "id": "recall",
+        "pause_between_sentences_ms": 2500,
+        "recall_pause_ms": 5000,
+        "sequence": [
+          "d012-s01",
+          "d012-s02",
+          "d012-s03",
+          "d012-s04",
+          "d012-s05",
+          "d012-s06",
+          "d012-s07",
+          "d012-s08",
+          "d012-s09",
+          "d012-s10",
+          "d012-s11",
+          "d012-s12",
+          "d012-s13",
+          "d012-s14",
+          "d012-s15",
+          "d012-s16",
+          "d012-s17",
+          "d012-s18",
+          "d012-s19",
+          "d012-s20"
+        ],
+        "thai_repetitions": 1,
+        "thai_speaking_rates": [
+          0.9
+        ]
+      },
+      {
+        "id": "scenario",
+        "pause_between_sentences_ms": 1200,
+        "sequence": [
+          "d012-s01",
+          "d012-s02",
+          "d012-s03",
+          "d012-s04",
+          "d012-s05",
+          "d012-s06",
+          "d012-s07",
+          "d012-s08",
+          "d012-s09",
+          "d012-s10",
+          "d012-s11",
+          "d012-s12",
+          "d012-s13",
+          "d012-s14",
+          "d012-s15",
+          "d012-s16",
+          "d012-s17",
+          "d012-s18",
+          "d012-s19",
+          "d012-s20"
+        ],
+        "thai_repetitions": 1,
+        "thai_speaking_rates": [
+          1
+        ]
+      }
+    ]
+  },
+  "day": 12,
+  "lesson_id": "day-012",
+  "revision": 1,
+  "schema_version": 1,
+  "sentences": [
+    {
+      "category": "decisions_and_plans",
+      "context_he": "עדיין לא החלטתי אם לנסוע מחר.",
+      "id": "d012-s01",
+      "literal_he": "אני + עדיין לא + החלטתי + האם לנסוע מחר",
+      "pattern": "ยังไม่ได้ตัดสินใจว่า...ไหม",
+      "prompt_he": "עדיין לא החלטתי אם לנסוע מחר.",
+      "review_status": "approved",
+      "romanization": "phǒm yang mâi dâai dtàt-sǐn-jai wâa jà bpai phrûng-níi mǎi khráp",
+      "thai": "ผมยังไม่ได้ตัดสินใจว่าจะไปพรุ่งนี้ไหมครับ",
+      "variation": {
+        "prompt_he": "כבר בחרתי יום שמתאים לי.",
+        "thai": "ผมเลือกวันที่สะดวกแล้วครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "להחליט",
+          "romanization": "dtàt-sǐn-jai",
+          "thai": "ตัดสินใจ"
+        }
+      ]
+    },
+    {
+      "category": "decisions_and_plans",
+      "context_he": "אני רוצה לשנות את התוכנית כי מחר אני לא פנוי.",
+      "id": "d012-s02",
+      "literal_he": "אני רוצה + לשנות תוכנית + כי מחר לא פנוי",
+      "pattern": "เปลี่ยนแผน เพราะ...",
+      "prompt_he": "אני רוצה לשנות את התוכנית כי מחר אני לא פנוי.",
+      "review_status": "approved",
+      "romanization": "phǒm yàak bplìan phɛ̌ɛn phrɔ́ phrûng-níi mâi wâang khráp",
+      "thai": "ผมอยากเปลี่ยนแผน เพราะพรุ่งนี้ไม่ว่างครับ",
+      "variation": {
+        "prompt_he": "אנחנו מסכימים לשנות את התוכנית.",
+        "thai": "เราตกลงว่าจะเปลี่ยนแผนครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "לשנות או להחליף",
+          "romanization": "bplìan",
+          "thai": "เปลี่ยน"
+        }
+      ]
+    },
+    {
+      "category": "decisions_and_plans",
+      "context_he": "תכננתי לנסוע לצ׳אנג מאי בסוף השבוע.",
+      "id": "d012-s03",
+      "literal_he": "אני + תכננתי ש + אסע לצ׳אנג מאי בסוף השבוע הזה",
+      "pattern": "วางแผนว่าจะ...",
+      "prompt_he": "תכננתי לנסוע לצ׳אנג מאי בסוף השבוע.",
+      "review_status": "approved",
+      "romanization": "phǒm waang-phɛ̌ɛn wâa jà bpai chiiang-mài sùt-sàp-daa níi khráp",
+      "thai": "ผมวางแผนว่าจะไปเชียงใหม่สุดสัปดาห์นี้ครับ",
+      "variation": {
+        "prompt_he": "אני צריך להכין את הדברים לפני הנסיעה.",
+        "thai": "ผมต้องเตรียมของก่อนเดินทางครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "לתכנן",
+          "romanization": "waang-phɛ̌ɛn",
+          "thai": "วางแผน"
+        }
+      ]
+    },
+    {
+      "category": "decisions_and_plans",
+      "context_he": "אני רוצה לנסות להתחבר שוב.",
+      "id": "d012-s04",
+      "literal_he": "אני רוצה + לנסות להתחבר + עוד פעם",
+      "pattern": "ลอง + [פעולה] + อีกครั้ง",
+      "prompt_he": "אני רוצה לנסות להתחבר שוב.",
+      "review_status": "approved",
+      "romanization": "phǒm yàak lɔɔng chʉ̂am-dtɔ̀ɔ ìik khráng khráp",
+      "thai": "ผมอยากลองเชื่อมต่ออีกครั้งครับ",
+      "variation": {
+        "prompt_he": "אחרי ההפסקה אני רוצה להתחיל מחדש.",
+        "thai": "พักแล้วผมอยากเริ่มใหม่ครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "לנסות",
+          "romanization": "lɔɔng",
+          "thai": "ลอง"
+        }
+      ]
+    },
+    {
+      "category": "conversation_and_memory",
+      "context_he": "אני רוצה להמשיך לעשות את זה אחרי ההפסקה.",
+      "id": "d012-s05",
+      "literal_he": "אני רוצה + להמשיך לעשות + אחרי מנוחה",
+      "pattern": "ทำต่อหลัง + [פעילות]",
+      "prompt_he": "אני רוצה להמשיך לעשות את זה אחרי ההפסקה.",
+      "review_status": "approved",
+      "romanization": "phǒm yàak tham dtɔ̀ɔ lǎng phák khráp",
+      "thai": "ผมอยากทำต่อหลังพักครับ",
+      "variation": {
+        "prompt_he": "אם כואבת לי הרגל אני צריך לעצור קודם.",
+        "thai": "ถ้าเจ็บขา ผมต้องหยุดก่อนครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "להמשיך לעשות",
+          "romanization": "tham dtɔ̀ɔ",
+          "thai": "ทำต่อ"
+        }
+      ]
+    },
+    {
+      "category": "conversation_and_memory",
+      "context_he": "אפשר להסביר את החלק הזה קצת יותר לאט?",
+      "id": "d012-s06",
+      "literal_he": "עזור להסביר + את החלק הזה + לאט יותר קצת + אפשר",
+      "pattern": "ช่วยอธิบาย...ได้ไหม",
+      "prompt_he": "אפשר להסביר את החלק הזה קצת יותר לאט?",
+      "review_status": "approved",
+      "romanization": "chûai à-thí-baai dtrong níi cháa long nɔ̀i dâai mǎi khráp",
+      "thai": "ช่วยอธิบายตรงนี้ช้าลงหน่อยได้ไหมครับ",
+      "variation": {
+        "prompt_he": "אפשר להסביר שוב עם דוגמה?",
+        "thai": "ช่วยอธิบายอีกครั้งพร้อมยกตัวอย่างได้ไหมครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "להסביר",
+          "romanization": "à-thí-baai",
+          "thai": "อธิบาย"
+        }
+      ]
+    },
+    {
+      "category": "conversation_and_memory",
+      "context_he": "אתה מתכוון שצריך להחליף את החלק הזה?",
+      "id": "d012-s07",
+      "literal_he": "אתה + מתכוון ש + צריך להחליף את החלק הזה + נכון",
+      "pattern": "หมายถึงว่า...ใช่ไหม",
+      "prompt_he": "אתה מתכוון שצריך להחליף את החלק הזה?",
+      "review_status": "approved",
+      "romanization": "khun mǎai-thʉ̌ng wâa dtɔ̂ng bplìan à-lài chín níi châi mǎi khráp",
+      "thai": "คุณหมายถึงว่าต้องเปลี่ยนอะไหล่ชิ้นนี้ใช่ไหมครับ",
+      "variation": {
+        "prompt_he": "אתה מתכוון למחר בבוקר או אחר הצהריים?",
+        "thai": "คุณหมายถึงพรุ่งนี้เช้าหรือพรุ่งนี้บ่ายครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "להתכוון",
+          "romanization": "mǎai-thʉ̌ng",
+          "thai": "หมายถึง"
+        }
+      ]
+    },
+    {
+      "category": "conversation_and_memory",
+      "context_he": "אני זוכר את המילה הזאת אבל לא זוכר את המשמעות.",
+      "id": "d012-s08",
+      "literal_he": "אני + זוכר את המילה הזאת + אבל לא זוכר את המשמעות",
+      "pattern": "จำ...ได้ แต่จำ...ไม่ได้",
+      "prompt_he": "אני זוכר את המילה הזאת אבל לא זוכר את המשמעות.",
+      "review_status": "approved",
+      "romanization": "phǒm jam kham níi dâai dtɛ̀ɛ jam khwaam-mǎai mâi dâai khráp",
+      "thai": "ผมจำคำนี้ได้ แต่จำความหมายไม่ได้ครับ",
+      "variation": {
+        "prompt_he": "אני זוכר שקבענו למחר.",
+        "thai": "ผมจำได้ว่าเรานัดกันพรุ่งนี้ครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "לזכור",
+          "romanization": "jam",
+          "thai": "จำ"
+        }
+      ]
+    },
+    {
+      "category": "observation_and_repairs",
+      "context_he": "שכחתי להודיע לך ששיניתי את השעה.",
+      "id": "d012-s09",
+      "literal_he": "אני + שכחתי להודיע לך + ששיניתי את השעה כבר",
+      "pattern": "ลืม + [פעולה]",
+      "prompt_he": "שכחתי להודיע לך ששיניתי את השעה.",
+      "review_status": "approved",
+      "romanization": "phǒm lʉʉm bɔ̀ɔk khun wâa bplìan wee-laa láew khráp",
+      "thai": "ผมลืมบอกคุณว่าเปลี่ยนเวลาแล้วครับ",
+      "variation": {
+        "prompt_he": "אל תשכח לאשר את התור.",
+        "thai": "อย่าลืมยืนยันนัดนะครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "לשכוח",
+          "romanization": "lʉʉm",
+          "thai": "ลืม"
+        }
+      ]
+    },
+    {
+      "category": "observation_and_repairs",
+      "context_he": "שמתי לב שהכלבה הולכת לאט יותר מהרגיל.",
+      "id": "d012-s10",
+      "literal_he": "אני + שמתי לב ש + הכלבה הולכת לאט יותר מהרגיל",
+      "pattern": "สังเกตว่า...",
+      "prompt_he": "שמתי לב שהכלבה הולכת לאט יותר מהרגיל.",
+      "review_status": "approved",
+      "romanization": "phǒm sǎng-gèet wâa mǎa dəən cháa gwàa bpòk-gà-dtì khráp",
+      "thai": "ผมสังเกตว่าหมาเดินช้ากว่าปกติครับ",
+      "variation": {
+        "prompt_he": "שמתי לב שהנורה מהבהבת כל הזמן.",
+        "thai": "ผมสังเกตว่าไฟกะพริบตลอดครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "לשים לב או להבחין",
+          "romanization": "sǎng-gèet",
+          "thai": "สังเกต"
+        }
+      ]
+    },
+    {
+      "category": "observation_and_repairs",
+      "context_he": "אפשר לבדוק אם הבלמים פועלים כרגיל?",
+      "id": "d012-s11",
+      "literal_he": "עזור לבדוק + האם הבלמים עובדים כרגיל",
+      "pattern": "ตรวจว่า...ไหม",
+      "prompt_he": "אפשר לבדוק אם הבלמים פועלים כרגיל?",
+      "review_status": "approved",
+      "romanization": "chûai dtrùat wâa brèek tham-ngaan bpòk-gà-dtì mǎi khráp",
+      "thai": "ช่วยตรวจว่าเบรกทำงานปกติไหมครับ",
+      "variation": {
+        "prompt_he": "בדוק קודם את הבלמים ואז תודיע לי.",
+        "thai": "ตรวจเบรกก่อน แล้วบอกผมด้วยนะครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "לבדוק",
+          "romanization": "dtrùat",
+          "thai": "ตรวจ"
+        }
+      ]
+    },
+    {
+      "category": "observation_and_repairs",
+      "context_he": "אפשר לפתור את הבעיה הזאת היום?",
+      "id": "d012-s12",
+      "literal_he": "לפתור את הבעיה הזאת + היום + אפשר",
+      "pattern": "แก้ไขปัญหา...ได้ไหม",
+      "prompt_he": "אפשר לפתור את הבעיה הזאת היום?",
+      "review_status": "approved",
+      "romanization": "gâe-khǎi bpan-hǎa níi wan-níi dâai mǎi khráp",
+      "thai": "แก้ไขปัญหานี้วันนี้ได้ไหมครับ",
+      "variation": {
+        "prompt_he": "כבר ניסיתי לפתור את הבעיה אבל היא עדיין קיימת.",
+        "thai": "ผมลองแก้ไขแล้ว แต่ยังมีปัญหาอยู่ครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "לתקן או לפתור",
+          "romanization": "gâe-khǎi",
+          "thai": "แก้ไข"
+        }
+      ]
+    },
+    {
+      "category": "appointments",
+      "context_he": "אני צריך לבטל את התור למחר כי צץ לי משהו.",
+      "id": "d012-s13",
+      "literal_he": "אני צריך + לבטל תור מחר + כי יש סידור",
+      "pattern": "ยกเลิกนัด เพราะ...",
+      "prompt_he": "אני צריך לבטל את התור למחר כי צץ לי משהו.",
+      "review_status": "approved",
+      "romanization": "phǒm dtɔ̂ng yók-lə̂ək nát phrûng-níi phrɔ́ mii thú-rá khráp",
+      "thai": "ผมต้องยกเลิกนัดพรุ่งนี้ เพราะมีธุระครับ",
+      "variation": {
+        "prompt_he": "אם אפשר להזיז את התור אני לא רוצה לבטל.",
+        "thai": "ถ้าเลื่อนนัดได้ ผมก็ไม่อยากยกเลิกครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "לבטל",
+          "romanization": "yók-lə̂ək",
+          "thai": "ยกเลิก"
+        }
+      ]
+    },
+    {
+      "category": "appointments",
+      "context_he": "אפשר לדחות את התור משתיים לארבע?",
+      "id": "d012-s14",
+      "literal_he": "מבקש לדחות תור + משתיים לארבע + אפשר",
+      "pattern": "เลื่อนนัดจาก...เป็น...",
+      "prompt_he": "אפשר לדחות את התור משתיים לארבע?",
+      "review_status": "approved",
+      "romanization": "khɔ̌ɔ lʉ̂an nát jàak bàai sɔ̌ɔng bpen bàai sìi dâai mǎi khráp",
+      "thai": "ขอเลื่อนนัดจากบ่ายสองเป็นบ่ายสี่ได้ไหมครับ",
+      "variation": {
+        "prompt_he": "אפשר לדחות את התור למחר?",
+        "thai": "ขอเลื่อนนัดเป็นพรุ่งนี้ได้ไหมครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "להזיז או לדחות מועד",
+          "romanization": "lʉ̂an",
+          "thai": "เลื่อน"
+        }
+      ]
+    },
+    {
+      "category": "appointments",
+      "context_he": "אני רוצה לקבוע תור לבדיקה מחר בבוקר.",
+      "id": "d012-s15",
+      "literal_he": "אני רוצה + לקבוע בדיקה + מחר בבוקר",
+      "pattern": "นัด + [פעילות] + [זמן]",
+      "prompt_he": "אני רוצה לקבוע תור לבדיקה מחר בבוקר.",
+      "review_status": "approved",
+      "romanization": "phǒm yàak nát dtrùat phrûng-níi cháo khráp",
+      "thai": "ผมอยากนัดตรวจพรุ่งนี้เช้าครับ",
+      "variation": {
+        "prompt_he": "אנחנו יכולים לקבוע להיפגש אחרי האימון.",
+        "thai": "เรานัดเจอกันหลังซ้อมได้ครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "לקבוע פגישה או תור",
+          "romanization": "nát",
+          "thai": "นัด"
+        }
+      ]
+    },
+    {
+      "category": "appointments",
+      "context_he": "אני רוצה לאשר שהפגישה מחר בשעה ארבע.",
+      "id": "d012-s16",
+      "literal_he": "אני מבקש לאשר ש + קבענו להיפגש מחר בארבע",
+      "pattern": "ยืนยันว่า...",
+      "prompt_he": "אני רוצה לאשר שהפגישה מחר בשעה ארבע.",
+      "review_status": "approved",
+      "romanization": "phǒm khɔ̌ɔ yʉʉn-yan wâa rao nát gan phrûng-níi bàai sìi khráp",
+      "thai": "ผมขอยืนยันว่าเรานัดกันพรุ่งนี้บ่ายสี่ครับ",
+      "variation": {
+        "prompt_he": "אפשר לאשר את השעה שוב?",
+        "thai": "ช่วยยืนยันเวลาอีกครั้งได้ไหมครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "לאשר",
+          "romanization": "yʉʉn-yan",
+          "thai": "ยืนยัน"
+        }
+      ]
+    },
+    {
+      "category": "recommendations_and_effort",
+      "context_he": "אתה יכול להמליץ על מוסך קרוב לכאן?",
+      "id": "d012-s17",
+      "literal_he": "עזור להמליץ + מוסך קרוב לכאן + אפשר",
+      "pattern": "แนะนำ + [דבר]",
+      "prompt_he": "אתה יכול להמליץ על מוסך קרוב לכאן?",
+      "review_status": "approved",
+      "romanization": "chûai náe-nam ùu sɔ̂ɔm rót glâi-glâi thîi nîi dâai mǎi khráp",
+      "thai": "ช่วยแนะนำอู่ซ่อมรถใกล้ ๆ ที่นี่ได้ไหมครับ",
+      "variation": {
+        "prompt_he": "אני רוצה להציג לך חבר שלי.",
+        "thai": "ผมอยากแนะนำเพื่อนให้คุณรู้จักครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "להמליץ או להציג מישהו",
+          "romanization": "náe-nam",
+          "thai": "แนะนำ"
+        }
+      ]
+    },
+    {
+      "category": "recommendations_and_effort",
+      "context_he": "אני רוצה להשוות מחירים לפני שאחליט.",
+      "id": "d012-s18",
+      "literal_he": "אני רוצה + להשוות מחיר + לפני החלטה",
+      "pattern": "เปรียบเทียบ...ก่อนตัดสินใจ",
+      "prompt_he": "אני רוצה להשוות מחירים לפני שאחליט.",
+      "review_status": "approved",
+      "romanization": "phǒm yàak bprìap-thîap raa-khaa gɔ̀ɔn dtàt-sǐn-jai khráp",
+      "thai": "ผมอยากเปรียบเทียบราคาก่อนตัดสินใจครับ",
+      "variation": {
+        "prompt_he": "אפשר להשוות בין שני הדגמים האלה?",
+        "thai": "ช่วยเปรียบเทียบสองรุ่นนี้ให้หน่อยได้ไหมครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "להשוות",
+          "romanization": "bprìap-thîap",
+          "thai": "เปรียบเทียบ"
+        }
+      ]
+    },
+    {
+      "category": "recommendations_and_effort",
+      "context_he": "אני משתדל לדבר תאית גם כשאני עדיין מדבר לאט.",
+      "id": "d012-s19",
+      "literal_he": "אני + משתדל לדבר תאית + אף שעדיין מדבר לאט",
+      "pattern": "พยายาม + [פעולה]",
+      "prompt_he": "אני משתדל לדבר תאית גם כשאני עדיין מדבר לאט.",
+      "review_status": "approved",
+      "romanization": "phǒm phá-yaa-yaam phûut phaa-sǎa thai thʉ̌ng jà yang phûut cháa khráp",
+      "thai": "ผมพยายามพูดภาษาไทย ถึงจะยังพูดช้าครับ",
+      "variation": {
+        "prompt_he": "אני משתדל לזכור את המילים החדשות.",
+        "thai": "ผมพยายามจำคำใหม่ ๆ ครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "להשתדל או להתאמץ",
+          "romanization": "phá-yaa-yaam",
+          "thai": "พยายาม"
+        }
+      ]
+    },
+    {
+      "category": "recommendations_and_effort",
+      "context_he": "אני אטפל בעניין הזה בעצמי.",
+      "id": "d012-s20",
+      "literal_he": "אני + אטפל בעניין הזה + בעצמי",
+      "pattern": "จัดการเรื่องนี้เอง",
+      "prompt_he": "אני אטפל בעניין הזה בעצמי.",
+      "review_status": "approved",
+      "romanization": "phǒm jà jàt-gaan rʉ̂ang níi eeng khráp",
+      "thai": "ผมจะจัดการเรื่องนี้เองครับ",
+      "variation": {
+        "prompt_he": "אפשר לטפל בעניין הזה לפני מחר?",
+        "thai": "ช่วยจัดการเรื่องนี้ก่อนพรุ่งนี้ได้ไหมครับ"
+      },
+      "vocabulary": [
+        {
+          "meaning_he": "לטפל בעניין או לנהל",
+          "romanization": "jàt-gaan",
+          "thai": "จัดการ"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "project": "Thai language learning",
+    "thread_id": "01a072ea-9260-7bf3-aeb7-31bf9b4bf90e"
+  },
+  "status": "approved",
+  "theme": "פעלים שימושיים: החלטות, תיאומים ופתרון בעיות",
+  "voices": {
+    "hebrew": {
+      "language_code": "he-IL",
+      "name": "he-IL-Chirp3-HD-Charon"
+    },
+    "provider": "google_cloud_tts",
+    "thai": {
+      "language_code": "th-TH",
+      "name": "th-TH-Chirp3-HD-Erinome"
+    }
+  },
+  "week": 2
+}
